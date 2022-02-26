@@ -23,7 +23,7 @@ int main()
  }
  return 0;
 }
-/*void mostrarArea(float area){   cout<<"El area es: "<<area<<endl; return;  }
+void mostrarArea(float area){   cout<<"El area es: "<<area<<endl; return;  }
 
 void areaDelCirculo(void){
  float radio, area = 0;
@@ -31,7 +31,7 @@ void areaDelCirculo(void){
  area = pow(radio,2) * Pi;
  mostrarArea(area);
  return;
-}*/
+}
 
 void areaDelCuadrado(void){
  float lado, area = 0;
