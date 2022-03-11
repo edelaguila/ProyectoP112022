@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 class Persona{
 public:
     string Nombre, Direccion, Empresa;
