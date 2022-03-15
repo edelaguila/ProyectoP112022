@@ -61,7 +61,7 @@ Puesto=strPuesto;
 }
 
 int main(){
-    persona primeraPersona("juan", 55569, 5300, 19, "45654", 45678, "jajajajaj", "ajajaja" );
+    persona primeraPersona("juan", 55569, 5300, 19, "45654", 45678, "5623@gmail.com", "universitario" );
     cout << primeraPersona.strRegistrar();
     cout << primeraPersona.strModificar("pedro");
     cout << primeraPersona.strEliminar();
