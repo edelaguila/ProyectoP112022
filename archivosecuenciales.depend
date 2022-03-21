@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1647901035 source:c:\users\mey\proyectos\proyectofinal\proyectop1equipo4\archivosecuenciales\main.cpp
+	<iostream>
+	"Persona.h"
+
+1647901035 c:\users\mey\proyectos\proyectofinal\proyectop1equipo4\archivosecuenciales\include\persona.h
+	<iostream>
+
+1647901507 source:c:\users\mey\proyectos\proyectofinal\proyectop1equipo4\archivosecuenciales\src\persona.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Persona.h"
+	<iostream>
+
+1647901035 c:\users\mey\proyectos\proyectofinal\proyectop1equipo4\archivosecuenciales\persona.h
+	<iostream>
+
