@@ -13,7 +13,7 @@ mapcell::mapcell()
 bool mapcell::isBlockedCell()
 {
     //cout << "caracter visitado=" << id << endl;
-    if( id == '1')
+    if( id == '=')
     //if( id == 178)
     {
         return true;
