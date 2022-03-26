@@ -62,7 +62,7 @@ void gamemap::loadMapFromFile()
     string line;
     int row = 0;
     char userInput = ' ';
-    ifstream myFile("map.txt");
+    ifstream myFile("MapG5.txt");
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas
@@ -102,7 +102,7 @@ void gamemap::loadMapFromFile()
 }
 void gamemap::createMapToFile()
 {
-    ofstream myFile("map.txt");
+    ofstream myFile("MapG5.txt");
     if (myFile.is_open())
     {
         for (int i = 0; i < 15; i++)
@@ -136,7 +136,7 @@ void gamemap::drawPortada()
 {
     string line;
     char userInput = ' ';
-    ifstream myFile("portada.txt");
+    ifstream myFile("portadaG5.txt");
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas
@@ -156,7 +156,7 @@ void gamemap::drawVictoria()
 {
     string line;
     char userInput = ' ';
-    ifstream myFile("premio.txt");
+    ifstream myFile("premioG5.txt");
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas

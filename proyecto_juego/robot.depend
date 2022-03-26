@@ -43,3 +43,74 @@
 	<iostream>
 	<fstream>
 
+1648221453 source:c:\users\monica pérez\desktop\progra i\ejemplos p2\proyecto_juego\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1648221453 c:\users\monica pérez\desktop\progra i\ejemplos p2\proyecto_juego\include\player.h
+
+1648221453 c:\users\monica pérez\desktop\progra i\ejemplos p2\proyecto_juego\include\mapcell.h
+
+1648221453 c:\users\monica pérez\desktop\progra i\ejemplos p2\proyecto_juego\include\gamemap.h
+	"mapcell.h"
+
+1648224018 source:c:\users\monica pérez\desktop\progra i\ejemplos p2\proyecto_juego\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+1648221453 source:c:\users\monica pérez\desktop\progra i\ejemplos p2\proyecto_juego\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1648221453 source:c:\users\monica pérez\desktop\progra i\ejemplos p2\proyecto_juego\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1648225254 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1648225254 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\player.h
+
+1648225254 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\mapcell.h
+
+1648225254 c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\gamemap.h
+	"mapcell.h"
+
+1648225254 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1648225254 source:c:\users\abima\proyectos\tareasgit\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1648255425 source:c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1648255425 c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\player.h
+
+1648255425 c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\mapcell.h
+
+1648255425 c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\include\gamemap.h
+	"mapcell.h"
+
+1648255425 source:c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1648255425 source:c:\users\halld\proyectos\proyectofinal\proyectop1e5\lab1_g5_entrega_final\proyecto_juego\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
