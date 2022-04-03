@@ -12,6 +12,11 @@ public:
     void eliminar();
     void mostrarDatos();
     void menuPrincipal();
+    void menuMantenimiento();
+    void menuNomina();
+    void menuPoliza();
+    void menuImpuestos();
+    void menuDepartamentos();
 private:
     string documentoIdentificacion, nombre, direccion, edad, correo, telefono, estudios, puesto, sueldo, desicion, busquedaDatos;;
 };
@@ -19,10 +24,10 @@ private:
 void persona::registrar(){
     system("cls");
     fstream baseDatos;
-    cout << "\n\tEntrando al menu --REGISTRAR--" << endl;
-    cout << "\n\t�Quires salir al --MENU PRINCIPAL--? [ si / no ] : "; cin >> desicion;
+    cout << "\n\t\t\tEntrando al menu --REGISTRAR--\n" << endl;
+    cout << "\n\t¿Quires salir al --MENU MANTENIMIENTO--? [ si / no ] : "; cin >> desicion;
     if (desicion=="si"){
-        return menuPrincipal();
+        return menuMantenimiento();
     }
     else {
         cout << "\n\t\tIngrese el numero de documento de identificacion de la persona: "; cin >> documentoIdentificacion;
@@ -38,15 +43,18 @@ void persona::registrar(){
         baseDatos.open("empleados.txt", ios::app | ios::out);
 	    baseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
 	    baseDatos.close();
-        cout << "\tRegresando al --MENU PRINCIPAL--" << endl;
-        return menuPrincipal();
+	    cout << "\n\n\t\tPresione s para salir "; cin >>desicion;
+            if (desicion=="s"){
+                cout <<"\t\t\nRegresando al --MENU MANTENIMIENTO--";
+                return menuMantenimiento();
+            }
     }
 }
 
 void persona::modificar(){
     system("cls");
     fstream baseDatos, modBaseDatos;
-    cout << "\n\tEntrando al menu --MODIFICAR--" << endl;
+    cout << "\n\t\t\tEntrando al menu --MODIFICAR--" << endl;
     //cout << "\n\t�Quires salir al --MENU PRINCIPAL--? [ si / no ] : "; cin >> desicion;
     //if (desicion=="si"){
       //  return menuPrincipal();
@@ -58,8 +66,8 @@ void persona::modificar(){
             baseDatos.close();
             cout << "\n\t\tPresione s para salir "; cin >>desicion;
             if (desicion=="s"){
-                cout <<"\t\t\nRegresando al --MENU PRINCIPAL--";
-                return menuPrincipal();
+                cout <<"\t\t\t\nRegresando al --MENU MANTENIMIENTO--";
+                return menuMantenimiento();
             }
         }
         else {
@@ -88,8 +96,11 @@ void persona::modificar(){
             baseDatos.close();
             remove("empleados.txt");
             rename("temporal.txt","empleados.txt");
-            cout <<"\t\t\nRegresando al --MENU PRINCIPAL--";
-            return menuPrincipal();
+            cout << "\n\n\t\tPresione s para salir "; cin >>desicion;
+            if (desicion=="s"){
+                cout <<"\t\t\nRegresando al --MENU MANTENIMIENTO--";
+                return menuMantenimiento();
+            }
         }
     //}
 }
@@ -98,7 +109,7 @@ void persona::eliminar(){
     system("cls");
     int datos=0;
     fstream baseDatos, modBaseDatos;
-    cout << "\n\tEntrando al menu --ELIMINAR--" << endl;
+    cout << "\n\t\t\tEntrando al menu --ELIMINAR--" << endl;
     //cout << "\n\t�Quires salir al --MENU PRINCIPAL--? [ si / no ] : "; cin >> desicion;
     //if (desicion=="si"){
       //  return menuPrincipal();
@@ -110,8 +121,8 @@ void persona::eliminar(){
             baseDatos.close();
             cout << "\n\t\tPresione s para salir "; cin >>desicion;
             if (desicion=="s"){
-                cout <<"\t\t\nRegresando al --MENU PRINCIPAL--";
-                return menuPrincipal();
+                cout <<"\t\t\nRegresando al --MENU MANTENIMIENTO--";
+                return menuMantenimiento();
             }
         }
         else {
@@ -120,37 +131,42 @@ void persona::eliminar(){
             baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
             while (!baseDatos.eof()){
                 if (busquedaDatos!=documentoIdentificacion){
-                        //esto me daba un error y no sé porqué...
-                    //modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
+                        //esto me esta dando un error y no sé porqué...
+                        //no se puede eliminar un registro guardado
+                        //terminar despues
+                    modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
                 }
                 else {
                     datos++;
-                    cout << "\t\t\nLa información se a borrado con exito...";
+                    cout << "\n\t\tLa informacion se a borrado con exito...";
                 }
                 baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
             }
             if (datos==0){
-                cout << "\t\t\t\n\nNo se encontraron coincidencias, Revise el numero del Documento de Identificacion e intentelo de nuevo...";
+                cout << "\n\t\t\tNo se encontraron coincidencias, Revise el numero del Documento de Identificacion e intentelo de nuevo...";
                 cout << "\n\n\t\tPresione s para intentarlo de nuevo "; cin >>desicion;
             if (desicion=="s"){
-                cout <<"\t\t\nRegresando al --MENU PRINCIPAL--";
-                return menuPrincipal();
+                cout <<"\t\t\t\nRegresando al --MENU MANTENIMIENTO--";
+                return menuMantenimiento();
                 }
             }
             modBaseDatos.close();
             baseDatos.close();
             remove("empleados.txt");
             rename("temporal.txt","empleados.txt");
-            cout <<"\t\t\nRegresando al --MENU PRINCIPAL--";
-            return menuPrincipal();
+            cout << "\n\n\t\tPresione s para salir "; cin >>desicion;
+            if (desicion=="s"){
+                cout <<"\t\t\nRegresando al --MENU MANTENIMIENTO--";
+                return menuMantenimiento();
+            }
         }
 }
 
 void persona::mostrarDatos(){
     system("cls");
     fstream baseDatos;
-    cout << "\n\t\tEntrando al menu --MOSTRAR DATOS--";
-    cout << "\n\t\t¿Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
+    cout << "\n\t\t\tEntrando al menu --MOSTRAR DATOS--";
+    cout << "\n\n\t\t¿Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
     if (desicion=="si"){
         int datos=0;
         baseDatos.open("empleados.txt",ios::in);
@@ -161,21 +177,20 @@ void persona::mostrarDatos(){
         }
         else
         {
-            string participant_id;
-            cout << "\n\t\tEntrando en el menu --BUSCAR--"<<endl;
-            cout << "\nIngrese el numero del Documento de Identificacion de la persona a buscar: "; cin >> busquedaDatos;
+            cout << "\n\t\t\tEntrando en el menu --BUSCAR--"<<endl;
+            cout << "\n\t\tIngrese el numero del Documento de Identificacion de la persona a buscar: "; cin >> busquedaDatos;
             baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
             while(!baseDatos.eof()){
                 if(busquedaDatos==documentoIdentificacion){
-                    cout<<"\n\t\t\tDocumento de Identificacion: "<< documentoIdentificacion;
-                    cout<<"\n\t\t\tNombre: " << nombre;
-                    cout<<"\n\t\t\tEdad: "<< edad;
-                    cout<<"\n\t\t\tCorreo Electronico: "<< correo;
-                    cout<<"\n\t\t\tTelefono: "<< telefono;
-                    cout<<"\n\t\t\tDireccion: "<< direccion;
-                    cout<<"\n\t\t\tNivel de estudios: "<< estudios;
-                    cout<<"\n\t\t\tPuesto o cargo: "<< puesto;
-                    cout<<"\n\t\t\tSueldo: "<< sueldo;
+                    cout<<"\n\t\tDocumento de Identificacion: "<< documentoIdentificacion;
+                    cout<<"\n\t\tNombre: " << nombre;
+                    cout<<"\n\t\tEdad: "<< edad;
+                    cout<<"\n\t\tCorreo Electronico: "<< correo;
+                    cout<<"\n\t\tTelefono: "<< telefono;
+                    cout<<"\n\t\tDireccion: "<< direccion;
+                    cout<<"\n\t\tNivel de estudios: "<< estudios;
+                    cout<<"\n\t\tPuesto o cargo: "<< puesto;
+                    cout<<"\n\t\tSueldo: "<< sueldo;
                     datos++;
                 }
                 baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
@@ -186,7 +201,7 @@ void persona::mostrarDatos(){
             }
             cout << "\n\t\tPresione s para salir "; cin >>desicion;
             if (desicion=="s"){
-                cout <<"\t\t\nRegresando al --MENU MOSTRAR DATOS--";
+                cout <<"\t\t\t\nRegresando al --MENU MOSTRAR DATOS--";
                 return mostrarDatos();
             }
             baseDatos.close();
@@ -202,8 +217,8 @@ void persona::mostrarDatos(){
             baseDatos.close();
             cout << "\n\t\tPresione s para salir "; cin >>desicion;
             if (desicion=="s"){
-                cout <<"\t\t\nRegresando al --MENU PRINCIPAL--";
-                return menuPrincipal();
+                cout <<"\t\t\t\nRegresando al --MENU MANTENIMIENTO--";
+                return menuMantenimiento();
             }
         }
         else
@@ -212,15 +227,15 @@ void persona::mostrarDatos(){
             while(!baseDatos.eof())
             {
                 total++;
-                cout<<"\n\t\t\tDocumento de Identificacion: "<< documentoIdentificacion;
-                cout<<"\n\t\t\tNombre: " << nombre;
-                cout<<"\n\t\t\tEdad: "<< edad;
-                cout<<"\n\t\t\tCorreo Electronico: "<< correo;
-                cout<<"\n\t\t\tTelefono: "<< telefono;
-                cout<<"\n\t\t\tDireccion: "<< direccion;
-                cout<<"\n\t\t\tNivel de estudios: "<< estudios;
-                cout<<"\n\t\t\tPuesto o cargo: "<< puesto;
-                cout<<"\n\t\t\tSueldo: "<< sueldo;
+                cout<<"\n\n\t\tDocumento de Identificacion: "<< documentoIdentificacion;
+                cout<<"\n\t\tNombre: " << nombre;
+                cout<<"\n\t\tEdad: "<< edad;
+                cout<<"\n\t\tCorreo Electronico: "<< correo;
+                cout<<"\n\t\tTelefono: "<< telefono;
+                cout<<"\n\t\tDireccion: "<< direccion;
+                cout<<"\n\t\tNivel de estudios: "<< estudios;
+                cout<<"\n\t\tPuesto o cargo: "<< puesto;
+                cout<<"\n\t\tSueldo: "<< sueldo;
                 baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
             }
             if(total==0){
@@ -228,8 +243,8 @@ void persona::mostrarDatos(){
             }
             cout << "\n\n\t\tPresione s para salir "; cin >>desicion;
             if (desicion=="s"){
-                cout <<"\t\t\nRegresando al --MENU PRINCIPAL--";
-                return menuPrincipal();
+                cout <<"\t\t\nRegresando al --MENU MANTENIMIENTO--";
+                return menuMantenimiento();
             }
         }
         baseDatos.close();
@@ -237,10 +252,43 @@ void persona::mostrarDatos(){
 }
 
 void persona::menuPrincipal(){
+    system ("cls");
+    int menu;
+    cout << "\n\t\t\tBienvenido al programa de ==RECURSOS HUMANOS==";
+    cout << "\n\n\t\tElija el numero del menu al que quiera ingresar\n"<< endl << "\t\t[1] Mantenimiento\n" << "\t\t[2] Nomina\n" << "\t\t[3] Poliza\n" << "\t\t[4] Impuestos\n" << "\t\t[5] Departamentos\n" << "\t\t[6] Salir del programa\n";cout<<"\n\t\t";cin >> menu;
+    switch(menu){
+    case 1:
+        menuMantenimiento();
+        break;
+    case 2:
+        menuNomina();
+        break;
+    case 3:
+        menuPoliza();
+        break;
+    case 4:
+        menuImpuestos();
+        break;
+    case 5:
+        menuDepartamentos();
+        break;
+    case 6:
+        cout << "\n\t\t¿Quiere salir del programa? [ si / no ] : "; cin>>desicion;
+        if (desicion=="si"){
+            return exit (0);
+        }
+        else {
+            return menuPrincipal();
+        break;
+        }
+    }
+}
+
+void persona::menuMantenimiento(){
     system("cls");
     int menu;
-    cout << "\n\tBienvenido al programa de --RECURSOS HUMANOS--" << endl;
-    cout << "\tElija el numero del menu al que quiere ingresar" << endl << "\t\t[1] Registrar\n" << "\t\t[2] Modificar\n" << "\t\t[3] Eliminar\n" << "\t\t[4] Mostrar Datos\n" << "\t\t[5] Salir del programa\n";cout<<"\n\t\t"; cin >> menu;
+    cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO--" << endl;
+    cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar\n" << "\t\t[2] Modificar\n" << "\t\t[3] Eliminar\n" << "\t\t[4] Mostrar Datos\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
     switch (menu){
     case 1:
         registrar();
@@ -255,9 +303,26 @@ void persona::menuPrincipal(){
         mostrarDatos();
         break;
     case 5:
-        cout << "\tSaliendo del programa" << endl;
-        exit(0);
+        cout << "\tSaliendo al --MENU PRINCIPAL--" << endl;
+        return menuPrincipal();
+        break;
         }
+}
+
+void persona::menuNomina(){
+    cout << "hola";
+}
+
+void persona::menuPoliza(){
+    cout << "hola";
+}
+
+void persona::menuImpuestos(){
+    cout << "hola";
+}
+
+void persona::menuDepartamentos(){
+    cout << "hola";
 }
 
 main(){
