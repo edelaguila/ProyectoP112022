@@ -1,9 +1,11 @@
 #include <iostream>
-
+#include "Persona.h"
+#include "menus.h"
 using namespace std;
 
-int main()
+main()
 {
-    cout << "Hello world!" << endl;
-    return 0;
+	menus menuP;
+	menuP.menuPrincipal();
+	return 0;
 }
