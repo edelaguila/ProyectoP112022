@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1649191483 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\main.cpp
+	<iostream>
+	"menus.h"
+
+1649191796 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\menus.h
+	<string>
+
+1649191586 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+
