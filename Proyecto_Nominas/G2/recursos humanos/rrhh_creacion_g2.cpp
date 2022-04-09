@@ -223,6 +223,7 @@ public:
             baseDatos.close();
         }
     }
+
     void menuPrincipal(){
         system ("cls");
         int menu;
@@ -280,7 +281,29 @@ public:
             }
     }
     void menuNomina(){
-        cout<<"hola";
+        system("cls");
+        int menu;
+        cout << "\n\t\tBienvenido al --MENU NOMINA--" << endl;
+        cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar\n" << "\t\t[2] Modificar\n" << "\t\t[3] Eliminar\n" << "\t\t[4] Mostrar Datos\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
+        switch (menu){
+        case 1:
+            registrar();
+            break;
+        case 2:
+            modificar();
+            break;
+        case 3:
+            eliminar();
+            break;
+        case 4:
+            mostrarDatos();
+            break;
+        case 5:
+            cout << "\tSaliendo al --MENU PRINCIPAL--" << endl;
+            return menuPrincipal();
+            break;
+            }
+
     }
     void menuPoliza(){
         cout<<"hola";
@@ -293,7 +316,10 @@ public:
     }
 private:
     string documentoIdentificacion, nombre, direccion, edad, correo, telefono, estudios, puesto, sueldo, desicion, busquedaDatos;;
+
 };
+
+
 
 class empleado : public empresa{
 private:
@@ -301,8 +327,11 @@ private:
 };
 
 class nomina : public empresa{
-    //aqui deben copiar y pegar el void de registrar, modificar, eliminar, y mostrar... pero con cambios, sino estaran trabajando con mi clase de empleados
+
 };
+    //aqui deben copiar y pegar el void de registrar, modificar, eliminar, y mostrar... pero con cambios, sino estaran trabajando con mi clase de empleados
+
+
 
 class poliza : public empresa{
     //aqui deben copiar y pegar el void de registrar, modificar, eliminar, y mostrar... pero con cambios, sino estaran trabajando con mi clase de empleados
@@ -315,6 +344,8 @@ class impuestos : public empresa{
 class departamento : public empresa{
     //aqui deben copiar y pegar el void de registrar, modificar, eliminar, y mostrar... pero con cambios, sino estaran trabajando con mi clase de empleados
 };
+
+
 
  int main(){
     system ("cls");
