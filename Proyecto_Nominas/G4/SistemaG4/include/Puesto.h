@@ -19,6 +19,7 @@ class Puesto
             void Consultar ();
             void Imprimir ();
             void Borrar ();
+            void consultarDep();
 
         Puesto();
         virtual ~Puesto();

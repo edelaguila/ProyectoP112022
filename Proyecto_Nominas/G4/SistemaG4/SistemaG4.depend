@@ -119,3 +119,43 @@
 	<iomanip>
 	"Puesto.h"
 
+1649593095 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\persona.cpp
+	"Persona.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649593095 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649626372 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1649626372 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649626521 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\usuarios.h
+	<string>
+

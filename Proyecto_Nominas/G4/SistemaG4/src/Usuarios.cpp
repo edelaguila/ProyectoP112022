@@ -1,24 +1,34 @@
+#include "Usuarios.h"
 #include<cstdlib>
 #include<conio.h>
 #include<iostream>
-
+#include <string>
+#include "Bitacora.h"
 #define USER "Grupo4"
 #define PASS "4444"
-
 using namespace std;
 #include "Usuarios.h"
 
 
 Usuarios::Usuarios()
 {
-    //ctor
+
 }
 
 Usuarios::~Usuarios()
 {
     //dtor
 }
+
+void Usuarios::obtenerUser(string valorUsuario)
+{
+
+    userP = valorUsuario;
+
+}
+
 bool Usuarios::loginUsuarios(){
+    Bitacora control;
     string Usuarios, contra;
     int contador=0;
     bool ingresa=false;
@@ -29,6 +39,7 @@ bool Usuarios::loginUsuarios(){
         cout<<"**********************"<<endl;
         cout<<"Ingrese Usuario: ";
         getline(cin, Usuarios);
+        obtenerUser(Usuarios);
         cout<<"\nContrasena: ";
         //getline(cin, contra);
         char caracter;
@@ -55,6 +66,8 @@ bool Usuarios::loginUsuarios(){
             ingresa=true;
 
         } else {
+            control.nuevaActividadTxt(30);
+            control.nuevaActividad(30);
             cout<<"\nEl usuario y/o contrasena son incorrectos"<<endl;
             cin.get();
             contador++;
@@ -62,12 +75,17 @@ bool Usuarios::loginUsuarios(){
         }
     } while (ingresa==false && contador<3);
     if (ingresa==false){
+        control.nuevaActividadTxt(31);
+        control.nuevaActividad(31);
         cout<<"\nLo siento, no puede ingresar al sistema, sus contrasenas son invalidas o agoto intentos"<<endl;
-        cin.get();
-    } else {
+        cout<<"** REGRESE PRONTO **";
+        exit(0);}
+     else {
+        control.nuevaActividadTxt(32);
+        control.nuevaActividad(32);
         cout<<"\n*** Bienvenido al Sistema ***"<<endl;
+        cout << "Presione enter para aceptar"<<endl;
         cin.get();
     }
     return ingresa;
 }
-

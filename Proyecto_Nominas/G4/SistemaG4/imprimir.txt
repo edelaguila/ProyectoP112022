@@ -1,1 +1,0 @@
-ID        Apellido        Primer nombre Dpi           Departamento         Email                          Telefono Zona      Genero

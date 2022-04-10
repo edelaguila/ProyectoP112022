@@ -1,6 +1,8 @@
 #ifndef USUARIOS_H
 #define USUARIOS_H
-using std::string;
+#include <string>
+using namespace std;
+
 
 class Usuarios
 {
@@ -9,10 +11,11 @@ class Usuarios
         virtual ~Usuarios();
         bool loginUsuarios();
         void menuUsuarios();
+        void obtenerUser(string);
+        string userP;
     protected:
 
     private:
-
 };
 
 #endif // USUARIOS_H
