@@ -4,6 +4,7 @@
 #include<iostream>
 #include <string>
 #include "Bitacora.h"
+//Declaracion provicional de usuario y contraseña
 #define USER "Grupo4"
 #define PASS "4444"
 using namespace std;
@@ -20,6 +21,7 @@ Usuarios::~Usuarios()
     //dtor
 }
 
+//Funcion que envia el usuario a Bitacora
 void Usuarios::obtenerUser(string valorUsuario)
 {
 
@@ -27,6 +29,7 @@ void Usuarios::obtenerUser(string valorUsuario)
 
 }
 
+//Funcion para el login
 bool Usuarios::loginUsuarios(){
     Bitacora control;
     string Usuarios, contra;
@@ -45,6 +48,7 @@ bool Usuarios::loginUsuarios(){
         char caracter;
         caracter = getch();
         contra="";
+        //En este while se trasnforma lo que ingresa el usuario en *
         while (caracter != 13) //ASCII TECLA ENTER
         {
             if (caracter != 8) //ASCII TECLA RETROCESO
@@ -73,6 +77,7 @@ bool Usuarios::loginUsuarios(){
             contador++;
 
         }
+        //Si se pasa de 3 fallos se detiene el ingreso y muestra error
     } while (ingresa==false && contador<3);
     if (ingresa==false){
         control.nuevaActividadTxt(31);

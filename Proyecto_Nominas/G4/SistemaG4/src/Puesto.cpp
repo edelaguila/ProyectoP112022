@@ -16,6 +16,7 @@ Puesto::~Puesto()
 {
     //dtor
 }
+//menu principal de puestos
 void Puesto::menu()
 {
     Bitacora control;
@@ -94,6 +95,8 @@ void Puesto::menu()
 	getch();
     }while(choice!= 7);
 }
+
+//Funcion que ingresa puestos y departamentos
 void Puesto::Ingresar()
 {
     Bitacora control;
@@ -119,6 +122,7 @@ void Puesto::Ingresar()
 	file.close();
 }
 
+//Funcion para imprimir los datos de puestos
 void Puesto::Imprimir()
 {
     Bitacora control;
@@ -152,6 +156,8 @@ void Puesto::Imprimir()
 	}
 	file.close();
 }
+
+//funcion para modificar puestos y departamentos
 void Puesto::Actualizar()
 {
     Bitacora control;
@@ -202,6 +208,8 @@ void Puesto::Actualizar()
 		rename("Record.txt","ParticipantRecord.txt");
 	}
 }
+
+//funcion para conultar puestos y departamentos
 void Puesto::Consultar()
 {
     Bitacora control;

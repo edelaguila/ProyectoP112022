@@ -10,7 +10,7 @@ using std::string;
 
 
 
-// constructor predeterminado de DatosCliente
+// constructor Persona
 Persona::Persona( int valorNumeroId,
    string valorApellido, string valorPrimerNombre,
    string valorDpi, string valorDepartamento, string valorTelefono, string valorEmail,
@@ -26,28 +26,28 @@ Persona::Persona( int valorNumeroId,
    establecerGenero(valorGenero);
    establecerDpi( valorDpi );
 
-} // fin del constructor de DatosCliente
+}
 
-// obtener el valor del número de cuenta
+// obtener el valor del ID
 int Persona::obtenerNumeroId() const
 {
    return numeroId;
 
-} // fin de la función obtenerNumeroCuenta
+}
 
-// establecer el valor del número de cuenta
+// establecer el valor del ID
 void Persona::establecerId( int valorNumeroId )
 {
    numeroId = valorNumeroId;
 
-} // fin de la función establecerNumeroCuenta
+}
 
 // obtener el valor del apellido
 string Persona::obtenerApellido() const
 {
    return apellido;
 
-} // fin de la función obtenerApellido
+}
 
 // establecer el valor del apellido
 void Persona::establecerApellido( string apellidoString )
@@ -61,65 +61,65 @@ void Persona::establecerApellido( string apellidoString )
    // anexar caracter nulo al apellido
    apellido[ longitud ] = '\0';
 
-} // fin de la función establecerApellido
+}
 
 // obtener el valor del primer nombre
 string Persona::obtenerPrimerNombre() const
 {
    return primerNombre;
 
-} // fin de la función obtenerPrimerNombre
+}
 
 // establecer el valor del primer nombre
 void Persona::establecerPrimerNombre( string primerNombreString )
 {
-   // copiar a lo más 10 caracteres de la cadena en primerNombre
+
    const char *valorPrimerNombre = primerNombreString.data();
    int longitud = strlen( valorPrimerNombre );
    longitud = ( longitud < 10 ? longitud : 9 );
    strncpy( primerNombre, valorPrimerNombre, longitud );
 
-   // anexar el caracter nulo a primerNombre
+
    primerNombre[ longitud ] = '\0';
 
-} // fin de la función establecerPrimerNombre
+}
 
 string Persona::obtenerTelefono() const
 {
    return telefono;
 
-} // fin de la función obtenerPrimerNombre
+}
 
-// establecer el valor del primer nombre
+
 void Persona::establecerTelefono( string telefonoString )
 {
-   // copiar a lo más 10 caracteres de la cadena en primerNombre
+
    const char *valorTelefono = telefonoString.data();
    int longitud = strlen( valorTelefono );
    longitud = ( longitud < 9 ? longitud : 8 );
    strncpy( telefono, valorTelefono, longitud );
 
-   // anexar el caracter nulo a primerNombre
+
    telefono[ longitud ] = '\0';
 
-} // fin de la función establecerPrimerNombre
+}
 
 string Persona::obtenerDpi() const
 {
    return dpi;
 
-} // fin de la función obtenerPrimerNombre
+}
 
-// establecer el valor del primer nombre
+
 void Persona::establecerDpi( string dpiString )
 {
-   // copiar a lo más 10 caracteres de la cadena en primerNombre
+
    const char *valorDpi = dpiString.data();
    int longitud = strlen( valorDpi );
    longitud = ( longitud < 15 ? longitud : 14 );
    strncpy( dpi, valorDpi, longitud );
 
-   // anexar el caracter nulo a primerNombre
+
    dpi[ longitud ] = '\0';
 
 }
@@ -129,18 +129,16 @@ string Persona::obtenerDepartamento() const
 {
    return departamento;
 
-} // fin de la función obtenerPrimerNombre
+}
 
-// establecer el valor del primer nombre
 void Persona::establecerDepartamento( string departamentoString )
 {
-   // copiar a lo más 10 caracteres de la cadena en primerNombre
+
    const char *valorDepartamento = departamentoString.data();
    int longitud = strlen( valorDepartamento );
    longitud = ( longitud < 22 ? longitud : 21 );
    strncpy( departamento, valorDepartamento, longitud );
 
-   // anexar el caracter nulo a primerNombre
    departamento[ longitud ] = '\0';
 
 }
@@ -149,18 +147,18 @@ string Persona::obtenerEmail() const
 {
    return email;
 
-} // fin de la función obtenerPrimerNombre
+}
 
-// establecer el valor del primer nombre
+
 void Persona::establecerEmail( string emailString )
 {
-   // copiar a lo más 10 caracteres de la cadena en primerNombre
+
    const char *valorEmail = emailString.data();
    int longitud = strlen( valorEmail );
    longitud = ( longitud < 32 ? longitud : 31 );
    strncpy( email, valorEmail, longitud );
 
-   // anexar el caracter nulo a primerNombre
+
    email[ longitud ] = '\0';
 
 }
@@ -169,18 +167,18 @@ string Persona::obtenerDireccion() const
 {
    return direccion;
 
-} // fin de la función obtenerPrimerNombre
+}
 
-// establecer el valor del primer nombre
+
 void Persona::establecerDireccion( string direccionString )
 {
-   // copiar a lo más 10 caracteres de la cadena en primerNombre
+
    const char *valorDireccion = direccionString.data();
    int longitud = strlen( valorDireccion );
    longitud = ( longitud < 4 ? longitud : 3 );
    strncpy( direccion, valorDireccion, longitud );
 
-   // anexar el caracter nulo a primerNombre
+
    direccion[ longitud ] = '\0';
 
 }
@@ -189,18 +187,18 @@ string Persona::obtenerGenero() const
 {
    return genero;
 
-} // fin de la función obtenerPrimerNombre
+}
 
-// establecer el valor del primer nombre
+
 void Persona::establecerGenero( string generoString )
 {
-   // copiar a lo más 10 caracteres de la cadena en primerNombre
+
    const char *valorGenero = generoString.data();
    int longitud = strlen( valorGenero );
    longitud = ( longitud < 3 ? longitud : 2 );
    strncpy( genero, valorGenero, longitud );
 
-   // anexar el caracter nulo a primerNombre
+
    genero[ longitud ] = '\0';
 
 }
@@ -216,7 +214,7 @@ void Persona::imprimirRegistro( fstream &leerDeArchivo )
       cerr << "No se pudo crear el archivo." << endl;
       exit( 1 );
 
-   } // fin de instrucción if
+   }
 
    archivoImprimirSalida << left << setw( 10 ) << "ID" << setw( 16 )
        << "Apellido" << setw( 14 ) << "Primer nombre"
@@ -242,14 +240,14 @@ void Persona::imprimirRegistro( fstream &leerDeArchivo )
       leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
          sizeof( Persona ) );
 
-   } // fin de instrucción while
+   }
 
-} // fin de la función imprimirRegistro
+}
 
 // actualizar el saldo en el registro
 void Persona::actualizarRegistro( fstream &actualizarArchivo )
 {
-   // obtener el número de cuenta a actualizar
+   // obtener el número de ID a actualizar
    int numeroId = obtenerId( "Escriba el ID del empleado a modificar" );
 
    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
@@ -283,35 +281,30 @@ void Persona::actualizarRegistro( fstream &actualizarArchivo )
     switch(choice)
     {
         case 1:
+            //cambio de departamento
             {cout << "Ingrese el nuevo departamento: "<<endl;
-            string cambioDpto; // cargo o abono
+            string cambioDpto;
             cin >> cambioDpto;
-
-        // actualizar el saldo del registro
             empleado.establecerDepartamento( cambioDpto );}
             break;
         case 2:
+            //cambio de direccion
             {cout << "Ingrese la nueva zona: "<<endl;
-            string cambioAdress; // cargo o abono
+            string cambioAdress;
             cin >> cambioAdress;
-
-      // actualizar el saldo del registro
             empleado.establecerDireccion( cambioAdress );}
             break;
         case 3:
+            //cambio de telefono
             {cout << "Ingrese el nuevo telefono: "<<endl;
-            string cambioTel; // cargo o abono
+            string cambioTel;
             cin >> setw( 9 )>> cambioTel;
-
-      // actualizar el saldo del registro
             empleado.establecerTelefono( cambioTel );}
             break;
         case 4:
             {cout << "Ingrese el nuevo Email: "<<endl;
-            string cambioEmail; // cargo o abono
+            string cambioEmail;
             cin >> cambioEmail;
-
-        // actualizar el saldo del registro
             empleado.establecerEmail( cambioEmail );}
             break;
         case 5:
@@ -321,7 +314,6 @@ void Persona::actualizarRegistro( fstream &actualizarArchivo )
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 	}
 
-      // actualizar el saldo del registro
       cout << left << setw( 10 ) << "ID" << setw( 16 )
        << "Apellido" << setw( 14 ) << "Primer nombre" <<
        setw( 14 )<<"DPI"<<setw(21)<<"Departamento"<<setw(31)<<"Email"
@@ -337,19 +329,19 @@ void Persona::actualizarRegistro( fstream &actualizarArchivo )
          reinterpret_cast< const char * >( &empleado ),
          sizeof( Persona ) );
 
-   } // fin de instrucción if
+   }
 
-   // mostrar error si la cuenta no existe
+   // mostrar error si el ID no existe
    else
       cerr << "El ID #" << numeroId
          << " aun no existe" << endl;
 
-} // fin de la función actualizarRegistro
+}
 
 // crear e insertar registro
 void Persona::nuevoRegistro( fstream &insertarEnArchivo )
 {
-   // obtener el número de cuenta a crear
+   // obtener el número de ID a crear
    int numeroId = obtenerId( "Ingrese el ID del nuevo empleado: " );
 
    // desplazar el apuntador de posición del archivo hasta el registro correcto en el archivo
@@ -373,7 +365,7 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
       char direccion[21];
       char genero[2];
 
-      // el usuario introduce el apellido, primer nombre y saldo
+      // el usuario introduce los datos
       cout << "Escriba el apellido : " << endl;
       cin >> setw( 15 ) >> apellido;
       cout << "Escriba el nombre: " << endl;
@@ -391,7 +383,7 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
       cout << "Escriba el genero M/F: "<<endl;
       cin >> setw(2)>> genero;
 
-      // usar valores para llenar los valores de la cuenta
+      // usar valores para llenar los valores del empleado
       empleado.establecerApellido( apellido );
       empleado.establecerPrimerNombre( primerNombre );
       empleado.establecerDpi( dpi );
@@ -411,19 +403,17 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
          reinterpret_cast< const char * >( &empleado ),
          sizeof( Persona ) );
 
-   } // fin de instrucción if
-
-   // mostrar error si la cuenta ya existe
+   }
    else
       cerr << "El ID numero #" << numeroId
            << " ya está registrado." << endl;
 
-} // fin de la función nuevoRegistro
+}
 
 // eliminar un registro existente
 void Persona::eliminarRegistro( fstream &eliminarDeArchivo )
 {
-   // obtener número de cuenta a eliminar
+   // obtener número de ID a eliminar
    int numeroId = obtenerId( "Escriba el ID del empleado a eliminar" );
 
    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
@@ -450,13 +440,13 @@ void Persona::eliminarRegistro( fstream &eliminarDeArchivo )
 
       cout << "Empleado con ID #" << numeroId << " eliminado.\n";
 
-   } // fin de instrucción if
+   }
 
-   // mostrar error si el registro no existe
    else
       cerr << "No existe ningun empleado con el ID #" << numeroId<<endl;
 
-} // fin de eliminarRegistro
+}
+//Consulta de los empleados
 void Persona::consultarRegistro( fstream &leerDeArchivo )
 {
 
@@ -484,9 +474,9 @@ void Persona::consultarRegistro( fstream &leerDeArchivo )
       leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
          sizeof( Persona ) );
 
-   } // fin de instrucción while
+   }
 
-} // fin de la función consultarRegistro
+}
 
 // mostrar registro individual
 void Persona::mostrarLinea( ostream &salida, const Persona &registro )
@@ -501,7 +491,7 @@ void Persona::mostrarLinea( ostream &salida, const Persona &registro )
           << setw( 4 ) << registro.obtenerDireccion().data()
           << setw( 2 ) << registro.obtenerGenero().data()<<endl;
 
-} // fin de la función mostrarLinea
+}
 void Persona::mostrarLineaPantalla( const Persona &registro )
 {
    cout << left << setw( 10 ) << registro.obtenerNumeroId()
@@ -513,14 +503,13 @@ void Persona::mostrarLineaPantalla( const Persona &registro )
           << setw( 9 ) << registro.obtenerTelefono().data()
           << setw( 4 ) << registro.obtenerDireccion().data()
           << setw( 2 ) << registro.obtenerGenero().data()<<endl;
-} // fin de la función mostrarLineaPantalla
+}
 
-// obtener el valor del número de cuenta del usuario
+// obtener el valor del número ID del usuario
 int Persona::obtenerId( const char * const indicador )
 {
    int numeroId;
 
-   // obtener el valor del número de cuenta
    do {
       cout << indicador << " (1 - 1000): ";
       cin >> numeroId;
@@ -529,7 +518,7 @@ int Persona::obtenerId( const char * const indicador )
 
    return numeroId;
 
-} // fin de la función obtenerCuenta
+}
 void Persona::crearArchivoEmpleados()
 {
     ofstream empleadosSalida( "empleados.dat", ios::out | ios::binary );
@@ -538,12 +527,11 @@ void Persona::crearArchivoEmpleados()
       cerr << "No se pudo abrir el archivo." << endl;
       exit( 1 );
 
-   } // fin de instrucción if
+   }
 
-   // crear DatosCliente sin información
+   // crear espacios sin informacion
    Persona empleadoEnBlanco;
 
-   // escribir 100 registros en blanco en el archivo
    for ( int i = 0; i < 1000; i++ )
       empleadosSalida.write(
          reinterpret_cast< const char * >( &empleadoEnBlanco ),
@@ -565,9 +553,10 @@ fstream Persona::inicioArchivo(){
     return empleadosEntradaSalida;
 }
 
+//Funcion para encontrar empleado especifico
 void Persona::busquedaRegistro(fstream &actualizarArchivo)
 {
-
+//Se obtiene el ID a buscar
        int numeroId = obtenerId( "Escriba el ID del empleado a buscar" );
 
    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
@@ -579,7 +568,7 @@ void Persona::busquedaRegistro(fstream &actualizarArchivo)
    actualizarArchivo.read( reinterpret_cast< char * >( &empleado ),
       sizeof( Persona ) );
 if ( empleado.obtenerNumeroId() != 0 ) {
-      // actualizar el saldo del registro
+      //MOstrar la informacion obtenida
       cout << left << setw( 10 ) << "ID" << setw( 16 )
        << "Apellido" << setw( 14 ) << "Primer nombre" <<
        setw( 14 )<<"DPI"<<setw(21)<<"Departamento"<<setw(31)<<"Email"
@@ -590,9 +579,9 @@ if ( empleado.obtenerNumeroId() != 0 ) {
       actualizarArchivo.seekp(
          ( numeroId - 1 ) * sizeof( Persona ) );
 
-   } // fin de instrucción if
+   }
 
-   // mostrar error si la cuenta no existe
+   // mostrar error si el ID no existe
    else
       cerr << "El ID #" << numeroId
          << " aun no existe" << endl;

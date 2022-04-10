@@ -35,12 +35,14 @@ string Bitacora::obtenerAccion(int opcion)
 }
 
 
-
+//Funcion que establece la fecha y la hora
 Bitacora::fechaHora()
 {
+    //se establece la hora
     time_t now = time(0);
     tm * time = localtime(&now);
 
+    //se establece el dia de la semana
     vector<string> dia_semana;
     dia_semana.push_back("Domingo");
     dia_semana.push_back("Lunes");
@@ -50,6 +52,7 @@ Bitacora::fechaHora()
     dia_semana.push_back("Viernes");
     dia_semana.push_back("Sabado");
 
+    //se establece el mes
     vector<string> mes;
     mes.push_back("Enero");
     mes.push_back("Febrero");
@@ -64,6 +67,7 @@ Bitacora::fechaHora()
     mes.push_back("Noviembre");
     mes.push_back("Diciembre");
 
+    //se establece el año
     int year = 1900 + time->tm_year;
 
     cout<<"\t\t\t-----------------------------------------------------------------"<<endl;
@@ -73,7 +77,7 @@ Bitacora::fechaHora()
     cout<<"\t\t\t-----------------------------------------------------------------"<<endl;
 }
 
-
+//Funcion para agregar informacion a la bitacora(binario)
 Bitacora::nuevaActividad(int opcion)
 {
     Usuarios user;
@@ -135,6 +139,8 @@ Bitacora::nuevaActividad(int opcion)
     control.segundos = segundoss;
     string accion1;
     string userPP = "Grupo4";
+
+    //switch que define que está haciendo el usuario
     switch(opcion){
 
     case 1:
@@ -244,7 +250,7 @@ Bitacora::nuevaActividad(int opcion)
 	<< control.minutos<<":"<<control.segundos<<"\n"<< accion1 <<endl<< "\n";
 	file.close();
 }
-
+//Funcion para crear la bitacora pero en texto
 Bitacora::nuevaActividadTxt(int opcion)
 {
     Usuarios user;

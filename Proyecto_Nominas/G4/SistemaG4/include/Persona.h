@@ -31,22 +31,20 @@ class Persona {
 
 public:
 
-   // constructor predeterminado de DatosCliente constructor
+   // constructor clase Persona
    Persona( int = 0, string = "", string = "", string = "", string = "", string = "", string = "", string = "", string = "");
 
-   // funciones de acceso para numeroCuenta
+   // Funciones para obtener el ID
    void establecerId( int );
    int obtenerNumeroId() const;
 
-   // funciones de acceso para apellido
+   // Funciones para acceder a los datos privados
    void establecerApellido( string );
    string obtenerApellido() const;
 
-   // funciones de acceso para primerNombre
    void establecerPrimerNombre( string );
    string obtenerPrimerNombre() const;
 
-   // funciones de acceso para el saldo
    void establecerTelefono( string );
    string obtenerTelefono() const;
 
@@ -65,6 +63,8 @@ public:
    void establecerDepartamento( string );
    string obtenerDepartamento() const;
 
+
+   //Funciones para el tratado de archivos
     void imprimirRegistro( fstream& );
     void actualizarRegistro( fstream& );
     void nuevoRegistro( fstream& );
@@ -92,7 +92,7 @@ private:
    char departamento[21];
    char genero[2];
 
-}; // fin de la clase DatosCliente
+};
 
 #endif
 

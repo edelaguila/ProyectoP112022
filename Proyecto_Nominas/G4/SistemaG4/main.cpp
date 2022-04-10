@@ -39,11 +39,13 @@ void seguridad();
 void bitacoramenu();
 
 
-
+//Inicio de main
 int main(int argc, char *argv[])
 {
     Puesto gesPuesto;
     Bitacora control;
+
+    //Llamado a clase Usuarios para el Login
     bool accesoUsuarios;
     Usuarios usuarioRegistrado;
     accesoUsuarios=usuarioRegistrado.loginUsuarios();
@@ -55,6 +57,7 @@ int choice;
 	do
     {
 	system("cls");
+	//Funcion que imprime Fecha  y Hora
 	control.fechaHora();
 	cout<<"\t\t\t    SISTEMA RECURSOS HUMANOS    "<<endl;
 	cout<<"\t\t\t"<<endl;
@@ -74,6 +77,7 @@ int choice;
     switch(choice)
     {
     case 1:
+        //Se envia a la Bitacora la accion realizada por el usuario
         control.nuevaActividadTxt(1);
         control.nuevaActividad(1);
         consultas();

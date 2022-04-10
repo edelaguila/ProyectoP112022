@@ -1,7 +1,17 @@
 # depslib dependency file v1.0
-1649191483 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\main.cpp
+1649627154 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\main.cpp
 	<iostream>
-	"menus.h"
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
 
 1649191796 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\menus.h
 	<string>
@@ -119,7 +129,7 @@
 	<iomanip>
 	"Puesto.h"
 
-1649593095 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\persona.cpp
+1649627154 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\persona.cpp
 	"Persona.h"
 	<iostream>
 	<conio.h>
@@ -128,14 +138,14 @@
 	<iomanip>
 	<cstdlib>
 
-1649593095 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\persona.h
+1649627154 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\persona.h
 	<iostream>
 	<conio.h>
 	<fstream>
 	<iomanip>
 	<cstdlib>
 
-1649626372 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\bitacora.cpp
+1649627307 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\bitacora.cpp
 	"Bitacora.h"
 	"Persona.h"
 	<iostream>
@@ -158,4 +168,36 @@
 
 1649626521 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\usuarios.h
 	<string>
+
+1649626521 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\departamento.cpp
+	"Departamento.h"
+
+1649626521 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\departamento.h
+
+1649626521 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1649626521 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1649626521 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
 
