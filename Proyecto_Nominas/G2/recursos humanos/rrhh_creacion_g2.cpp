@@ -321,24 +321,24 @@ class departamento : public empresa{
     string usuario, contrasena, config1, config2;
     fstream usuariosContrasenas;
     usuariosContrasenas.open("seguridad.dat",ios::in|ios::binary);
-    //if(!usuariosContrasenas){
-      //  cout<<"\n\t\tError";
-        //cout<<"\n\t\tNo se encontro el archivo, asegurese de que el archivo este en la misma carpeta que el programa";
-    //}
-    //else{
-      //  cout << "\n\t\t\tBIENVENIDO AL PROGRAMA DE RECURSOS HUMANOS DEL GRUPO 2\n" << endl;
-        //cout << "\n\t\tIngrese su usuario: "; cin >> usuario;
-        //cout << "\n\t\tIngrese su contraseña: "; cin >> contrasena;
+    if(!usuariosContrasenas){
+        cout<<"\n\t\tError";
+        cout<<"\n\t\tNo se encontro el archivo, asegurese de que el archivo este en la misma carpeta que el programa";
+    }
+    else{
+        cout << "\n\t\t\tBIENVENIDO AL PROGRAMA DE RECURSOS HUMANOS DEL GRUPO 2\n" << endl;
+        cout << "\n\t\tIngrese su usuario: "; cin >> usuario;
+        cout << "\n\t\tIngrese su contraseña: "; cin >> contrasena;
         //usuariosContrasenas>>config1>>config2;
-        //while (!usuariosContrasenas.eof()){
-         //   if (usuario==config1 and contrasena ==config2){
+        while (!usuariosContrasenas.eof()){
+            if (usuario=="admin" && contrasena =="123"){
                 empleado prueba;
                 prueba.menuPrincipal();
-           // }
-           // else{
-             //   cout << "Permiso denegado\a";
-               // exit(0);
-            //}
-        //}
-    //}
+            }
+            else{
+                cout << "Permiso denegado\a";
+                exit(0);
+            }
+        }
+    }
 };
