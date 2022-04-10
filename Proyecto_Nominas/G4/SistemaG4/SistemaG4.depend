@@ -11,3 +11,36 @@
 	<iostream>
 	<conio.h>
 
+1649456859 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\persona.cpp
+	"Persona.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649561182 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649560633 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\usuarios.cpp
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	"Usuarios.h"
+
+1649560541 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\usuarios.h
+
+1649560827 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\sistemag4\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	"Usuarios.h"
+

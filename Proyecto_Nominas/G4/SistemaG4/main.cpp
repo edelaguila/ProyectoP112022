@@ -23,18 +23,33 @@ using std::setw;
 using std::setprecision;
 
 #include <cstdlib>
+#include "Usuarios.h"
 using namespace std;
 
 //Declaracion de las funciones para abrir los menus
+
 void consultas();
 void gestionEmpleados();
 void contabilidad();
 void seguridad();
-
-main()
+void creditosSistema();
+void menuGeneral();
+int main()
 {
-//inicio menu principal
-int choice;
+    bool accesoUsuarios;
+    creditosSistema();
+    Usuarios usuarioRegistrado;
+    accesoUsuarios=usuarioRegistrado.loginUsuarios();
+    if (accesoUsuarios){
+        menuGeneral();
+    }
+    system("cls");
+    cout<<"** REGRESE PRONTO **";
+    return 0;
+}
+void menuGeneral(){
+    system("cls");
+    int choice;
 	char x;
 	do
     {
@@ -75,7 +90,6 @@ int choice;
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 	}
     }while(choice!= 5);
-    return 0;
 }
 //Declaracion menu consultas
 void consultas()
@@ -296,3 +310,25 @@ void seguridad()
 	}
     }while(choice!= 4);
 }
+void creditosSistema(){
+string line;
+    //char userInput = ' ';
+    ifstream myFile("sistemarrhh.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        while( getline(myFile, line))
+        {
+            cout << line << endl;
+        }
+        myFile.close();
+        cout<<"Presione cualquier tecla para continuar";
+        cin.get();
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo sistema no pudo ser cargado" << endl;
+        cin.get();
+    }
+}
+
