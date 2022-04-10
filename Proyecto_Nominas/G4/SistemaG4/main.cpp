@@ -1,6 +1,7 @@
 #include <iostream>
 #include<conio.h>
 #include "Persona.h"
+#include "Concepto.h"
 using std::cout;
 using std::cerr;
 using std::cin;

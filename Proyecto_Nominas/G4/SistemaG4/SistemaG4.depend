@@ -37,3 +37,35 @@
 	<iomanip>
 	<cstdlib>
 
+1649549225 source:c:\users\nelso\desktop\sistema hora y fecha\src\persona.cpp
+	"Persona.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649549225 c:\users\nelso\desktop\sistema hora y fecha\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649561638 source:c:\users\nelso\desktop\sistema hora y fecha\concepto.cpp
+	"Concepto.h"
+
+1649561637 c:\users\nelso\desktop\sistema hora y fecha\concepto.h
+
+1649562650 source:c:\users\nelso\desktop\sistema hora y fecha\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
