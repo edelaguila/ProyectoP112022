@@ -3,13 +3,16 @@
 #include <stdlib.h>
 #include <cstdlib>
 #include <iomanip>
-#include <math.h>0
+#include <math.h>
 using namespace std;
 
 class empresa{
 public:
-
     void registrar(){
+            std::fstream bitacora;
+            bitacora.open("bitacora.dat",ios::app|ios::in|ios::out|ios::binary);
+            bitacora<<std::left<<std::setw(15)<<"menu registrar";
+            bitacora.close();
         system("cls");
         fstream baseDatos;
         cout << "\n\t\t\tEntrando al menu --REGISTRAR EMPLEADOS--\n" << endl;
@@ -39,6 +42,10 @@ public:
         }
     }
     void modificar(){
+            std::fstream bitacora;
+            bitacora.open("bitacora.dat",ios::app|ios::in|ios::out|ios::binary);
+            bitacora<<std::left<<std::setw(15)<<"menu modificar";
+            bitacora.close();
         system("cls");
         fstream baseDatos, modBaseDatos;
         cout << "\n\t\t\tEntrando al menu --MODIFICAR--" << endl;
@@ -86,6 +93,10 @@ public:
             }
     }
     void eliminar(){
+            std::fstream bitacora;
+            bitacora.open("bitacora.dat",ios::app|ios::in|ios::out|ios::binary);
+            bitacora<<std::left<<std::setw(15)<<"menu eliminar";
+            bitacora.close();
         system("cls");
         int datos=0;
         fstream baseDatos, modBaseDatos;
@@ -137,6 +148,10 @@ public:
             }
     }
     void mostrarDatos(){
+            std::fstream bitacora;
+            bitacora.open("bitacora.dat",ios::app|ios::in|ios::out|ios::binary);
+            bitacora<<std::left<<std::setw(15)<<"menu mostrar";
+            bitacora.close();
         system("cls");
         fstream baseDatos;
         cout << "\n\t\t\tEntrando al menu --MOSTRAR DATOS--";
@@ -224,36 +239,48 @@ public:
             baseDatos.close();
         }
     }
-
     void menuPrincipal(){
         system ("cls");
         int menu;
-        cout << "\n\t\t\tBienvenido al programa de ==RECURSOS HUMANOS==";
-        cout << "\n\n\t\tElija el numero del menu al que quiera ingresar\n"<< endl << "\t\t[1] Mantenimiento\n" << "\t\t[2] Nomina\n" << "\t\t[3] Poliza\n" << "\t\t[4] Impuestos\n" << "\t\t[5] Departamentos\n" << "\t\t[6] Salir del programa\n";cout<<"\n\t\t";cin >> menu;
-        switch(menu){
-        case 1:
-            menuMantenimiento();
-            break;
-        case 2:
-            menuNomina();
-            break;
-        case 3:
-            menuPoliza();
-            break;
-        case 4:
-            menuImpuestos();
-            break;
-        case 5:
-            menuDepartamentos();
-            break;
-        case 6:
-            cout << "\n\t\t¿Quiere salir del programa? [ si / no ] : "; cin>>desicion;
-            if (desicion=="si"){
-                return exit (0);
-            }
-            else {
-                return menuPrincipal();
-            break;
+        fstream bienvenida;
+        string line;
+        bienvenida.open("bienvenidos.txt");
+        if(bienvenida.is_open()){
+        while( getline(bienvenida, line))
+        {
+            cout << line << endl;
+        }
+        bienvenida.close();
+        }
+        cout << "\n\t\tPresione i para ingresar al --PROGRAMA-- : ";cin>>desicion;
+        if (desicion=="i"){
+            cout << "\n\t\t\tBienvenido al programa de ==RECURSOS HUMANOS==";
+            cout << "\n\n\t\tElija el numero del menu al que quiera ingresar\n"<< endl << "\t\t[1] Mantenimiento\n" << "\t\t[2] Nomina\n" << "\t\t[3] Poliza\n" << "\t\t[4] Impuestos\n" << "\t\t[5] Departamentos\n" << "\t\t[6] Salir del programa\n";cout<<"\n\t\t";cin >> menu;
+            switch(menu){
+            case 1:
+                menuMantenimiento();
+                break;
+            case 2:
+                menuNomina();
+                break;
+            case 3:
+                menuPoliza();
+                break;
+            case 4:
+                menuImpuestos();
+                break;
+            case 5:
+                menuDepartamentos();
+                break;
+            case 6:
+                cout << "\n\t\t¿Quiere salir del programa? [ si / no ] : "; cin>>desicion;
+                if (desicion=="si"){
+                    return exit (0);
+                }
+                else {
+                    return menuPrincipal();
+                break;
+                }
             }
         }
     }
@@ -304,7 +331,6 @@ public:
             return menuPrincipal();
             break;
             }
-
     }
     void menuPoliza(){
         cout<<"hola";
@@ -335,10 +361,6 @@ private:
 };
 
 class nomina : public empresa{
-
-
-private:
-
     string documentoIdentificacion, nombre, direccion, edad, correo, telefono, estudios, puesto, desicion, busquedaDatos, bono;;
      int nomi, sueldonet, sueldoh, horasextr, horastr;
 
@@ -576,11 +598,9 @@ private:
         }
     }
 };
-
-
-    //aqui deben copiar y pegar el void de registrar, modificar, eliminar, y mostrar... pero con cambios, sino estaran trabajando con mi clase de empleados
-
-
+private:
+    string documentoIdentificacion, nombre, direccion, edad, correo, telefono, estudios, puesto, sueldo, desicion, busquedaDatos;;
+};
 
 class poliza : public empresa{
     //aqui deben copiar y pegar el void de registrar, modificar, eliminar, y mostrar... pero con cambios, sino estaran trabajando con mi clase de empleados
@@ -595,32 +615,30 @@ class departamento : public empresa{
 };
 
 
-
  int main(){
     system ("cls");
     string usuario, contrasena, config1, config2;
-    fstream usuariosContrasenas;
-    usuariosContrasenas.open("seguridad.dat",ios::in|ios::binary);
-    //if(!usuariosContrasenas){
-      //  cout<<"\n\t\tError";
-        //cout<<"\n\t\tNo se encontro el archivo, asegurese de que el archivo este en la misma carpeta que el programa";
-    //}
-    //else{
-      //  cout << "\n\t\t\tBIENVENIDO AL PROGRAMA DE RECURSOS HUMANOS DEL GRUPO 2\n" << endl;
-        //cout << "\n\t\tIngrese su usuario: "; cin >> usuario;
-        //cout << "\n\t\tIngrese su contraseña: "; cin >> contrasena;
-        //usuariosContrasenas>>config1>>config2;
-        //while (!usuariosContrasenas.eof()){
-         //   if (usuario==config1 and contrasena ==config2){
+    fstream usuariosContrasenas, bitacora;
+    usuariosContrasenas.open("seguridad.dat",ios::app|ios::in|ios::binary);
+    if(!usuariosContrasenas){
+        cout<<"\n\t\tError";
+        cout<<"\n\t\tNo se encontro el archivo, asegurese de que el archivo este en la misma carpeta que el programa";
+    }
+    else{
+        cout << "\n\t\t\tBIENVENIDO AL PROGRAMA DE RECURSOS HUMANOS DEL GRUPO 2\n" << endl;
+        cout << "\n\t\tIngrese su usuario: "; cin >> usuario;
+        cout << "\n\t\tIngrese su contrasena: "; cin >> contrasena;
+        usuariosContrasenas>>config1>>config2;
+            if (usuario=="admin" && contrasena =="123"){
+                bitacora.open("bitacora.dat",ios::app|ios::in|ios::out|ios::binary);
+                bitacora<<std::left<<std::setw(15)<<usuario;
+                bitacora.close();
                 empleado prueba;
                 prueba.menuPrincipal();
-           // }
-           // else{
-             //   cout << "Permiso denegado\a";
-               // exit(0);
-            //}
-        //}
-    //}
+            }
+            else{
+                cout << "\n\t\t\tPermiso denegado\a";
+                exit(0);
+            }
+      }
 };
-
-
