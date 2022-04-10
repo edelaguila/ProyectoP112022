@@ -34,9 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Departamentos.h" />
 		<Unit filename="include/Persona.h" />
+		<Unit filename="include/Puesto.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Departamentos.cpp" />
 		<Unit filename="src/Persona.cpp" />
+		<Unit filename="src/Puesto.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

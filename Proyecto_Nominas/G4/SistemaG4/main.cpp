@@ -1,6 +1,8 @@
 #include <iostream>
 #include<conio.h>
 #include "Persona.h"
+#include "Puesto.h"
+#include "Departamentos.h"
 using std::cout;
 using std::cerr;
 using std::cin;
