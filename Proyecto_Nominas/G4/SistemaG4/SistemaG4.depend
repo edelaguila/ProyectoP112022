@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1649191483 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\main.cpp
+	<iostream>
+	"menus.h"
+
+1649191796 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\include\menus.h
+	<string>
+
+1649191586 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\sistemag4\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+
+1649565285 source:c:\users\maria\gitproyectos\proyectoequipo4\proyecto_nominas\g4\sistemag4\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Puesto.h"
+	"Departamentos.h"
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649460092 c:\users\maria\gitproyectos\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649460092 source:c:\users\maria\gitproyectos\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\persona.cpp
+	"Persona.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649565285 source:c:\users\maria\gitproyectos\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+
+1649566411 c:\users\maria\gitproyectos\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1649565285 source:c:\users\maria\gitproyectos\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\departamentos.cpp
+	"Departamentos.h"
+
+1649566449 c:\users\maria\gitproyectos\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\departamentos.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1649565285 source:c:\users\maria\gitproyectos\prueba\sistema g4\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Puesto.h"
+	"Departamentos.h"
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649460092 c:\users\maria\gitproyectos\prueba\sistema g4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649566411 c:\users\maria\gitproyectos\prueba\sistema g4\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1649566449 c:\users\maria\gitproyectos\prueba\sistema g4\include\departamentos.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1649565285 source:c:\users\maria\gitproyectos\prueba\sistema g4\src\departamentos.cpp
+	"Departamentos.h"
+
+1649460092 source:c:\users\maria\gitproyectos\prueba\sistema g4\src\persona.cpp
+	"Persona.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1649565285 source:c:\users\maria\gitproyectos\prueba\sistema g4\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+

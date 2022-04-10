@@ -36,13 +36,24 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+<<<<<<< HEAD
 		<Unit filename="Concepto.cpp" />
 		<Unit filename="Concepto.h" />
 		<Unit filename="include/Persona.h" />
 		<Unit filename="include/Usuarios.h" />
+=======
+		<Unit filename="include/Departamentos.h" />
+		<Unit filename="include/Persona.h" />
+		<Unit filename="include/Puesto.h" />
+>>>>>>> Secundario/mantenimientopuesto-departamento
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Departamentos.cpp" />
 		<Unit filename="src/Persona.cpp" />
+<<<<<<< HEAD
 		<Unit filename="src/Usuarios.cpp" />
+=======
+		<Unit filename="src/Puesto.cpp" />
+>>>>>>> Secundario/mantenimientopuesto-departamento
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
