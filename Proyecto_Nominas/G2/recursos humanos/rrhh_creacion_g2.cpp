@@ -21,7 +21,7 @@ public:
     void eliminarDepto();
     void mostrarDatosDepto();
 private:
-    string documentoIdentificacion, nombre, direccion, edad, correo, telefono, estudios, puesto, sueldo, desicion, busquedaDatos;;
+    string documentoIdentificacion, nombre, direccion, edad, correo, telefono, estudios, puesto, sueldo, desicion, busquedaDatos, numDepto, nombreDepto, telefonoDepto, direccionDepto;
 };
 
 void empresa::menuPrincipal(){
@@ -45,6 +45,8 @@ void empresa::menuPrincipal(){
     case 5:
         cout << "\n\t\t¿Quiere salir del programa? [ si / no ] : "; cin>>desicion;
         if (desicion=="si"){
+            cout<<"\n\n\t\tGRACIAS POR USAR EL RPOGRAMA DEL GRUPO 2 :)";
+            cout<<"\n\n\t\t";system("pause");
             return exit (0);
         }
         else {
@@ -129,6 +131,7 @@ void empresa::registrarEmpleado(){
 }
 
 void empresa::modificarEmpleado(){
+    //preguntar
     system("cls");
     fstream baseDatos, modBaseDatos;
     cout << "\n\t\t\tEntrando al menu --MODIFICAR EMPLEADOS--" << endl;
@@ -142,7 +145,7 @@ void empresa::modificarEmpleado(){
     }
     else {
         cout << "\n\t\t\tIngrese el numero de Documento de Identificacion de la persona que busca: "; cin >> busquedaDatos;
-        modBaseDatos.open("temporal.dat",ios::out|ios::binary);
+        modBaseDatos.open("temporalEmpleados.dat",ios::out|ios::binary);
         baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
         while (!baseDatos.eof()){
             if (busquedaDatos!=documentoIdentificacion){
@@ -165,7 +168,7 @@ void empresa::modificarEmpleado(){
         modBaseDatos.close();
         baseDatos.close();
         remove("empleados.dat");
-        rename("temporal.dat","empleados.dat");
+        rename("temporalEmpleados.dat","empleados.dat");
     }
     cout <<"\n\n\t\tRegresando al --MENU EMPLEADOS--";
     cout<<"\n\t";system("pause");
@@ -173,6 +176,7 @@ void empresa::modificarEmpleado(){
 }
 
 void empresa::eliminarEmpleado(){
+    //preguntar
     system("cls");
 	fstream baseDatos,modBaseDatos;
 	int found=0;
@@ -186,11 +190,11 @@ void empresa::eliminarEmpleado(){
 	else
 	{
 		cout << "\n\t\tIngrese el numero de Documento de Identificacion de la persona que busca: "; cin >> busquedaDatos;
-		modBaseDatos.open("temporal.dat", ios::out | ios::binary);
+		modBaseDatos.open("temporalEmpleados.dat", ios::app | ios::out | ios::binary);
 		baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
 		while(!baseDatos.eof())
 		{
-			if(busquedaDatos!= documentoIdentificacion)
+			if(busquedaDatos!=documentoIdentificacion)
 			{
 				modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
 			}
@@ -208,7 +212,7 @@ void empresa::eliminarEmpleado(){
 		baseDatos.close();
 		modBaseDatos.close();
 		remove("empleados.dat");
-		rename("temporal.dat","empleados.dat");
+		rename("temporalEmpleados.dat","empleados.dat");
 	}
     cout <<"\n\n\t\t\tRegresando al --MENU EMPLEADOS--";
     cout<<"\n\t";system("pause");
@@ -328,7 +332,26 @@ void empresa::menuDepartamentos(){
     }
 }
 void empresa::registrarDepto(){
-    cout<<"hola";
+    system("cls");
+    fstream baseDatos;
+    cout << "\n\t\t\tEntrando al menu --REGISTRAR DEPARTAMENTOS--\n" << endl;
+    cout << "\n\t¿Quires salir al --MENU DEPARTAMENTOS--? [ si / no ] : "; cin >> desicion;
+    if (desicion=="si"){
+        return menuDepartamentos();
+    }
+    else {
+        cout << "\n\t\tIngrese el numero del Departamento a registrar: "; cin >>numDepto;
+        cout << "\t\tIngrese el nombre del Departamento a registrar: "; cin >> nombreDepto;
+        cout << "\t\tIngrese el numero telefonico del Departamento a registrar: "; cin >> telefonoDepto;
+        cout << "\t\tIngrese la direccion del Departamento a registrar: "; cin >> direccionDepto;
+        cout << "\n\t--Registro completado--\n" << endl;
+        baseDatos.open("departamentos.dat",ios::app | ios::out | ios::binary);
+        baseDatos<<std::left<<std::setw(15)<< numDepto <<std::left<<std::setw(15)<< nombreDepto <<std::left<<std::setw(15)<< telefonoDepto <<std::left<<std::setw(15)<< direccionDepto <<"\n";
+        baseDatos.close();
+    }
+    cout <<"\n\n\t\tRegresando al --MENU DEPARTAMENTOS--";
+    cout<<"\n\t";system("pause");
+    return menuDepartamentos();
 }
 
 void empresa::modificarDepto(){
@@ -336,7 +359,46 @@ void empresa::modificarDepto(){
 }
 
 void empresa::eliminarDepto(){
-    cout<<"hola";
+    system("cls");
+	fstream file,file1;
+	int found=0;
+	cout<<"\n\t\t\tEntrando al --MENU ELIMINAR DEPARTAMENTO--"<<endl;
+	file.open("departamentos.dat",ios::binary|ios::in);
+	if(!file)
+	{
+		cout<<"\n\t\t\tNo hay informacion...";
+		file.close();
+	}
+	else
+	{
+		cout<<"\n Ingrese el numero de Departamento que quiere borrar: ";cin>>busquedaDatos;
+		file1.open("temporalDeptos.dat",ios::binary|ios::app | ios::out);
+		file >> numDepto >> nombreDepto >> telefonoDepto >> direccionDepto;
+		while(!file.eof())
+		{
+			if(busquedaDatos!=numDepto)
+			{
+				file1<<std::left<<std::setw(15)<< numDepto <<std::left<<std::setw(15)<< nombreDepto <<std::left<<std::setw(15)<< telefonoDepto <<std::left<<std::setw(15)<< direccionDepto << "\n";
+			}
+			else
+			{
+				found++;
+				cout << "\n\t\t\tBorrado de informacion exitoso";
+			}
+			file >> numDepto >> nombreDepto  >> telefonoDepto >> direccionDepto;
+		}
+		if(found==0)
+		{
+			cout<<"\n\t\t\t numero de Departamento no encontrado...";
+		}
+		file1.close();
+		file.close();
+		remove("departamentos.dat");
+		rename("temporalDeptos.dat","departamentos.dat");
+	}
+	cout <<"\n\n\t\tRegresando al --MENU DEPARTAMENTOS--";
+    cout<<"\n\t";system("pause");
+    return menuDepartamentos();
 }
 
 void empresa::mostrarDatosDepto(){
@@ -345,41 +407,47 @@ void empresa::mostrarDatosDepto(){
 
  int main(){
     system ("cls");
-    string usuario, config1, config2, contrasena;
+    string usuario, config0, config1, config2, contrasena, numU;
     fstream config;
+    int datos=0;
     config.open("seguridad.dat",ios::in|ios::binary);
     if(!config){
-        cout<<"\n\t\tError";
-        cout<<"\n\t\tNo se encontro el archivo, asegurese de que el archivo este en la misma carpeta que el programa";
+        cout<<"\n\n\t\tError, no se encuentra un archivo escencial del programa...\a\n\n";
+        exit(1);
     }
     else{
         cout << "\n\t\t\tBIENVENIDO AL PROGRAMA DE RECURSOS HUMANOS DEL GRUPO 2\n" << endl;
-        cout << "\n\t\tIngrese su usuario: "; cin >> usuario;
-        cout << "\n\t\tIngrese su contrasena: ";cin>>contrasena;
-        config>>config1>>config2;
-        while (!config.eof()){
-            if (usuario==config1 && contrasena ==config2){
-                system("cls");
-                fstream bienvenida;
-                string line, desicion;
-                bienvenida.open("bienvenidos.txt");
-                if(bienvenida.is_open()){
-                    cout << "\n";
-                    while( getline(bienvenida, line)){
-                        cout << "\t"<<line << endl;
-                    }
-                    bienvenida.close();
-                    }
-                cout << "\n\t\tPresione i para ingresar al --PROGRAMA-- : ";cin>>desicion;
-                if (desicion=="i"){
-                empresa empleado;
-                empleado.menuPrincipal();
+        cout << "\n\t\tIngrese el numero de usuario asignado: "; cin >> numU;
+        config>>config0>>config1>>config2;
+        while(!config.eof()){
+            if(numU==config0){
+                cout << "\n\t\tIngrese su usuario: "; cin >> usuario;
+                cout << "\n\t\tIngrese su contrasena: ";cin>>contrasena;
+                if (usuario==config1 && contrasena==config2){
+                    system("cls");
+                    fstream bienvenida;
+                    string line, desicion;
+                    bienvenida.open("bienvenidos.txt");
+                    if(bienvenida.is_open()){
+                        cout << "\n";
+                        while( getline(bienvenida, line)){
+                            cout << "\t"<<line << endl;
+                        }
+                        bienvenida.close();
+                        }
+                    cout << "\n\t\t";system("pause");
+                    empresa empleado;
+                    empleado.menuPrincipal();
                 }
+                datos++;
+                config.close();
             }
-            else{
-                cout << "\n\t\t\tPERMISO DENEGADO\a\n";
-                exit(0);
-            }
+            config>>config0>>config1>>config2;
+        }
+        if(datos==0)
+        {
+            cout<<"\n\t\t\tPERMISO DENEGADO\a\n";
+            config.close();
         }
     }
 };
