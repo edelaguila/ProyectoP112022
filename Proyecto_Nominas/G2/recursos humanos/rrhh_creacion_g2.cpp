@@ -406,7 +406,6 @@ void empresa::mostrarDatosDepto(){
 }
 
  int main(){
-     //terminado
     system ("cls");
     string usuario, config0, config1, config2, contrasena, numU;
     fstream config;
