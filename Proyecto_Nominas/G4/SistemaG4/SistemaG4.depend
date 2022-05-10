@@ -201,3 +201,34 @@
 	"Bitacora.h"
 	"Usuarios.h"
 
+1652148998 source:c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1652148998 c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652148998 c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652148998 c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\usuarios.h
+	<string>
+

@@ -41,12 +41,14 @@
 		<Unit filename="include/Persona.h" />
 		<Unit filename="include/Puesto.h" />
 		<Unit filename="include/Usuarios.h" />
+		<Unit filename="include/menus.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Bitacora.cpp" />
 		<Unit filename="src/Departamento.cpp" />
 		<Unit filename="src/Persona.cpp" />
 		<Unit filename="src/Puesto.cpp" />
 		<Unit filename="src/Usuarios.cpp" />
+		<Unit filename="src/menus.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
