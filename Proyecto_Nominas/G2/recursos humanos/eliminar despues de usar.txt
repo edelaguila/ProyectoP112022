@@ -1,0 +1,7 @@
+log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+log<<std::left<<std::setw(33)<< "entro al menu mantenimiento, ";
+log.close();
+
+log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+log<<std::left<<std::setw(33)<< "registro a: "<<std::left<<std::setw(15)<<documentoIdentificacion;
+log.close();
