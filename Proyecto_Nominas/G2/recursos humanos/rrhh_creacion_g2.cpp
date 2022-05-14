@@ -711,7 +711,7 @@ void empresa::mostrarDatosDepto(){
                 cout << "\n\t\tIngrese su contrasena: ";cin>>contrasena;
                 if (usuario==config1 && contrasena==config2){
                     system("cls");
-                    log<< "\n\n\nUsuario: "<< usuario <<"Fecha AAMMDD / Hora, minutos, segundos : " <<currentDateTime() <<", ";
+                    log<< "\n\n\nUsuario: "<< usuario <<" Fecha AAMMDD / Hora, minutos, segundos : " <<currentDateTime() <<", ";
                     log.close();
                     fstream bienvenida;
                     string line, desicion;
