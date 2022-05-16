@@ -40,7 +40,7 @@ const std::string currentDateTime() {
 void empresa::mostrarLog(){
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(40)<< "entro a mostrar bitacora, ";
+    log<<"entro a mostrar bitacora, ";
     log.close();
     string line;
     log.open("bitacora.dat");
@@ -59,7 +59,7 @@ void empresa::menuPrincipal(){
     system ("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(33)<< "entro al menu principal, ";
+    log<<"entro al menu principal, ";
     log.close();
     int menu;
     cout << "\n\t\t\tBienvenido al programa de ==RECURSOS HUMANOS==";
@@ -98,7 +98,7 @@ void empresa::menuMantenimiento(){
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(33)<< "entro al menu mantenimiento, ";
+    log<<"entro al menu mantenimiento, ";
     log.close();
     int menu;
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO--" << endl;
@@ -122,7 +122,7 @@ void empresa::menuEmpleados(){
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(33)<< "entro al menu empleados, ";
+    log<<"entro al menu empleados, ";
     log.close();
     int menu;
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO EMPLEADO--" << endl;
@@ -152,7 +152,7 @@ void empresa::registrarEmpleado(){
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(36)<< "entro al menu registrar empleado, ";
+    log<<"entro al menu registrar empleado, ";
     log.close();
     cout << "\n\t\t\tEntrando al menu --REGISTRAR EMPLEADOS--\n" << endl;
     cout << "\n\t¿Quires salir al --MENU EMPLEADO--? [ si / no ] : "; cin >> desicion;
@@ -171,7 +171,7 @@ void empresa::registrarEmpleado(){
         cout << "\t\tIngrese el sueldo de la persona a registrar: "; cin>>sueldo;
         cout << "\n\t--Registro completado--\n" << endl;
         log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-        log<<std::left<<std::setw(33)<< "registro a: "<<std::left<<std::setw(15)<<documentoIdentificacion<<std::left<<std::setw(3)<<", ";
+        log<< "registro a: "<<documentoIdentificacion<<", ";
         log.close();
         baseDatos.open("empleados.dat",ios::app | ios::out | ios::binary);
         baseDatos<<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
@@ -187,7 +187,7 @@ void empresa::modificarEmpleado(){
     fstream baseDatos, modBaseDatos, log;
     cout << "\n\t\t\tEntrando al menu --MODIFICAR EMPLEADOS--" << endl;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(38)<< "entro al menu modificar empleados, ";
+    log<<"entro al menu modificar empleados, ";
     log.close();
     baseDatos.open("empleados.dat",ios::in|ios::binary);
     if(!baseDatos){
@@ -216,7 +216,7 @@ void empresa::modificarEmpleado(){
                 cout << "\t\tIngrese el puesto de la persona a registrar: "; cin>>puesto;
                 cout << "\t\tIngrese el sueldo de la persona a registrar: "; cin>>sueldo;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<std::left<<std::setw(33)<< "modifico a: "<<std::left<<std::setw(15)<<documentoIdentificacion<<std::left<<std::setw(3)<<", ";
+                log<<"busco a: "<<busquedaDatos<<" y la modificacion es: "<<", ";
                 log.close();
                 modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
             }
@@ -248,7 +248,7 @@ void empresa::eliminarEmpleado(){
     system("cls");
 	fstream baseDatos,modBaseDatos,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(42)<< "entro al menu eliminar empleado, ";
+    log<<"entro al menu eliminar empleado, ";
     log.close();
 	int found=0;
 	cout << "\n\t\t\tEntrando al menu --ELIMINAR EMPLEADOS--" << endl;
@@ -273,7 +273,7 @@ void empresa::eliminarEmpleado(){
 			{
 				found++;
 				log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<std::left<<std::setw(33)<< "elimino a: "<<std::left<<std::setw(15)<<documentoIdentificacion<<std::left<<std::setw(3)<<", ";
+                log<<"elimino a: "<<busquedaDatos<<", ";
                 log.close();
 				cout << "\n\t\t\tBorrado de informacion exitoso\a";
 			}
@@ -309,7 +309,7 @@ void empresa::mostrarDatosEmpleados(){
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(45)<< "entro al menu mostrar datos empleado, ";
+    log<<"entro al menu mostrar datos empleado, ";
     log.close();
     cout << "\n\t\t\tEntrando al --MENU MOSTRAR DATOS EMPLEADOS--";
     cout << "\n\n\t\t¿Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
@@ -424,7 +424,7 @@ void empresa::menuDepartamentos(){
     int menu;
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(36)<< "entro al menu departamentos, ";
+    log<<"entro al menu departamentos, ";
     log.close();
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO DEPPARTAMENTOS--" << endl;
     cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar Departamento\n" << "\t\t[2] Modificar Departamento\n" << "\t\t[3] Eliminar Departamento\n" << "\t\t[4] Mostrar Datos Departamentos\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
@@ -463,7 +463,7 @@ void empresa::registrarDepto(){
         cout << "\t\tIngrese la direccion del Departamento a registrar: "; cin >> direccionDepto;
         cout << "\n\t--Registro completado--\n" << endl;
         log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-        log<<std::left<<std::setw(33)<< "registro el Depto: "<<std::left<<std::setw(15)<<numDepto<<std::left<<std::setw(3)<<", ";
+        log<<"registro el Depto: "<<numDepto<<", ";
         log.close();
         baseDatos.open("departamentos.dat",ios::app | ios::out | ios::binary);
         baseDatos<<std::left<<std::setw(15)<< numDepto <<std::left<<std::setw(15)<< nombreDepto <<std::left<<std::setw(15)<< telefonoDepto <<std::left<<std::setw(15)<< direccionDepto <<"\n";
@@ -478,7 +478,7 @@ void empresa::modificarDepto(){
     system("cls");
     fstream baseDatos, modBaseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(33)<< "entro al menu modificar Depto, ";
+    log<<"entro al menu modificar Depto, ";
     log.close();
     cout << "\n\t\t\tEntrando al menu --MODIFICAR DEPARTAMENTOS--" << endl;
     baseDatos.open("departamentos.dat",ios::in|ios::binary);
@@ -503,7 +503,7 @@ void empresa::modificarDepto(){
                 cout << "\t\tIngrese el numero telefonico del Departamento a registrar: "; cin >> telefonoDepto;
                 cout << "\t\tIngrese la direccion del Departamento a registrar: "; cin >> direccionDepto;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<std::left<<std::setw(33)<< "modifico el Depto: "<<std::left<<std::setw(15)<<numDepto<<std::left<<std::setw(3)<<", ";
+                log<<"modifico el Depto: "<<busquedaDatos<<", ahora es: "<<numDepto<<", ";
                 log.close();
                 modBaseDatos <<std::left<<std::setw(15)<< numDepto <<std::left<<std::setw(15)<< nombreDepto <<std::left<<std::setw(15)<< telefonoDepto <<std::left<<std::setw(15)<< direccionDepto <<"\n";
             }
@@ -535,7 +535,7 @@ void empresa::eliminarDepto(){
     system("cls");
 	fstream file,file1,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(42)<< "entro al menu eliminar Depto, ";
+    log<<"entro al menu eliminar Depto, ";
     log.close();
 	int found=0;
 	cout<<"\n\t\t\tEntrando al --MENU ELIMINAR DEPARTAMENTO--"<<endl;
@@ -560,7 +560,7 @@ void empresa::eliminarDepto(){
 			{
 				found++;
 				log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<std::left<<std::setw(33)<< "elimino el Depto: "<<std::left<<std::setw(15)<<busquedaDatos<<std::left<<std::setw(3)<<", ";
+                log<<"elimino el Depto: "<<busquedaDatos<<", ";
                 log.close();
 				cout << "\n\t\t\tBorrado de informacion exitoso";
 			}
@@ -596,7 +596,7 @@ void empresa::mostrarDatosDepto(){
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<std::left<<std::setw(48)<< "entro al menu mostrar datos Depto, ";
+    log<<"entro al menu mostrar datos Depto, ";
     log.close();
     cout << "\n\t\t\tEntrando al menu --MOSTRAR DATOS DEPARTAMENTOS--";
     cout << "\n\n\t\t¿Quiere buscar a un Departamento en especifico? [ si / no ] : "; cin>>desicion;
@@ -717,7 +717,7 @@ void empresa::mostrarDatosDepto(){
                 cout << "\n\t\tIngrese su contrasena: ";cin>>contrasena;
                 if (usuario==config1 && contrasena==config2){
                     system("cls");
-                    log<<std::left<<std::setw(10)<< "\n\n\nUsuario: " <<std::left<<std::setw(30)<< usuario <<std::left<<std::setw(30)<< "Fecha AAMMDD / Hora, minutos, segundos : " <<std::left<<std::setw(20)<< currentDateTime() <<std::left<<std::setw(3)<<", ";
+                    log<<"\n\n\nUsuario: " << usuario <<"Fecha AAMMDD / Hora, minutos, segundos: " <<currentDateTime() <<", ";
                     log.close();
                     fstream bienvenida;
                     string line, desicion;
