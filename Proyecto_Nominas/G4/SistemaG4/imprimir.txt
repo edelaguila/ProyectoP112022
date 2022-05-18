@@ -1,0 +1,4 @@
+ID        Apellido        Primer nombre Dpi           Departamento         Email                          Telefono Zona      Genero
+1         Martinez        Juan          9942123       Contabilidad         Nelson2031997                  41477643 18  M 
+2         Pineda          Maria         022131        Mercadoctenia        Maria203                       41422222 17  F 
+3         Ochoa           Meyglin       219732189391  Secretaria           Meyglin203                     21321312 3   m 
