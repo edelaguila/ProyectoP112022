@@ -1001,12 +1001,16 @@ log.close();
 }
 
  int main(){
+
+     //bitacora, log in, creado por Carlos Gonzalez
+
     system ("cls");
-    string usuario, config0, config1, config2, contrasena, numU;
+    int contador=0;
+    bool ingresa=false;
+    string usuario, config0, config1, config2, contra, numU;
     fstream config, log;
     int datos=0;
     config.open("seguridad.dat",ios::in|ios::binary);
-    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     if(!config){
         cout<<"\n\n\t\tError, no se encuentra un archivo escencial del programa...\a\n\n";
         exit(1);
@@ -1017,11 +1021,53 @@ log.close();
         config>>config0>>config1>>config2;
         while(!config.eof()){
             if(numU==config0){
-                cout << "\n\t\tIngrese su usuario: "; cin >> usuario;
-                cout << "\n\t\tIngrese su contrasena: ";cin>>contrasena;
-                if (usuario==config1 && contrasena==config2){
-                    system("cls");
-                    log<< "\n\n\nUsuario: "<< usuario <<" Fecha AAMMDD / Hora, minutos, segundos : " <<currentDateTime() <<", ";
+                do{
+                    cout << "\n\t\tIngrese su usuario: "; cin >> usuario;
+                    cout << "\n\t\tIngrese su contrasena: ";
+                    char caracter;
+                    caracter = getch();
+                    contra="";
+                    while (caracter != 13) //ASCII TECLA ENTER
+                    {
+                        if (caracter != 8) //ASCII TECLA RETROCESO
+                        {
+                            contra.push_back(caracter);
+                            cout<<"*";
+                        } else
+                        {
+                            if (contra.length() > 0)
+                            {
+                                cout<<"\b \b"; //Efecto caracter borrado en pantalla
+                                contra = contra.substr(0,contra.length()-1); //Toma todos los caracteres menos el ultimo
+                            }
+                        }
+                        caracter = getch();
+                    }
+                    //instancia de clase USUARIOS, para consultar: primero se consulta el usuario, si existe, se consulta la contraseña
+                    if (usuario==config1 && contra==config2){
+                        system("cls");
+                        ingresa=true;
+                    } else {
+                        log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+                        log<<"\n\n\nUsuario: " << usuario <<", El usuario y/o contrasena son incorrectos, ";
+                        log.close();
+                        cout<<"\n\t\tEl usuario y/o contrasena son incorrectos\a"<<endl;
+                        cin.get();
+                        contador++;
+                        log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+                        log<<"intentos: "<<contador<<", ";
+                        log.close();
+                    }
+                } while (ingresa==false && contador<3);
+                if (ingresa==false){
+                    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+                    log<<"\n\n\nUsuario: " << usuario <<", Lo siento, no puede ingresar al sistema, agoto intentos. ";
+                    log.close();
+                    cout<<"\n\t\tLo siento, no puede ingresar al sistema, agoto intentos"<<endl;
+                    cin.get();
+                } else {
+                    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+                    log<<"\n\n\nUsuario: " << usuario <<"Fecha AAMMDD / Hora, minutos, segundos: " <<currentDateTime() <<", ";
                     log.close();
                     fstream bienvenida;
                     string line, desicion;
@@ -1031,25 +1077,22 @@ log.close();
                         while( getline(bienvenida, line)){
                             cout << "\t"<<line << endl;
                         }
+                        cout<<"\n\t\t";system("pause");
                         bienvenida.close();
-                        }
-                    cout << "\n\t\t";system("pause");
+                    }
+                    bienvenida.close();
                     empresa empleado;
                     empleado.menuPrincipal();
+                    cin.get();
                 }
+                return ingresa;
                 datos++;
                 config.close();
             }
-            log.close();
             config>>config0>>config1>>config2;
-        }
-        log.close();
-        if(datos==0)
-        {
-            cout<<"\n\t\t\tPERMISO DENEGADO\a\n";
             config.close();
         }
+        config.close();
     }
-    log.close();
+    config.close();
 };
-
