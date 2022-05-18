@@ -1,4 +1,5 @@
-ID        Apellido        Primer nombre Dpi           Departamento         Email                          Telefono Zona      Genero
-1         Martinez        Juan          9942123       Contabilidad         Nelson2031997                  41477643 18  M 
-2         Pineda          Maria         022131        Mercadoctenia        Maria203                       41422222 17  F 
-3         Ochoa           Meyglin       219732189391  Secretaria           Meyglin203                     21321312 3   m 
+ID  Apellido    Primer nombre Sueldo(Q)   No. Cuenta      Email                      Puesto      Horas Extra Dias Laburados del Mes  
+1   Pineda      Nelson        10000       513             Nelson203                  Gerente     30          30
+2   Diaz        Carlos        10000       513             Dizas                      Gerente     30          30
+3   Rodaz       Carla         2300        123             Carla123                   Vendedora   21          30
+4   Veliz       Majo          2300        231             Majo403                    Vendedora   21          30
