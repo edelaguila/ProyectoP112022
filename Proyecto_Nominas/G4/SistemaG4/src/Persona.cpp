@@ -665,3 +665,254 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
 
 }
 
+// eliminar un registro existente
+void Persona::eliminarRegistro( fstream &eliminarDeArchivo )
+{
+   // obtener número de ID a eliminar
+   int numeroId = obtenerId( "Escriba el ID del empleado a eliminar" );
+
+   // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+   eliminarDeArchivo.seekg(
+      ( numeroId - 1 ) * sizeof( Persona ) );
+
+   // leer el registro del archivo
+   Persona empleado;
+   eliminarDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Persona ) );
+
+   // eliminar el registro, si es que existe en el archivo
+   if ( empleado.obtenerNumeroId() != 0 ) {
+      Persona empleadoEnBlanco;
+
+      // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+      eliminarDeArchivo.seekp( ( numeroId - 1 ) *
+         sizeof( Persona ) );
+
+      // reemplazar el registro existente con un registro en blanco
+      eliminarDeArchivo.write(
+         reinterpret_cast< const char * >( &empleadoEnBlanco ),
+         sizeof( Persona ) );
+
+      cout << "Empleado con ID #" << numeroId << " eliminado.\n";
+
+   }
+
+   else
+      cerr << "No existe ningun empleado con el ID #" << numeroId<<endl;
+
+}
+//Consulta de los empleados
+void Persona::consultarRegistro( fstream &leerDeArchivo )
+{
+
+    cout << left << setw( 4 ) << "ID" << setw( 12 )
+       << "Apellido" << setw( 14 ) << "Primer nombre" <<
+       setw( 12 )<<"Sueldo(Q)"<<setw(16)<<"No. Cuenta"<<setw(27)<<"Email"
+       <<setw( 12 )<< "Puesto"<<setw(12)<<"Horas Extra"<<setw(24)<<"Dias Laburados del Mes" << endl;
+   // colocar el apuntador de posición de archivo al principio del archivo de registros
+   leerDeArchivo.seekg( 0 );
+
+   // leer el primer registro del archivo de registros
+   Persona empleado;
+   leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Persona ) );
+
+   // copiar todos los registros del archivo de registros en el archivo de texto
+   while ( !leerDeArchivo.eof() ) {
+
+      // escribir un registro individual en el archivo de texto
+      if ( empleado.obtenerNumeroId() != 0 )
+         mostrarLineaPantalla(empleado);
+
+      // leer siguiente registro del archivo de registros
+      leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+         sizeof( Persona ) );
+
+   }
+
+}
+
+void Persona::consultarRegistro2( fstream &leerDeArchivo )
+{
+
+cout << left << setw( 4 ) << "ID" << setw( 12 )
+       << "Apellido" << setw( 14 ) << "Primer nombre" <<
+       setw( 12 )<<"Sueldo(Q)"<<setw(12)<<"Horas Extra"<<setw(15)<<"Dias Laborados"<<setw(11)<<"Comisiones"<<setw(12)<<"Valor Horas"
+       <<setw(26)<<"Sueldo Extraordinario (Q)"<<setw(16)<<"Total Devengado"<<setw(9)<<"IGSS"
+        <<setw(9)<<"ISR"<<setw(10)<<"Anticipos"<<setw(17)<<"Total Descuento"<<setw(16)<<"Bono Incentivo"<<setw(17)<<"Liquido Recibir"<<setw(8)<<"Pension A."<< endl;
+
+   // colocar el apuntador de posición de archivo al principio del archivo de registros
+   leerDeArchivo.seekg( 0 );
+
+   // leer el primer registro del archivo de registros
+   Persona empleado;
+   leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Persona ) );
+
+   // copiar todos los registros del archivo de registros en el archivo de texto
+   while ( !leerDeArchivo.eof() ) {
+
+      // escribir un registro individual en el archivo de texto
+      if ( empleado.obtenerNumeroId() != 0 )
+         mostrarLineaPantalla2(empleado);
+
+      // leer siguiente registro del archivo de registros
+      leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+         sizeof( Persona ) );
+
+   }
+
+}
+
+// mostrar registro individual
+void Persona::mostrarLinea( ostream &salida, const Persona &registro )
+{
+    salida<< left << setw( 4 ) << registro.obtenerNumeroId()
+          << setw( 12 ) << registro.obtenerApellido().data()
+          << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw( 12 ) << registro.obtenerSueldo()
+          << setw( 16 ) << registro.obtenerCuenta()
+          << setw( 27 ) << registro.obtenerEmail().data()
+          << setw( 12 ) << registro.obtenerPuesto().data()
+          << setw( 12 ) << registro.obtenerHoras()
+          << setw( 15 ) << registro.obtenerDias()<<endl;
+
+}
+void Persona::mostrarLineaPantalla( const Persona &registro )
+{
+   cout << left << setw( 4 ) << registro.obtenerNumeroId()
+          << setw( 12 ) << registro.obtenerApellido().data()
+          << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw( 12 ) << registro.obtenerSueldo()
+          << setw( 16 ) << registro.obtenerCuenta()
+          << setw( 27 ) << registro.obtenerEmail().data()
+          << setw( 12 ) << registro.obtenerPuesto().data()
+          << setw( 12 ) << registro.obtenerHoras()
+          << setw( 15) << registro.obtenerDias()<<endl;
+}
+
+void Persona::mostrarLinea2( ostream &salida, const Persona &registro )
+{
+   salida << left << setw( 4 ) << registro.obtenerNumeroId()
+          << setw( 12 ) << registro.obtenerApellido().data()
+          << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw( 12 ) << registro.obtenerSueldo()
+          << setw( 12 ) << registro.obtenerHoras()
+          << setw( 15 ) << registro.obtenerDias()
+        << setw (11)  << registro.obtenerComisiones()
+          <<setw (12)  << registro.obtenerVhoras()
+          << setw( 26) << registro.obtenerSueldoEx()
+          << setw( 16 ) << registro.obtenerTDevengado()
+          << setw( 9) << registro.obtenerIGSS()
+          << setw( 12 ) << registro.obtenerISR()
+          << setw( 10 ) << registro.obtenerAnticipos()
+          << setw( 17 ) << registro.obtenerTDescuentos()
+          << setw( 16) << registro.obtenerBincentivo()
+          << setw( 17 ) << registro.obtenerLiquidorR()
+          <<setw(8)<< registro.obtenerPAlimenticia()<<endl;
+}
+void Persona::mostrarLineaPantalla2( const Persona &registro )
+{
+   cout << left << setw( 4 ) << registro.obtenerNumeroId()
+          << setw( 12 ) << registro.obtenerApellido().data()
+          << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw( 12 ) << registro.obtenerSueldo()
+          << setw( 12 ) << registro.obtenerHoras()
+          << setw( 15 )  << registro.obtenerDias()
+        << setw (11)  << registro.obtenerComisiones()
+          <<setw (12)  << registro.obtenerVhoras()
+          << setw( 26) << registro.obtenerSueldoEx()
+          << setw( 16 ) << registro.obtenerTDevengado()
+          << setw( 9 ) << registro.obtenerIGSS()
+          << setw( 9 ) << registro.obtenerISR()
+          << setw( 10 ) << registro.obtenerAnticipos()
+          << setw( 17 ) << registro.obtenerTDescuentos()
+          << setw( 16) << registro.obtenerBincentivo()
+          << setw( 17 ) << registro.obtenerLiquidorR()
+          <<setw(8)<< registro.obtenerPAlimenticia()<<endl;
+
+}
+
+// obtener el valor del número ID del usuario
+int Persona::obtenerId( const char * const indicador )
+{
+   int numeroId;
+
+   do {
+      cout << indicador << " (1 - 1000): ";
+      cin >> numeroId;
+
+   } while ( numeroId < 1 || numeroId > 1000 );
+
+   return numeroId;
+
+}
+void Persona::crearArchivoEmpleados()
+{
+    ofstream empleadosSalida( "empleados.dat", ios::out | ios::binary );
+   // salir del programa si ofstream no pudo abrir el archivo
+   if ( !empleadosSalida ) {
+      cerr << "No se pudo abrir el archivo." << endl;
+      exit( 1 );
+
+   }
+
+   // crear espacios sin informacion
+   Persona empleadoEnBlanco;
+
+   for ( int i = 0; i < 1000; i++ )
+      empleadosSalida.write(
+         reinterpret_cast< const char * >( &empleadoEnBlanco ),
+         sizeof( Persona ) );
+}
+
+fstream Persona::inicioArchivo(){
+    Persona empleado;
+        fstream empleadosEntradaSalida( "empleados.dat", ios::in | ios::out | ios::binary);
+
+   // salir del programa si fstream no puede abrir el archivo
+    if ( !empleadosEntradaSalida ) {
+      cerr << "No se pudo abrir el archivo." << endl;
+      empleado.crearArchivoEmpleados();
+      cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+      exit ( 1 );
+
+    }
+    return empleadosEntradaSalida;
+}
+
+
+//Funcion para encontrar empleado especifico
+void Persona::busquedaRegistro(fstream &actualizarArchivo)
+{
+//Se obtiene el ID a buscar
+       int numeroId = obtenerId( "Escriba el ID del empleado a buscar" );
+
+   // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+   actualizarArchivo.seekg(
+      ( numeroId - 1 ) * sizeof( Persona ) );
+
+   // leer el primer registro del archivo
+   Persona empleado;
+   actualizarArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Persona ) );
+if ( empleado.obtenerNumeroId() != 0 ) {
+      //MOstrar la informacion obtenida
+       cout << left << setw( 4 ) << "ID" << setw( 12 )
+       << "Apellido" << setw( 14 ) << "Primer nombre" <<
+       setw( 12 )<<"Sueldo(Q)"<<setw(16)<<"No. Cuenta"<<setw(27)<<"Email"
+       <<setw( 12 )<< "Puesto"<<setw(12)<<"Horas Extra"<<setw(24)<<"Dias Laburados del Mes" << endl;
+      mostrarLinea( cout, empleado );
+
+      // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+      actualizarArchivo.seekp(
+         ( numeroId - 1 ) * sizeof( Persona ) );
+
+   }
+
+   // mostrar error si el ID no existe
+   else
+      cerr << "El ID #" << numeroId
+         << " aun no existe" << endl;
+
+}

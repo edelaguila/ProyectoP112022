@@ -5228,3 +5228,308 @@ Grupo4
 2:4:37
 Se realizo consulta de Nomina
 
+Grupo4         
+16/05/2022
+2:13:12
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+16/05/2022
+2:13:13
+Ingreso a Menu Contabilidad
+
+Grupo4         
+16/05/2022
+2:13:15
+Se realizo consulta de Nomina
+
+Grupo4         
+17/05/2022
+9:21:57
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+17/05/2022
+9:21:59
+Ingreso a Gestion de Empleados
+
+Grupo4         
+17/05/2022
+9:22:5
+Ingreso a Menu Consultas
+
+Grupo4         
+17/05/2022
+9:22:13
+Se realizo consulta de Departamentos
+
+Grupo4         
+17/05/2022
+9:22:15
+Se realizo consulta de Sueldos
+
+Grupo4         
+17/05/2022
+9:22:17
+Se realizo consulta de Empleados
+
+Grupo4         
+17/05/2022
+9:36:55
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+17/05/2022
+9:37:0
+Ingreso a Menu Contabilidad
+
+Grupo4         
+17/05/2022
+9:37:16
+Ingreso a Menu Consultas
+
+Grupo4         
+17/05/2022
+9:37:23
+Se realizo consulta de Empleados
+
+Grupo4         
+17/05/2022
+9:46:3
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+17/05/2022
+9:46:9
+Ingreso a Gestion de Empleados
+
+Grupo4         
+17/05/2022
+9:46:13
+Se agrego un nuevo Empleado
+
+Grupo4         
+17/05/2022
+9:46:26
+Se realizo consulta de Empleados
+
+Grupo4         
+17/05/2022
+9:46:49
+Ingreso a Menu Contabilidad
+
+Grupo4         
+17/05/2022
+9:47:6
+Se realizo consulta de Nomina
+
+Grupo4         
+17/05/2022
+9:53:29
+Cierre del Programa
+
+Grupo4         
+17/05/2022
+9:53:38
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+17/05/2022
+9:54:3
+Ingreso a Gestion de Empleados
+
+Grupo4         
+17/05/2022
+9:54:7
+Ingreso a Gestion de Puestos
+
+Grupo4         
+17/05/2022
+9:54:18
+Se realizo consulta de Departamentos
+
+Grupo4         
+17/05/2022
+9:54:56
+Se agrego un nuevo puesto
+
+Grupo4         
+17/05/2022
+9:55:16
+Se realizo consulta de Puestos
+
+Grupo4         
+17/05/2022
+10:46:35
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+17/05/2022
+10:46:39
+Ingreso a Menu Contabilidad
+
+Grupo4         
+17/05/2022
+10:46:46
+Se realizo consulta de Nomina
+
+Grupo4         
+17/05/2022
+11:16:8
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+17/05/2022
+11:16:14
+Ingreso a Menu Contabilidad
+
+Grupo4         
+17/05/2022
+11:16:16
+Se realizo consulta de Nomina
+
+Grupo4         
+17/05/2022
+11:38:52
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+17/05/2022
+11:38:54
+Ingreso a Menu Consultas
+
+Grupo4         
+17/05/2022
+11:38:55
+Se realizo consulta de Empleados
+
+Grupo4         
+17/05/2022
+11:39:57
+Ingreso a Menu Contabilidad
+
+Grupo4         
+17/05/2022
+11:39:58
+Se realizo consulta de Nomina
+
+Grupo4         
+18/05/2022
+13:13:41
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+18/05/2022
+13:20:58
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+18/05/2022
+13:21:23
+Ingreso a Gestion de Puestos
+
+Grupo4         
+18/05/2022
+13:22:17
+Ingreso a Gestion de Empleados
+
+Grupo4         
+18/05/2022
+13:22:18
+Se realizo consulta de Empleados
+
+Grupo4         
+18/05/2022
+13:22:51
+Ingreso a Menu Contabilidad
+
+Grupo4         
+18/05/2022
+13:22:53
+Se realizo consulta de Nomina
+
+Grupo4         
+18/05/2022
+13:23:37
+Ingreso a Menu Contabilidad
+
+Grupo4         
+18/05/2022
+13:23:41
+Ingreso a Menu Consultas
+
+Grupo4         
+18/05/2022
+13:23:43
+Se realizo consulta de Empleados
+
+Grupo4         
+18/05/2022
+13:24:1
+Ingreso a Gestion de Empleados
+
+Grupo4         
+18/05/2022
+13:24:4
+Se agrego un nuevo Empleado
+
+Grupo4         
+18/05/2022
+13:24:57
+Se realizo consulta de Empleados
+
+Grupo4         
+18/05/2022
+13:25:10
+Ingreso a Menu Contabilidad
+
+Grupo4         
+18/05/2022
+13:25:11
+Se realizo consulta de Nomina
+
+Grupo4         
+18/05/2022
+13:42:15
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+18/05/2022
+13:43:15
+Ingreso a Gestion de Puestos
+
+Grupo4         
+18/05/2022
+13:43:59
+Ingreso a Gestion de Empleados
+
+Grupo4         
+18/05/2022
+13:48:23
+Ingreso a Gestion de Empleados
+
+Grupo4         
+18/05/2022
+13:48:36
+Se agrego un nuevo Empleado
+
+Grupo4         
+18/05/2022
+13:50:47
+Ingreso a Menu Contabilidad
+
+Grupo4         
+18/05/2022
+17:23:13
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+18/05/2022
+17:23:19
+Ingreso a Menu Contabilidad
+
+Grupo4         
+18/05/2022
+17:23:20
+Se realizo consulta de Poliza
+

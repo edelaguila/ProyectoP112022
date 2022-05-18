@@ -99,6 +99,9 @@ public:
    void establecerRAlimenticio( string );
    string obtenerRAlimenticio() const;
 
+   void establecerPIGSS( double);
+   double obtenerPIGSS() const;
+
    //Funciones para el tratado de archivos
     void imprimirRegistro( fstream& );
     void imprimirRegistro2( fstream& );
@@ -138,6 +141,7 @@ private:
    double LiquidoR;
    double PAlimenticia;
    char RAlimenticio[5] ;
+   double PIGSS;
 };
 
 #endif
