@@ -232,3 +232,107 @@
 1652148998 c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\usuarios.h
 	<string>
 
+1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"menus.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\departamento.h
+
+1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\usuarios.h
+	<string>
+
+1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\menus.h
+
+1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\departamento.cpp
+	"Departamento.h"
+
+1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\persona.cpp
+	"Persona.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
