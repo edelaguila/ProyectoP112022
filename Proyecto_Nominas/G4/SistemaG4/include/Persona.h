@@ -32,7 +32,7 @@ class Persona {
 public:
 
    // constructor clase Persona
-   Persona( int = 0, string = "", string = "", int = 0, int = 0, string = "", string = "", int = 0, int = 0);
+   Persona( int = 0, string = "", string = "", int = 0, int = 0, string = "", string = "", string = "", int = 0, int = 0, int = 0, double = 0, double = 0, double = 0, double = 0, double = 0, double = 0, double = 0, double = 0, double = 0, double = 0);
 
    // Funciones para obtener el ID
    void establecerId( int );
@@ -63,6 +63,41 @@ public:
    void establecerCuenta( int );
    int obtenerCuenta() const;
 
+   void establecerVhoras( int );
+   int obtenerVhoras() const;
+
+   void establecerSueldoEx( double );
+   double obtenerSueldoEx() const;
+
+   void establecerComisiones( double );
+   double obtenerComisiones() const;
+
+   void establecerTDevengado( double );
+   double obtenerTDevengado() const;
+
+   void establecerIGSS( double );
+   double obtenerIGSS() const;
+
+   void establecerISR ( double );
+   double obtenerISR() const;
+
+   void establecerAnticipos( double );
+   double obtenerAnticipos() const;
+
+   void establecerTDescuentos( double );
+  double obtenerTDescuentos() const;
+
+   void establecerBincentivo ( double );
+   double obtenerBincentivo() const;
+
+   void establecerLiquidoR( double );
+   double obtenerLiquidorR() const;
+
+   void establecerPAlimenticia(double);
+   double obtenerPAlimenticia() const;
+
+   void establecerRAlimenticio( string );
+   string obtenerRAlimenticio() const;
 
    //Funciones para el tratado de archivos
     void imprimirRegistro( fstream& );
@@ -81,10 +116,6 @@ public:
     void mostrarLineaPantalla2( const Persona &);
     fstream inicioArchivo();
 
-
-
-
-
 private:
    int numeroId;
    char apellido[ 15 ];
@@ -95,7 +126,18 @@ private:
    int hExtra;
    int noCuenta;
    int dias;
-
+   int Vhoras;
+   double SueldoEx;
+   double Comisiones;
+   double TDevengado;
+   double IGSS;
+   double ISR;
+   double Anticipos;
+   double TDescuentos;
+   double Bincentivo;
+   double LiquidoR;
+   double PAlimenticia;
+   char RAlimenticio[5] ;
 };
 
 #endif

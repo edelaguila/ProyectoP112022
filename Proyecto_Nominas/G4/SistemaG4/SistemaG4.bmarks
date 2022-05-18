@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="src\Puesto.cpp" open="1" top="0" tabpos="6">
+	<File name="include\Usuarios.h" open="1" top="0" tabpos="11">
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="include\Persona.h" open="1" top="0" tabpos="2">
-		<Cursor position="2245" topLine="64" />
+		<Cursor position="3421" topLine="98" />
 		<BrowseMarks positions="" />
+	</File>
+	<File name="src\Puesto.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="2327" topLine="33" />
+	</File>
+	<File name="include\Bitacora.h" open="1" top="0" tabpos="9">
+		<Cursor position="0" topLine="16" />
+	</File>
+	<File name="include\menus.h" open="1" top="0" tabpos="8">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src\Bitacora.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="0" topLine="18" />
 	</File>
 	<File name="src\menus.cpp" open="1" top="0" tabpos="7">
-		<Cursor position="4738" topLine="0" />
-		<BrowseMarks positions="" />
-	</File>
-	<File name="src\Usuarios.cpp" open="1" top="1" tabpos="5">
-		<Cursor position="2723" topLine="57" />
-		<BrowseMarks positions="" />
+		<Cursor position="4095" topLine="189" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="156" topLine="0" />
+		<Cursor position="864" topLine="0" />
 	</File>
-	<File name="src\Persona.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="20799" topLine="0" />
-		<BrowseMarks positions="" />
+	<File name="include\Puesto.h" open="1" top="0" tabpos="10">
+		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="include\Departamento.h" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src\Persona.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="18065" topLine="0" />
+		<BrowseMarks positions="" />
+	</File>
+	<File name="src\Usuarios.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="2628" topLine="12" />
+	</File>
+	<File name="src\Departamento.cpp" open="1" top="0" tabpos="13">
 		<Cursor position="0" topLine="0" />
 	</File>
 </BrowseTracker_layout_file>

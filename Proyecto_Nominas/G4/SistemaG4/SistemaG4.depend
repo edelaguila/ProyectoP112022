@@ -232,7 +232,7 @@
 1652148998 c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\usuarios.h
 	<string>
 
-1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\main.cpp
+1652139294 source:c:\users\nelso\desktop\modificar original de carlos\main.cpp
 	<iostream>
 	<conio.h>
 	"Persona.h"
@@ -247,14 +247,14 @@
 	<iomanip>
 	<cstdlib>
 
-1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\persona.h
+1652653907 c:\users\nelso\desktop\modificar original de carlos\include\persona.h
 	<iostream>
 	<conio.h>
 	<fstream>
 	<iomanip>
 	<cstdlib>
 
-1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\bitacora.h
+1651861240 c:\users\nelso\desktop\modificar original de carlos\include\bitacora.h
 	<iostream>
 	<ctime>
 	<vector>
@@ -262,7 +262,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\puesto.h
+1651861240 c:\users\nelso\desktop\modificar original de carlos\include\puesto.h
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -270,14 +270,14 @@
 	<conio.h>
 	<iomanip>
 
-1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\departamento.h
+1651861240 c:\users\nelso\desktop\modificar original de carlos\include\departamento.h
 
-1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\usuarios.h
+1651861240 c:\users\nelso\desktop\modificar original de carlos\include\usuarios.h
 	<string>
 
-1652149703 c:\users\maria\onedrive\desktop\generación nómina\include\menus.h
+1652139294 c:\users\nelso\desktop\modificar original de carlos\include\menus.h
 
-1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\bitacora.cpp
+1652139294 source:c:\users\nelso\desktop\modificar original de carlos\src\bitacora.cpp
 	"Bitacora.h"
 	"Persona.h"
 	<iostream>
@@ -290,10 +290,10 @@
 	<iomanip>
 	<cstdlib>
 
-1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\departamento.cpp
+1651861240 source:c:\users\nelso\desktop\modificar original de carlos\src\departamento.cpp
 	"Departamento.h"
 
-1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\persona.cpp
+1652677397 source:c:\users\nelso\desktop\modificar original de carlos\src\persona.cpp
 	"Persona.h"
 	<iostream>
 	<conio.h>
@@ -301,8 +301,9 @@
 	<fstream>
 	<iomanip>
 	<cstdlib>
+	<string>
 
-1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\menus.cpp
+1652139294 source:c:\users\nelso\desktop\modificar original de carlos\src\menus.cpp
 	"menus.h"
 	<iostream>
 	<conio.h>
@@ -317,7 +318,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\puesto.cpp
+1651861240 source:c:\users\nelso\desktop\modificar original de carlos\src\puesto.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -327,7 +328,7 @@
 	"Puesto.h"
 	"Bitacora.h"
 
-1652149703 source:c:\users\maria\onedrive\desktop\generación nómina\src\usuarios.cpp
+1652139294 source:c:\users\nelso\desktop\modificar original de carlos\src\usuarios.cpp
 	"Usuarios.h"
 	<cstdlib>
 	<conio.h>
