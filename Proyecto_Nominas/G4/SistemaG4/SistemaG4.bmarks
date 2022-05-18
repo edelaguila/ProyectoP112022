@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <BrowseTracker_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="src\Usuarios.cpp" open="1" top="0" tabpos="5">
+	<File name="src\Puesto.cpp" open="1" top="0" tabpos="6">
 		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="include\Persona.h" open="1" top="0" tabpos="2">
+		<Cursor position="2245" topLine="64" />
 		<BrowseMarks positions="" />
 	</File>
-	<File name="src\Persona.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="17644" topLine="546" />
-		<BrowseMarks positions="" />
-	</File>
-	<File name="include\Departamento.h" open="1" top="0" tabpos="4">
-		<Cursor position="0" topLine="0" />
-		<BrowseMarks positions="" />
-	</File>
-	<File name="src\menus.cpp" open="1" top="1" tabpos="15">
+	<File name="src\menus.cpp" open="1" top="0" tabpos="7">
 		<Cursor position="4738" topLine="0" />
 		<BrowseMarks positions="" />
 	</File>
-	<File name="include\Persona.h" open="1" top="0" tabpos="2">
-		<Cursor position="1451" topLine="60" />
-	</File>
-	<File name="src\Puesto.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="0" topLine="0" />
+	<File name="src\Usuarios.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="2723" topLine="57" />
 		<BrowseMarks positions="" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="156" topLine="0" />
+	</File>
+	<File name="src\Persona.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="20799" topLine="0" />
 		<BrowseMarks positions="" />
+	</File>
+	<File name="include\Departamento.h" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
 	</File>
 </BrowseTracker_layout_file>

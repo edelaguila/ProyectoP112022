@@ -13,18 +13,18 @@ using std::string;
 // constructor Persona
 Persona::Persona( int valorNumeroId,
    string valorApellido, string valorPrimerNombre,
-   string valorDpi, string valorDepartamento, string valorTelefono, string valorEmail,
-   string valorDireccion, string valorGenero)
+   int valorSueldo, int valorCuenta, string valorPuesto, string valorEmail,
+   int valorHoras, int valorDias)
 {
    establecerId( valorNumeroId );
    establecerApellido( valorApellido );
    establecerPrimerNombre( valorPrimerNombre );
-   establecerTelefono( valorTelefono );
+   establecerPuesto( valorPuesto );
    establecerEmail(valorEmail);
-   establecerDepartamento(valorDepartamento);
-   establecerDireccion(valorDireccion);
-   establecerGenero(valorGenero);
-   establecerDpi( valorDpi );
+   establecerCuenta(valorCuenta);
+   establecerHoras(valorHoras);
+   establecerDias(valorDias);
+   establecerSueldo( valorSueldo );
 
 }
 
@@ -84,62 +84,49 @@ void Persona::establecerPrimerNombre( string primerNombreString )
 
 }
 
-string Persona::obtenerTelefono() const
+string Persona::obtenerPuesto() const
 {
-   return telefono;
+   return puesto;
 
 }
 
 
-void Persona::establecerTelefono( string telefonoString )
+void Persona::establecerPuesto( string puestoString )
 {
 
-   const char *valorTelefono = telefonoString.data();
-   int longitud = strlen( valorTelefono );
-   longitud = ( longitud < 9 ? longitud : 8 );
-   strncpy( telefono, valorTelefono, longitud );
+   const char *valorPuesto = puestoString.data();
+   int longitud = strlen( valorPuesto );
+   longitud = ( longitud < 15 ? longitud : 15 );
+   strncpy( puesto, valorPuesto, longitud );
 
 
-   telefono[ longitud ] = '\0';
+   puesto[ longitud ] = '\0';
 
 }
 
-string Persona::obtenerDpi() const
+int Persona::obtenerSueldo() const
 {
-   return dpi;
-
-}
-
-
-void Persona::establecerDpi( string dpiString )
-{
-
-   const char *valorDpi = dpiString.data();
-   int longitud = strlen( valorDpi );
-   longitud = ( longitud < 15 ? longitud : 14 );
-   strncpy( dpi, valorDpi, longitud );
-
-
-   dpi[ longitud ] = '\0';
+   return sueldo;
 
 }
 
 
-string Persona::obtenerDepartamento() const
+void Persona::establecerSueldo( int valorSueldo )
 {
-   return departamento;
+   sueldo = valorSueldo;
 
 }
 
-void Persona::establecerDepartamento( string departamentoString )
+
+int Persona::obtenerCuenta() const
 {
+   return noCuenta;
 
-   const char *valorDepartamento = departamentoString.data();
-   int longitud = strlen( valorDepartamento );
-   longitud = ( longitud < 22 ? longitud : 21 );
-   strncpy( departamento, valorDepartamento, longitud );
+}
 
-   departamento[ longitud ] = '\0';
+void Persona::establecerCuenta( int valorCuenta )
+{
+   noCuenta = valorCuenta;
 
 }
 
@@ -163,43 +150,29 @@ void Persona::establecerEmail( string emailString )
 
 }
 
-string Persona::obtenerDireccion() const
+int Persona::obtenerHoras() const
 {
-   return direccion;
+   return hExtra;
 
 }
 
 
-void Persona::establecerDireccion( string direccionString )
+void Persona::establecerHoras( int valorHoras )
 {
-
-   const char *valorDireccion = direccionString.data();
-   int longitud = strlen( valorDireccion );
-   longitud = ( longitud < 4 ? longitud : 3 );
-   strncpy( direccion, valorDireccion, longitud );
-
-
-   direccion[ longitud ] = '\0';
+   hExtra = valorHoras;
 
 }
 
-string Persona::obtenerGenero() const
+int Persona::obtenerDias() const
 {
-   return genero;
+   return dias;
 
 }
 
 
-void Persona::establecerGenero( string generoString )
+void Persona::establecerDias( int valorDias)
 {
-
-   const char *valorGenero = generoString.data();
-   int longitud = strlen( valorGenero );
-   longitud = ( longitud < 3 ? longitud : 2 );
-   strncpy( genero, valorGenero, longitud );
-
-
-   genero[ longitud ] = '\0';
+   dias = valorDias;
 
 }
 
@@ -218,8 +191,8 @@ void Persona::imprimirRegistro( fstream &leerDeArchivo )
 
    archivoImprimirSalida << left << setw( 10 ) << "ID" << setw( 16 )
        << "Apellido" << setw( 14 ) << "Primer nombre"
-       << setw( 14 ) << "Dpi" <<setw( 21 )<<"Departamento"<<setw( 31 )<<"Email"
-       <<setw( 9 )<<"Telefono"<<setw( 10 )<<"Zona"<<setw( 5 )<<"Genero"<<endl;
+       << setw( 14 ) << "Sueldo(Q)" <<setw( 21 )<<"No. Cuenta"<<setw( 31 )<<"Email"
+       <<setw( 15 )<<"Puesto"<<setw( 12 )<<"Horas Extra"<<setw( 24 )<<"Dias Laburados del Mes"<<endl;
 
    // colocar el apuntador de posición de archivo al principio del archivo de registros
    leerDeArchivo.seekg( 0 );
@@ -241,6 +214,47 @@ void Persona::imprimirRegistro( fstream &leerDeArchivo )
          sizeof( Persona ) );
 
    }
+
+
+}
+
+void Persona::imprimirRegistro2( fstream &leerDeArchivo )
+{
+   // crear archivo de texto
+   ofstream archivoImprimirSalida( "planilla.txt", ios::out );
+
+   // salir del programa si ofstream no puede crear el archivo
+   if ( !archivoImprimirSalida ) {
+      cerr << "No se pudo crear el archivo." << endl;
+      exit( 1 );
+
+   }
+
+   archivoImprimirSalida << left << setw( 10 ) << "ID" << setw( 16 )
+       << "Apellido" << setw( 14 ) << "Primer nombre"
+       << setw( 14 ) << "Sueldo(Q)" <<setw( 21 )<<setw( 12 )<<"Horas Extra"<<setw( 24 )<<"Dias Laburados del Mes"<<endl;
+
+   // colocar el apuntador de posición de archivo al principio del archivo de registros
+   leerDeArchivo.seekg( 0 );
+
+   // leer el primer registro del archivo de registros
+   Persona empleado;
+   leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Persona ) );
+
+   // copiar todos los registros del archivo de registros en el archivo de texto
+   while ( !leerDeArchivo.eof() ) {
+
+      // escribir un registro individual en el archivo de texto
+      if ( empleado.obtenerNumeroId() != 0 )
+         mostrarLinea2( archivoImprimirSalida, empleado );
+
+      // leer siguiente registro del archivo de registros
+      leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+         sizeof( Persona ) );
+
+   }
+
 
 }
 
@@ -264,42 +278,45 @@ void Persona::actualizarRegistro( fstream &actualizarArchivo )
 
          cout << left << setw( 10 ) << "ID" << setw( 16 )
        << "Apellido" << setw( 14 ) << "Primer nombre" <<
-       setw( 14 )<<"DPI"<<setw(21)<<"Departamento"<<setw(31)<<"Email"
-       <<setw( 9 )<< "Telefono"<<setw(10)<<"Zona"<<setw(5)<<"Genero" << endl;
+       setw( 14 )<<"Sueldo(Q)"<<setw(21)<<"No. Cuenta"<<setw(31)<<"Email"
+       <<setw( 15 )<< "Puesto"<<setw(12)<<"Horas Extra"<<setw(24)<<"Dias Laburados del Mes" << endl;
       mostrarLinea( cout, empleado );
 
 
       // solicitar al usuario que especifique la transacción
       cout<<""<<endl;
       cout <<"¿Que desea modificar?"<<endl;
-	  cout<<"1. Departamento"<<endl;
+	  cout<<"1. No. Cuenta"<<endl;
 	  cout<<"2. Zona"<<endl;
-	  cout<<"3. Telefono"<<endl;
+	  cout<<"3. Puesto"<<endl;
 	  cout<<"4. Email"<<endl;
-	  cout<<"5. Cancelar"<<endl;
+	  cout<<"5. Sueldo"<<endl;
+	  cout<<"6. Horas Extra"<<endl;
+	  cout<<"7. Dias Laburados del Mes"<<endl;
+	  cout<<"8. Cancelar"<<endl;
 	  cin >> choice;
     switch(choice)
     {
         case 1:
             //cambio de departamento
-            {cout << "Ingrese el nuevo departamento: "<<endl;
-            string cambioDpto;
-            cin >> cambioDpto;
-            empleado.establecerDepartamento( cambioDpto );}
+            {cout << "Ingrese el nuevo no. de cuenta: "<<endl;
+            int cambioCuenta;
+            cin >> cambioCuenta;
+            empleado.establecerCuenta( cambioCuenta );}
             break;
         case 2:
             //cambio de direccion
-            {cout << "Ingrese la nueva zona: "<<endl;
-            string cambioAdress;
-            cin >> cambioAdress;
-            empleado.establecerDireccion( cambioAdress );}
+            {cout << "Ingrese las horas extra "<<endl;
+            int cambioHoras;
+            cin >> cambioHoras;
+            empleado.establecerHoras( cambioHoras );}
             break;
         case 3:
             //cambio de telefono
-            {cout << "Ingrese el nuevo telefono: "<<endl;
-            string cambioTel;
-            cin >> setw( 9 )>> cambioTel;
-            empleado.establecerTelefono( cambioTel );}
+            {cout << "Ingrese el nuevo puesto: "<<endl;
+            string cambioPuesto;
+            cin >> setw( 15 )>> cambioPuesto;
+            empleado.establecerPuesto( cambioPuesto );}
             break;
         case 4:
             {cout << "Ingrese el nuevo Email: "<<endl;
@@ -308,6 +325,24 @@ void Persona::actualizarRegistro( fstream &actualizarArchivo )
             empleado.establecerEmail( cambioEmail );}
             break;
         case 5:
+            {cout << "Ingrese el nuevo sueldo: "<<endl;
+            int cambioSueldo;
+            cin >> cambioSueldo;
+            empleado.establecerSueldo( cambioSueldo );}
+            break;
+        case 6:
+            {cout << "Ingrese las horas extra: "<<endl;
+            int cambioHoras;
+            cin >> cambioHoras;
+            empleado.establecerHoras( cambioHoras );}
+            break;
+        case 7:
+            {cout << "Ingrese los Dias Laburados del Mes "<<endl;
+            int cambioDias;
+            cin >> cambioDias;
+            empleado.establecerDias( cambioDias );}
+            break;
+        case 8:
             cout << "Modificacion cancelada, empleado sin cambios: "<<endl;
             break;
         default:
@@ -316,8 +351,8 @@ void Persona::actualizarRegistro( fstream &actualizarArchivo )
 
       cout << left << setw( 10 ) << "ID" << setw( 16 )
        << "Apellido" << setw( 14 ) << "Primer nombre" <<
-       setw( 14 )<<"DPI"<<setw(21)<<"Departamento"<<setw(31)<<"Email"
-       <<setw( 9 )<< "Telefono"<<setw(10)<<"Zona"<<setw(5)<<"Genero" << endl;
+       setw( 14 )<<"Sueldo(Q)"<<setw(21)<<"No. Cuenta"<<setw(31)<<"Email"
+       <<setw( 15 )<< "Puesto"<<setw(12)<<"Horas Extra"<<setw(24)<<"Dias Laburados del Mes" << endl;
       mostrarLinea( cout, empleado );
 
       // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
@@ -358,41 +393,41 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
 
       char apellido[ 15 ];
       char primerNombre[ 10 ];
-      char telefono[ 9 ];
-      char dpi[ 14 ];
-      char departamento[21];
+      char puesto[ 15 ];
+      int sueldo;
+      int noCuenta;
       char email[31];
-      char direccion[21];
-      char genero[2];
+      int hExtra;
+      int dias;
 
       // el usuario introduce los datos
       cout << "Escriba el apellido : " << endl;
       cin >> setw( 15 ) >> apellido;
       cout << "Escriba el nombre: " << endl;
       cin >> setw( 10 ) >> primerNombre;
-      cout << "Escriba el DPI: "<<endl;
-      cin >> setw( 14 ) >> dpi;
-      cout << "Escriba el departamento: "<<endl;
-      cin >> setw(21)>> departamento;
+      cout << "Escriba el sueldo: "<<endl;
+      cin >> setw( 14 ) >> sueldo;
+      cout << "Escriba el no. de cuenta: "<<endl;
+      cin >> setw(21)>> noCuenta;
       cout << "Escriba el email: "<<endl;
       cin >> setw(21)>> email;
-      cout << "Escriba el telefono: " << endl;
-      cin >> setw( 9 ) >> telefono;
-      cout << "Escriba la Zona: "<<endl;
-      cin >> setw(3)>> direccion;
-      cout << "Escriba el genero M/F: "<<endl;
-      cin >> setw(2)>> genero;
+      cout << "Escriba el puesto: " << endl;
+      cin >> setw( 15 ) >> puesto;
+      cout << "Escriba las horas extra "<<endl;
+      cin >> setw(3)>> hExtra;
+      cout << "Escriba los Dias Laburados del Mes"<<endl;
+      cin >> setw(2)>> dias;
 
       // usar valores para llenar los valores del empleado
       empleado.establecerApellido( apellido );
       empleado.establecerPrimerNombre( primerNombre );
-      empleado.establecerDpi( dpi );
-      empleado.establecerTelefono( telefono );
+      empleado.establecerSueldo( sueldo );
+      empleado.establecerPuesto( puesto );
       empleado.establecerId( numeroId );
-      empleado.establecerDepartamento(departamento);
+      empleado.establecerCuenta(noCuenta);
       empleado.establecerEmail(email);
-      empleado.establecerDireccion(direccion);
-      empleado.establecerGenero(genero);
+      empleado.establecerHoras(hExtra);
+      empleado.establecerDias(dias);
 
       // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
       insertarEnArchivo.seekp( ( numeroId - 1 ) *
@@ -452,8 +487,8 @@ void Persona::consultarRegistro( fstream &leerDeArchivo )
 
    cout << left << setw( 10 ) << "ID" << setw( 16 )
        << "Apellido" << setw( 14 ) << "Primer nombre" <<
-       setw( 14 )<<"DPI"<<setw(21)<<"Departamento"<<setw(31)<<"Email"
-       <<setw( 9 )<< "Telefono"<<setw(10)<<"Zona"<<setw(5)<<"Genero" << endl;
+       setw( 14 )<<"Sueldo(Q)"<<setw(21)<<"No. Cuenta"<<setw(31)<<"Email"
+       <<setw( 9 )<< "Puesto"<<setw(12)<<"Horas Extra"<<setw(24)<<"Dias Laburados del Mes" << endl;
 
    // colocar el apuntador de posición de archivo al principio del archivo de registros
    leerDeArchivo.seekg( 0 );
@@ -478,18 +513,48 @@ void Persona::consultarRegistro( fstream &leerDeArchivo )
 
 }
 
+void Persona::consultarRegistro2( fstream &leerDeArchivo )
+{
+
+   cout << left << setw( 10 ) << "ID" << setw( 16 )
+       << "Apellido" << setw( 14 ) << "Primer nombre" <<
+       setw( 14 )<<"Sueldo(Q)"<<setw(12)<<"Horas Extra"<<setw(24)<<"Dias Laburados del Mes" << endl;
+
+   // colocar el apuntador de posición de archivo al principio del archivo de registros
+   leerDeArchivo.seekg( 0 );
+
+   // leer el primer registro del archivo de registros
+   Persona empleado;
+   leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Persona ) );
+
+   // copiar todos los registros del archivo de registros en el archivo de texto
+   while ( !leerDeArchivo.eof() ) {
+
+      // escribir un registro individual en el archivo de texto
+      if ( empleado.obtenerNumeroId() != 0 )
+         mostrarLineaPantalla2(empleado);
+
+      // leer siguiente registro del archivo de registros
+      leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+         sizeof( Persona ) );
+
+   }
+
+}
+
 // mostrar registro individual
 void Persona::mostrarLinea( ostream &salida, const Persona &registro )
 {
    salida << left << setw( 10 ) << registro.obtenerNumeroId()
           << setw( 16 ) << registro.obtenerApellido().data()
           << setw( 14 ) << registro.obtenerPrimerNombre().data()
-          << setw( 14 ) << registro.obtenerDpi().data()
-          << setw( 21 ) << registro.obtenerDepartamento().data()
+          << setw( 14 ) << registro.obtenerSueldo()
+          << setw( 21 ) << registro.obtenerCuenta()
           << setw( 31 ) << registro.obtenerEmail().data()
-          << setw( 9 ) << registro.obtenerTelefono().data()
-          << setw( 4 ) << registro.obtenerDireccion().data()
-          << setw( 2 ) << registro.obtenerGenero().data()<<endl;
+          << setw( 15 ) << registro.obtenerPuesto().data()
+          << setw( 14 ) << registro.obtenerHoras()
+          << setw( 2 ) << registro.obtenerDias()<<endl;
 
 }
 void Persona::mostrarLineaPantalla( const Persona &registro )
@@ -497,12 +562,32 @@ void Persona::mostrarLineaPantalla( const Persona &registro )
    cout << left << setw( 10 ) << registro.obtenerNumeroId()
           << setw( 16 ) << registro.obtenerApellido().data()
           << setw( 14 ) << registro.obtenerPrimerNombre().data()
-          << setw( 14 ) << registro.obtenerDpi().data()
-          << setw( 21 ) << registro.obtenerDepartamento().data()
+          << setw( 14 ) << registro.obtenerSueldo()
+          << setw( 21 ) << registro.obtenerCuenta()
           << setw( 31 ) << registro.obtenerEmail().data()
-          << setw( 9 ) << registro.obtenerTelefono().data()
-          << setw( 4 ) << registro.obtenerDireccion().data()
-          << setw( 2 ) << registro.obtenerGenero().data()<<endl;
+          << setw( 15 ) << registro.obtenerPuesto().data()
+          << setw( 14 ) << registro.obtenerHoras()
+          << setw( 2 ) << registro.obtenerDias()<<endl;
+}
+
+void Persona::mostrarLinea2( ostream &salida, const Persona &registro )
+{
+   salida << left << setw( 10 ) << registro.obtenerNumeroId()
+          << setw( 16 ) << registro.obtenerApellido().data()
+          << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw( 14 ) << registro.obtenerSueldo()
+          << setw( 14 ) << registro.obtenerHoras()
+          << setw( 2 ) << registro.obtenerDias()<<endl;
+
+}
+void Persona::mostrarLineaPantalla2( const Persona &registro )
+{
+   cout << left << setw( 10 ) << registro.obtenerNumeroId()
+          << setw( 16 ) << registro.obtenerApellido().data()
+          << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw( 14 ) << registro.obtenerSueldo()
+          << setw( 14 ) << registro.obtenerHoras()
+          << setw( 2 ) << registro.obtenerDias()<<endl;
 }
 
 // obtener el valor del número ID del usuario
@@ -553,6 +638,7 @@ fstream Persona::inicioArchivo(){
     return empleadosEntradaSalida;
 }
 
+
 //Funcion para encontrar empleado especifico
 void Persona::busquedaRegistro(fstream &actualizarArchivo)
 {
@@ -571,8 +657,8 @@ if ( empleado.obtenerNumeroId() != 0 ) {
       //MOstrar la informacion obtenida
       cout << left << setw( 10 ) << "ID" << setw( 16 )
        << "Apellido" << setw( 14 ) << "Primer nombre" <<
-       setw( 14 )<<"DPI"<<setw(21)<<"Departamento"<<setw(31)<<"Email"
-       <<setw( 9 )<< "Telefono"<<setw(10)<<"Zona"<<setw(5)<<"Genero" << endl;
+       setw( 14 )<<"Sueldo(Q)"<<setw(21)<<"No. Cuenta"<<setw(31)<<"Email"
+       <<setw( 15 )<< "Puesto"<<setw(12)<<"Horas Extra"<<setw(24)<<"Dias Laburados del Mes" << endl;
       mostrarLinea( cout, empleado );
 
       // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
