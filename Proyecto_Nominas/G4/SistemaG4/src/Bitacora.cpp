@@ -413,28 +413,6 @@ Bitacora::nuevaActividadTxt(int opcion)
     case 32:
         accion1 = "Ingreso de usuario y contrasena exitoso";
         break;
-    case 34:
-        accion1 = "Ingreso de datos de Nomina";
-        break;
-    case 35:
-        accion1 = "Ingreso datos de Nomina";
-        break;
-    case 36:
-        accion1 = "Ingresó a Consulta de Nomina";
-        break;
-    case 37:
-        accion1 = "Se realizo actualización de Nomina";
-        break;
-    case 38:
-        accion1 = "Ingresó a consulta de Planilla";
-        break;
-    case 39:
-        accion1 = "Se Elimino un usuario de Nomina";
-        break;
-    case 40:
-        accion1 = "Se ingreso la clave de empleado";
-        break;
-
 
     }
 
