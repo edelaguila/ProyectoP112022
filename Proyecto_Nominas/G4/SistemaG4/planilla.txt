@@ -1,5 +1,0 @@
-ID  Apellido    Primer nombre Sueldo(Q)   Horas Extra Dias Laborados Comisiones Valor Horas Sueldo Extraordinario (Q) Total Devengado IGSS     ISR      Anticipos Total Descuento  Bono Incentivo  Liquido Recibir  Pension A.
-1   Pineda      Nelson        10000       30          30             500        25          750                       11250           543.375  335.331     4500      5378.71          250             4871.29          4228.33 
-2   Diaz        Carlos        10000       30          30             500        25          750                       11250           543.375  335.331     4500      5378.71          250             4871.29          0       
-3   Rodaz       Carla         2300        21          30             500        25          525                       3325            160.597  0           1330      1490.6           250             1059.4           1078.1  
-4   Veliz       Majo          2300        21          30             500        25          525                       3325            160.597  0           1330      1490.6           250             1059.4           0       

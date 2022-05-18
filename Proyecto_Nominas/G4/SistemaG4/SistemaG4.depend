@@ -201,38 +201,7 @@
 	"Bitacora.h"
 	"Usuarios.h"
 
-1652148998 source:c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\bitacora.cpp
-	"Bitacora.h"
-	"Persona.h"
-	<iostream>
-	<ctime>
-	<vector>
-	<fstream>
-	<string>
-	<sstream>
-	"Usuarios.h"
-	<iomanip>
-	<cstdlib>
-
-1652148998 c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\bitacora.h
-	<iostream>
-	<ctime>
-	<vector>
-	<fstream>
-	<iomanip>
-	<cstdlib>
-
-1652148998 c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\persona.h
-	<iostream>
-	<conio.h>
-	<fstream>
-	<iomanip>
-	<cstdlib>
-
-1652148998 c:\users\jawic\desktop\equipo4\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\usuarios.h
-	<string>
-
-1652139294 source:c:\users\nelso\desktop\modificar original de carlos\main.cpp
+1651996779 source:c:\users\nelso\desktop\original a modificar\main.cpp
 	<iostream>
 	<conio.h>
 	"Persona.h"
@@ -240,21 +209,21 @@
 	"Puesto.h"
 	"Departamento.h"
 	"Usuarios.h"
-	"menus.h"
+	"Concepto.h"
 	<ctime>
 	<vector>
 	<fstream>
 	<iomanip>
 	<cstdlib>
 
-1652653907 c:\users\nelso\desktop\modificar original de carlos\include\persona.h
+1651872040 c:\users\nelso\desktop\original a modificar\include\persona.h
 	<iostream>
 	<conio.h>
 	<fstream>
 	<iomanip>
 	<cstdlib>
 
-1651861240 c:\users\nelso\desktop\modificar original de carlos\include\bitacora.h
+1651872040 c:\users\nelso\desktop\original a modificar\include\bitacora.h
 	<iostream>
 	<ctime>
 	<vector>
@@ -262,7 +231,7 @@
 	<iomanip>
 	<cstdlib>
 
-1651861240 c:\users\nelso\desktop\modificar original de carlos\include\puesto.h
+1651872040 c:\users\nelso\desktop\original a modificar\include\puesto.h
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -270,14 +239,12 @@
 	<conio.h>
 	<iomanip>
 
-1651861240 c:\users\nelso\desktop\modificar original de carlos\include\departamento.h
+1651872040 c:\users\nelso\desktop\original a modificar\include\departamento.h
 
-1651861240 c:\users\nelso\desktop\modificar original de carlos\include\usuarios.h
+1651872040 c:\users\nelso\desktop\original a modificar\include\usuarios.h
 	<string>
 
-1652139294 c:\users\nelso\desktop\modificar original de carlos\include\menus.h
-
-1652139294 source:c:\users\nelso\desktop\modificar original de carlos\src\bitacora.cpp
+1652072483 source:c:\users\nelso\desktop\original a modificar\src\bitacora.cpp
 	"Bitacora.h"
 	"Persona.h"
 	<iostream>
@@ -290,10 +257,10 @@
 	<iomanip>
 	<cstdlib>
 
-1651861240 source:c:\users\nelso\desktop\modificar original de carlos\src\departamento.cpp
+1651872040 source:c:\users\nelso\desktop\original a modificar\src\departamento.cpp
 	"Departamento.h"
 
-1652677397 source:c:\users\nelso\desktop\modificar original de carlos\src\persona.cpp
+1651872040 source:c:\users\nelso\desktop\original a modificar\src\persona.cpp
 	"Persona.h"
 	<iostream>
 	<conio.h>
@@ -301,24 +268,8 @@
 	<fstream>
 	<iomanip>
 	<cstdlib>
-	<string>
 
-1652139294 source:c:\users\nelso\desktop\modificar original de carlos\src\menus.cpp
-	"menus.h"
-	<iostream>
-	<conio.h>
-	"Persona.h"
-	"Bitacora.h"
-	"Puesto.h"
-	"Departamento.h"
-	"Usuarios.h"
-	<ctime>
-	<vector>
-	<fstream>
-	<iomanip>
-	<cstdlib>
-
-1651861240 source:c:\users\nelso\desktop\modificar original de carlos\src\puesto.cpp
+1651872040 source:c:\users\nelso\desktop\original a modificar\src\puesto.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -328,7 +279,7 @@
 	"Puesto.h"
 	"Bitacora.h"
 
-1652139294 source:c:\users\nelso\desktop\modificar original de carlos\src\usuarios.cpp
+1651872040 source:c:\users\nelso\desktop\original a modificar\src\usuarios.cpp
 	"Usuarios.h"
 	<cstdlib>
 	<conio.h>
@@ -336,4 +287,22 @@
 	<string>
 	"Bitacora.h"
 	"Usuarios.h"
+
+1651998862 c:\users\nelso\desktop\original a modificar\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652072334 source:c:\users\nelso\desktop\original a modificar\src\concepto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Concepto.h"
+	"Bitacora.h"
 
