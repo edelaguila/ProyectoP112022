@@ -1,12 +1,16 @@
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>
+#include <iostream>
+#include <fstream>
+#include <stdlib.h>
 #include <cstdlib>
 #include <iomanip>
 #include <windows.h>
 #include <string>
 #include <stdio.h>
 #include <time.h>
+#include<math.h>
 #include <conio.h>
 
 class empresa{
@@ -69,7 +73,7 @@ void empresa::menuPrincipal(){//funcion creada pro Carlos Gonzalez
         menuMantenimiento();
         break;
     case 2:
-        cout<<"hola";
+        menuNomina();
         break;
     case 3:
         cout<<"hola";
@@ -448,6 +452,7 @@ void empresa::menuDepartamentos(){//funcion creada pro Carlos Gonzalez
         break;
     }
 }
+
 void empresa::registrarDepto(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream baseDatos, log;
@@ -696,6 +701,299 @@ void empresa::mostrarDatosDepto(){//funcion creada pro Carlos Gonzalez
         cout<<"\n\n\t\tArchivo cerrado";}
 }
 
+void empresa::menuNomina()
+{
+fstream log;
+log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+log<<"entro al MENU NOMINA ";
+log.close();
+
+    int choice;
+	char x;
+	do
+    {
+	system("cls");
+
+	cout<<"\t\t\t-------------------------------"<<endl;
+	cout<<"\t\t\t |  SISTEMA DE NOMINA EMPLEADOS  |"<<endl;
+	cout<<"\t\t\t-------------------------------"<<endl;
+	cout<<"\t\t\t 1. Registrar"<<endl;
+	cout<<"\t\t\t 2. Mostrar"<<endl;
+	cout<<"\t\t\t 3. Modificar"<<endl;
+	cout<<"\t\t\t 4. Buscar"<<endl;
+	cout<<"\t\t\t 5. Eliminar"<<endl;
+	cout<<"\t\t\t 6. Exit"<<endl;
+
+	cout<<"\t\t\t-------------------------------"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
+	cout<<"\t\t\t-------------------------------"<<endl;
+	cout<<"Ingresa tu Opcion: ";
+    cin>>choice;
+
+    switch(choice)
+    {
+    case 1:
+    	do
+    	{
+    		insertNomina();
+    		cout<<"\n\t\t\t Agrega otro empleado a la nomina (Y,N): ";
+    		cin>>x;
+		}while(x=='y'||x=='Y');
+		break;
+	case 2:
+		displayNomina();
+		break;
+	case 3:
+		modifyNomina();
+		break;
+	case 4:
+		searchNomina();
+		break;
+	case 5:
+		deletNomina ();
+		break;
+	case 6:
+		exit(0);
+	default:
+		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
+	}
+	getch();
+    }while(choice!= 6);
+}
+void empresa::insertNomina()
+{
+fstream log;
+    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+    log<<"entro REGISTRAR EMPLEADOS EN NOMINA ";
+    log.close();
+
+	system("cls");
+	fstream file;
+	cout<<"\n Agregar detalles Empleados a Nomina "<<endl;
+	cout<<"\t\t\tIngresa Id de Empleado        : ";
+	cin>>numeroid;
+	cout<<"\t\t\tIngresa Nombre del Empleado     : ";
+	cin>>nombre;
+	cout<<"\t\t\tIngresa Telefono del Empleado   : ";
+	cin>>telefono;
+	cout<<"\t\t\tIngresa las Horas Trabajadas del Empleado ";
+	cin>>horatr;
+	cout<<"\t\t\tIngresa la Cantidad que Gana por Hora el Empleado  : ";
+	cin>>hora;
+	cout<<"\t\t\tIngresa la Cantidad de Horas Extras Trabajadas (si no tiene horas extras ingrese 0) : ";
+	cin>>horaextra;
+
+    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+    log<<"registro a: "<<numeroid<<", ";
+    log.close();
+	file.open("Empleados.dat", ios::app | ios::out | ios::binary);
+	file<<std::left<<std::setw(15)<< numeroid <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora << std::left<<std::setw(15)<< horaextra << "\n";
+	file.close();
+
+}
+void empresa::displayNomina()
+{
+fstream log;
+log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+log<<"entro MOSTRAR EMPLEADOS EN NOMINA ";
+log.close();
+
+	system("cls");
+	fstream file;
+	int total=0;
+	cout<<"\n-------------------------Tabla de Detalles de Empleados -------------------------"<<endl;
+	file.open("Empleados.dat",ios::in|ios::binary);
+	if(!file)
+	{
+		cout<<"\n\t\t\tNo hay información...";
+		file.close();
+	}
+	else
+	{
+		file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra;
+		while(!file.eof())
+		{
+			total++;
+			cout<<"\n\n\t\t\t Id Empleado: "<<numeroid<<endl;
+			cout<<"\t\t\t Nombre Empleado: "<<nombre<<endl;
+			cout<<"\t\t\t Telefono Empleado: "<<telefono<<endl;
+			cout<<"\t\t\t Horas Trabajadas del Empleado: "<<horatr<<endl;
+			cout<<"\t\t\t Cantidad que Gana por Hora: "<<hora<<endl;
+			cout<<"\t\t\t Horas extas trabajadas: "<<horaextra<<endl;
+			sueldo1 = horatr+horaextra;
+			sueldototal= sueldo1*hora;
+			bonificacion= sueldototal+250;
+			cout<<"\t\t\t Bonificacion Incentiva de Q250.00 "<<endl;
+			cout<<"\t\t\t Sueldo total a recibir "<< bonificacion<<endl;
+			file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra >> sueldototal >> bonificacion;
+		}
+		if(total==0)
+		{
+			cout<<"\n\t\t\tNo hay informacion...";
+		}
+	}
+	file.close();
+}
+void empresa::modifyNomina()
+{
+fstream log;
+log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+log<<"entro MODIFICAR EMPLEADOS EN NOMINA ";
+log.close();
+
+	system("cls");
+	fstream file,file1;
+	string participant_id;
+	int found=0;
+	cout<<"\n-------------------------Modificacion Detalles Empleado-------------------------"<<endl;
+	file.open("Empleados.dat",ios::in|ios::binary);
+	if(!file)
+	{
+		cout<<"\n\t\t\tNo hay informacion..,";
+		file.close();
+	}
+	else
+	{
+		cout<<"\n Ingrese Id del Empleado que quiere modificar: ";
+		cin>>participant_id;
+		file1.open("Record.dat",ios::app|ios::out|ios::binary);
+		file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra;
+		while(!file.eof())
+		{
+			if(participant_id!=numeroid)
+			{
+			 file1<<std::left<<std::setw(15)<< numeroid <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora << std::left<<std::setw(15)<< horaextra << "\n";
+			}
+			else
+			{
+				cout<<"\t\t\tIngresa Id Empleado        : ";
+	            cin>>numeroid;
+                cout<<"\t\t\tIngresa Nombre del Empleado     : ";
+	            cin>>nombre;
+	            cout<<"\t\t\tIngresa Telefono del Empleado   : ";
+	            cin>>telefono;
+	            cout<<"\t\t\tIngresa las Horas Trabajadas: ";
+	            cin>>horatr;
+	            cout<<"\t\t\tIngresa la Cantidad que Gana por Hora  : ";
+	            cin>>hora;
+	            cout<<"\t\t\tIngresa la Cantidad de Horas Extras Trabajadas (si no tiene horas extras ingrese 0) : ";
+                cin>>horaextra;
+                sueldo1 = horatr+horaextra;
+			    sueldototal= sueldo1*hora;
+			    bonificacion= sueldototal+250;
+			    cout<<"\t\t\t Bonificacion Incentiva de Q250.00 "<<endl;
+			    cout<<"\t\t\t Sueldo total a recibir "<< bonificacion<<endl;
+                log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+                log<<"registro a: "<<numeroid<<", ";
+                log.close();
+				file1<<std::left<<std::setw(15)<< numeroid <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora << std::left<<std::setw(15)<< horaextra << std::left<<std::setw(15)<< sueldototal << std::left<<std::setw(15)<< bonificacion <<"\n";
+				found++;
+			}
+			file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra >> sueldototal >> bonificacion;
+
+		}
+
+		file1.close();
+		file.close();
+		remove("Empleados.dat");
+		rename("Record.dat","Empleados.dat");
+	}
+}
+void empresa::searchNomina()
+{
+    fstream log;
+log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+log<<"entro BUSCAR EMPLEADOS EN NOMINA ";
+log.close();
+	system("cls");
+	fstream file;
+	int found=0;
+	file.open("Empleados.dat",ios::in|ios::binary);
+	if(!file)
+	{
+		cout<<"\n-------------------------Datos del Empleado buscada------------------------"<<endl;
+		cout<<"\n\t\t\tNo hay informacion...";
+	}
+	else
+	{
+		string participant_id;
+		cout<<"\n-------------------------Datos del Empleado buscada------------------------"<<endl;
+		cout<<"\nIngrese Id del Empleado que quiere buscar: ";
+		cin>>participant_id;
+		file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra;
+		while(!file.eof())
+		{
+			if(participant_id==numeroid)
+			{
+				cout<<"\n\n\t\t\t Id del Empleado: "<<numeroid<<endl;
+			    cout<<"\t\t\t Nombre del Empleado: "<<nombre<<endl;
+			    cout<<"\t\t\t Telefono del Empleado: "<<telefono<<endl;
+			    cout<<"\t\t\t Horas Trabajadas del Empleado: "<<horatr<<endl;
+			    cout<<"\t\t\t Cantidad que Gana por Hora: "<<hora<<endl;
+			    cout<<"\t\t\t Horas extas trabajadas: "<<horaextra<<endl;
+				found++;
+			}
+			file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra;
+		}
+		if(found==0)
+		{
+			cout<<"\n\t\t\t Empleado no encontrado...";
+		}
+		file.close();
+	}
+}
+void empresa::deletNomina()
+{
+    fstream log;
+log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+log<<"entro ELIMINAR EMPLEADOS EN NOMINA ";
+log.close();
+
+	system("cls");
+	fstream file,file1;
+	string participant_id;
+	int found=0;
+	cout<<"\n-------------------------Detalles de Empleado a Borrar-------------------------"<<endl;
+	file.open("Empleados.dat",ios::in|ios::binary);
+	if(!file)
+	{
+		cout<<"\n\t\t\tNo hay informacion...";
+		file.close();
+	}
+	else
+	{
+		cout<<"\n Ingrese el Id del Empleado que quiere borrar: ";
+		cin>>participant_id;
+		file1.open("Record.dat",ios::app|ios::out|ios::binary);
+		file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra;
+		while(!file.eof())
+		{
+			if(participant_id!=numeroid)
+			{
+				file1<<std::left<<std::setw(15)<< numeroid <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora <<std::left<<std::setw(15)<< horaextra << "\n";
+			}
+			else
+			{
+               log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+               log<<"registro a: "<<numeroid<<", ";
+               log.close();
+
+				found++;
+				cout << "\n\t\t\tBorrado de informacion exitoso";
+			}
+			file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra;
+		}
+		if(found==0)
+		{
+			cout<<"\n\t\t\t Id del Empleado no encontrado...";
+		}
+
+		file1.close();
+		file.close();
+		remove("Empleados.dat");
+		rename("Record.dad","Empleados.dad");
+	}
+
  int main(){
 
      //bitacora, log in, creado por Carlos Gonzalez
@@ -707,7 +1005,6 @@ void empresa::mostrarDatosDepto(){//funcion creada pro Carlos Gonzalez
     fstream config, log;
     int datos=0;
     config.open("seguridad.dat",ios::in|ios::binary);
-    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     if(!config){
         cout<<"\n\n\t\tError, no se encuentra un archivo escencial del programa...\a\n\n";
         exit(1);
@@ -786,7 +1083,6 @@ void empresa::mostrarDatosDepto(){//funcion creada pro Carlos Gonzalez
                 datos++;
                 config.close();
             }
-            log.close();
             config>>config0>>config1>>config2;
             config.close();
         }
