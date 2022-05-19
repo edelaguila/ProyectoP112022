@@ -8,7 +8,6 @@
 #include <stdio.h>
 #include <time.h>
 #include <conio.h>
-using namespace std;
 
 class empresa{
 public:
@@ -217,7 +216,7 @@ void empresa::modificarEmpleado(){//funcion creada pro Carlos Gonzalez
                 cout << "\t\tIngrese el puesto de la persona a registrar: "; cin>>puesto;
                 cout << "\t\tIngrese el sueldo de la persona a registrar: "; cin>>sueldo;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<"busco a: "<<busquedaDatos<<" y la modificacion es: "<<", ";
+                log<<"busco a: "<<busquedaDatos<<" y la modificacion es: "<<documentoIdentificacion<<", ";
                 log.close();
                 modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
             }
@@ -246,11 +245,11 @@ void empresa::modificarEmpleado(){//funcion creada pro Carlos Gonzalez
 }
 
 void empresa::eliminarEmpleado(){//funcion creada pro Carlos Gonzalez
-    system("cls");
+  system("cls");
 	fstream baseDatos,modBaseDatos,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"entro al menu eliminar empleado, ";
-    log.close();
+  log<<"entro al menu eliminar empleado, ";
+  log.close();
 	int found=0;
 	cout << "\n\t\t\tEntrando al menu --ELIMINAR EMPLEADOS--" << endl;
 	baseDatos.open("empleados.dat",ios::in|ios::binary);
@@ -274,8 +273,8 @@ void empresa::eliminarEmpleado(){//funcion creada pro Carlos Gonzalez
 			{
 				found++;
 				log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<"elimino a: "<<busquedaDatos<<", ";
-                log.close();
+        log<<"elimino a: "<<busquedaDatos<<", ";
+        log.close();
 				cout << "\n\t\t\tBorrado de informacion exitoso\a";
 			}
 			baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
@@ -708,6 +707,7 @@ void empresa::mostrarDatosDepto(){//funcion creada pro Carlos Gonzalez
     fstream config, log;
     int datos=0;
     config.open("seguridad.dat",ios::in|ios::binary);
+    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     if(!config){
         cout<<"\n\n\t\tError, no se encuentra un archivo escencial del programa...\a\n\n";
         exit(1);
@@ -786,6 +786,7 @@ void empresa::mostrarDatosDepto(){//funcion creada pro Carlos Gonzalez
                 datos++;
                 config.close();
             }
+            log.close();
             config>>config0>>config1>>config2;
             config.close();
         }
