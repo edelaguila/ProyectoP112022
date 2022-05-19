@@ -95,7 +95,7 @@ void Persona::establecerPrimerNombre( string primerNombreString )
    primerNombre[ longitud ] = '\0';
 
 }
-
+//Obtener el valor de puesto
 string Persona::obtenerPuesto() const
 {
    return puesto;
@@ -115,33 +115,33 @@ void Persona::establecerPuesto( string puestoString )
    puesto[ longitud ] = '\0';
 
 }
-
+// Obtener el valor sueldo
 int Persona::obtenerSueldo() const
 {
    return sueldo;
 
 }
 
-
+// Establecer el valor de sueldo
 void Persona::establecerSueldo( int valorSueldo )
 {
    sueldo = valorSueldo;
 
 }
 
-
+// Obtener el valor de cuenta
 int Persona::obtenerCuenta() const
 {
    return noCuenta;
 
 }
-
+// Establecer el valor de cuenta
 void Persona::establecerCuenta( int valorCuenta )
 {
    noCuenta = valorCuenta;
 
 }
-
+// Obtener el valor de email
 string Persona::obtenerEmail() const
 {
    return email;
@@ -161,27 +161,27 @@ void Persona::establecerEmail( string emailString )
    email[ longitud ] = '\0';
 
 }
-
+// Obtener el valor de horas
 int Persona::obtenerHoras() const
 {
    return hExtra;
 
 }
 
-
+// Establecer el valor de horas
 void Persona::establecerHoras( int valorHoras )
 {
    hExtra = valorHoras;
 
 }
-
+// Obtener el valor de dias
 int Persona::obtenerDias() const
 {
    return dias;
 
 }
 
-
+// Establecer el valor de dias
 void Persona::establecerDias( int valorDias)
 {
    dias = valorDias;
