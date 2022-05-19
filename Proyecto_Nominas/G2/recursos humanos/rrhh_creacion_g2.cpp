@@ -10,39 +10,29 @@
 #include <string>
 #include <stdio.h>
 #include <time.h>
-#include<conio.h>
 #include<math.h>
-
-using namespace std;
+#include <conio.h>
 
 class empresa{
 public:
-    void mostrarLog();
-    void menuPrincipal();
-    void menuMantenimiento();
-    void menuEmpleados();
-    void registrarEmpleado();
-    void modificarEmpleado();
-    void eliminarEmpleado();
-    void mostrarDatosEmpleados();
-    void menuDepartamentos();
-    void registrarDepto();
-    void modificarDepto();
-    void eliminarDepto();
-    void mostrarDatosDepto();
-    void menuNomina();
-    void insertNomina();
-    void displayNomina();
-    void modifyNomina();
-    void searchNomina();
-    void deletNomina();
+    void mostrarLog();//funcion creada por Carlos Gonzalez
+    void menuPrincipal();//funcion creada pro Carlos Gonzalez
+    void menuMantenimiento();//funcion creada pro Carlos Gonzalez
+    void menuEmpleados();//funcion creada pro Carlos Gonzalez
+    void registrarEmpleado();//funcion creada pro Carlos Gonzalez
+    void modificarEmpleado();//funcion creada pro Carlos Gonzalez
+    void eliminarEmpleado();//funcion creada pro Carlos Gonzalez
+    void mostrarDatosEmpleados();//funcion creada pro Carlos Gonzalez
+    void menuDepartamentos();//funcion creada pro Carlos Gonzalez
+    void registrarDepto();//funcion creada pro Carlos Gonzalez
+    void modificarDepto();//funcion creada pro Carlos Gonzalez
+    void eliminarDepto();//funcion creada pro Carlos Gonzalez
+    void mostrarDatosDepto();//funcion creada pro Carlos Gonzalez
 private:
     string documentoIdentificacion, nombre, direccion, edad, correo, telefono, estudios, puesto, sueldo, desicion, busquedaDatos, numDepto, nombreDepto, telefonoDepto, direccionDepto;
-    string numeroid,choice;
-    int sueldo1,sueldototal,bonificacion,hora,horaextra,totalhoras,horatr;
 };
 
-const std::string currentDateTime() {
+const std::string currentDateTime() {//funcion creada pro Carlos Gonzalez
     time_t now = time(0);
     struct tm tstruct;
     char buf[80];
@@ -51,7 +41,7 @@ const std::string currentDateTime() {
     return buf;
 };
 
-void empresa::mostrarLog(){
+void empresa::mostrarLog(){//funcion creada pro Carlos Gonzalez
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     log<<"entro a mostrar bitacora, ";
@@ -69,7 +59,7 @@ void empresa::mostrarLog(){
     cout << "\n\t\t";system("pause");
 }
 
-void empresa::menuPrincipal(){
+void empresa::menuPrincipal(){//funcion creada pro Carlos Gonzalez
     system ("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -108,11 +98,11 @@ void empresa::menuPrincipal(){
     }
 }
 
-void empresa::menuMantenimiento(){
+void empresa::menuMantenimiento(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu mantenimiento, ";
+    log<<"entro al menu mantenimiento, ";
     log.close();
     int menu;
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO--" << endl;
@@ -132,11 +122,11 @@ void empresa::menuMantenimiento(){
     }
 }
 
-void empresa::menuEmpleados(){
+void empresa::menuEmpleados(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu empleados, ";
+    log<<"entro al menu empleados, ";
     log.close();
     int menu;
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO EMPLEADO--" << endl;
@@ -162,11 +152,11 @@ void empresa::menuEmpleados(){
     }
 }
 
-void empresa::registrarEmpleado(){
+void empresa::registrarEmpleado(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu registrar empleado, ";
+    log<<"entro al menu registrar empleado, ";
     log.close();
     cout << "\n\t\t\tEntrando al menu --REGISTRAR EMPLEADOS--\n" << endl;
     cout << "\n\t¿Quires salir al --MENU EMPLEADO--? [ si / no ] : "; cin >> desicion;
@@ -196,12 +186,12 @@ void empresa::registrarEmpleado(){
     return menuEmpleados();
 }
 
-void empresa::modificarEmpleado(){
+void empresa::modificarEmpleado(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream baseDatos, modBaseDatos, log;
     cout << "\n\t\t\tEntrando al menu --MODIFICAR EMPLEADOS--" << endl;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu modificar empleados, ";
+    log<<"entro al menu modificar empleados, ";
     log.close();
     baseDatos.open("empleados.dat",ios::in|ios::binary);
     if(!baseDatos){
@@ -230,7 +220,7 @@ void empresa::modificarEmpleado(){
                 cout << "\t\tIngrese el puesto de la persona a registrar: "; cin>>puesto;
                 cout << "\t\tIngrese el sueldo de la persona a registrar: "; cin>>sueldo;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<< "modifico a: "<<documentoIdentificacion<<", ";
+                log<<"busco a: "<<busquedaDatos<<" y la modificacion es: "<<documentoIdentificacion<<", ";
                 log.close();
                 modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
             }
@@ -258,12 +248,12 @@ void empresa::modificarEmpleado(){
     return menuEmpleados();
 }
 
-void empresa::eliminarEmpleado(){
-    system("cls");
+void empresa::eliminarEmpleado(){//funcion creada pro Carlos Gonzalez
+  system("cls");
 	fstream baseDatos,modBaseDatos,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"entro al menu eliminar empleado, ";
-    log.close();
+  log<<"entro al menu eliminar empleado, ";
+  log.close();
 	int found=0;
 	cout << "\n\t\t\tEntrando al menu --ELIMINAR EMPLEADOS--" << endl;
 	baseDatos.open("empleados.dat",ios::in|ios::binary);
@@ -287,8 +277,8 @@ void empresa::eliminarEmpleado(){
 			{
 				found++;
 				log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<< "elimino a: "<<documentoIdentificacion<<", ";
-                log.close();
+        log<<"elimino a: "<<busquedaDatos<<", ";
+        log.close();
 				cout << "\n\t\t\tBorrado de informacion exitoso\a";
 			}
 			baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
@@ -319,7 +309,7 @@ void empresa::eliminarEmpleado(){
     return menuEmpleados();
 }
 
-void empresa::mostrarDatosEmpleados(){
+void empresa::mostrarDatosEmpleados(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -407,9 +397,15 @@ void empresa::mostrarDatosEmpleados(){
                 cout<<"\n\t\tPuesto o cargo: "<< puesto;
                 cout<<"\n\t\tSueldo: "<< sueldo;
                 baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
+                //if (baseDatos.is_open()){
+                  //  baseDatos.close();
+                    //cout<<"\n\n\t\tArchivo cerrado";}
             }
             if(total==0){
                 cout<<"\n\t\t\tEl archivo se encuentra vacio...";
+                //if (baseDatos.is_open()){
+                  //  baseDatos.close();
+                    //cout<<"\n\n\t\tArchivo cerrado";}
             }
             if (baseDatos.is_open()){
                 baseDatos.close();
@@ -427,12 +423,12 @@ void empresa::mostrarDatosEmpleados(){
         cout<<"\n\n\t\tArchivo cerrado";}
 }
 
-void empresa::menuDepartamentos(){
+void empresa::menuDepartamentos(){//funcion creada pro Carlos Gonzalez
     system("cls");
     int menu;
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu departamentos, ";
+    log<<"entro al menu departamentos, ";
     log.close();
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO DEPPARTAMENTOS--" << endl;
     cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar Departamento\n" << "\t\t[2] Modificar Departamento\n" << "\t\t[3] Eliminar Departamento\n" << "\t\t[4] Mostrar Datos Departamentos\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
@@ -456,7 +452,8 @@ void empresa::menuDepartamentos(){
         break;
     }
 }
-void empresa::registrarDepto(){
+
+void empresa::registrarDepto(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream baseDatos, log;
     cout << "\n\t\t\tEntrando al menu --REGISTRAR DEPARTAMENTOS--\n" << endl;
@@ -482,7 +479,7 @@ void empresa::registrarDepto(){
     return menuDepartamentos();
 }
 
-void empresa::modificarDepto(){
+void empresa::modificarDepto(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream baseDatos, modBaseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -511,7 +508,7 @@ void empresa::modificarDepto(){
                 cout << "\t\tIngrese el numero telefonico del Departamento a registrar: "; cin >> telefonoDepto;
                 cout << "\t\tIngrese la direccion del Departamento a registrar: "; cin >> direccionDepto;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<"modifico el Depto: "<<numDepto<<", ";
+                log<<"modifico el Depto: "<<busquedaDatos<<", ahora es: "<<numDepto<<", ";
                 log.close();
                 modBaseDatos <<std::left<<std::setw(15)<< numDepto <<std::left<<std::setw(15)<< nombreDepto <<std::left<<std::setw(15)<< telefonoDepto <<std::left<<std::setw(15)<< direccionDepto <<"\n";
             }
@@ -539,7 +536,7 @@ void empresa::modificarDepto(){
     return menuDepartamentos();
 }
 
-void empresa::eliminarDepto(){
+void empresa::eliminarDepto(){//funcion creada pro Carlos Gonzalez
     system("cls");
 	fstream file,file1,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -600,7 +597,7 @@ void empresa::eliminarDepto(){
     return menuDepartamentos();
 }
 
-void empresa::mostrarDatosDepto(){
+void empresa::mostrarDatosDepto(){//funcion creada pro Carlos Gonzalez
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -703,8 +700,6 @@ void empresa::mostrarDatosDepto(){
         baseDatos.close();
         cout<<"\n\n\t\tArchivo cerrado";}
 }
-
-
 
 void empresa::menuNomina()
 {
@@ -998,7 +993,6 @@ log.close();
 		remove("Empleados.dat");
 		rename("Record.dad","Empleados.dad");
 	}
-}
 
  int main(){
 
