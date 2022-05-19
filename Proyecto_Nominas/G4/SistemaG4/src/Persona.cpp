@@ -583,6 +583,7 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
       cin >> setw(15)>> dias;
       cout << "Escriba las Comsiones ganadas" <<endl;
       cin>> setw(6)>>Comisiones;
+      // Calculos
       Bincentivo = 250;
       Vhoras= 25;
       switch(RAlimenticio){
@@ -848,6 +849,7 @@ int Persona::obtenerId( const char * const indicador )
    return numeroId;
 
 }
+// Crear el archivo empleados
 void Persona::crearArchivoEmpleados()
 {
     ofstream empleadosSalida( "empleados.dat", ios::out | ios::binary );
