@@ -1368,7 +1368,8 @@ void empresa::mostrarDatosImpuestos(){//funcion creada por William Mayen
             agregar(es);
             break;
         case 5:
-            exit(0);
+            menuPrincipal();
+            break;
     }
  }
 
