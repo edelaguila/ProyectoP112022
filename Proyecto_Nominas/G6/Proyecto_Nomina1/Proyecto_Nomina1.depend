@@ -1,0 +1,826 @@
+# depslib dependency file v1.0
+1652842498 source:c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\src\ingreso.cpp
+	"ingreso.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1652842498 c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\include\ingreso.h
+
+1652847855 source:c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\src\menus.cpp
+	"menus.h"
+	"conceptos.h"
+	"impuestos.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652844211 c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\include\menus.h
+
+1652844087 source:c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\main.cpp
+	<iostream>
+	<conio.h>
+	"ingreso.h"
+	"menus.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652845042 source:c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\src\conceptos.cpp
+	"conceptos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652844901 c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\include\conceptos.h
+
+1652846408 source:c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\src\impuestos.cpp
+	<iostream>
+	<cstring>
+	"impuestos.h"
+
+1652847445 c:\users\vjere\proyectos\pruebaspf\proyecto_nomina1\include\impuestos.h
+	<iostream>
+
+1652848803 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\main.cpp
+	<iostream>
+	<conio.h>
+	"ingreso.h"
+	"menus.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652848803 c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\include\ingreso.h
+
+1652848803 c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\include\menus.h
+
+1652848803 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\conceptos.cpp
+	"conceptos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652848803 c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\include\conceptos.h
+
+1652848803 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\impuestos.cpp
+	<iostream>
+	<cstring>
+	"impuestos.h"
+
+1652848803 c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\include\impuestos.h
+	<iostream>
+
+1652848803 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\ingreso.cpp
+	"ingreso.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1652904479 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\menus.cpp
+	"menus.h"
+	"conceptos.h"
+	"impuestos.h"
+	"informe.h"
+	"empleados.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652904479 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\informe.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"informe.h"
+	"menus.h"
+
+1652849324 c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\include\informe.h
+
+1652904479 source:c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\src\empleados.cpp
+	<iostream>
+	"empleados.h"
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652902379 c:\users\bryan\clonacion\prub\prueba\prueba\proyecto_nomina1\include\empleados.h
+	<iostream>
+
+1652906115 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\main.cpp
+	<iostream>
+	<conio.h>
+	"ingreso.h"
+	"menus.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652906115 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\ingreso.h
+
+1652906115 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\menus.h
+
+1652906115 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\conceptos.cpp
+	"conceptos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652906115 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\conceptos.h
+
+1652906115 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\empleados.cpp
+	<iostream>
+	"empleados.h"
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menus.h"
+
+1652906115 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\empleados.h
+	<iostream>
+
+1652906115 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\impuestos.cpp
+	<iostream>
+	<cstring>
+	"impuestos.h"
+
+1652906115 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\impuestos.h
+	<iostream>
+
+1652906115 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\informe.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"informe.h"
+	"menus.h"
+
+1652906115 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\informe.h
+
+1652906115 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\ingreso.cpp
+	"ingreso.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1652915346 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\menus.cpp
+	"menus.h"
+	"conceptos.h"
+	"impuestos.h"
+	"informe.h"
+	"empleados.h"
+	"Banco.h"
+	"Empresas.h"
+	"Poliza.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652910158 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\empresas.cpp
+	"Empresas.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652909938 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\empresas.h
+
+1652908864 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\banco.h
+
+1652909254 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\banco.cpp
+	"Banco.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652915279 c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\include\poliza.h
+
+1652915448 source:c:\users\saul_\proyectos\proyecto\proyectoe6\colaborador\proyectofp1e6\proyecto_nomina1\src\poliza.cpp
+	"Poliza.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menus.h"
+
+1652917412 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\main.cpp
+	<iostream>
+	<conio.h>
+	"ingreso.h"
+	"menus.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\ingreso.h
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\menus.h
+
+1652921666 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\banco.cpp
+	"Banco.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\banco.h
+
+1652917412 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\conceptos.cpp
+	"conceptos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\conceptos.h
+
+1652921526 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\empleados.cpp
+	<iostream>
+	"empleados.h"
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menus.h"
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\empleados.h
+	<iostream>
+
+1652921666 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\empresas.cpp
+	"Empresas.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\empresas.h
+
+1652917412 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\impuestos.cpp
+	<iostream>
+	<cstring>
+	"impuestos.h"
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\impuestos.h
+	<iostream>
+
+1652917412 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\informe.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"informe.h"
+	"menus.h"
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\informe.h
+
+1652917412 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\ingreso.cpp
+	"ingreso.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1652921788 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\menus.cpp
+	"menus.h"
+	"conceptos.h"
+	"impuestos.h"
+	"informe.h"
+	"empleados.h"
+	"Banco.h"
+	"Empresas.h"
+	"Poliza.h"
+	"bitacora.h"
+	"transferencia.h"
+	"departamentos.h"
+	"puestos.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652917412 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\poliza.h
+
+1652917412 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\poliza.cpp
+	"Poliza.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menus.h"
+
+1652918620 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\bitacora.h
+
+1652918972 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\bitacora.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"bitacora.h"
+	"menus.h"
+
+1652919633 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\transferencia.cpp
+	"transferencia.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652919633 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\transferencia.h
+
+1652920114 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\departamentos.cpp
+	"departamentos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652920114 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\departamentos.h
+
+1652920871 c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\include\puestos.h
+	<iostream>
+
+1652921587 source:c:\users\vjere\proyectos\proyectofinale6\proyecto-progra\proyecto_nomina1\src\puestos.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"puestos.h"
+	"menus.h"
+
+1652917412 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\main.cpp
+	<iostream>
+	<conio.h>
+	"ingreso.h"
+	"menus.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\ingreso.h
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\menus.h
+
+1652921666 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\banco.cpp
+	"Banco.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\banco.h
+
+1652918972 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\bitacora.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"bitacora.h"
+	"menus.h"
+
+1652918620 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\bitacora.h
+
+1652917412 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\conceptos.cpp
+	"conceptos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\conceptos.h
+
+1652920114 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\departamentos.cpp
+	"departamentos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652920114 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\departamentos.h
+
+1652921526 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\empleados.cpp
+	<iostream>
+	"empleados.h"
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menus.h"
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\empleados.h
+	<iostream>
+
+1652921666 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\empresas.cpp
+	"Empresas.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\empresas.h
+
+1652917412 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\impuestos.cpp
+	<iostream>
+	<cstring>
+	"impuestos.h"
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\impuestos.h
+	<iostream>
+
+1652917412 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\informe.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"informe.h"
+	"menus.h"
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\informe.h
+
+1652917412 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\ingreso.cpp
+	"ingreso.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1652921788 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\menus.cpp
+	"menus.h"
+	"conceptos.h"
+	"impuestos.h"
+	"informe.h"
+	"empleados.h"
+	"Banco.h"
+	"Empresas.h"
+	"Poliza.h"
+	"bitacora.h"
+	"transferencia.h"
+	"departamentos.h"
+	"puestos.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652917412 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\poliza.h
+
+1652919633 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\transferencia.h
+
+1652920871 c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\include\puestos.h
+	<iostream>
+
+1652917412 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\poliza.cpp
+	"Poliza.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menus.h"
+
+1652921587 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\puestos.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"puestos.h"
+	"menus.h"
+
+1652919633 source:c:\users\vjere\proyectos\prograproyectofinale6\proyecto_nomina1\src\transferencia.cpp
+	"transferencia.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652975575 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\main.cpp
+	<iostream>
+	<conio.h>
+	"ingreso.h"
+	"menus.h"
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\ingreso.h
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\menus.h
+
+1652921666 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\banco.cpp
+	"Banco.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\banco.h
+
+1652918972 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\bitacora.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"bitacora.h"
+	"menus.h"
+
+1652918620 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\bitacora.h
+
+1652917412 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\conceptos.cpp
+	"conceptos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\conceptos.h
+
+1652920114 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\departamentos.cpp
+	"departamentos.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652920114 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\departamentos.h
+
+1652921526 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\empleados.cpp
+	<iostream>
+	"empleados.h"
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menus.h"
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\empleados.h
+	<iostream>
+
+1652921666 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\empresas.cpp
+	"Empresas.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\empresas.h
+
+1652917412 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\impuestos.cpp
+	<iostream>
+	<cstring>
+	"impuestos.h"
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\impuestos.h
+	<iostream>
+
+1652917412 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\informe.cpp
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"informe.h"
+	"menus.h"
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\informe.h
+
+1652917412 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\ingreso.cpp
+	"ingreso.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
+1652935504 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\menus.cpp
+	"menus.h"
+	"conceptos.h"
+	"impuestos.h"
+	"informe.h"
+	"empleados.h"
+	"Banco.h"
+	"Empresas.h"
+	"Poliza.h"
+	"bitacora.h"
+	"transferencia.h"
+	"departamentos.h"
+	"puestos.h"
+	"generacionnomina.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652917412 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\poliza.h
+
+1652919633 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\transferencia.h
+
+1652920871 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\puestos.h
+	<iostream>
+
+1652917412 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\poliza.cpp
+	"Poliza.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"menus.h"
+
+1652921587 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\puestos.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"puestos.h"
+	"menus.h"
+
+1652919633 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\transferencia.cpp
+	"transferencia.h"
+	"menus.h"
+	<iostream>
+	<istream>
+	<fstream>
+	<stdlib.h>
+	<string.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652935421 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\generacionnomina.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"generacionnomina.h"
+	"menus.h"
+
+1652935261 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\generacionnomina.h
+	<iostream>
+
