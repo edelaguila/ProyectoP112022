@@ -29,12 +29,12 @@ void Puesto::menu()
 	cout<<"\t\t\t................................"<<endl;
 	cout<<"\t\t\t .  SISTEMA GESTION PUESTOS Y DEPARTAMENTOS   ."<<endl;
 	cout<<"\t\t\t................................"<<endl;
-	cout<<"\t\t\t 1. Ingreso Puesto"<<endl;
-	cout<<"\t\t\t 2. Actualizar Puesto"<<endl;
-	cout<<"\t\t\t 3. Consultar Puestos"<<endl;
-	cout<<"\t\t\t 4. Imprimir Puesto"<<endl;
-	cout<<"\t\t\t 5. Borra Puesto"<<endl;
-	cout<<"\t\t\t 6. Consulta Departamentos"<<endl;
+	cout<<"\t\t\t 1. Ingreso Departamento"<<endl;
+	cout<<"\t\t\t 2. Actualizar Departamento"<<endl;
+	cout<<"\t\t\t 3. Consultar Departamentos"<<endl;
+	cout<<"\t\t\t 4. Imprimir Departamentos"<<endl;
+	cout<<"\t\t\t 5. Borra Departamento"<<endl;
+	cout<<"\t\t\t 6. Consulta Puestos"<<endl;
 	cout<<"\t\t\t 7. Regresar"<<endl;
 
 	cout<<"\t\t\t"<<endl;

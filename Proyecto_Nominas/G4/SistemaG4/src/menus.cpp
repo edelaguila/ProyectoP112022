@@ -59,7 +59,7 @@ int choice;
 	cout<<"\t\t\t 1. Consultas"<<endl;
 	cout<<"\t\t\t 2. Contabilidad"<<endl;
 	cout<<"\t\t\t 3. Gestion Empleados"<<endl;
-	cout<<"\t\t\t 4. Gestion Puestos"<<endl;
+	cout<<"\t\t\t 4. Gestion Departamentos"<<endl;
 	cout<<"\t\t\t 5. Seguridad"<<endl;
 	cout<<"\t\t\t 6. Salir"<<endl;
 

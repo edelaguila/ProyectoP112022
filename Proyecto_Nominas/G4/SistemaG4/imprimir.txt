@@ -1,5 +1,0 @@
-ID  Apellido    Primer nombre Sueldo(Q)   No. Cuenta      Email                      Puesto      Horas Extra Dias Laburados del Mes  
-1   Pineda      Nelson        10000       513             Nelson203                  Gerente     30          30
-2   Diaz        Carlos        10000       513             Dizas                      Gerente     30          30
-3   Rodaz       Carla         2300        123             Carla123                   Vendedora   21          30
-4   Veliz       Majo          2300        231             Majo403                    Vendedora   21          30
