@@ -83,9 +83,8 @@ bool Usuarios::loginUsuarios(){
         control.nuevaActividadTxt(31);
         control.nuevaActividad(31);
         cout<<"\nLo siento, no puede ingresar al sistema, sus contrasenas son invalidas o agoto intentos"<<endl;
-        cout<<"** REGRESE PRONTO **";
-        exit(0);}
-     else {
+        cin.get();
+    } else {
         control.nuevaActividadTxt(32);
         control.nuevaActividad(32);
         cout<<"\n*** Bienvenido al Sistema ***"<<endl;
