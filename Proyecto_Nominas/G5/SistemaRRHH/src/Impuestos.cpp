@@ -1,6 +1,9 @@
 #include "Impuestos.h"
 #include <iostream>
 #include "datosimpuestos.h"
+#include <ctime>
+#include <vector>
+
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -76,11 +79,46 @@ Impuestos::Impuestos()
    } //FIN WHILE
 }
 int opcionImp(){
-    //system("cls");
+    system("cls");
+
+    time_t now = time(0);
+        tm * time = localtime(&now);
+
+vector<string> dia_semana;
+dia_semana.push_back("Domingo");
+dia_semana.push_back("Lunes");
+dia_semana.push_back("Martes");
+dia_semana.push_back("Miercoles");
+dia_semana.push_back("Jueves");
+dia_semana.push_back("Viernes");
+dia_semana.push_back("Sabado");
+
+vector<string> mes;
+mes.push_back("Enero");
+mes.push_back("Febrero");
+mes.push_back("Marzo");
+mes.push_back("Abril");
+mes.push_back("Mayo");
+mes.push_back("Junio");
+mes.push_back("Julio");
+mes.push_back("Agosto");
+mes.push_back("Septiembre");
+mes.push_back("Octubre");
+mes.push_back("Noviembre");
+mes.push_back("Diciembre");
+
+int year = 1900 + time->tm_year;
+
+//Formato=hoy miercoles, 27 de mayo del 2015
+cout<< "\n";
+cout << "Hoy " << dia_semana[time->tm_wday] << ", ";
+cout << time->tm_mday << " de " << mes[time->tm_mon] << " del " << year << endl;
+cout << time->tm_hour << ":" << time->tm_min << ":" << time->tm_sec << endl;
+
     cout<<"\n\t\t\t---------------------------------"<<endl;
-    cout<<"\t\t\t\t------------------"<<endl;
-	cout<<"\t\t\t\t|  IMPUESTOS  |"<<endl;
-	cout<<"\t\t\t\t------------------"<<endl;
+    cout<<"\t\t\t\t-----------------"<<endl;
+	cout<<"\t\t\t\t |  IMPUESTOS  |"<<endl;
+	cout<<"\t\t\t\t-----------------"<<endl;
 
 
     cout<< "\n\n\t\t\t 1. Guardar archivo de texto para Imprimirlo" << endl
@@ -118,7 +156,8 @@ void imprimirRegistroImp( fstream &leerDeArchivo )
         mostrarLineaImp( archivoImprimirSalida, impuestos );
         leerDeArchivo.read( reinterpret_cast< char * >( &impuestos ), sizeof( datosimpuestos ) );
     } //FIN DE WHILE
-
+cout<<"\n";
+ system("pause");
 } //FIN DE LA FUNCION -IMPRIMIR REGISTRO-
 void mostrarLineaImp( ostream &salida, const datosimpuestos &registro )
 {
@@ -138,6 +177,8 @@ void crearArchivoCreditoImp()
     datosimpuestos impuestoEnBlanco;
     for ( int i = 0; i < 100; i++ )
         creditoSalida.write(reinterpret_cast< const char * >( &impuestoEnBlanco ), sizeof( datosimpuestos ) );
+cout<<"\n";
+ system("pause");
 }
 void nuevoRegistroImp( fstream &insertarEnArchivo )
 {
@@ -166,7 +207,8 @@ void nuevoRegistroImp( fstream &insertarEnArchivo )
     } //FIN IF
     else
         cerr << "El impuesto con codigo #" << codigo << " ya contiene informacion.\n" << endl;
-
+cout<<"\n";
+ system("pause");
 } //FIN REGISTRO
 int obtenernCodigoImp( const char * const indicador )
 {
@@ -231,7 +273,8 @@ void modificarRegistroImp( fstream &actualizarArchivo )
             actualizarArchivo.write(reinterpret_cast< const char * >( &impuestos ), sizeof( datosimpuestos ) );
         }
     }
-
+cout<<"\n";
+ system("pause");
 } //FIN DE -ACTUALIZAR REGISTRO-
 void eliminarRegistroImp( fstream &eliminarDeArchivo )
 {
@@ -252,7 +295,8 @@ void eliminarRegistroImp( fstream &eliminarDeArchivo )
    //ERROR SI NO EXISTE
    else
       cerr << "La cuenta #" << codigo << " esta vacia.\n";
-
+cout<<"\n";
+ system("pause");
 } //FIN -ELIMINARREGISTRO-
 void consultarRegistroImp( fstream &leerDeArchivo )
 {
@@ -266,7 +310,8 @@ void consultarRegistroImp( fstream &leerDeArchivo )
             leerDeArchivo.read( reinterpret_cast< char * >( &impuestos ), sizeof( datosimpuestos ) );
 
    } //FIN WHILE
-
+cout<<"\n";
+ system("pause");
 } //FIN CONSULTAR REGISTRO
 void mostrarLineaPantallaImp( const datosimpuestos &registro)
 {
@@ -279,3 +324,4 @@ Impuestos::~Impuestos()
 {
     //dtor
 }
+

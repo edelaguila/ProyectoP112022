@@ -1,6 +1,9 @@
 #include "Departamento.h"
 #include "DatosDepartamento.h"
 #include <iostream>
+#include <ctime>
+#include <vector>
+
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -73,12 +76,46 @@ Departamento::Departamento()
 
 }
 int opcionDepa(){
-    //system("cls");
+    system("cls");
 
-    cout<<"\n\t\t\t---------------------------------"<<endl;
-    cout<<"\t\t\t\t------------------"<<endl;
-	cout<<"\t\t\t\t|  DEPARTAMENTOS  |"<<endl;
-	cout<<"\t\t\t\t------------------"<<endl;
+    time_t now = time(0);
+        tm * time = localtime(&now);
+
+vector<string> dia_semana;
+dia_semana.push_back("Domingo");
+dia_semana.push_back("Lunes");
+dia_semana.push_back("Martes");
+dia_semana.push_back("Miercoles");
+dia_semana.push_back("Jueves");
+dia_semana.push_back("Viernes");
+dia_semana.push_back("Sabado");
+
+vector<string> mes;
+mes.push_back("Enero");
+mes.push_back("Febrero");
+mes.push_back("Marzo");
+mes.push_back("Abril");
+mes.push_back("Mayo");
+mes.push_back("Junio");
+mes.push_back("Julio");
+mes.push_back("Agosto");
+mes.push_back("Septiembre");
+mes.push_back("Octubre");
+mes.push_back("Noviembre");
+mes.push_back("Diciembre");
+
+int year = 1900 + time->tm_year;
+
+//Formato=hoy miercoles, 27 de mayo del 2015
+cout<< "\n";
+cout << "Hoy " << dia_semana[time->tm_wday] << ", ";
+cout << time->tm_mday << " de " << mes[time->tm_mon] << " del " << year << endl;
+cout << time->tm_hour << ":" << time->tm_min << ":" << time->tm_sec << endl;
+
+    cout<<"\n\t\t\t----------------------------------"<<endl;
+    cout<<"\t\t\t\t-------------------"<<endl;
+	cout<<"\t\t\t\t | DEPARTAMENTOS |"<<endl;
+	cout<<"\t\t\t\t-------------------"<<endl;
 
 
     cout<< "\n\t\t\t 1. Guardar archivo de texto para Imprimirlo" << endl
@@ -87,7 +124,7 @@ int opcionDepa(){
         << "\t\t\t 4. Eliminar Departamento" << endl
         << "\t\t\t 5. Mostrar Lista Departamento" << endl
         << "\t\t\t 6. Regresar al Menu Principal" << endl
-        << "\n\t\t\t---------------------------------"<<endl
+        << "\n\t\t\t----------------------------------"<<endl
         << "\n\t\t\tIngrese su opcion: ";
 
     int opciionMenu;
@@ -105,7 +142,7 @@ void imprimirRegistroDepa( fstream &leerDeArchivo )
 
     } //FIN DE INSTRUCCION if
 
-    archivoImprimirSalida << left << setw( 10 ) << "Codigo" << setw( 16 )<< "NombreDepartamento" << right << setw( 10 ) << "Area" << endl;
+    archivoImprimirSalida << left << setw( 10 ) << "Codigo" << setw( 16 )<< "NombreDepartamento" << right << setw( 20 ) << "Area" << endl;
     leerDeArchivo.seekg( 0 );
 
     DatosDepartamento departamentos;
@@ -116,13 +153,15 @@ void imprimirRegistroDepa( fstream &leerDeArchivo )
         mostrarLineaDepa( archivoImprimirSalida, departamentos );
         leerDeArchivo.read( reinterpret_cast< char * >( &departamentos ), sizeof( DatosDepartamento ) );
     } //FIN DE WHILE
-
+         cout<<"\n";
+ system("pause");
 } //FIN DE LA FUNCION -IMPRIMIR REGISTRO-
 void mostrarLineaDepa( ostream &salida, const DatosDepartamento &registro )
 {
    salida << left << setw( 10 ) << registro.obtenerCodigo()
           << setw( 16 ) << registro.obtenerApellido().data()
-          << setw( 14 ) << registro.obtenerNombre().data() << endl;
+          //Nombre es area
+          << setw( 20 ) << registro.obtenerNombre().data() << endl;
 
 
 }//FIN -MOSTRARLINEA-
@@ -136,6 +175,8 @@ void crearArchivoCreditoDepa()
     DatosDepartamento empleadoEnBlanco;
     for ( int i = 0; i < 100; i++ )
         creditoSalida.write(reinterpret_cast< const char * >( &empleadoEnBlanco ), sizeof( DatosDepartamento ) );
+          cout<<"\n";
+ system("pause");
 }
 void nuevoRegistroDepa( fstream &insertarEnArchivo )
 {
@@ -146,12 +187,12 @@ void nuevoRegistroDepa( fstream &insertarEnArchivo )
 
     if ( departamentos.obtenerCodigo() == 0 ) {
         char apellido[ 15 ];
-        char nombre[ 10 ];
+        char nombre[ 20 ];
 
-        cout<<"Escriba el Nombre del departamento: ";
+        cout<<"Escriba el Nombre del Departamento: ";
         cin>> setw( 15 ) >> apellido;
-        cout<<"Escriba el Nombre el area: ";
-        cin>> setw( 10 ) >> nombre;
+        cout<<"Escriba el Nombre el Area: ";
+        cin>> setw( 20 ) >> nombre;
 
         departamentos.establecerApellido( apellido );
         departamentos.establecerNombre( nombre );
@@ -165,6 +206,8 @@ void nuevoRegistroDepa( fstream &insertarEnArchivo )
     else
         cerr << "El Departamento con codigo #" << codigo << " ya contiene informacion.\n" << endl;
 
+cout<<"\n";
+ system("pause");
 } //FIN REGISTRO
 int obtenernCodigoDepa( const char * const indicador )
 {
@@ -229,7 +272,8 @@ void modificarRegistroDepa( fstream &actualizarArchivo )
                 actualizarArchivo.write(reinterpret_cast< const char * >( &departamentos ), sizeof( DatosDepartamento ) );
         }
     }
-
+  cout<<"\n";
+ system("pause");
 } //FIN DE -ACTUALIZAR REGISTRO-
 void eliminarRegistroDepa( fstream &eliminarDeArchivo )
 {
@@ -251,10 +295,12 @@ void eliminarRegistroDepa( fstream &eliminarDeArchivo )
    else
       cerr << "La cuenta #" << codigo << " esta vacia.\n";
 
+        cout<<"\n";
+ system("pause");
 } //FIN -ELIMINARREGISTRO-
 void consultarRegistroDepa( fstream &leerDeArchivo )
 {
-    cout << left << setw( 10 ) << "\nCodigo" << setw( 16 ) << "Nombre Depa" << right << setw( 10 ) << " Area" << endl;
+    cout << left << setw( 10 ) << "\nCodigo" << setw( 12 ) << "Nombre Depa" << right << setw( 8 ) << " Area" << endl;
     leerDeArchivo.seekg( 0 );
     DatosDepartamento departamentos;
     leerDeArchivo.read( reinterpret_cast< char * >( &departamentos ), sizeof( DatosDepartamento ) );
@@ -264,13 +310,14 @@ void consultarRegistroDepa( fstream &leerDeArchivo )
             leerDeArchivo.read( reinterpret_cast< char * >( &departamentos ), sizeof( DatosDepartamento ) );
 
    } //FIN WHILE
-
+  cout<<"\n";
+ system("pause");
 } //FIN CONSULTAR REGISTRO
 void mostrarLineaPantallaDepa( const DatosDepartamento &registro )
 {
-   cout << left <<" "<< setw( 10 ) << registro.obtenerCodigo()
+   cout << left <<" "<< setw( 9 ) << registro.obtenerCodigo()
           << setw( 16 ) << registro.obtenerApellido().data()
-          << setw( 14 ) << registro.obtenerNombre().data()<< endl;
+          << setw( 20 ) << registro.obtenerNombre().data()<< endl;
 
 } //FIN -MOSTRARLINEAENOANTALLA-
 Departamento::~Departamento()

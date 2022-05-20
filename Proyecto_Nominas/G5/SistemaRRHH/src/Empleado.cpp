@@ -1,6 +1,9 @@
 #include "Empleado.h"
 #include "DatosEmpleado.h"
 #include <iostream>
+#include <ctime>
+#include <vector>
+
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -73,7 +76,43 @@ Empleado::Empleado()
    } //FIN WHILE
 }
 int opcionEmp(){
-    //system("cls");
+system("cls");
+
+     time_t now = time(0);
+        tm * time = localtime(&now);
+
+vector<string> dia_semana;
+dia_semana.push_back("Domingo");
+dia_semana.push_back("Lunes");
+dia_semana.push_back("Martes");
+dia_semana.push_back("Miercoles");
+dia_semana.push_back("Jueves");
+dia_semana.push_back("Viernes");
+dia_semana.push_back("Sabado");
+
+vector<string> mes;
+mes.push_back("Enero");
+mes.push_back("Febrero");
+mes.push_back("Marzo");
+mes.push_back("Abril");
+mes.push_back("Mayo");
+mes.push_back("Junio");
+mes.push_back("Julio");
+mes.push_back("Agosto");
+mes.push_back("Septiembre");
+mes.push_back("Octubre");
+mes.push_back("Noviembre");
+mes.push_back("Diciembre");
+
+int year = 1900 + time->tm_year;
+
+//Formato=hoy miercoles, 27 de mayo del 2015
+cout<< "\n";
+cout << "Hoy " << dia_semana[time->tm_wday] << ", ";
+cout << time->tm_mday << " de " << mes[time->tm_mon] << " del " << year << endl;
+cout << time->tm_hour << ":" << time->tm_min << ":" << time->tm_sec << endl;
+
+
     cout<<"\n\t\t\t---------------------------------"<<endl;
     cout<<"\n\t\t\t\t------------------"<<endl;
 	cout<<"\t\t\t\t |   EMPLEADOS  |"<<endl;
@@ -87,7 +126,8 @@ int opcionEmp(){
         << "\t\t\t 6. Regresar al Menu Principal" << endl
         <<"\n\t\t\t---------------------------------"<<endl
         << "\n\t\t\tIngrese su opcion: ";
-    int opcionMenu;
+    int opcionMenu ;
+
     cin >> opcionMenu;
 
    return opcionMenu;
@@ -113,7 +153,8 @@ void imprimirRegistroEmp( fstream &leerDeArchivo )
         mostrarLineaEmp( archivoImprimirSalida, empleados );
         leerDeArchivo.read( reinterpret_cast< char * >( &empleados ), sizeof( DatosEmpleado ) );
     } //FIN DE WHILE
-
+cout<<"\n";
+ system("pause");
 } //FIN DE LA FUNCION -IMPRIMIR REGISTRO-
 void mostrarLineaEmp( ostream &salida, const DatosEmpleado &registro )
 {
@@ -134,6 +175,8 @@ void crearArchivoCreditoEmp()
     DatosEmpleado empleadoEnBlanco;
     for ( int i = 0; i < 100; i++ )
         creditoSalida.write(reinterpret_cast< const char * >( &empleadoEnBlanco ), sizeof( DatosEmpleado ) );
+cout<<"\n";
+ system("pause");
 }
 void nuevoRegistroEmp( fstream &insertarEnArchivo )
 {
@@ -168,7 +211,8 @@ void nuevoRegistroEmp( fstream &insertarEnArchivo )
     } //FIN IF
     else
         cerr << "El Empleado con codigo #" << codigo << " ya contiene informacion.\n" << endl;
-
+cout<<"\n";
+ system("pause");
 } //FIN REGISTRO
 int obtenernCodigoEmp( const char * const indicador )
 {
@@ -277,7 +321,8 @@ void modificarRegistroEmp( fstream &actualizarArchivo )
                 actualizarArchivo.write(reinterpret_cast< const char * >( &empleados ), sizeof( DatosEmpleado ) );
         }
     }
-
+cout<<"\n";
+ system("pause");
 } //FIN DE -ACTUALIZAR REGISTRO-
 void eliminarRegistroEmp( fstream &eliminarDeArchivo )
 {
@@ -298,7 +343,8 @@ void eliminarRegistroEmp( fstream &eliminarDeArchivo )
    //ERROR SI NO EXISTE
    else
       cerr << "La cuenta #" << codigo << " esta vacia.\n";
-
+cout<<"\n";
+ system("pause");
 } //FIN -ELIMINARREGISTRO-
 void consultarRegistroEmp( fstream &leerDeArchivo )
 {
@@ -312,7 +358,8 @@ void consultarRegistroEmp( fstream &leerDeArchivo )
             leerDeArchivo.read( reinterpret_cast< char * >( &empleados ), sizeof( DatosEmpleado ) );
 
    } //FIN WHILE
-
+cout<<"\n";
+ system("pause");
 } //FIN CONSULTAR REGISTRO
 void mostrarLineaPantallaEmp( const DatosEmpleado &registro )
 {
@@ -324,7 +371,6 @@ void mostrarLineaPantallaEmp( const DatosEmpleado &registro )
           << showpoint << registro.obtenerSueldo() << endl;
 
 } //FIN -MOSTRARLINEAENOANTALLA-
-
 Empleado::~Empleado()
 {
     //dtor
