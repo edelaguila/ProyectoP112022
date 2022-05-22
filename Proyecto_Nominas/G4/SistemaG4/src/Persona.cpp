@@ -95,7 +95,7 @@ void Persona::establecerPrimerNombre( string primerNombreString )
    primerNombre[ longitud ] = '\0';
 
 }
-
+//Obtener el valor de puesto
 string Persona::obtenerPuesto() const
 {
    return puesto;
@@ -115,33 +115,33 @@ void Persona::establecerPuesto( string puestoString )
    puesto[ longitud ] = '\0';
 
 }
-
+// Obtener el valor sueldo
 int Persona::obtenerSueldo() const
 {
    return sueldo;
 
 }
 
-
+// Establecer el valor de sueldo
 void Persona::establecerSueldo( int valorSueldo )
 {
    sueldo = valorSueldo;
 
 }
 
-
+// Obtener el valor de cuenta
 int Persona::obtenerCuenta() const
 {
    return noCuenta;
 
 }
-
+// Establecer el valor de cuenta
 void Persona::establecerCuenta( int valorCuenta )
 {
    noCuenta = valorCuenta;
 
 }
-
+// Obtener el valor de email
 string Persona::obtenerEmail() const
 {
    return email;
@@ -161,143 +161,144 @@ void Persona::establecerEmail( string emailString )
    email[ longitud ] = '\0';
 
 }
-
+// Obtener el valor de horas
 int Persona::obtenerHoras() const
 {
    return hExtra;
 
 }
 
-
+// Establecer el valor de horas
 void Persona::establecerHoras( int valorHoras )
 {
    hExtra = valorHoras;
 
 }
-
+// Obtener el valor de dias
 int Persona::obtenerDias() const
 {
    return dias;
 
 }
 
-
+// Establecer el valor de dias
 void Persona::establecerDias( int valorDias)
 {
    dias = valorDias;
 
 }
-
+// Obtener el valor de horas
 int Persona::obtenerVhoras() const
 {
  return Vhoras;
 }
-
+// Establecer el valor de horas
 void Persona::establecerVhoras( int ValorVHoras)
 {
     Vhoras = ValorVHoras;
 }
-
+// Obtener el valor de sueldoEx
 double Persona::obtenerSueldoEx() const
 {
  return SueldoEx;
 }
-
+// Establecer el valor de SueldoEx
 void Persona::establecerSueldoEx( double ValorSueldoEx)
 {
     SueldoEx = ValorSueldoEx;
 }
-
+// Obtener el valor de comisiones
 double Persona::obtenerComisiones() const
 {
     return Comisiones;
 }
-
+// Establecer el valor de comisiones
 void Persona::establecerComisiones( double ValorComisiones )
 {
     Comisiones = ValorComisiones;
 }
-
+// Obtener el valor TDevengado
 double Persona::obtenerTDevengado() const
 {
     return TDevengado;
 }
-
+// Establecer el valor de TDevengado
 void Persona::establecerTDevengado( double ValorDevengado )
 {
     TDevengado = ValorDevengado;
 }
-
+// Obtener el valor de IGSS
 double Persona::obtenerIGSS() const
 {
     return IGSS;
 }
-
+// Establecer el valor de IGSS
 void Persona::establecerIGSS( double ValorIGSS )
 {
     IGSS = ValorIGSS;
 }
-
+// Obtener el valor de ISR
 double Persona::obtenerISR() const
 {
     return ISR;
 }
-
+// Establecer el valor de ISR
 void Persona::establecerISR( double ValorISR )
 {
     ISR = ValorISR;
 }
-
+// Obtener el valor de Anticipos
 double Persona::obtenerAnticipos() const
 {
     return Anticipos;
 }
-
+// Establecer el valor de Anticipos
 void Persona::establecerAnticipos( double ValorAnticipos)
 {
     Anticipos = ValorAnticipos;
 }
-
+// Obtener el valor de TDescuentos
 double Persona::obtenerTDescuentos() const
 {
     return TDescuentos;
 }
-
+// Establecer el valor de TDescuentos
 void Persona::establecerTDescuentos( double ValorTDescuentos )
 {
      TDescuentos = ValorTDescuentos;
 }
-
+// Obtener el valor de Bincentivo
 double Persona::obtenerBincentivo() const
 {
     return Bincentivo;
 }
-
+// Establecer el valor de Bincentivo
 void Persona::establecerBincentivo( double ValorBicentivo )
 {
     Bincentivo = ValorBicentivo;
 }
-
+// Obtener el valor de LiquidorR
 double Persona::obtenerLiquidorR() const
 {
     return LiquidoR ;
 }
-
+// Establecer el valor de LiquidoR
 void Persona::establecerLiquidoR( double ValorLiquido )
 {
     LiquidoR = ValorLiquido;
 }
+// Obtener el valor de PAlimenticia
 double Persona::obtenerPAlimenticia () const
 {
     return PAlimenticia;
 }
-
+// Establecer el valor de PAlimenticia
 void Persona::establecerPAlimenticia ( double ValorAlimenticio)
 {
     PAlimenticia = ValorAlimenticio;
 
 }
-
+// Obtener el valor de RAlimenticio
 string Persona::obtenerRAlimenticio() const
 {
    return RAlimenticio;
@@ -582,6 +583,7 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
       cin >> setw(15)>> dias;
       cout << "Escriba las Comsiones ganadas" <<endl;
       cin>> setw(6)>>Comisiones;
+      // Calculos
       Bincentivo = 250;
       Vhoras= 25;
       switch(RAlimenticio){
@@ -847,6 +849,7 @@ int Persona::obtenerId( const char * const indicador )
    return numeroId;
 
 }
+// Crear el archivo empleados
 void Persona::crearArchivoEmpleados()
 {
     ofstream empleadosSalida( "empleados.dat", ios::out | ios::binary );

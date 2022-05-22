@@ -342,3 +342,108 @@
 
 1652901372 c:\users\nelso\desktop\modificar original de carlos\include\concepto.h
 
+1652978125 source:c:\users\hp\desktop\copia\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"menus.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652978125 c:\users\hp\desktop\copia\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652978125 c:\users\hp\desktop\copia\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652978125 c:\users\hp\desktop\copia\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652978125 c:\users\hp\desktop\copia\include\departamento.h
+
+1652978125 c:\users\hp\desktop\copia\include\usuarios.h
+	<string>
+
+1652978125 c:\users\hp\desktop\copia\include\menus.h
+
+1652978125 source:c:\users\hp\desktop\copia\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1652978125 source:c:\users\hp\desktop\copia\src\departamento.cpp
+	"Departamento.h"
+
+1652978125 source:c:\users\hp\desktop\copia\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1652978125 source:c:\users\hp\desktop\copia\src\persona.cpp
+	"Persona.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1652978125 source:c:\users\hp\desktop\copia\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1652978125 source:c:\users\hp\desktop\copia\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
