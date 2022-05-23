@@ -12,13 +12,18 @@ int main()
 
 
     gamemap map;
+    gamemap map2;
     player hero;
+    player hero2;
     map.drawPortada();
-    //map.draw();
+    char choice;
+
     while(map.isGameOver==false)
     {
+       map.opcion = 0;
       cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
       hero.callInput();
+
 
       //Actualizar información del jugador en el mapa
       if(map.setPlayerCell(hero.getValueX(), hero.getValueY()))
@@ -32,9 +37,34 @@ int main()
         //Dibujamos el mapa
         map.draw();
       }
-      //map.draw();
 
-    }
+     }
 
+            if (map.opcion = 1){
+                //system("cls");
+            map.drawPortada2();
+            getchar();
+            while(map2.isGameOver==false)
+            {
+                cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
+                hero2.callInput();
+
+
+                //Actualizar información del jugador en el mapa
+                if(map2.setPlayerCell2(hero2.getValueX(), hero2.getValueY()))
+                {
+                //   system("cls");
+                    map2.draw2();
+                } else
+                {
+                // system("cls");
+                    hero2.resetToSafePosition();
+                    //Dibujamos el mapa
+                    map2.draw2();
+                }
+
+                }
+
+        }
     return 0;
 }
