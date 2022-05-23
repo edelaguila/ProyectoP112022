@@ -6,6 +6,7 @@
 #include "Departamento.h"
 #include "Usuarios.h"
 #include "menus.h"
+#include "Concepto.h"
 using std::cout;
 using std::cerr;
 using std::cin;

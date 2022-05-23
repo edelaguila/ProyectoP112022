@@ -30,3 +30,4 @@ class Puesto
 };
 
 #endif // PUESTO_H
+
