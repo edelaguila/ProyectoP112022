@@ -1057,7 +1057,6 @@ void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     log<<"entro al menu Registrar Impuesto ";
     log.close();
-
     cout << "\n\t\t\tEntrando al menu --REGISTRAR CONCEPTO IMPUESTOS--\n" << endl;
     cout << "\n\t�Quires salir al --MENU IMPUESTOS--? [ si / no ] : "; cin >> desicion;
     if (desicion=="si"){
@@ -1087,7 +1086,6 @@ void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
 }
 
 void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
-    //preguntar
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1152,7 +1150,6 @@ void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
 }
 
 void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
-    //preguntar
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
