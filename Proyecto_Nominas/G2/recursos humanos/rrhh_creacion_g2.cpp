@@ -15,39 +15,45 @@
 
 using namespace std;
 
-class empresa{
+class empresa{//funcion creada por Carlos Gonzalez
 public:
-    void mostrarLog();
-    void menuPrincipal();
-    void menuMantenimiento();
-    void menuEmpleados();
-    void registrarEmpleado();
-    void modificarEmpleado();
-    void eliminarEmpleado();
-    void mostrarDatosEmpleados();
-    void menuDepartamentos();
-    void registrarDepto();
-    void modificarDepto();
-    void eliminarDepto();
-    void mostrarDatosDepto();
-    void menuNomina();
-    void insertNomina();
-    void displayNomina();
-    void modifyNomina();
-    void searchNomina();
-    void deletNomina();
-    void menuImpuestos();
-    void registrarImpuestos();
-    void modificarImpuestos();
-    void eliminarImpuestos();
-    void mostrarDatosImpuestos();
+    void mostrarLog();//funcion creada por Carlos Gonzalez
+    void menuPrincipal();//funcion creada por Carlos Gonzalez
+    void menuMantenimiento();//funcion creada por Carlos Gonzalez
+    void menuEmpleados();//funcion creada por Carlos Gonzalez
+    void registrarEmpleado();//funcion creada por Carlos Gonzalez
+    void modificarEmpleado();//funcion creada por Carlos Gonzalez
+    void eliminarEmpleado();//funcion creada por Carlos Gonzalez
+    void mostrarDatosEmpleados();//funcion creada por Carlos Gonzalez
+    void menuDepartamentos();//funcion creada por Carlos Gonzalez
+    void registrarDepto();//funcion creada por Carlos Gonzalez
+    void modificarDepto();//funcion creada por Carlos Gonzalez
+    void eliminarDepto();//funcion creada por Carlos Gonzalez
+    void mostrarDatosDepto();//funcion creada por Carlos Gonzalez
+    void menuNomina();//funcion creada por Diego Culajay
+    void insertNomina();//funcion creada por Diego Culajay
+    void displayNomina();//funcion creada por Diego Culajay
+    void modifyNomina();//funcion creada por Diego Culajay
+    void searchNomina();//funcion creada por Diego Culajay
+    void deletNomina();//funcion creada por Diego Culajay
+    void menuConceptoImpuestos();//funcion creada por William Mayen
+    void registrarConceptoImpuestos();//funcion creada por William Mayen
+    void modificarConceptoImpuestos();//funcion creada por William Mayen
+    void eliminarConceptoImpuestos();//funcion creada por William Mayen
+    void mostrarDatosConceptoImpuestos();//funcion creada por William Mayen
+    void menuPoliza();//funcion creada por Carlos Montes
+    bool verificar(string ced, string num);//funcion creada por Carlos Montes
+    void agregar(ofstream &es);//funcion creada por Carlos Montes
+    void VerPoliza(ifstream &Lec);//funcion creada por Carlos Montes
+    void reclamaciones(ofstream &Esc, ifstream &Lec);//funcion creada por Carlos Montes
+    void ModificarPlan(ifstream &Lec);//funcion creada por Carlos Montes
 private:
     string documentoIdentificacion, nombre, direccion, edad, correo, telefono, estudios, puesto, sueldo, desicion, busquedaDatos, numDepto, nombreDepto, telefonoDepto, direccionDepto;
     string numeroid,choice;
     int sueldo1,sueldototal,bonificacion,hora,horaextra,totalhoras,horatr;
 };
 
-const std::string currentDateTime() {
+const std::string currentDateTime() {//funcion creada por Carlos Gonzalez
     time_t now = time(0);
     struct tm tstruct;
     char buf[80];
@@ -56,7 +62,7 @@ const std::string currentDateTime() {
     return buf;
 };
 
-void empresa::mostrarLog(){
+void empresa::mostrarLog(){//funcion creada por Carlos Gonzalez
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     log<<"entro a mostrar bitacora, ";
@@ -74,7 +80,7 @@ void empresa::mostrarLog(){
     cout << "\n\t\t";system("pause");
 }
 
-void empresa::menuPrincipal(){
+void empresa::menuPrincipal(){//funcion creada por Carlos Gonzalez
     system ("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -91,16 +97,16 @@ void empresa::menuPrincipal(){
         menuNomina();
         break;
     case 3:
-        cout<<"hola";
+        menuPoliza();
         break;
     case 4:
-        menuImpuestos();
+        menuConceptoImpuestos();
         break;
     case 5:
         mostrarLog();
         break;
     case 6:
-        cout << "\n\t\t¿Quiere salir del programa? [ si / no ] : "; cin>>desicion;
+        cout << "\n\t\t�Quiere salir del programa? [ si / no ] : "; cin>>desicion;
         if (desicion=="si"){
             cout<<"\n\n\t\tGRACIAS POR USAR EL RPOGRAMA DEL GRUPO 2 :)";
             cout<<"\n\n\t\t";system("pause");
@@ -113,11 +119,11 @@ void empresa::menuPrincipal(){
     }
 }
 
-void empresa::menuMantenimiento(){
+void empresa::menuMantenimiento(){//funcion creada por Carlos Gonzalez
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu mantenimiento, ";
+    log<<"entro al menu mantenimiento, ";
     log.close();
     int menu;
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO--" << endl;
@@ -137,11 +143,11 @@ void empresa::menuMantenimiento(){
     }
 }
 
-void empresa::menuEmpleados(){
+void empresa::menuEmpleados(){//funcion creada por Carlos Gonzalez
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu empleados, ";
+    log<<"entro al menu empleados, ";
     log.close();
     int menu;
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO EMPLEADO--" << endl;
@@ -167,14 +173,14 @@ void empresa::menuEmpleados(){
     }
 }
 
-void empresa::registrarEmpleado(){
+void empresa::registrarEmpleado(){//funcion creada por Carlos Gonzalez
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu registrar empleado, ";
+    log<<"entro al menu registrar empleado, ";
     log.close();
     cout << "\n\t\t\tEntrando al menu --REGISTRAR EMPLEADOS--\n" << endl;
-    cout << "\n\t¿Quires salir al --MENU EMPLEADO--? [ si / no ] : "; cin >> desicion;
+    cout << "\n\t�Quires salir al --MENU EMPLEADO--? [ si / no ] : "; cin >> desicion;
     if (desicion=="si"){
         return menuEmpleados();
     }
@@ -201,12 +207,12 @@ void empresa::registrarEmpleado(){
     return menuEmpleados();
 }
 
-void empresa::modificarEmpleado(){
+void empresa::modificarEmpleado(){//funcion creada por Carlos Gonzalez
     system("cls");
     fstream baseDatos, modBaseDatos, log;
     cout << "\n\t\t\tEntrando al menu --MODIFICAR EMPLEADOS--" << endl;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu modificar empleados, ";
+    log<<"entro al menu modificar empleados, ";
     log.close();
     baseDatos.open("empleados.dat",ios::in|ios::binary);
     if(!baseDatos){
@@ -235,7 +241,7 @@ void empresa::modificarEmpleado(){
                 cout << "\t\tIngrese el puesto de la persona a registrar: "; cin>>puesto;
                 cout << "\t\tIngrese el sueldo de la persona a registrar: "; cin>>sueldo;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<< "modifico a: "<<documentoIdentificacion<<", ";
+                log<<"busco a: "<<busquedaDatos<<" y la modificacion es: "<<documentoIdentificacion<<", ";
                 log.close();
                 modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
             }
@@ -263,12 +269,12 @@ void empresa::modificarEmpleado(){
     return menuEmpleados();
 }
 
-void empresa::eliminarEmpleado(){
+void empresa::eliminarEmpleado(){//funcion creada por Carlos Gonzalez
     system("cls");
 	fstream baseDatos,modBaseDatos,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"entro al menu eliminar empleado, ";
-    log.close();
+  log<<"entro al menu eliminar empleado, ";
+  log.close();
 	int found=0;
 	cout << "\n\t\t\tEntrando al menu --ELIMINAR EMPLEADOS--" << endl;
 	baseDatos.open("empleados.dat",ios::in|ios::binary);
@@ -292,8 +298,8 @@ void empresa::eliminarEmpleado(){
 			{
 				found++;
 				log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<< "elimino a: "<<documentoIdentificacion<<", ";
-                log.close();
+        log<<"elimino a: "<<busquedaDatos<<", ";
+        log.close();
 				cout << "\n\t\t\tBorrado de informacion exitoso\a";
 			}
 			baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
@@ -324,14 +330,14 @@ void empresa::eliminarEmpleado(){
     return menuEmpleados();
 }
 
-void empresa::mostrarDatosEmpleados(){
+void empresa::mostrarDatosEmpleados(){//funcion creada por Carlos Gonzalez
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     log<<"entro al menu mostrar datos empleado, ";
     log.close();
     cout << "\n\t\t\tEntrando al --MENU MOSTRAR DATOS EMPLEADOS--";
-    cout << "\n\n\t\t¿Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
+    cout << "\n\n\t\t�Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
     if (desicion=="si"){
         int datos=0;
         baseDatos.open("empleados.dat",ios::in|ios::binary);
@@ -412,9 +418,15 @@ void empresa::mostrarDatosEmpleados(){
                 cout<<"\n\t\tPuesto o cargo: "<< puesto;
                 cout<<"\n\t\tSueldo: "<< sueldo;
                 baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
+                //if (baseDatos.is_open()){
+                  //  baseDatos.close();
+                    //cout<<"\n\n\t\tArchivo cerrado";}
             }
             if(total==0){
                 cout<<"\n\t\t\tEl archivo se encuentra vacio...";
+                //if (baseDatos.is_open()){
+                  //  baseDatos.close();
+                    //cout<<"\n\n\t\tArchivo cerrado";}
             }
             if (baseDatos.is_open()){
                 baseDatos.close();
@@ -432,12 +444,12 @@ void empresa::mostrarDatosEmpleados(){
         cout<<"\n\n\t\tArchivo cerrado";}
 }
 
-void empresa::menuDepartamentos(){
+void empresa::menuDepartamentos(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
     system("cls");
     int menu;
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<< "entro al menu departamentos, ";
+    log<<"entro al menu departamentos, ";
     log.close();
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO DEPPARTAMENTOS--" << endl;
     cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar Departamento\n" << "\t\t[2] Modificar Departamento\n" << "\t\t[3] Eliminar Departamento\n" << "\t\t[4] Mostrar Datos Departamentos\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
@@ -461,11 +473,12 @@ void empresa::menuDepartamentos(){
         break;
     }
 }
-void empresa::registrarDepto(){
+
+void empresa::registrarDepto(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
     system("cls");
     fstream baseDatos, log;
     cout << "\n\t\t\tEntrando al menu --REGISTRAR DEPARTAMENTOS--\n" << endl;
-    cout << "\n\t¿Quires salir al --MENU DEPARTAMENTOS--? [ si / no ] : "; cin >> desicion;
+    cout << "\n\t�Quires salir al --MENU DEPARTAMENTOS--? [ si / no ] : "; cin >> desicion;
     if (desicion=="si"){
         return menuDepartamentos();
     }
@@ -487,7 +500,7 @@ void empresa::registrarDepto(){
     return menuDepartamentos();
 }
 
-void empresa::modificarDepto(){
+void empresa::modificarDepto(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
     system("cls");
     fstream baseDatos, modBaseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -516,7 +529,7 @@ void empresa::modificarDepto(){
                 cout << "\t\tIngrese el numero telefonico del Departamento a registrar: "; cin >> telefonoDepto;
                 cout << "\t\tIngrese la direccion del Departamento a registrar: "; cin >> direccionDepto;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<"modifico el Depto: "<<numDepto<<", ";
+                log<<"modifico el Depto: "<<busquedaDatos<<", ahora es: "<<numDepto<<", ";
                 log.close();
                 modBaseDatos <<std::left<<std::setw(15)<< numDepto <<std::left<<std::setw(15)<< nombreDepto <<std::left<<std::setw(15)<< telefonoDepto <<std::left<<std::setw(15)<< direccionDepto <<"\n";
             }
@@ -544,7 +557,7 @@ void empresa::modificarDepto(){
     return menuDepartamentos();
 }
 
-void empresa::eliminarDepto(){
+void empresa::eliminarDepto(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
     system("cls");
 	fstream file,file1,log;
 	log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -605,14 +618,14 @@ void empresa::eliminarDepto(){
     return menuDepartamentos();
 }
 
-void empresa::mostrarDatosDepto(){
+void empresa::mostrarDatosDepto(){//funcion creada por Carlos Gonzalez (porque ya no esta MELANNY SECAIDA)
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     log<<"entro al menu mostrar datos Depto, ";
     log.close();
     cout << "\n\t\t\tEntrando al menu --MOSTRAR DATOS DEPARTAMENTOS--";
-    cout << "\n\n\t\t¿Quiere buscar a un Departamento en especifico? [ si / no ] : "; cin>>desicion;
+    cout << "\n\n\t\t�Quiere buscar a un Departamento en especifico? [ si / no ] : "; cin>>desicion;
     if (desicion=="si"){
         int datos=0;
         baseDatos.open("departamentos.dat",ios::in|ios::binary);
@@ -709,9 +722,7 @@ void empresa::mostrarDatosDepto(){
         cout<<"\n\n\t\tArchivo cerrado";}
 }
 
-
-
-void empresa::menuNomina()
+void empresa::menuNomina()//funcion creada por Diego Culajay
 {
 fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -770,7 +781,8 @@ log.close();
 	getch();
     }while(choice!= 6);
 }
-void empresa::insertNomina()
+
+void empresa::insertNomina()//funcion creada por Diego Culajay
 {
 fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -801,7 +813,8 @@ fstream log;
 	file.close();
 
 }
-void empresa::displayNomina()
+
+void empresa::displayNomina()//funcion creada por Diego Culajay
 {
 fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -815,7 +828,7 @@ log.close();
 	file.open("Empleados.dat",ios::in|ios::binary);
 	if(!file)
 	{
-		cout<<"\n\t\t\tNo hay información...";
+		cout<<"\n\t\t\tNo hay informaci�n...";
 		file.close();
 	}
 	else
@@ -844,7 +857,8 @@ log.close();
 	}
 	file.close();
 }
-void empresa::modifyNomina()
+
+void empresa::modifyNomina()//funcion creada por Diego Culajay
 {
 fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -909,7 +923,8 @@ log.close();
 		rename("Record.dat","Empleados.dat");
 	}
 }
-void empresa::searchNomina()
+
+void empresa::searchNomina()//funcion creada por Diego Culajay
 {
     fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -952,7 +967,8 @@ log.close();
 		file.close();
 	}
 }
-void empresa::deletNomina()
+
+void empresa::deletNomina()//funcion creada por Diego Culajay
 {
     fstream log;
 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1004,8 +1020,8 @@ log.close();
 		rename("Record.dad","Empleados.dad");
 	}
 }
-//WilliamMayen inicio impuestos//
-void empresa::menuImpuestos(){
+
+void empresa::menuConceptoImpuestos(){//funcion creada por William Mayen
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1016,26 +1032,26 @@ void empresa::menuImpuestos(){
     cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar Impuestos\n" << "\t\t[2] Modificar Impuestos\n" <<  "\t\t[3] Eliminar Impeustos\n" << "\t\t[4] Mostrar Datos Impuestos\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
     switch (menu){
     case 1:
-        registrarImpuestos();
+        registrarConceptoImpuestos();
         break;
     case 2:
-        modificarImpuestos();
+        modificarConceptoImpuestos();
         break;
     case 3:
-        eliminarImpuestos();
+        eliminarConceptoImpuestos();
         break;
     case 4:
-        mostrarDatosImpuestos();
+        mostrarDatosConceptoImpuestos();
         break;
     case 5:
-        cout << "\n\tSaliendo al --MENU MANTENIMIENTO--" << endl;
+        cout << "\n\tSaliendo al --MENU PRINCIPAL--" << endl;
         cout<<"\t";system ("pause");
-        return menuMantenimiento();
+        return menuPrincipal();
         break;
     }
 }
 
-void empresa::registrarImpuestos(){
+void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1043,9 +1059,9 @@ void empresa::registrarImpuestos(){
     log.close();
 
     cout << "\n\t\t\tEntrando al menu --REGISTRAR IMPUESTOS--\n" << endl;
-    cout << "\n\t¿Quires salir al --MENU EMPLEADO--? [ si / no ] : "; cin >> desicion;
+    cout << "\n\t�Quires salir al --MENU EMPLEADO--? [ si / no ] : "; cin >> desicion;
     if (desicion=="si"){
-        return menuImpuestos();
+        return menuConceptoImpuestos();
     }
     else {
         cout << "\n\t\tIngrese el numero de documento de identificacion de la persona: "; cin >> documentoIdentificacion;
@@ -1061,16 +1077,16 @@ void empresa::registrarImpuestos(){
         log.open("bitacora.dat",ios::app|ios::out|ios::binary);
         log<<"registro el impuesto: "<<documentoIdentificacion<<", ";
         log.close();
-        baseDatos.open("impuestos.dat",ios::app | ios::out | ios::binary);
+        baseDatos.open("empleados.dat",ios::app | ios::out | ios::binary);
         baseDatos<<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
         baseDatos.close();
     }
     cout <<"\n\n\t\tRegresando al --MENU IMPUESTOS--";
     cout<<"\n\t";system("pause");
-    return menuImpuestos();
+    return menuConceptoImpuestos();
 }
 
-void empresa::modificarImpuestos(){
+void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
     //preguntar
     system("cls");
     fstream log;
@@ -1079,17 +1095,17 @@ void empresa::modificarImpuestos(){
     log.close();
     fstream baseDatos, modBaseDatos;
     cout << "\n\t\t\tEntrando al menu --MODIFICAR IMPUESTOS--" << endl;
-    baseDatos.open("impuestos.dat",ios::in|ios::binary);
+    baseDatos.open("empleados.dat",ios::in|ios::binary);
     if(!baseDatos){
         cout << "\n\t\tNo se encontro el archivo" << endl;
         baseDatos.close();
         cout <<"\n\n\t\t\tRegresando al --MENU IMPUESTOS--";
         cout<<"\n\t";system("pause");
-        return menuImpuestos();
+        return menuConceptoImpuestos();
     }
     else {
         cout << "\n\t\t\tIngrese el numero de Documento de Identificacion de la persona que busca: "; cin >> busquedaDatos;
-        modBaseDatos.open("temporalImpuestos.dat",ios::out|ios::binary);
+        modBaseDatos.open("temporalEmpleados.dat",ios::out|ios::binary);
         baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
         while (!baseDatos.eof()){
             if (busquedaDatos!=documentoIdentificacion){
@@ -1132,10 +1148,10 @@ void empresa::modificarImpuestos(){
 
     cout <<"\n\n\t\tRegresando al --MENU IMPUESTOS--";
     cout<<"\n\t";system("pause");
-    return menuImpuestos();
+    return menuConceptoImpuestos();
 }
 
-void empresa::eliminarImpuestos(){
+void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
     //preguntar
     system("cls");
     fstream log;
@@ -1145,7 +1161,7 @@ void empresa::eliminarImpuestos(){
 	fstream baseDatos,modBaseDatos;
 	int found=0;
 	cout << "\n\t\t\tEntrando al menu --ELIMINAR IMPUESTOS--" << endl;
-	baseDatos.open("impuestos.dat",ios::in|ios::binary);
+	baseDatos.open("empleados.dat",ios::in|ios::binary);
 	if(!baseDatos)
 	{
 		cout<<"\n\t\t\tNo hay informacion...\a";
@@ -1154,7 +1170,7 @@ void empresa::eliminarImpuestos(){
 	else
 	{
 		cout << "\n\t\tIngrese el numero de Documento de Identificacion de la persona que busca: "; cin >> busquedaDatos;
-		modBaseDatos.open("temporalImpuestos.dat", ios::app | ios::out | ios::binary);
+		modBaseDatos.open("temporalEmpleados.dat", ios::app | ios::out | ios::binary);
 		baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
 		while(!baseDatos.eof())
 		{
@@ -1196,10 +1212,10 @@ void empresa::eliminarImpuestos(){
 
     cout <<"\n\n\t\t\tRegresando al --MENU EMPLEADOS--";
     cout<<"\n\t";system("pause");
-    return menuImpuestos();
+    return menuConceptoImpuestos();
 }
 
-void empresa::mostrarDatosImpuestos(){
+void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1207,7 +1223,7 @@ void empresa::mostrarDatosImpuestos(){
     log.close();
     fstream baseDatos;
     cout << "\n\t\t\tEntrando al menu --MOSTRAR DATOS IMPUESTOS--";
-    cout << "\n\n\t\t¿Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
+    cout << "\n\n\t\t�Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
     if (desicion=="si"){
         int datos=0;
         baseDatos.open("impuestos.dat",ios::in|ios::binary);
@@ -1239,7 +1255,7 @@ void empresa::mostrarDatosImpuestos(){
 
                     cout<<"\n\n\t\t\tRegresando al --MENU EMPLEADO--";
                     cout<<"\n\t";system("pause");
-                    return menuImpuestos();
+                    return menuConceptoImpuestos();
                     baseDatos.close();
                 }
                 baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
@@ -1249,7 +1265,7 @@ void empresa::mostrarDatosImpuestos(){
                 cout<<"\n\t\t\tNo se encontro ninguna coincidencia, intentelo de nuevo";
                 cout <<"\n\n\t\t\tRegresando al --MENU MOSTRAR DATOS--";
                 cout<<"\n\t";system("pause");
-                return mostrarDatosImpuestos();
+                return mostrarDatosConceptoImpuestos();
                 if (baseDatos.is_open()){
                     baseDatos.close();
                     cout<<"\n\n\t\tArchivo cerrado";}
@@ -1266,7 +1282,7 @@ void empresa::mostrarDatosImpuestos(){
         fstream baseDatos;
         int total=0;
         cout<<"\n\t\t\tEntrando al --MENU MOSTRAR DATOS IMPUESTOS"<<endl;
-        baseDatos.open("impuestos.dat",ios::in|ios::binary);
+        baseDatos.open("Empleados.dat",ios::in|ios::binary);
         if(!baseDatos){
             cout<<"\n\t\t\tError\n\t\t\tNo se encontro el archivo, asegurese de que el archivo se encuentre en la misma carpeta del programa";
             if (baseDatos.is_open()){
@@ -1276,7 +1292,7 @@ void empresa::mostrarDatosImpuestos(){
 
             cout <<"\n\n\t\t\tRegresando al --MENU IMPUESTOS--";
             cout<<"\n\t";system("pause");
-            return menuImpuestos();
+            return menuConceptoImpuestos();
         }
         else
         {
@@ -1304,7 +1320,7 @@ void empresa::mostrarDatosImpuestos(){
 
             cout <<"\n\n\t\tRegresando al --MENU IMPUESTOS--";
             cout<<"\n\t";system("pause");
-            return menuImpuestos();
+            return menuConceptoImpuestos();
         }
         if (baseDatos.is_open()){
             baseDatos.close();
@@ -1317,7 +1333,218 @@ void empresa::mostrarDatosImpuestos(){
             cout<<"\n\n\t\tArchivo cerrado";}
 
 }
-//WilliamMayen fin impuestos//
+
+ void empresa::menuPoliza(){//funcion creada por Carlos Montes
+ 	int opt;
+	fstream log;
+      log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+      log<<"ingreso a menu Poliza, ";
+      log.close();
+ 	system("cls");
+ 	cout<<"+----------------------------------+\n";
+ 	cout<<"|          MENU POLIZA             |\n";
+ 	cout<<"+----------------------------------+\n";
+ 	cout<<"| 1) Ver reclamaciones acumuladas  |\n";
+ 	cout<<"| 2) Reclamaciones pendientes      |\n";
+ 	cout<<"| 3) Modificar plan                |\n";
+ 	cout<<"| 4) Registrar reclamante          |\n";
+ 	cout<<"| 5) Salir                         |\n";
+ 	cout<<"+----------------------------------+\n";
+ 	cout<<"Opcion:  ";
+ 	cin>>opt;
+ 	ofstream Esc, es;
+	ifstream Lec;
+    switch(opt){
+        case 1:
+            VerPoliza(Lec);
+            break;
+        case 2:
+            reclamaciones(Esc, Lec);
+            break;
+        case 3:
+            ModificarPlan(Lec);
+            break;
+        case 4:
+            agregar(es);
+            break;
+        case 5:
+            menuPrincipal();
+            break;
+    }
+ }
+
+  bool empresa::verificar(string ced, string num){ //funcion creada por Carlos Montes
+ 	ifstream leer("poliza.dat", ios::in|ios::binary);
+	fstream log;
+      log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+      log<<"ingreso a verificar Poliza, ";
+      log.close();
+ 	string Num, Nom, Ape, Ced, Plan;
+ 	leer>>Num;
+ 	while(!leer.eof()){
+ 		leer>>Nom;
+ 	    leer>>Ape;
+ 	    leer>>Ced;
+ 	    leer>>Plan;
+ 	    if(Ced == ced || Num == num){
+ 	    	cout<<"Este registro ya existe.\n";
+ 		system("pause");
+ 		leer.close();
+ 		return false;
+		 }
+	 }
+ 	leer.close();
+ 	return true;
+ }
+
+ void empresa::agregar(ofstream &es){//funcion creada por Carlos Montes
+	system("cls");
+	fstream log;
+      log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+      log<<"ingreso a agregar reclamante en Poliza, ";
+      log.close();
+	cout<<"<--------- nuevo registro de reclamante ---------->\n";
+	string num, nom, ape, ced, plan;
+	es.open("poliza.dat", ios::out | ios::app|ios::binary);
+	cout<<"Numero de poliza: ";
+	cin>>num;
+	cout<<"Nombre: ";
+	cin>>nom;
+	cout<<"Apellido: ";
+	cin>>ape;
+	cout<<"Cedula: ";
+	cin>>ced;
+	system("cls");
+	cout<<"A) Plan A tiene deducible de $100 y restar copago de 40% de la reclamacion\n";
+	cout<<"B) Plan B tiene deducible de $50 y restar copago de 60% de la reclamacion\n";
+	cout<<"C) No quiero plan";
+	cout<<"Selecciona un plan: ";
+	cin>>plan;
+	if(verificar(ced, num))
+	es<<num<<" "<<nom<<" "<<ape<<" "<<ced<<" "<<plan<<"\n";
+	es.close();
+}
+
+void empresa::VerPoliza(ifstream &Lec){//funcion creada por Carlos Montes
+	system("cls");
+	fstream log;
+      log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+      log<<"ingreso a Mostrar Reclamaciones de poliza, ";
+      log.close();
+	string num, nom, ape, ced, plan;
+	Lec.open("acumulada.dat", ios::in|ios::binary);
+	cout<<"+----------------------------------------+\n";
+	cout<<"|       Reclamaciones acumuladas         |\n";
+	cout<<"+----------------------------------------+\n";
+	if(Lec.is_open()){
+		Lec>>num;
+		while(!Lec.eof()){
+			Lec>>nom;
+			Lec>>ape;
+			Lec>>ced;
+			Lec>>plan;
+			cout<<"Numero de poliza--: "<<num<<endl;
+			cout<<"Nombre------------: "<<nom<<endl;
+			cout<<"Apellido----------: "<<ape<<endl;
+			cout<<"Cedula------------: "<<ced<<endl;
+			cout<<"Plan de poliza----: "<<plan<<"\n\n";
+			Lec>>num;
+		}
+		Lec.close();
+		system("pause");
+	}else{
+		cout<<"No se pudo acceder a la base de datos\n";
+		system("pause");
+	}
+}
+
+void empresa::reclamaciones(ofstream &Esc, ifstream &Lec){//funcion creada por Carlos Montes
+	system("cls");
+	fstream log;
+      log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+      log<<"ingreso a reclamaciones de poliza, ";
+      log.close();
+	string num, nom, ape, ced, plan, numaux;
+	Lec.open("poliza.dat", ios::in|ios::binary);
+	bool encontrado = false;
+	cout<<"Digite el numero de poliza: ";
+	cin>>numaux;
+	if(Lec.is_open()){
+		Lec>>num;
+		while(!Lec.eof() && !encontrado){
+			Lec>>nom;
+			Lec>>ape;
+			Lec>>ced;
+			Lec>>plan;
+			if(num == numaux){
+				if(plan =="A" || plan =="a" || plan == "B" || plan == "b"){
+					Esc.open("acumulada.dat", ios::out | ios::app|ios::binary);
+					Esc<<num<<" "<<ape<<" "<<ced<<" "<<plan<<"\n";
+					Esc.close();
+					cout<<"Se a�adio una reclamacion acumulada\n";
+					system("pause");
+					encontrado = true;
+				}else{
+					cout<<"ERROR: Usted no cuenta con un plan para su poliza\n";
+					system("pause");
+					encontrado = true;
+				}
+			}
+			Lec>>num;
+		}
+		Lec.close();
+		if(!encontrado){
+			cout<<"Registro no encontrado.\n";
+			system("pause");
+			system("cls");
+			agregar(Esc);
+		}
+	}else{
+		cout<<"No se pudo acceder a la base de Datos\n";
+		system("pause");
+	}
+}
+
+void empresa::ModificarPlan(ifstream &Lec){//funcion creada por Carlos Montes
+	system("cls");
+      fstream log;
+      log.open("bitacora.dat",ios::app|ios::out|ios::binary);
+      log<<"ingreso a Modificar Plan de Poliza, ";
+      log.close();
+	string num, nom, ape, ced, plan, numaux, planaux;
+	Lec.open("poliza.dat", ios::in|ios::binary);
+	ofstream aux("auxiliar.dat", ios::out|ios::binary);
+	if(Lec.is_open()){
+		cout<<"Digite el numero de poliza a modificiar: ";
+		cin>>numaux;
+		Lec>>num;
+		while(!Lec.eof()){
+			Lec>>nom;
+			Lec>>ape;
+			Lec>>ced;
+			Lec>>plan;
+			if(num == numaux){
+				system("cls");
+				cout<<"A) Plan A tiene deducible de RD$100 y restar copago de 40% de la reclamacion\n";
+				cout<<"B) Plan B tiene deducible de RD$50 y restar copago de 60% de la reclamacion\n";
+				cout<<"Seleccione un plan: ";
+				cin>>planaux;
+				aux<<num<<" "<<nom<<" "<<ape<<" "<<ced<<" "<<planaux<<"\n";
+			}else{
+				aux<<num<<" "<<nom<<" "<<ape<<" "<<ced<<" "<<plan<<"\n";
+			}
+			Lec>>num;
+		}
+		Lec.close();
+		aux.close();
+	}else{
+		cout<<"No se pudo acceder a la base de datos\n";
+		system("pause");
+	}
+	remove("poliza.dat");
+	rename("auxiliar.dat", "poliza.dat");
+}
+
  int main(){
 
      //bitacora, log in, creado por Carlos Gonzalez
@@ -1414,4 +1641,3 @@ void empresa::mostrarDatosImpuestos(){
     }
     config.close();
 };
-
