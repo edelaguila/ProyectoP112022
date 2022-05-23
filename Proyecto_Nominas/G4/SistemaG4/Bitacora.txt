@@ -1,0 +1,25 @@
+Grupo4         
+23/05/2022
+15:26:8
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+23/05/2022
+15:26:10
+Ingreso a Menu Contabilidad
+
+Grupo4         
+23/05/2022
+15:26:18
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+23/05/2022
+15:26:21
+Ingreso a Menu Contabilidad
+
+Grupo4         
+23/05/2022
+15:26:23
+Se realizo consulta de Poliza
+

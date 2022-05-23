@@ -846,3 +846,129 @@
 	"Bitacora.h"
 	"Usuarios.h"
 
+1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653317955 c:\users\mey\desktop\progra1\pruebacarlos\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653317955 c:\users\mey\desktop\progra1\pruebacarlos\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653317955 c:\users\mey\desktop\progra1\pruebacarlos\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653317955 c:\users\mey\desktop\progra1\pruebacarlos\include\departamento.h
+
+1653317955 c:\users\mey\desktop\progra1\pruebacarlos\include\usuarios.h
+	<string>
+
+1653317955 c:\users\mey\desktop\progra1\pruebacarlos\include\menus.h
+
+1653317955 c:\users\mey\desktop\progra1\pruebacarlos\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\departamento.cpp
+	"Departamento.h"
+
+1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
