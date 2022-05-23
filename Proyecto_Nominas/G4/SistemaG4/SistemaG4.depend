@@ -846,7 +846,7 @@
 	"Bitacora.h"
 	"Usuarios.h"
 
-1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\main.cpp
+1653344876 source:c:\users\mey\desktop\progra1\pruebacarlos\main.cpp
 	<iostream>
 	<conio.h>
 	"Persona.h"
@@ -856,6 +856,7 @@
 	"Usuarios.h"
 	"menus.h"
 	"Concepto.h"
+	"Poliza.h"
 	<ctime>
 	<vector>
 	<fstream>
@@ -926,7 +927,7 @@
 1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\departamento.cpp
 	"Departamento.h"
 
-1653317955 source:c:\users\mey\desktop\progra1\pruebacarlos\src\menus.cpp
+1653344876 source:c:\users\mey\desktop\progra1\pruebacarlos\src\menus.cpp
 	"menus.h"
 	<iostream>
 	<conio.h>
@@ -936,6 +937,7 @@
 	"Departamento.h"
 	"Usuarios.h"
 	"Concepto.h"
+	"Poliza.h"
 	<ctime>
 	<vector>
 	<fstream>
@@ -971,4 +973,6 @@
 	<string>
 	"Bitacora.h"
 	"Usuarios.h"
+
+1653345810 c:\users\mey\desktop\progra1\pruebacarlos\include\poliza.h
 

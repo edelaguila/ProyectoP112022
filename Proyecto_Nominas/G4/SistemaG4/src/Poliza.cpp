@@ -44,15 +44,41 @@ void Poliza::menu()
     {
     case 1:
 		cout <<"  - Muerte natural o por enfermedad "<<endl;
+		cout <<"  - Muerte Accidental "<<endl;
+		cout <<"  - Gastos funerarios "<<endl;
+		cout <<"  - Enfermedad terminal "<<endl;
+		cout <<"  - Invalidez total "<<endl;
+		cout <<"  - Indemnizacion escolar "<<endl;
 		break;
 	case 2:
 		cout <<" - Atencion medica general "<<endl;
+		cout <<" - Examenes de laboratorio "<<endl;
+		cout <<" - Hospitalizacion "<<endl;
+		cout <<" - Gastos ambulatorios "<<endl;
+		cout <<" - Medicamentos por receta medica "<<endl;
+		cout <<" - Telemedicina "<<endl;
+		cout <<" - Maternidad  "<<endl;
+		cout <<" - Servicios de emergencias  "<<endl;
+		cout <<" - Servicios de salud mental "<<endl;
 		break;
     case 3:
 		cout <<" - Asistencia medica para esposa e hijos"<<endl;
+		cout <<" - Asistencia quirurgica para esposa e hijos "<<endl;
+		cout <<" - Asistencia farmaceutica para esposa e hijos "<<endl;
+		cout <<" - Asistencia hospitalaria para esposa e hijos "<<endl;
+		cout <<" - Servicios de laboratorio "<<endl;
+		cout <<" - Atencion durante el embarazo y parto  "<<endl;
+		cout <<" - Control general en periodo de maternidad   "<<endl;
+		cout <<" - Servicios pediatricos   "<<endl;
 		break;
     case 4:
 		cout <<" - Consulta cada 6 meses "<<endl;
+		cout <<" - Cuidado basico de restauracion dental "<<endl;
+		cout <<" - Limpiezas regulares de dientes  "<<endl;
+		cout <<" - Tratamientos  "<<endl;
+		cout <<" - Radiografias de rutina "<<endl;
+		cout <<" - Extracciones   "<<endl;
+		cout <<" - Tratamiento de Ortodoncias "<<endl;
 	case 5:
 		cout <<"Presiona Enter para salir"<<endl;
 		break;
