@@ -1029,7 +1029,7 @@ void empresa::menuConceptoImpuestos(){//funcion creada por William Mayen
     log.close();
     int menu;
     cout << "\n\t\tBienvenido al --MENU MANTENIMIENTO IMPUESTOS--" << endl;
-    cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar Impuestos\n" << "\t\t[2] Modificar Impuestos\n" <<  "\t\t[3] Eliminar Impeustos\n" << "\t\t[4] Mostrar Datos Impuestos\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
+    cout << "\n\t\tElija el numero del menu al que quiere ingresar\n" << endl << "\t\t[1] Registrar Concepto Impuestos\n" << "\t\t[2] Modificar Concepto Impuestos\n" <<  "\t\t[3] Eliminar Concepto Impeustos\n" << "\t\t[4] Mostrar Datos ConceptoImpuestos\n" << "\t\t[5] Salir al --MENU PRINCIPAL--\n";cout<<"\n\t\t"; cin >> menu;
     switch (menu){
     case 1:
         registrarConceptoImpuestos();
@@ -1058,8 +1058,8 @@ void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
     log<<"entro al menu Registrar Impuesto ";
     log.close();
 
-    cout << "\n\t\t\tEntrando al menu --REGISTRAR IMPUESTOS--\n" << endl;
-    cout << "\n\t�Quires salir al --MENU EMPLEADO--? [ si / no ] : "; cin >> desicion;
+    cout << "\n\t\t\tEntrando al menu --REGISTRAR CONCEPTO IMPUESTOS--\n" << endl;
+    cout << "\n\t�Quires salir al --MENU IMPUESTOS--? [ si / no ] : "; cin >> desicion;
     if (desicion=="si"){
         return menuConceptoImpuestos();
     }
@@ -1094,7 +1094,7 @@ void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
     log<<"entro al menu Modificar Impuestos ";
     log.close();
     fstream baseDatos, modBaseDatos;
-    cout << "\n\t\t\tEntrando al menu --MODIFICAR IMPUESTOS--" << endl;
+    cout << "\n\t\t\tEntrando al menu --MODIFICAR CONCEPTO IMPUESTOS--" << endl;
     baseDatos.open("empleados.dat",ios::in|ios::binary);
     if(!baseDatos){
         cout << "\n\t\tNo se encontro el archivo" << endl;
@@ -1156,11 +1156,11 @@ void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"entro al menu Eliminar Impuestos ";
+    log<<"entro al menu Eliminar CONCEPTO Impuestos ";
     log.close();
 	fstream baseDatos,modBaseDatos;
 	int found=0;
-	cout << "\n\t\t\tEntrando al menu --ELIMINAR IMPUESTOS--" << endl;
+	cout << "\n\t\t\tEntrando al menu --ELIMINAR CONCEPTO IMPUESTOS--" << endl;
 	baseDatos.open("empleados.dat",ios::in|ios::binary);
 	if(!baseDatos)
 	{
@@ -1226,7 +1226,7 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
     cout << "\n\n\t\t�Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
     if (desicion=="si"){
         int datos=0;
-        baseDatos.open("impuestos.dat",ios::in|ios::binary);
+        baseDatos.open("empleados.dat",ios::in|ios::binary);
         if(!baseDatos)
         {
             cout<<"\n\t\tError";
@@ -1281,8 +1281,8 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
     else {
         fstream baseDatos;
         int total=0;
-        cout<<"\n\t\t\tEntrando al --MENU MOSTRAR DATOS IMPUESTOS"<<endl;
-        baseDatos.open("Empleados.dat",ios::in|ios::binary);
+        cout<<"\n\t\t\tEntrando al --MENU MOSTRAR DATOS CONCEPTO IMPUESTOS"<<endl;
+        baseDatos.open("empleados.dat",ios::in|ios::binary);
         if(!baseDatos){
             cout<<"\n\t\t\tError\n\t\t\tNo se encontro el archivo, asegurese de que el archivo se encuentre en la misma carpeta del programa";
             if (baseDatos.is_open()){
