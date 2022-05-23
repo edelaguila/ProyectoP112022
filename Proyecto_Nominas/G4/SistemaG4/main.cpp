@@ -7,6 +7,7 @@
 #include "Usuarios.h"
 #include "menus.h"
 #include "Concepto.h"
+#include "Poliza.h"
 using std::cout;
 using std::cerr;
 using std::cin;
