@@ -99,8 +99,15 @@ public:
    void establecerRAlimenticio( string );
    string obtenerRAlimenticio() const;
 
-   void establecerPIGSS( double);
-   double obtenerPIGSS() const;
+   void establecerresultIGSS (double);
+   double obtenerresultIGSS () const;
+
+   double obtenerPerIgss () const;
+   double obtenerPerISR () const;
+   double obtenerPerAlim () const;
+   double obtenerPerAnticipo () const;
+
+
 
    //Funciones para el tratado de archivos
     void imprimirRegistro( fstream& );
@@ -141,7 +148,10 @@ private:
    double LiquidoR;
    double PAlimenticia;
    char RAlimenticio[5] ;
-   double PIGSS;
+
+
+
+
 };
 
 #endif

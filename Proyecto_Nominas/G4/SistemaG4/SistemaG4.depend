@@ -342,52 +342,7 @@
 
 1652901372 c:\users\nelso\desktop\modificar original de carlos\include\concepto.h
 
-1652978125 source:c:\users\hp\desktop\copia\main.cpp
-	<iostream>
-	<conio.h>
-	"Persona.h"
-	"Bitacora.h"
-	"Puesto.h"
-	"Departamento.h"
-	"Usuarios.h"
-	"menus.h"
-	<ctime>
-	<vector>
-	<fstream>
-	<iomanip>
-	<cstdlib>
-
-1652978125 c:\users\hp\desktop\copia\include\persona.h
-	<iostream>
-	<conio.h>
-	<fstream>
-	<iomanip>
-	<cstdlib>
-
-1652978125 c:\users\hp\desktop\copia\include\bitacora.h
-	<iostream>
-	<ctime>
-	<vector>
-	<fstream>
-	<iomanip>
-	<cstdlib>
-
-1652978125 c:\users\hp\desktop\copia\include\puesto.h
-	<iostream>
-	<fstream>
-	<stdlib.h>
-	<cstdlib>
-	<conio.h>
-	<iomanip>
-
-1652978125 c:\users\hp\desktop\copia\include\departamento.h
-
-1652978125 c:\users\hp\desktop\copia\include\usuarios.h
-	<string>
-
-1652978125 c:\users\hp\desktop\copia\include\menus.h
-
-1652978125 source:c:\users\hp\desktop\copia\src\bitacora.cpp
+1652150094 source:c:\users\nelso\desktop\modificar original de carlos variables\src\bitacora.cpp
 	"Bitacora.h"
 	"Persona.h"
 	<iostream>
@@ -400,10 +355,30 @@
 	<iomanip>
 	<cstdlib>
 
-1652978125 source:c:\users\hp\desktop\copia\src\departamento.cpp
+1651872040 c:\users\nelso\desktop\modificar original de carlos variables\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653049340 c:\users\nelso\desktop\modificar original de carlos variables\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1651872040 c:\users\nelso\desktop\modificar original de carlos variables\include\usuarios.h
+	<string>
+
+1651872040 source:c:\users\nelso\desktop\modificar original de carlos variables\src\departamento.cpp
 	"Departamento.h"
 
-1652978125 source:c:\users\hp\desktop\copia\src\menus.cpp
+1651872040 c:\users\nelso\desktop\modificar original de carlos variables\include\departamento.h
+
+1653045195 source:c:\users\nelso\desktop\modificar original de carlos variables\src\menus.cpp
 	"menus.h"
 	<iostream>
 	<conio.h>
@@ -412,23 +387,24 @@
 	"Puesto.h"
 	"Departamento.h"
 	"Usuarios.h"
+	"Concepto.h"
 	<ctime>
 	<vector>
 	<fstream>
 	<iomanip>
 	<cstdlib>
 
-1652978125 source:c:\users\hp\desktop\copia\src\persona.cpp
-	"Persona.h"
-	<iostream>
-	<conio.h>
-	<cstring>
-	<fstream>
-	<iomanip>
-	<cstdlib>
-	<string>
+1652150094 c:\users\nelso\desktop\modificar original de carlos variables\include\menus.h
 
-1652978125 source:c:\users\hp\desktop\copia\src\puesto.cpp
+1651872040 c:\users\nelso\desktop\modificar original de carlos variables\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1651872040 source:c:\users\nelso\desktop\modificar original de carlos variables\src\puesto.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -438,7 +414,430 @@
 	"Puesto.h"
 	"Bitacora.h"
 
-1652978125 source:c:\users\hp\desktop\copia\src\usuarios.cpp
+1652150094 source:c:\users\nelso\desktop\modificar original de carlos variables\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653025378 source:c:\users\nelso\desktop\modificar original de carlos variables\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653049340 c:\users\nelso\desktop\modificar original de carlos variables\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653049373 source:c:\users\nelso\desktop\modificar original de carlos variables\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653049340 source:c:\users\nelso\desktop\modificar original de carlos variables\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653025378 source:c:\users\maria\onedrive\desktop\meyglin\nelson 2\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653151792 c:\users\maria\onedrive\desktop\meyglin\nelson 2\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1651872040 c:\users\maria\onedrive\desktop\meyglin\nelson 2\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653151792 c:\users\maria\onedrive\desktop\meyglin\nelson 2\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1651872040 c:\users\maria\onedrive\desktop\meyglin\nelson 2\include\departamento.h
+
+1651872040 c:\users\maria\onedrive\desktop\meyglin\nelson 2\include\usuarios.h
+	<string>
+
+1652150094 c:\users\maria\onedrive\desktop\meyglin\nelson 2\include\menus.h
+
+1653151792 c:\users\maria\onedrive\desktop\meyglin\nelson 2\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1652150094 source:c:\users\maria\onedrive\desktop\meyglin\nelson 2\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1651872040 source:c:\users\maria\onedrive\desktop\meyglin\nelson 2\src\departamento.cpp
+	"Departamento.h"
+
+1651872040 source:c:\users\maria\onedrive\desktop\meyglin\nelson 2\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1652150094 source:c:\users\maria\onedrive\desktop\meyglin\nelson 2\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653151792 source:c:\users\maria\onedrive\desktop\meyglin\nelson 2\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653151792 source:c:\users\maria\onedrive\desktop\meyglin\nelson 2\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653151792 source:c:\users\maria\onedrive\desktop\meyglin\nelson 2\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653025380 source:c:\users\jawic\desktop\2\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653226492 c:\users\jawic\desktop\2\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1651872042 c:\users\jawic\desktop\2\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653151794 c:\users\jawic\desktop\2\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1651872042 c:\users\jawic\desktop\2\include\departamento.h
+
+1651872042 c:\users\jawic\desktop\2\include\usuarios.h
+	<string>
+
+1652150096 c:\users\jawic\desktop\2\include\menus.h
+
+1653225502 c:\users\jawic\desktop\2\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653228431 source:c:\users\jawic\desktop\2\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1653228431 source:c:\users\jawic\desktop\2\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1651872042 source:c:\users\jawic\desktop\2\src\departamento.cpp
+	"Departamento.h"
+
+1653228431 source:c:\users\jawic\desktop\2\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653226912 source:c:\users\jawic\desktop\2\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653227854 source:c:\users\jawic\desktop\2\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1652150096 source:c:\users\jawic\desktop\2\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653025380 source:c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653226492 c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1651872042 c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653151794 c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1651872042 c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\include\departamento.h
+
+1651872042 c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\include\usuarios.h
+	<string>
+
+1652150096 c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\include\menus.h
+
+1653225502 c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653228431 source:c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1653228431 source:c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1651872042 source:c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\src\departamento.cpp
+	"Departamento.h"
+
+1653228683 source:c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Departamento.h"
+	"Usuarios.h"
+	"Concepto.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653228683 source:c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653227854 source:c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1652150096 source:c:\users\maria\onedrive\desktop\meyglin\carlos\carlos1\src\usuarios.cpp
 	"Usuarios.h"
 	<cstdlib>
 	<conio.h>
