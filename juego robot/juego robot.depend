@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1653342344 source:c:\users\ll322\proyectos\grupo2\juego robot\src\mapcellcarlosgonzalez.cpp
+	"mapcellCarlosGonzalez.h"
+	<iostream>
+
+1653342844 c:\users\ll322\proyectos\grupo2\juego robot\include\mapcellcarlosgonzalez.h
+
+1653342344 source:c:\users\ll322\proyectos\grupo2\juego robot\src\playercarlosgonzalez.cpp
+	"playerCarlosGonzalez.h"
+	<iostream>
+	<fstream>
+
+1653342844 c:\users\ll322\proyectos\grupo2\juego robot\include\playercarlosgonzalez.h
+
+1653351917 source:c:\users\ll322\proyectos\grupo2\juego robot\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<fstream>
+	<cstdlib>
+	<iomanip>
+	<windows.h>
+	<string>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	"playerCarlosGonzalez.h"
+	"mapcellCarlosGonzalez.h"
+	"gamemapCarlosGonzalez.h"
+
+1653352478 c:\users\ll322\proyectos\grupo2\juego robot\include\gamemapcarlosgonzalez.h
+	"mapcellCarlosGonzalez.h"
+
+1653352506 source:c:\users\ll322\proyectos\grupo2\juego robot\src\gamemapcarlosgonzalez.cpp
+	"gamemapCarlosGonzalez.h"
+	<iostream>
+	<fstream>
+
