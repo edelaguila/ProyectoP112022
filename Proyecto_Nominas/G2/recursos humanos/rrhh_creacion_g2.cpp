@@ -795,20 +795,20 @@ log<<"entro MOSTRAR EMPLEADOS EN NOMINA ";
 log.close();
 
 	system("cls");
-	fstream file;
+	fstream baseDatos;
 	int total=0;
 	cout<<"\n-------------------------Tabla de Detalles de Empleados -------------------------"<<endl;
-	file.open("empleados.dat",ios::in|ios::binary);
-	if(!file)
+	baseDatos.open("empleados.dat",ios::in|ios::binary);
+	if(!baseDatos)
 	{
 		cout<<"\n\t\t\tNo hay informacion......";
-		file.close();
+		baseDatos.close();
 	}
 	else
 	{
-		file >>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
+		baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
 
-		while(!file.eof())
+		while(!baseDatos.eof())
 		{
 				total++;
 
@@ -829,14 +829,14 @@ log.close();
 			cout<<"\t\nNOMBRES"<<" "<<"|"<<"CARGO"<<" "<<" "<<" "<<" "<<" "<<"|"<<"HORASTRABAJADAS"<<"|"<<"CANTIDADPORHORA"<<"|"<<"HORASEXTRAS"<<"|"<<"BONIFICACION"<<"|"<<" "<<" "<<"ISR"<<"|"<<" "<<" "<<" "<<"IGSS"<<"|"<<"IRTRA"<<"|"<<"TOTALDESCUENTOS"<<"|"<<"SALARIOTOTAL\t\t\n ";
 			cout<<nombre<<" "<<" "<<"|"<<puesto<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<horatr<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<hora<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<horaextra<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<"250"<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<isr<<" "<<" "<<"|"<<igss<<"|"<<irtra<<" "<<"|"<<" "<<" "<<totaldesc<<" "<<" "<<" "<<" "<<" "<<" "<<"|"" "<<" "<<bonificacion;
 			cout<<"----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
-			file >>nombre>>puesto>>horatr>>hora>>horaextra>>sueldo1>>sueldo>>isr>>igss>>irtra>>totaldesc>>sueldo2>>bonificacion;
+			baseDatos>>nombre>>puesto>>horatr>>hora>>horaextra>>sueldo1>>sueldo>>isr>>igss>>irtra>>totaldesc>>sueldo2>>bonificacion;
 		}
 		if(total==0)
 		{
 			cout<<"\n\t\t\tNo hay informacion...";
 		}
 	}
-	file.close();
+	baseDatos.close();
 }
 
 void empresa::modifyNomina()//funcion creada por Diego Culajay
