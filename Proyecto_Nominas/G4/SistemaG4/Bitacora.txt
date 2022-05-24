@@ -23,3 +23,48 @@ Grupo4
 15:26:23
 Se realizo consulta de Poliza
 
+Grupo4         
+23/05/2022
+16:51:14
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+23/05/2022
+16:51:16
+Ingreso a Menu Contabilidad
+
+Grupo4         
+23/05/2022
+16:51:20
+Se realizo consulta de Poliza
+
+Grupo4         
+23/05/2022
+16:59:12
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+23/05/2022
+16:59:16
+Ingreso a Menu Contabilidad
+
+Grupo4         
+23/05/2022
+16:59:18
+Se realizo consulta de Poliza
+
+Grupo4         
+23/05/2022
+17:0:51
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+23/05/2022
+17:0:53
+Ingreso a Menu Contabilidad
+
+Grupo4         
+23/05/2022
+17:0:56
+Se realizo consulta de Poliza
+

@@ -5,6 +5,9 @@
 class Poliza
 {
     public:
+        void menu();
+        menuContabilidad();
+
         Poliza();
         virtual ~Poliza();
 

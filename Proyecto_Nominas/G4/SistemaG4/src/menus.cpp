@@ -7,6 +7,7 @@
 #include "Departamento.h"
 #include "Usuarios.h"
 #include "Concepto.h"
+#include "Poliza.h"
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -167,6 +168,7 @@ menus::menuConsultas()
 menus::menuContabilidad()
 {   Concepto gesConcepto;
     Persona empleado;
+    Poliza gesPoliza;
     Bitacora control;
     fstream empleadosEntradaSalida = empleado.inicioArchivo();
     fstream empleadosEntradaSalida2 = empleado.inicioArchivo();
@@ -210,8 +212,7 @@ menus::menuContabilidad()
 	case 3:
 	    control.nuevaActividadTxt(12);
         control.nuevaActividad(12);
-        cout<<"Estamos trabajando en la Consulta de Poliza"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+        gesPoliza.menu();
 		break;
 	case 4:
 	    control.nuevaActividadTxt(13);
