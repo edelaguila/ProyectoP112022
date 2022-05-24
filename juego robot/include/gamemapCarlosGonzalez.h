@@ -15,6 +15,7 @@ class gamemapCarlosGonzalez
         void drawVictoria();
         void drawFinalA();
         void drawFinalB();
+        void drawMuerte();
         virtual ~gamemapCarlosGonzalez();
         bool isGameOver=false;
     protected:

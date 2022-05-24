@@ -38,14 +38,20 @@ bool gamemapCarlosGonzalez::setPlayerCell(int playerX, int playerY)
             isGameOver==true;
             return true;
         }
+        if (cell[playerX][playerY].id=='_')
+        {
+            drawMuerte();
+            isGameOver==true;
+            return true;
+        }
         else
         { // evalúa espacio
             //Se verifica que maque con cero la posicion que abandona el jugador
             if (playerCell != NULL)
             {
                 // Cambio permitira quitar los ceros en el camino del jugador, al traslador un cero a un char se convierte en espacio
-                //playerCell->id='0';
-                playerCell->id=0;
+                playerCell->id='0';
+                //playerCell->id=0;
             }
             //cout << "Las coordenadas del jugador estan en: " << playerX << "," << playerY << endl;
             //Cambio de coordenadas para corregiro problema de los movimientos del jugador en el eje X
@@ -77,9 +83,9 @@ void gamemapCarlosGonzalez::loadMapFromFile()
             //cout << line << endl;
             for (int p = 0; p < line.length(); p++)
             {
-                if (line[p] == '0')
+                if (line[p] == 0)
                 {
-                    cell[row][p].id = 0;
+                    cell[row][p].id = '0';//posible solucion
                 } else
                 {
                     cell[row][p].id = line[p];
@@ -186,6 +192,29 @@ void gamemapCarlosGonzalez::drawFinalA(){
     else
     {
         cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
+    }
+}
+
+void gamemapCarlosGonzalez::drawMuerte()
+{
+    system("cls");
+    string line;
+    char userInput = ' ';
+    ifstream myFile("muerte.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        while( getline(myFile, line))
+        {
+            cout << "\t" << line << endl;
+        }
+        myFile.close();
+        cout<<"\n\t\t\t";system("pause");//cin >> userInput;
+        exit(0);
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de ganador no pudo ser cargado" << endl;
     }
 }
 
