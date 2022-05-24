@@ -96,7 +96,11 @@ void Concepto::Actualizar()
 				cin>>PAnticipos;
 				cout<<"\t\t\tIngrese porcentaje nuevo de Pension alimenticia: ";
 				cin>>Ppension;
-				file1<<std::left<<std::setw(15)<<anio<<std::left<<std::setw(15)<< PIGSS <<std::left<<std::setw(15)<< PISR <<std::left<<std::setw(15)<< PAnticipos <<std::left<<std::setw(15)<< Ppension <<std::left<<std::setw(15)<< resultIGSS<<std::left<<std::setw(15)<<resultISR<<std::left<<std::setw(15)<<resultAnticipo<<std::left<<std::setw(15)<<resultpension << "\n";
+				double cIGSS = PIGSS/100;
+				double cISR = PISR/100;
+				double cAnticipos = PAnticipos/100;
+				double cPension = Ppension/100;
+				file1<<std::left<<std::setw(15)<<anio<<std::left<<std::setw(15)<< PIGSS <<std::left<<std::setw(15)<< PISR <<std::left<<std::setw(15)<< PAnticipos <<std::left<<std::setw(15)<< Ppension <<std::left<<std::setw(15)<< cIGSS<<std::left<<std::setw(15)<<cISR<<std::left<<std::setw(15)<<cAnticipos<<std::left<<std::setw(15)<<cPension << "\n";
                 found++;
 			}
 			file>>anio>>PIGSS>>PISR>>PAnticipos>>Ppension>>resultIGSS>>resultISR>>resultAnticipo>>resultpension;

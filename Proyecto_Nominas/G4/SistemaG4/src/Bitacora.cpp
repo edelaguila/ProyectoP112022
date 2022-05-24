@@ -177,7 +177,7 @@ Bitacora::nuevaActividad(int opcion)
         accion1 = "Se realizo consulta de Poliza";
         break;
     case 12:
-        accion1 = "Se realizo consulta de Planillas";
+        accion1 = "Se imprimio a Nomina";
         break;
     case 13:
         accion1 = "Se realizo consulta de Retenciones";
@@ -417,7 +417,16 @@ Bitacora::nuevaActividadTxt(int opcion)
         accion1 = "Se consultaron los conceptos";
         break;
     case 35:
-        accion1 = "Se actualizaron los conceptos";
+        accion1 = "Se consultaron Seguros de Vida";
+        break;
+    case 36:
+        accion1 = "Se consultaron seguros de Salud";
+        break;
+    case 37:
+        accion1 = "Se consultaron seguros Familiares";
+        break;
+    case 38:
+        accion1 = "Se consultaron seguros Dentales";
         break;
 
     }

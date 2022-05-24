@@ -203,26 +203,26 @@ menus::menuContabilidad()
         cout << "Presiona Enter para aceptar"<<endl;
 		break;
 	case 2:
-	    control.nuevaActividadTxt(11);
-        control.nuevaActividad(11);
+	    control.nuevaActividadTxt(12);
+        control.nuevaActividad(12);
         empleado.imprimirRegistro2(empleadosEntradaSalida2);
         cout << "Nomina impresa satisfactoriamente"<<endl;
         cout << "Presiona Enter para aceptar"<<endl;
 		break;
 	case 3:
-	    control.nuevaActividadTxt(12);
-        control.nuevaActividad(12);
+	    control.nuevaActividadTxt(11);
+        control.nuevaActividad(11);
         gesPoliza.menu();
 		break;
 	case 4:
-	    control.nuevaActividadTxt(13);
-        control.nuevaActividad(13);
+	    control.nuevaActividadTxt(15);
+        control.nuevaActividad(15);
         cout<<"Estamos trabajando en la Consulta de Transferencias"<<endl;
         cout << "Presiona Enter para aceptar"<<endl;
 		break;
 	case 5:
-	    control.nuevaActividadTxt(15);
-        control.nuevaActividad(15);
+	    control.nuevaActividadTxt(13);
+        control.nuevaActividad(13);
         gesConcepto.menu();
 		break;
     case 6:

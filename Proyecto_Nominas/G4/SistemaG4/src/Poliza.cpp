@@ -43,6 +43,8 @@ void Poliza::menu()
     switch(choice)
     {
     case 1:
+        control.nuevaActividadTxt(35);
+        control.nuevaActividad(35);
 		cout <<"  - Muerte natural o por enfermedad "<<endl;
 		cout <<"  - Muerte Accidental "<<endl;
 		cout <<"  - Gastos funerarios "<<endl;
@@ -51,6 +53,8 @@ void Poliza::menu()
 		cout <<"  - Indemnizacion escolar "<<endl;
 		break;
 	case 2:
+	    control.nuevaActividadTxt(36);
+        control.nuevaActividad(36);
 		cout <<" - Atencion medica general "<<endl;
 		cout <<" - Examenes de laboratorio "<<endl;
 		cout <<" - Hospitalizacion "<<endl;
@@ -62,6 +66,8 @@ void Poliza::menu()
 		cout <<" - Servicios de salud mental "<<endl;
 		break;
     case 3:
+        control.nuevaActividadTxt(37);
+        control.nuevaActividad(37);
 		cout <<" - Asistencia medica para esposa e hijos"<<endl;
 		cout <<" - Asistencia quirurgica para esposa e hijos "<<endl;
 		cout <<" - Asistencia farmaceutica para esposa e hijos "<<endl;
@@ -72,6 +78,8 @@ void Poliza::menu()
 		cout <<" - Servicios pediatricos   "<<endl;
 		break;
     case 4:
+        control.nuevaActividadTxt(38);
+        control.nuevaActividad(38);
 		cout <<" - Consulta cada 6 meses "<<endl;
 		cout <<" - Cuidado basico de restauracion dental "<<endl;
 		cout <<" - Limpiezas regulares de dientes  "<<endl;
