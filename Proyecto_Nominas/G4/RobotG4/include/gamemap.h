@@ -40,6 +40,5 @@ class gamemap
         void createMapToFile2();
         void createMapToFile3();
 };
-};
 
 #endif // GAMEMAP_H
