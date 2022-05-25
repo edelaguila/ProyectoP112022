@@ -1,4 +1,5 @@
 #include "Persona.h"
+#include "Concepto.h"
 #include <iostream>
 #include<conio.h>
 using namespace std;
@@ -318,6 +319,30 @@ void Persona::establecerRAlimenticio( string RAlimenticioString )
 
 }
 
+double Persona::obtenerPerIgss() const
+{
+   Concepto imp;
+   return imp.eIGSS;
+}
+
+double Persona::obtenerPerISR() const
+{
+   Concepto imp;
+   return imp.eISR;
+}
+
+double Persona::obtenerPerAnticipo() const
+{
+   Concepto imp;
+   return imp.eAnticipos;
+}
+
+double Persona::obtenerPerAlim() const
+{
+   Concepto imp;
+   return imp.ePension;
+}
+
 
 
 // crear archivo de texto con formato para imprimirlo
@@ -525,6 +550,8 @@ cout << left << setw( 4 ) << "ID" << setw( 12 )
 // crear e insertar registro
 void Persona::nuevoRegistro( fstream &insertarEnArchivo )
 {
+    Concepto imp;
+
    // obtener el número de ID a crear
    int numeroId = obtenerId( "Ingrese el ID del nuevo empleado: " );
 
@@ -561,6 +588,7 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
       double PAlimenticia;
       int RAlimenticio;
 
+
       // el usuario introduce los datos
       cout << "Escriba el apellido : " << endl;
       cin >> setw( 15 ) >> apellido;
@@ -584,35 +612,41 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
       cin>> setw(6)>>Comisiones;
       Bincentivo = 250;
       Vhoras= 25;
+      imp.Consultar2();
+      double resultIGSS = imp.eIGSS;
+      double resultISR = imp.eISR;
+      double resultAnticipo = imp.eAnticipos;
+      double resultpension = imp.ePension;
+
       switch(RAlimenticio){
      case 1:
      if (sueldo >= 4000 ){
         SueldoEx = (hExtra*Vhoras);
       TDevengado = (SueldoEx+Comisiones+sueldo);
-      IGSS = (TDevengado*0.0483);
-      ISR = (((TDevengado*12)-(48000+(IGSS*12)))*0.05)/12;
-      Anticipos = (TDevengado*0.4);
+      IGSS = (TDevengado*resultIGSS);
+      ISR = (((TDevengado*12)-(48000+(IGSS*12)))*resultISR)/12;
+      Anticipos = (TDevengado*resultAnticipo);
       TDescuentos = (IGSS+ISR+Anticipos);
       LiquidoR = (sueldo-TDescuentos+Bincentivo);
-      PAlimenticia = ((Anticipos+LiquidoR)*0.4512);
+      PAlimenticia = ((Anticipos+LiquidoR)*resultpension);
       }
       else{
     ISR = 0;
     SueldoEx = (hExtra*Vhoras);
       TDevengado = (SueldoEx+Comisiones+sueldo);
-      IGSS = (TDevengado*0.0483);
-      Anticipos = (TDevengado*0.4);
+      IGSS = (TDevengado*resultIGSS);
+      Anticipos = (TDevengado*resultAnticipo);
       TDescuentos = (IGSS+ISR+Anticipos);
       LiquidoR = (sueldo-TDescuentos+Bincentivo);
-    PAlimenticia = ((Anticipos+LiquidoR)*0.4512);
+    PAlimenticia = ((Anticipos+LiquidoR)*resultpension);
       }
       case 2:
    if (sueldo >= 4000 ){
         SueldoEx = (hExtra*Vhoras);
       TDevengado = (SueldoEx+Comisiones+sueldo);
-      IGSS = (TDevengado*0.0483);
-      ISR = (((TDevengado*12)-(48000+(IGSS*12)))*0.05)/12;
-      Anticipos = (TDevengado*0.4);
+      IGSS = (TDevengado*resultIGSS);
+      ISR = (((TDevengado*12)-(48000+(IGSS*12)))*resultISR)/12;
+      Anticipos = (TDevengado*resultAnticipo);
       TDescuentos = (IGSS+ISR+Anticipos);
       LiquidoR = (sueldo-TDescuentos+Bincentivo);
       }
@@ -620,8 +654,8 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
     ISR = 0;
     SueldoEx = (hExtra*Vhoras);
       TDevengado = (SueldoEx+Comisiones+sueldo);
-      IGSS = (TDevengado*0.0483);
-      Anticipos = (TDevengado*0.4);
+      IGSS = (TDevengado*resultIGSS);
+      Anticipos = (TDevengado*resultAnticipo);
       TDescuentos = (IGSS+ISR+Anticipos);
       LiquidoR = (sueldo-TDescuentos+Bincentivo);
       }

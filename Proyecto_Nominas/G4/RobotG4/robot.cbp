@@ -2,30 +2,28 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="SistemaG4" />
+		<Option title="robot" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/SistemaG4" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/robot" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="include" />
-					<Add directory="./" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/SistemaG4" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/robot" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="include" />
-					<Add directory="./" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -36,23 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/Bitacora.h" />
-		<Unit filename="include/Concepto.h" />
-		<Unit filename="include/Departamento.h" />
-		<Unit filename="include/Persona.h" />
-		<Unit filename="include/Poliza.h" />
-		<Unit filename="include/Puesto.h" />
-		<Unit filename="include/Usuarios.h" />
-		<Unit filename="include/menus.h" />
+		<Unit filename="include/gamemap.h" />
+		<Unit filename="include/mapcell.h" />
+		<Unit filename="include/player.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Bitacora.cpp" />
-		<Unit filename="src/Concepto.cpp" />
-		<Unit filename="src/Departamento.cpp" />
-		<Unit filename="src/Persona.cpp" />
-		<Unit filename="src/Poliza.cpp" />
-		<Unit filename="src/Puesto.cpp" />
-		<Unit filename="src/Usuarios.cpp" />
-		<Unit filename="src/menus.cpp" />
+		<Unit filename="src/gamemap.cpp" />
+		<Unit filename="src/mapcell.cpp" />
+		<Unit filename="src/player.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

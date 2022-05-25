@@ -1,0 +1,126 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\visitante\proyectos\didactica2k\temporal\prograuno\objetos\proyecto\robot\main.cpp
+	<iostream>
+
+1647041769 source:c:\users\visitante\proyectos\didactica2k\temporal\prograuno\objetos\proyecto\robot\src\player.cpp
+	"player.h"
+
+1647041769 c:\users\visitante\proyectos\didactica2k\temporal\prograuno\objetos\proyecto\robot\include\player.h
+
+1648218813 source:c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1648218813 c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\include\player.h
+
+1647105197 D
+
+1648218813 source:c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1647127950 ot_construyendo_paredes
+	"player.h"
+	<iostream>
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+1648181161 source:c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1648130225 c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\include\mapcell.h
+
+1648176707 c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\include\gamemap.h
+	"mapcell.h"
+
+1648218813 source:c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+1652576463 source:c:\users\jawic\prograunosql\prograuno\proyecto_juego\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1651161769 c:\users\jawic\prograunosql\prograuno\proyecto_juego\include\player.h
+
+1651161769 c:\users\jawic\prograunosql\prograuno\proyecto_juego\include\mapcell.h
+
+1652576463 c:\users\jawic\prograunosql\prograuno\proyecto_juego\include\gamemap.h
+	"mapcell.h"
+
+1652576653 source:c:\users\jawic\prograunosql\prograuno\proyecto_juego\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+1651161769 source:c:\users\jawic\prograunosql\prograuno\proyecto_juego\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1651161769 source:c:\users\jawic\prograunosql\prograuno\proyecto_juego\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1652576463 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1651161769 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\player.h
+
+1651161769 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\mapcell.h
+
+1652576463 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\gamemap.h
+	"mapcell.h"
+
+1652576653 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+1651161769 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1651161769 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1653446618 source:c:\users\mey\desktop\robot\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1653446618 c:\users\mey\desktop\robot\include\mapcell.h
+
+1653446618 source:c:\users\mey\desktop\robot\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1653446618 c:\users\mey\desktop\robot\include\player.h
+
+1653448666 source:c:\users\mey\desktop\robot\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1653451612 c:\users\mey\desktop\robot\include\gamemap.h
+	"mapcell.h"
+
+1653450441 source:c:\users\mey\desktop\robot\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+

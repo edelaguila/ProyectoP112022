@@ -6,6 +6,8 @@
 #include "Puesto.h"
 #include "Departamento.h"
 #include "Usuarios.h"
+#include "Concepto.h"
+#include "Poliza.h"
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -59,7 +61,7 @@ int choice;
 	cout<<"\t\t\t 1. Consultas"<<endl;
 	cout<<"\t\t\t 2. Contabilidad"<<endl;
 	cout<<"\t\t\t 3. Gestion Empleados"<<endl;
-	cout<<"\t\t\t 4. Gestion Puestos"<<endl;
+	cout<<"\t\t\t 4. Gestion Departamentos"<<endl;
 	cout<<"\t\t\t 5. Seguridad"<<endl;
 	cout<<"\t\t\t 6. Salir"<<endl;
 
@@ -112,6 +114,7 @@ menus::menuConsultas()
     //Creacion de un objeto de la clase Persona
     Persona empleado;
     Bitacora control;
+    Puesto dep;
     fstream empleadosEntradaSalida = empleado.inicioArchivo();
 
     int choice;
@@ -125,7 +128,7 @@ menus::menuConsultas()
 	cout<<"\t\t\t"<<endl;
 	cout<<"\t\t\t 1. Consulta Empleados"<<endl;
 	cout<<"\t\t\t 2. Consulta Departamentos"<<endl;
-	cout<<"\t\t\t 3. Consulta Sueldos"<<endl;
+	cout<<"\t\t\t 3. Consulta Nomina"<<endl;
 	cout<<"\t\t\t 4. Regresar"<<endl;
 
 	cout<<"\t\t\t"<<endl;
@@ -144,14 +147,12 @@ menus::menuConsultas()
 	case 2:
 	    control.nuevaActividadTxt(8);
         control.nuevaActividad(8);
-        cout<<"Estamos trabajando en la Consulta de Departamentos"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+        dep.Consultar();
 		break;
 	case 3:
 	    control.nuevaActividadTxt(9);
         control.nuevaActividad(9);
-        cout<<"Estamos trabajando en la Consulta de Sueldos"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+        empleado.consultarRegistro2(empleadosEntradaSalida);
 		break;
 	case 4:
 	        cout<<"Presione Enter para confirmar"<<endl;
@@ -165,8 +166,9 @@ menus::menuConsultas()
 }
 
 menus::menuContabilidad()
-{
+{   Concepto gesConcepto;
     Persona empleado;
+    Poliza gesPoliza;
     Bitacora control;
     fstream empleadosEntradaSalida = empleado.inicioArchivo();
     fstream empleadosEntradaSalida2 = empleado.inicioArchivo();
@@ -182,12 +184,12 @@ menus::menuContabilidad()
 	cout<<"\t\t\t 1. Consulta Nomina"<<endl;
 	cout<<"\t\t\t 2. Imprimir Nomina"<<endl;
 	cout<<"\t\t\t 3. Consulta Poliza"<<endl;
-	cout<<"\t\t\t 4. Consulta Retenciones"<<endl;
-	cout<<"\t\t\t 5. Transferencias"<<endl;
+	cout<<"\t\t\t 4. Transferencias"<<endl;
+	cout<<"\t\t\t 5. Mantenimiento de Deducciones y Percepciones"<<endl;
 	cout<<"\t\t\t 6. Regresar"<<endl;
 
 	cout<<"\t\t\t"<<endl;
-	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6/7]"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
 	cout<<"\t\t\t"<<endl;
 	cout<<"Ingresa una Opcion: ";
     cin>>choice;
@@ -201,31 +203,29 @@ menus::menuContabilidad()
         cout << "Presiona Enter para aceptar"<<endl;
 		break;
 	case 2:
-	    control.nuevaActividadTxt(11);
-        control.nuevaActividad(11);
+	    control.nuevaActividadTxt(12);
+        control.nuevaActividad(12);
         empleado.imprimirRegistro2(empleadosEntradaSalida2);
-        cout << "Planilla impresa satisfactoriamente"<<endl;
+        cout << "Nomina impresa satisfactoriamente"<<endl;
         cout << "Presiona Enter para aceptar"<<endl;
 		break;
 	case 3:
-	    control.nuevaActividadTxt(12);
-        control.nuevaActividad(12);
-        cout<<"Estamos trabajando en la Consulta de Poliza"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+	    control.nuevaActividadTxt(11);
+        control.nuevaActividad(11);
+        gesPoliza.menu();
 		break;
 	case 4:
-	    control.nuevaActividadTxt(13);
-        control.nuevaActividad(13);
-        cout<<"Estamos trabajando en la Consulta de Retenciones"<<endl;
+	    control.nuevaActividadTxt(15);
+        control.nuevaActividad(15);
+        cout<<"Estamos trabajando en la Consulta de Transferencias"<<endl;
         cout << "Presiona Enter para aceptar"<<endl;
 		break;
 	case 5:
-	    control.nuevaActividadTxt(15);
-        control.nuevaActividad(15);
-        cout<<"Estamos trabajando en las Transferencias"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+	    control.nuevaActividadTxt(13);
+        control.nuevaActividad(13);
+        gesConcepto.menu();
 		break;
-	case 6:
+    case 6:
 	    cout<<"Presiona enter para confirmar"<<endl;
 		break;
 	default:
@@ -375,3 +375,4 @@ menus::menuSeguridad()
 	}getch();
     }while(choice!= 4);
 }
+

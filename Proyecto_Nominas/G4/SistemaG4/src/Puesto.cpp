@@ -27,18 +27,17 @@ void Puesto::menu()
 	system("cls");
 
 	cout<<"\t\t\t................................"<<endl;
-	cout<<"\t\t\t .  SISTEMA GESTION PUESTOS Y DEPARTAMENTOS   ."<<endl;
+	cout<<"\t\t\t .  SISTEMA GESTION DEPARTAMENTOS   ."<<endl;
 	cout<<"\t\t\t................................"<<endl;
 	cout<<"\t\t\t 1. Ingreso Puesto"<<endl;
-	cout<<"\t\t\t 2. Actualizar Puesto"<<endl;
-	cout<<"\t\t\t 3. Consultar Puestos"<<endl;
-	cout<<"\t\t\t 4. Imprimir Puesto"<<endl;
-	cout<<"\t\t\t 5. Borra Puesto"<<endl;
-	cout<<"\t\t\t 6. Consulta Departamentos"<<endl;
-	cout<<"\t\t\t 7. Regresar"<<endl;
+	cout<<"\t\t\t 2. Actualizar Departamento"<<endl;
+	cout<<"\t\t\t 3. Consultar Departamento"<<endl;
+	cout<<"\t\t\t 4. Imprimir Departamentos"<<endl;
+	cout<<"\t\t\t 5. Borrar Puesto"<<endl;
+	cout<<"\t\t\t 6. Regresar"<<endl;
 
 	cout<<"\t\t\t"<<endl;
-	cout<<"\t\t\t Opcion a escoger:[1/2/3/4/5/6/7]"<<endl;
+	cout<<"\t\t\t Opcion a escoger:[1/2/3/4/5/6]"<<endl;
 	cout<<"\t\t\t"<<endl;
 	cout<<"Ingresa tu Opcion: ";
     cin>>choice;
@@ -60,7 +59,7 @@ void Puesto::menu()
 	    control.nuevaActividadTxt(26);
         control.nuevaActividad(26);
 		Actualizar();
-		cout <<"Puesto actualizado satisfactoriamente"<<endl;
+		cout <<"Departamento actualizado satisfactoriamente"<<endl;
 		break;
 	case 3:
 	    control.nuevaActividadTxt(27);
@@ -80,20 +79,14 @@ void Puesto::menu()
 		Borrar();
 		cout <<"Puesto eliminado satisfactoriamente"<<endl;
 		break;
-    case 6:
-        control.nuevaActividadTxt(29);
-        control.nuevaActividad(29);
-        consultarDep();
-        cout <<"Presiona Enter para confirmar"<<endl;
-        break;
-	case 7:
+	case 6:
 	    cout << "Presiona Enter para confirmar"<<endl;
         break;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 	}
 	getch();
-    }while(choice!= 7);
+    }while(choice!= 6);
 }
 
 //Funcion que ingresa puestos y departamentos
@@ -103,12 +96,12 @@ void Puesto::Ingresar()
 	system("cls");
 	fstream file;
 	cout<<"\n.....................................................................................................................";
-	cout<<"\n.....................................Agregar detalles de Puesto......................................................"<<endl;
-	cout<<"\t\t\tIngresa Departamento del Puesto       : ";
+	cout<<"\n.....................................Agregar detalles de Departamento......................................................"<<endl;
+	cout<<"\t\t\tMIngresa el nombre del Departamento       : ";
 	cin>>Dpuesto;
-	cout<<"\t\t\tIngresa el Cargo del Puesto     : ";
+	cout<<"\t\t\tIngresa el Puesto     : ";
 	cin>>Crpuesto;
-	cout<<"\t\t\tIngresa Salario del Puesto   : ";
+	cout<<"\t\t\tIngresa Salario  : ";
 	cin>>Spuesto;
 	cout<<"\t\t\tIngresa hora de entrada  : ";
 	cin>>Hentrada;
@@ -143,7 +136,7 @@ void Puesto::Imprimir()
 		{
 			total++;
 			cout<<"\n\n\t\t\t Departamento: "<<Dpuesto<<endl;
-			cout<<"\t\t\t Nombre del cargo: "<<Crpuesto<<endl;
+			cout<<"\t\t\t Puesto: "<<Crpuesto<<endl;
 			cout<<"\t\t\t Salario: "<<Spuesto<<endl;
 			cout<<"\t\t\t Hora de entrada: "<<Hentrada<<endl;
 			cout<<"\t\t\t Hora de salida: "<<Hsalida<<endl;
@@ -174,7 +167,7 @@ void Puesto::Actualizar()
 	}
 	else
 	{
-		cout<<"\n Ingrese Departamento de la personas que quiere modificar: ";
+		cout<<"\n Ingrese el Departamento a modificar: ";
 		cin>>participant_Dp;
 		file1.open("Record.txt",ios::app | ios::out);
 		file >> Dpuesto >> Crpuesto>> Spuesto >> Hentrada >> Hsalida;
@@ -186,11 +179,11 @@ void Puesto::Actualizar()
 			}
 			else
 			{
-				cout<<"\t\t\tIngrese Departamento del Puesto: ";
+				cout<<"\t\t\tIngrese Departamento: ";
 				cin>>Dpuesto;
-				cout<<"\t\t\tIngrese Cargo del Puesto: ";
+				cout<<"\t\t\tIngrese el Puesto: ";
 				cin>>Crpuesto;
-				cout<<"\t\t\tIngresa Salario del Puesto: ";
+				cout<<"\t\t\tIngresa Salario: ";
 				cin>>Spuesto;
 				cout<<"\t\t\tIngrese hora de entrada: ";
 				cin>>Hentrada;
@@ -234,7 +227,7 @@ void Puesto::Consultar()
 			if(participant_Dp==Dpuesto)
 			{
 				cout<<"\n\n\t\t\t Departamento: "<<Dpuesto<<endl;
-                cout<<"\t\t\t Nombre del cargo: "<<Crpuesto<<endl;
+                cout<<"\t\t\t Puesto: "<<Crpuesto<<endl;
                 cout<<"\t\t\t Salario: "<<Spuesto<<endl;
                 cout<<"\t\t\t Hora de entrada: "<<Hentrada<<endl;
                 cout<<"\t\t\t Hora de salida: "<<Hsalida<<endl;
@@ -266,7 +259,7 @@ void Puesto::Borrar()
 	}
 	else
 	{
-		cout<<"\n Ingrese el Departamento de la Persona que quiere borrar: ";
+		cout<<"\n Ingrese el Departamento del Puesto que quiere borrar: ";
 		cin>>participant_Dp;
 		file1.open("Record.txt",ios::app | ios::out);
 		file >> Dpuesto >> Crpuesto>> Spuesto >> Hentrada >> Hsalida;
@@ -285,7 +278,7 @@ void Puesto::Borrar()
 		}
 		if(found==0)
 		{
-			cout<<"\n\t\t\t Departamento de Puesto no encontrado...";
+			cout<<"\n\t\t\t Departamento no encontrado...";
 		}
 		file1.close();
 		file.close();
