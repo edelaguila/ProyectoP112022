@@ -30,6 +30,7 @@ bool gamemapCarlosGonzalez::setPlayerCell(int playerX, int playerY)
         if (cell[playerX][playerY].id == '$')
         {
             drawVictoria();
+            drawFinalB();
             isGameOver = true;
             return true;
         }if (cell[playerX][playerY].id=='2')
@@ -177,6 +178,28 @@ void gamemapCarlosGonzalez::drawFinalA(){
     system("cls");
     string line;
     ifstream myFile("tunelInfinito.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        cout<<"\n\n";
+        while( getline(myFile, line))
+        {
+            cout << "\t" <<line << endl;
+        }
+        myFile.close();
+        cout<<"\n\t\t\t";system("pause");//cin >> userInput;
+        exit(0);
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
+    }
+}
+
+void gamemapCarlosGonzalez::drawFinalB(){
+    system("cls");
+    string line;
+    ifstream myFile("creditos.txt");
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas
