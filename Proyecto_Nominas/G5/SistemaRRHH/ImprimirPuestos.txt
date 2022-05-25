@@ -1,2 +1,0 @@
-Codigo    Estatus         Nombre        
-1         habilitado      gegentege    
