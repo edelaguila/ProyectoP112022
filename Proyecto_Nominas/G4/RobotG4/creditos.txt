@@ -1,10 +1,9 @@
 Equipo de Desarrollo:
-   Equipo -----> G1
-   Integrante 1:  Juan Ejemplo - Portada
-   Integrante 2:  Juan Ejemplo - Premios
-   Integrante 3:  Juan Ejemplo - Caracteres
-   Integrante 4:  Juan Ejemplo - Mensaje Final
-   Integrante 5:  Juan Ejemplo - Creditos
+   Equipo -----> G4
+   Integrante 1:  Carlos Sandoval - Implementación Segundo Nivel
+   Integrante 2:  Meyglin Rosales - Implemetnación Tercer Nivel
+   Integrante 3:  Maria Jose Veliz - Cambio de Robot por nivel
+   Integrante 4:  Nelson Pineda - Cambio de Colores y Premios
 
 
 

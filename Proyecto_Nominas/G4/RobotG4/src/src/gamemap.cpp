@@ -1,7 +1,6 @@
 #include "gamemap.h"
 #include <iostream>
 #include <fstream>
-#include <windows.h>
 //Implementacion de toda la funcionabilidad del mapa del juego
 
 using namespace std;
@@ -212,8 +211,7 @@ void gamemap::loadMapFromFile()
 
 }
 void gamemap::loadMapFromFile2()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 5);
+{
     string line;
     int row = 0;
     char userInput = ' ';
@@ -257,8 +255,6 @@ void gamemap::loadMapFromFile2()
 }
 void gamemap::loadMapFromFile3()
 {
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 4);
     string line;
     int row = 0;
     char userInput = ' ';
@@ -397,8 +393,7 @@ void gamemap::createMapToFile3()
     }
 }
 void gamemap::drawPortada()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 15);
+{
     string line;
     char userInput = ' ';
     ifstream myFile("portada.txt");
@@ -418,8 +413,7 @@ void gamemap::drawPortada()
     }
 }
 void gamemap::drawPortada2()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 15);
+{
     string line;
     char userInput = ' ';
     ifstream myFile("portada2.txt");
@@ -439,9 +433,7 @@ void gamemap::drawPortada2()
     }
 }
 void gamemap::drawPortada3()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 15);
-
+{
     string line;
     char userInput = ' ';
     ifstream myFile("portada3.txt");
@@ -461,8 +453,7 @@ void gamemap::drawPortada3()
     }
 }
 void gamemap::drawVictoria()
-{ HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 3);
+{
     gamemap map;
     string line;
     char choice;
@@ -487,8 +478,7 @@ void gamemap::drawVictoria()
         }
 }
 void gamemap::drawVictoria2()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 6);
+{
     gamemap map;
     string line;
     char choice;
@@ -513,8 +503,7 @@ void gamemap::drawVictoria2()
         }
 }
 void gamemap::drawVictoria3()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 5);
+{
     gamemap map;
     string line;
     char choice;
