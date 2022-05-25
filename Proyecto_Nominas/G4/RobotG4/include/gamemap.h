@@ -8,7 +8,7 @@ class gamemap
     public:
         gamemap();
         mapcell* playerCell;
-        mapcell cell [15][10];
+        mapcell cell [15][30];
         gamemap2();
         gamemap3();
         void draw();
