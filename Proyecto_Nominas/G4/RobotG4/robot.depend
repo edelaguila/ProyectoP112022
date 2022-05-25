@@ -124,3 +124,30 @@
 	<iostream>
 	<fstream>
 
+1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1653516259 c:\users\mey\desktop\progra1\nueva carpeta\include\player.h
+
+1653516805 c:\users\mey\desktop\progra1\nueva carpeta\include\mapcell.h
+
+1653516805 c:\users\mey\desktop\progra1\nueva carpeta\include\gamemap.h
+	"mapcell.h"
+
+1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1653516729 source:c:\users\mey\desktop\progra1\nueva carpeta\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
