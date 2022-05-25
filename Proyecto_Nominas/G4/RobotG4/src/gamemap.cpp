@@ -100,7 +100,7 @@ bool gamemap::setPlayerCell2(int playerX, int playerY)
 {
     if (cell[playerX][playerY].isBlockedCell() == false)
     {
-        if (cell[playerX][playerY].id == '$')
+        if (cell[playerX][playerY].id == '#')
         {
             drawVictoria2();
             isGameOver = true;
@@ -119,7 +119,7 @@ bool gamemap::setPlayerCell2(int playerX, int playerY)
             //playerCell = &cell[playerY][playerX];
             playerCell = &cell[playerX][playerY];
             //Simbolo del jugador en el mapa
-            playerCell->id=169; //ascii 169
+            playerCell->id=254; //ascii 254
         }
 
         return true;
@@ -137,7 +137,7 @@ bool gamemap::setPlayerCell3(int playerX, int playerY)
 
     if (cell[playerX][playerY].isBlockedCell() == false)
     {
-        if (cell[playerX][playerY].id == '$')
+        if (cell[playerX][playerY].id == 'A')
         {
             drawVictoria3();
             isGameOver = true;
@@ -156,7 +156,7 @@ bool gamemap::setPlayerCell3(int playerX, int playerY)
             //playerCell = &cell[playerY][playerX];
             playerCell = &cell[playerX][playerY];
             //Simbolo del jugador en el mapa
-            playerCell->id=169; //ascii 169
+            playerCell->id=156; //ascii 156
         }
 
         return true;
