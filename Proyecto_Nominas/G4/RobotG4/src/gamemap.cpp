@@ -23,7 +23,7 @@ void gamemap::draw(){
         cout << endl;
     }
 }
-void gamemap::draw2(){//Carlos Sandoval
+void gamemap::draw2(){
     //system("cls");
     for (int i = 0; i < 15; i++)
     {
@@ -265,7 +265,7 @@ void gamemap::loadMapFromFile()
     }
 
 }
-void gamemap::loadMapFromFile2()//Carlos Sandoval
+void gamemap::loadMapFromFile2()
 {
     string line;
     int row = 0;
@@ -308,7 +308,7 @@ void gamemap::loadMapFromFile2()//Carlos Sandoval
     }
 
 }
-void gamemap::loadMapFromFile3()//Meyglin Rosales
+void gamemap::loadMapFromFile3()
 {
     string line;
     int row = 0;
@@ -351,7 +351,7 @@ void gamemap::loadMapFromFile3()//Meyglin Rosales
     }
 
 }
-void gamemap::loadMapFromFile4()//Meyglin Rosales
+void gamemap::loadMapFromFile4()
 {
     string line;
     int row = 0;

@@ -124,7 +124,7 @@
 	<iostream>
 	<fstream>
 
-1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\main.cpp
+1653517484 source:c:\users\mey\desktop\progra1\nueva carpeta\main.cpp
 	<iostream>
 	"player.h"
 	"mapcell.h"
@@ -134,7 +134,7 @@
 
 1653516805 c:\users\mey\desktop\progra1\nueva carpeta\include\mapcell.h
 
-1653516805 c:\users\mey\desktop\progra1\nueva carpeta\include\gamemap.h
+1653517435 c:\users\mey\desktop\progra1\nueva carpeta\include\gamemap.h
 	"mapcell.h"
 
 1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\src\mapcell.cpp
