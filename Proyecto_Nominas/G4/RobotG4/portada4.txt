@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-                         NIVEL 4
-=======
              BIENVENIDOS AL LABERINTO 4
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 
                            (__)    )
                            (..)   /|\
@@ -14,8 +10,4 @@
                            `._\(___`.
                              '---' _)/
                                   `-'
-<<<<<<< HEAD
             Presione enter para iniciar el nivel 4
-=======
-            Presione enter para iniciar el nivel 4
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f

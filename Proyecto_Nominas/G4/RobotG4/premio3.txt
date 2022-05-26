@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-              FELICITACIONES ERES EL GANADOR
-                _.--.
-=======
-                FELICITACIONES ERES EL GANADOR
-  _.--.
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
-                        _.-'_:-'||
-                    _.-'_.-::::'||
-               _.-:'_.-::::::'  ||
-             .'`-.-:::::::'     ||
-            /.'`;|:::::::'      ||_
-           ||   ||::::::'     _.;._'-._
-           ||   ||:::::'  _.-!oo @.!-._'-.
-           \'.  ||:::::.-!()oo @!()@.-'_.|
-            '.'-;|:.-'.&$@.& ()$%-'o.'\U||
-              `>'-.!@%()@'@_%-'_.-o _.|'||
-               ||-._'-.@.-'_.-' _.-o  |'||
-               ||=[ '-._.-\U/.-'    o |'||
-               || '-.]=|| |'|      o  |'||
-               ||      || |'|        _| ';
-               ||      || |'|    _.-'_.-'
-               |'-._   || |'|_.-'_.-'
-                '-._'-.|| |' `_.-'
-                    '-.||_/.-'
-<<<<<<< HEAD
-=======
-        
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
-=======
 
                                  _______ _______________________________ ______
                                  \      |EN HORA BUENA ERES EL GANADOR! |     /
@@ -65,4 +34,3 @@
     ,sBs:  ,B:G  sBX,,sX, rBB,,:G:,,MB: ,B,   s2rBB,,ii,sBrrsssssssrsBi rr,:Bsr2X   Gs:GB,:::,MGiiriririr:sBr ii,iBii29 
   iBBMrrrs::BrM2  ,,:2BBMi : rsBMBr ,  ,B9       rBr:i,:B2 , , , ,   B2ii:,sB,       :,XM::i,,B9,:::::::,::Br:ii,sB:,:  
   s2rrssssss2r sGM22Bs  i2M2592  ,XGM2MMr         :2G29hr             s292Gs            sG9shGs             hhhsM2
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f

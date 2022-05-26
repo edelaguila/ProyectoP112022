@@ -43,6 +43,7 @@ int main()
       }
 
      }
+
             if (map.opcion = 1){
                 //system("cls");
             map.drawPortada2();
@@ -67,10 +68,6 @@ int main()
                 }
 
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
         }
             if (map.opcion = 1){
                 //system("cls");
@@ -98,38 +95,6 @@ int main()
                 }
 
 
-<<<<<<< HEAD
-=======
->>>>>>> 74909decd316040db6568f5684d1d556bad9c255
-        }
-            if (map.opcion = 1){
-                //system("cls");
-            map.drawPortada3();
-            getchar();
-            while(map3.isGameOver==false)
-            {
-                cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
-                hero3.callInput();
-
-
-                //Actualizar información del jugador en el mapa
-                if(map3.setPlayerCell3(hero3.getValueX(), hero3.getValueY()))
-                {
-                //   system("cls");
-                    map3.draw3();
-                } else
-                {
-                // system("cls");
-                    hero3.resetToSafePosition();
-                    //Dibujamos el mapa
-                    map3.draw3();
-                }
-
-                }
-
-
-=======
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
         }
             if (map.opcion = 1){
                 //system("cls");
@@ -156,5 +121,6 @@ int main()
 
                 }
         }
+
     return 0;
 }

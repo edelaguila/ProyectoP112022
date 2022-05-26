@@ -1,9 +1,9 @@
 Equipo de Desarrollo:
    Equipo -----> G4
-   Integrante 1:  Carlos Sandoval - Implementación Segundo Nivel
-   Integrante 2:  Meyglin Rosales - Implemetnación Tercer Nivel
-   Integrante 3:  Maria Jose Veliz - Cambio de Robot por nivel
-   Integrante 4:  Nelson Pineda - Cambio de Colores y Premios
+   Integrante 1:  Meyglin Rosales - Tercer y Cuarto Nivel
+   Integrante 2:  Carlos Sandoval - Segundo Nivel y correcciones
+   Integrante 3:  Nelson Pineda - Cambio de Colores
+   Integrante 4:  Maria Jose Veliz - Cambio de Premios
 
 
 

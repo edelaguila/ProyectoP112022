@@ -15,7 +15,7 @@
 
 1648218813 c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\include\player.h
 
-1653516259 D
+1647105197 D
 
 1648218813 source:c:\users\visitante\proyectos\didactica2k\temporal\prograuno\proyecto juego\src\player.cpp
 	"player.h"
@@ -97,7 +97,6 @@
 	<iostream>
 	<fstream>
 
-<<<<<<< HEAD
 1653446618 source:c:\users\mey\desktop\robot\src\mapcell.cpp
 	"mapcell.h"
 	<iostream>
@@ -112,80 +111,24 @@
 1653446618 c:\users\mey\desktop\robot\include\player.h
 
 1653448666 source:c:\users\mey\desktop\robot\main.cpp
-
-1653377455 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\main.cpp
-
-1653516259 ff647aa36c9ada2b4a921a68abb9618c12a5d
-=======
-1653377455 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\main.cpp
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 	<iostream>
 	"player.h"
 	"mapcell.h"
 	"gamemap.h"
-	"gamemap.h"
-	<iostream>
-	<fstream>
 
-1653317955 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\player.h
-
-1653317955 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\mapcell.h
-
-1653373913 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\gamemap.h
+1653451612 c:\users\mey\desktop\robot\include\gamemap.h
 	"mapcell.h"
 
-<<<<<<< HEAD
 1653450441 source:c:\users\mey\desktop\robot\src\gamemap.cpp
-
-1653317955 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\player.h
-
-1653317955 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\mapcell.h
-
-1653373913 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\gamemap.h
-	"mapcell.h"
-
-1653376044 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\gamemap.cpp
-
-1653317955 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\mapcell.cpp
-	"mapcell.h"
-	<iostream>
-
-1653317955 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\player.cpp
-	"player.h"
+	"gamemap.h"
 	<iostream>
 	<fstream>
-
-1653377456 source:c:\users\nelso\desktop\roboobobot\main.cpp
 
 1653517484 source:c:\users\mey\desktop\progra1\nueva carpeta\main.cpp
-
-1653516729 09decd316040db6568f5684d1d556bad9c255
 	<iostream>
 	"player.h"
 	"mapcell.h"
 	"gamemap.h"
-	"player.h"
-	<iostream>
-	<fstream>
-
-1653317956 c:\users\nelso\desktop\roboobobot\include\player.h
-
-1653317956 c:\users\nelso\desktop\roboobobot\include\mapcell.h
-
-1653373914 c:\users\nelso\desktop\roboobobot\include\gamemap.h
-	"mapcell.h"
-
-1653520030 source:c:\users\nelso\desktop\roboobobot\src\gamemap.cpp
-	"gamemap.h"
-	<iostream>
-	<fstream>
-	<windows.h>
-
-1653317956 source:c:\users\nelso\desktop\roboobobot\src\mapcell.cpp
-	"mapcell.h"
-	<iostream>
-
-1653317956 source:c:\users\nelso\desktop\roboobobot\src\player.cpp
 
 1653516259 c:\users\mey\desktop\progra1\nueva carpeta\include\player.h
 
@@ -199,99 +142,39 @@
 	<iostream>
 
 1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
 
 1653516729 source:c:\users\mey\desktop\progra1\nueva carpeta\src\gamemap.cpp
-=======
-1653376044 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\gamemap.cpp
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 	"gamemap.h"
 	<iostream>
 	<fstream>
 
-<<<<<<< HEAD
-1653527923 source:c:\users\jawic\desktop\union\proyectoequipo4\proyecto_nominas\g4\robotg4\main.cpp
-=======
-1653317955 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\mapcell.cpp
-	"mapcell.h"
-	<iostream>
-
-1653317955 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\player.cpp
-	"player.h"
-	<iostream>
-	<fstream>
-
-1653461907 source:c:\users\mey\desktop\progra1\robotfinal\main.cpp
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
+1653538801 source:c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\main.cpp
 	<iostream>
 	"player.h"
 	"mapcell.h"
 	"gamemap.h"
 
-<<<<<<< HEAD
-1653527758 c:\users\jawic\desktop\union\proyectoequipo4\proyecto_nominas\g4\robotg4\include\player.h
+1653519234 c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\include\player.h
 
-1653527758 c:\users\jawic\desktop\union\proyectoequipo4\proyecto_nominas\g4\robotg4\include\mapcell.h
+1653519234 c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\include\mapcell.h
 
-1653527923 c:\users\jawic\desktop\union\proyectoequipo4\proyecto_nominas\g4\robotg4\include\gamemap.h
+1653519234 c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\include\gamemap.h
 	"mapcell.h"
 
-1653527923 source:c:\users\jawic\desktop\union\proyectoequipo4\proyecto_nominas\g4\robotg4\src\gamemap.cpp
+1653536964 source:c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\src\gamemap.cpp
 	"gamemap.h"
 	<iostream>
 	<fstream>
 	<windows.h>
 
-1653527758 source:c:\users\jawic\desktop\union\proyectoequipo4\proyecto_nominas\g4\robotg4\src\mapcell.cpp
+1653519234 source:c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\src\mapcell.cpp
 	"mapcell.h"
 	<iostream>
 
-1653527758 source:c:\users\jawic\desktop\union\proyectoequipo4\proyecto_nominas\g4\robotg4\src\player.cpp
-=======
-1653317956 c:\users\mey\desktop\progra1\robotfinal\include\player.h
-
-1653317956 c:\users\mey\desktop\progra1\robotfinal\include\mapcell.h
-
-1653460711 c:\users\mey\desktop\progra1\robotfinal\include\gamemap.h
-	"mapcell.h"
-
-1653317956 source:c:\users\mey\desktop\progra1\robotfinal\src\mapcell.cpp
-	"mapcell.h"
-	<iostream>
-
-1653317956 source:c:\users\mey\desktop\progra1\robotfinal\src\player.cpp
-	"player.h"
-	<iostream>
-	<fstream>
-
-1653463388 source:c:\users\mey\desktop\progra1\robotfinal\src\gamemap.cpp
-	"gamemap.h"
-	<iostream>
-	<fstream>
-
-1653461908 source:c:\users\maria\onedrive\desktop\meyglin\meyglin ros\main.cpp
-	<iostream>
-	"player.h"
-	"mapcell.h"
-	"gamemap.h"
-
-1653317956 c:\users\maria\onedrive\desktop\meyglin\meyglin ros\include\player.h
-
-1653317956 c:\users\maria\onedrive\desktop\meyglin\meyglin ros\include\mapcell.h
-
-1653460712 c:\users\maria\onedrive\desktop\meyglin\meyglin ros\include\gamemap.h
-	"mapcell.h"
-
-1653544476 source:c:\users\maria\onedrive\desktop\meyglin\meyglin ros\src\gamemap.cpp
-	"gamemap.h"
-	<iostream>
-	<fstream>
-
-1653317956 source:c:\users\maria\onedrive\desktop\meyglin\meyglin ros\src\mapcell.cpp
-	"mapcell.h"
-	<iostream>
-
-1653317956 source:c:\users\maria\onedrive\desktop\meyglin\meyglin ros\src\player.cpp
->>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
+1653519234 source:c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\src\player.cpp
 	"player.h"
 	<iostream>
 	<fstream>
