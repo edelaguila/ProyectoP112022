@@ -7,10 +7,6 @@ using namespace std;
 
 int main()
 {
-    // Aplicativo elaborado en el curso de Programacion I - Universidad Mariano Galvez
-    // desarrollador: daguilae - Marzo 2022
-
-
     gamemap map;
     gamemap map2;
     gamemap map3;
@@ -43,7 +39,7 @@ int main()
       }
 
      }
-
+        //Implementacion Segundo Nivel - Carlos Sandoval 9959-21-1324
             if (map.opcion = 1){
                 //system("cls");
             map.drawPortada2();
@@ -69,6 +65,8 @@ int main()
 
                 }
         }
+
+        //Implementacion Tercer Nivel - Meyglin Rosales 9959-21-4490
             if (map.opcion = 1){
                 //system("cls");
             map.drawPortada3();
@@ -96,6 +94,8 @@ int main()
 
 
         }
+
+        //Implementacion Cuarto Nivel - Meyglin Rosales 9959-21-4490
             if (map.opcion = 1){
                 //system("cls");
             map.drawPortada4();

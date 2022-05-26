@@ -224,7 +224,9 @@ bool gamemap::setPlayerCell4(int playerX, int playerY)
 
 }
 void gamemap::loadMapFromFile()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+{
+    //Implementacion Cambio de Colores por Nivel - Nelson Pineda 9959-21-10015
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, 2);
     string line;
     int row = 0;
@@ -268,7 +270,9 @@ void gamemap::loadMapFromFile()
 
 }
 void gamemap::loadMapFromFile2()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+{
+    //Implementacion Cambio de Colores por Nivel - Nelson Pineda 9959-21-10015
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, 5);
     string line;
     int row = 0;
@@ -312,7 +316,9 @@ void gamemap::loadMapFromFile2()
 
 }
 void gamemap::loadMapFromFile3()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+{
+    //Implementacion Cambio de Colores por Nivel - Nelson Pineda 9959-21-10015
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, 4);
     string line;
     int row = 0;
@@ -356,7 +362,9 @@ void gamemap::loadMapFromFile3()
 
 }
 void gamemap::loadMapFromFile4()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+{
+    //Implementacion Cambio de Colores por Nivel - Nelson Pineda 9959-21-10015
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, 3);
     string line;
     int row = 0;
@@ -607,6 +615,8 @@ void gamemap::drawPortada4()
         cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
     }
 }
+
+//Implementacion Victorias por nivel y diseño de Premios - Maria Jose Veliz 9959-21-5909
 void gamemap::drawVictoria()
 {
     gamemap map;

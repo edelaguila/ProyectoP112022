@@ -70,29 +70,30 @@
 	<iostream>
 	<fstream>
 
-1652576463 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\main.cpp
+1653597387 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\main.cpp
 	<iostream>
 	"player.h"
 	"mapcell.h"
 	"gamemap.h"
 
-1651161769 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\player.h
+1653511706 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\player.h
 
-1651161769 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\mapcell.h
+1653511706 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\mapcell.h
 
-1652576463 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\gamemap.h
+1653597387 c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\include\gamemap.h
 	"mapcell.h"
 
-1652576653 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\gamemap.cpp
+1653597387 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\gamemap.cpp
 	"gamemap.h"
 	<iostream>
 	<fstream>
+	<windows.h>
 
-1651161769 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\mapcell.cpp
+1653511706 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\mapcell.cpp
 	"mapcell.h"
 	<iostream>
 
-1651161769 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\player.cpp
+1653511706 source:c:\users\jawic\proyectofinalp1\proyectop112022\proyecto_nominas\g4\robotg4\src\player.cpp
 	"player.h"
 	<iostream>
 	<fstream>
