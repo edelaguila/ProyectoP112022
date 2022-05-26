@@ -124,3 +124,86 @@
 	<iostream>
 	<fstream>
 
+1653517484 source:c:\users\mey\desktop\progra1\nueva carpeta\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1653516259 c:\users\mey\desktop\progra1\nueva carpeta\include\player.h
+
+1653516805 c:\users\mey\desktop\progra1\nueva carpeta\include\mapcell.h
+
+1653517435 c:\users\mey\desktop\progra1\nueva carpeta\include\gamemap.h
+	"mapcell.h"
+
+1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1653516729 source:c:\users\mey\desktop\progra1\nueva carpeta\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+1653538801 source:c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1653519234 c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\include\player.h
+
+1653519234 c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\include\mapcell.h
+
+1653519234 c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\include\gamemap.h
+	"mapcell.h"
+
+1653536964 source:c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+	<windows.h>
+
+1653519234 source:c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1653519234 source:c:\users\jawic\desktop\mey\proyectoequipo4-cuartonivel_9959-21-4490\proyecto_nominas\g4\robotg4\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1653547256 source:c:\users\mey\desktop\proyecto final\robot majo\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1653547256 c:\users\mey\desktop\proyecto final\robot majo\include\player.h
+
+1653547256 c:\users\mey\desktop\proyecto final\robot majo\include\mapcell.h
+
+1653547256 c:\users\mey\desktop\proyecto final\robot majo\include\gamemap.h
+	"mapcell.h"
+
+1653547256 source:c:\users\mey\desktop\proyecto final\robot majo\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+	<windows.h>
+
+1653547256 source:c:\users\mey\desktop\proyecto final\robot majo\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1653547256 source:c:\users\mey\desktop\proyecto final\robot majo\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+

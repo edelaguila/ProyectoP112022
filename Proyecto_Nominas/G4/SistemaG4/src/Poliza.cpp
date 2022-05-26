@@ -16,6 +16,8 @@ Poliza::~Poliza()
 {
     //dtor
 }
+
+//Clase para Poliza de Seguros - Meyglin Rosales 9959-21-4490, Maria Jose Veliz 9959-21-5909
 void Poliza::menu()
 {
     Bitacora control;
@@ -43,6 +45,7 @@ void Poliza::menu()
     switch(choice)
     {
     case 1:
+        //Se muestran las distintas opciones de seguros con los que cuenta la empresa
         control.nuevaActividadTxt(35);
         control.nuevaActividad(35);
 		cout <<"  - Muerte natural o por enfermedad "<<endl;

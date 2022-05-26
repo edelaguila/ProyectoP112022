@@ -1,10 +1,9 @@
 Equipo de Desarrollo:
-   Equipo -----> G1
-   Integrante 1:  Juan Ejemplo - Portada
-   Integrante 2:  Juan Ejemplo - Premios
-   Integrante 3:  Juan Ejemplo - Caracteres
-   Integrante 4:  Juan Ejemplo - Mensaje Final
-   Integrante 5:  Juan Ejemplo - Creditos
+   Equipo -----> G4
+   Integrante 1:  Meyglin Rosales - Tercer y Cuarto Nivel
+   Integrante 2:  Carlos Sandoval - Segundo Nivel y correcciones
+   Integrante 3:  Nelson Pineda - Cambio de Colores
+   Integrante 4:  Maria Jose Veliz - Cambio de Premios
 
 
 
