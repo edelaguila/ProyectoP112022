@@ -179,3 +179,31 @@
 	<iostream>
 	<fstream>
 
+1653547256 source:c:\users\mey\desktop\proyecto final\robot majo\main.cpp
+	<iostream>
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1653547256 c:\users\mey\desktop\proyecto final\robot majo\include\player.h
+
+1653547256 c:\users\mey\desktop\proyecto final\robot majo\include\mapcell.h
+
+1653547256 c:\users\mey\desktop\proyecto final\robot majo\include\gamemap.h
+	"mapcell.h"
+
+1653547256 source:c:\users\mey\desktop\proyecto final\robot majo\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+	<windows.h>
+
+1653547256 source:c:\users\mey\desktop\proyecto final\robot majo\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1653547256 source:c:\users\mey\desktop\proyecto final\robot majo\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
