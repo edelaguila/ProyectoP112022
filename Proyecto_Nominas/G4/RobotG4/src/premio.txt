@@ -1,10 +1,5 @@
-<<<<<<< HEAD
               FELICITACIONES ERES EL GANADOR
                 _.--.
-=======
-                FELICITACIONES ERES EL GANADOR
-  _.--.
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
                         _.-'_:-'||
                     _.-'_.-::::'||
                _.-:'_.-::::::'  ||
@@ -23,7 +18,3 @@
                |'-._   || |'|_.-'_.-'
                 '-._'-.|| |' `_.-'
                     '-.||_/.-'
-<<<<<<< HEAD
-=======
-        
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d

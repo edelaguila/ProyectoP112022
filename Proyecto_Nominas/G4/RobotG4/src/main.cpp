@@ -91,34 +91,6 @@ int main()
 
                 }
 
-
-        }
-
-            if (map.opcion = 1){
-                //system("cls");
-            map.drawPortada3();
-            getchar();
-            while(map3.isGameOver==false)
-            {
-                cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
-                hero3.callInput();
-
-
-                //Actualizar información del jugador en el mapa
-                if(map3.setPlayerCell3(hero3.getValueX(), hero3.getValueY()))
-                {
-                //   system("cls");
-                    map3.draw3();
-                } else
-                {
-                // system("cls");
-                    hero3.resetToSafePosition();
-                    //Dibujamos el mapa
-                    map3.draw3();
-                }
-
-                }
-
         }
     return 0;
 }

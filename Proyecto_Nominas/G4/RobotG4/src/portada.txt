@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-                           NIVEL 3
-=======
-                         NIVEL 3
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
+                 BIENVENIDOS AL LABERINTO
 
                            (__)    )
                            (..)   /|\
@@ -14,4 +10,4 @@
                            `._\(___`.
                              '---' _)/
                                   `-'
-            Presione enter para iniciar el nivel 3
+            Presione enter para iniciar el nivel 1   

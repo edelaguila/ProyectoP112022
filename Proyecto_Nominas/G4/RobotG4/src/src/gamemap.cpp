@@ -1,7 +1,6 @@
 #include "gamemap.h"
 #include <iostream>
 #include <fstream>
-#include <windows.h>
 //Implementacion de toda la funcionabilidad del mapa del juego
 
 using namespace std;
@@ -16,7 +15,7 @@ void gamemap::draw(){
     //system("cls");
     for (int i = 0; i < 15; i++)
     {
-        for (int j = 0; j < 30; j++)
+        for (int j = 0; j < 10; j++)
         {
             // Utilizar las celulas cuando se dibuja el mapa
             cout << cell [i][j].id;
@@ -28,19 +27,7 @@ void gamemap::draw2(){
     //system("cls");
     for (int i = 0; i < 15; i++)
     {
-        for (int j = 0; j < 30; j++)
-        {
-            // Utilizar las celulas cuando se dibuja el mapa
-            cout << cell [i][j].id;
-        }
-        cout << endl;
-    }
-}
-void gamemap::draw3(){// Meyglin Rosales
-    //system("cls");
-    for (int i = 0; i < 15; i++)
-    {
-        for (int j = 0; j < 30; j++)
+        for (int j = 0; j < 10; j++)
         {
             // Utilizar las celulas cuando se dibuja el mapa
             cout << cell [i][j].id;
@@ -133,11 +120,7 @@ bool gamemap::setPlayerCell2(int playerX, int playerY)
             //playerCell = &cell[playerY][playerX];
             playerCell = &cell[playerX][playerY];
             //Simbolo del jugador en el mapa
-<<<<<<< HEAD
-            playerCell->id=254; //ascii 254
-=======
             playerCell->id=254; //ascii 169
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
         }
 
         return true;
@@ -150,10 +133,6 @@ bool gamemap::setPlayerCell2(int playerX, int playerY)
 }
 bool gamemap::setPlayerCell3(int playerX, int playerY)
 {
-<<<<<<< HEAD
-
-=======
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
     loadMapFromFile3();
 
     if (cell[playerX][playerY].isBlockedCell() == false)
@@ -177,11 +156,7 @@ bool gamemap::setPlayerCell3(int playerX, int playerY)
             //playerCell = &cell[playerY][playerX];
             playerCell = &cell[playerX][playerY];
             //Simbolo del jugador en el mapa
-<<<<<<< HEAD
-            playerCell->id=156; //ascii 156
-=======
             playerCell->id=184; //ascii 169
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
         }
 
         return true;
@@ -236,8 +211,7 @@ void gamemap::loadMapFromFile()
 
 }
 void gamemap::loadMapFromFile2()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 5);
+{
     string line;
     int row = 0;
     char userInput = ' ';
@@ -281,11 +255,6 @@ void gamemap::loadMapFromFile2()
 }
 void gamemap::loadMapFromFile3()
 {
-<<<<<<< HEAD
-=======
-    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 4);
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
     string line;
     int row = 0;
     char userInput = ' ';
@@ -334,14 +303,14 @@ void gamemap::createMapToFile()
     {
         for (int i = 0; i < 15; i++)
         {
-            for (int j = 0; j < 30; j++)
+            for (int j = 0; j < 10; j++)
             {
                 if (i == 0 || i == 14)
                 {
                     myFile << "1";
                 } else
                 {
-                    if (j == 0 || j == 29)
+                    if (j == 0 || j == 9)
                     {
                         myFile << "1";
                     } else
@@ -366,46 +335,14 @@ void gamemap::createMapToFile2()
     {
         for (int i = 0; i < 15; i++)
         {
-            for (int j = 0; j < 30; j++)
+            for (int j = 0; j < 10; j++)
             {
                 if (i == 0 || i == 14)
                 {
                     myFile << "1";
                 } else
                 {
-                    if (j == 0 || j == 29)
-                    {
-                        myFile << "1";
-                    } else
-                    {
-                        myFile << "0";
-                    }
-                }
-
-            }
-            myFile << endl;
-        }
-        myFile.close();
-    } else
-    {
-        cout << "Error FATAL: archivo no pudo ser creado" << endl;
-    }
-}
-void gamemap::createMapToFile3()//Meyglin Rosales
-{
-    ofstream myFile("map3.txt");
-    if (myFile.is_open())
-    {
-        for (int i = 0; i < 15; i++)
-        {
-            for (int j = 0; j < 30; j++)
-            {
-                if (i == 0 || i == 14)
-                {
-                    myFile << "1";
-                } else
-                {
-                    if (j == 0 || j == 29)
+                    if (j == 0 || j == 9)
                     {
                         myFile << "1";
                     } else
@@ -456,8 +393,7 @@ void gamemap::createMapToFile3()
     }
 }
 void gamemap::drawPortada()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 15);
+{
     string line;
     char userInput = ' ';
     ifstream myFile("portada.txt");
@@ -477,8 +413,7 @@ void gamemap::drawPortada()
     }
 }
 void gamemap::drawPortada2()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 15);
+{
     string line;
     char userInput = ' ';
     ifstream myFile("portada2.txt");
@@ -498,13 +433,7 @@ void gamemap::drawPortada2()
     }
 }
 void gamemap::drawPortada3()
-<<<<<<< HEAD
 {
-=======
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 15);
-
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
     string line;
     char userInput = ' ';
     ifstream myFile("portada3.txt");
@@ -524,8 +453,7 @@ void gamemap::drawPortada3()
     }
 }
 void gamemap::drawVictoria()
-{ HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 3);
+{
     gamemap map;
     string line;
     char choice;
@@ -550,8 +478,7 @@ void gamemap::drawVictoria()
         }
 }
 void gamemap::drawVictoria2()
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 6);
+{
     gamemap map;
     string line;
     char choice;
@@ -576,12 +503,7 @@ void gamemap::drawVictoria2()
         }
 }
 void gamemap::drawVictoria3()
-<<<<<<< HEAD
 {
-=======
-{HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(hConsole, 5);
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
     gamemap map;
     string line;
     char choice;

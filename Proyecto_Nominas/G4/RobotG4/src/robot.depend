@@ -97,35 +97,12 @@
 	<iostream>
 	<fstream>
 
-<<<<<<< HEAD
-1653446618 source:c:\users\mey\desktop\robot\src\mapcell.cpp
-	"mapcell.h"
-	<iostream>
-
-1653446618 c:\users\mey\desktop\robot\include\mapcell.h
-
-1653446618 source:c:\users\mey\desktop\robot\src\player.cpp
-	"player.h"
-	<iostream>
-	<fstream>
-
-1653446618 c:\users\mey\desktop\robot\include\player.h
-
-1653448666 source:c:\users\mey\desktop\robot\main.cpp
-=======
 1653377455 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\main.cpp
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
 	<iostream>
 	"player.h"
 	"mapcell.h"
 	"gamemap.h"
 
-<<<<<<< HEAD
-1653451612 c:\users\mey\desktop\robot\include\gamemap.h
-	"mapcell.h"
-
-1653450441 source:c:\users\mey\desktop\robot\src\gamemap.cpp
-=======
 1653317955 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\player.h
 
 1653317955 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\mapcell.h
@@ -133,14 +110,11 @@
 1653373913 c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\include\gamemap.h
 	"mapcell.h"
 
-1653376044 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\gamemap.cpp
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
+1653377777 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\gamemap.cpp
 	"gamemap.h"
 	<iostream>
 	<fstream>
 
-<<<<<<< HEAD
-=======
 1653317955 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\mapcell.cpp
 	"mapcell.h"
 	<iostream>
@@ -150,32 +124,3 @@
 	<iostream>
 	<fstream>
 
-1653377456 source:c:\users\nelso\desktop\roboobobot\main.cpp
-	<iostream>
-	"player.h"
-	"mapcell.h"
-	"gamemap.h"
-
-1653317956 c:\users\nelso\desktop\roboobobot\include\player.h
-
-1653317956 c:\users\nelso\desktop\roboobobot\include\mapcell.h
-
-1653373914 c:\users\nelso\desktop\roboobobot\include\gamemap.h
-	"mapcell.h"
-
-1653520030 source:c:\users\nelso\desktop\roboobobot\src\gamemap.cpp
-	"gamemap.h"
-	<iostream>
-	<fstream>
-	<windows.h>
-
-1653317956 source:c:\users\nelso\desktop\roboobobot\src\mapcell.cpp
-	"mapcell.h"
-	<iostream>
-
-1653317956 source:c:\users\nelso\desktop\roboobobot\src\player.cpp
-	"player.h"
-	<iostream>
-	<fstream>
-
->>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
