@@ -16,6 +16,8 @@ Puesto::~Puesto()
 {
     //dtor
 }
+
+//Mantenimiento de Departamentos y Puestos - Maria Jose Veliz 9959-21-5909
 //menu principal de puestos
 void Puesto::menu()
 {
@@ -33,7 +35,7 @@ void Puesto::menu()
 	cout<<"\t\t\t 2. Actualizar Departamento"<<endl;
 	cout<<"\t\t\t 3. Consultar Departamento"<<endl;
 	cout<<"\t\t\t 4. Imprimir Departamentos"<<endl;
-	cout<<"\t\t\t 5. Borrar Puesto"<<endl;
+	cout<<"\t\t\t 5. Borrar Departamento"<<endl;
 	cout<<"\t\t\t 6. Regresar"<<endl;
 
 	cout<<"\t\t\t"<<endl;
@@ -50,10 +52,10 @@ void Puesto::menu()
     	    control.nuevaActividadTxt(25);
             control.nuevaActividad(25);
     		Ingresar();
-    		cout<<"\n\t\t\t Agrega otro Puesto(Y,N): ";
+    		cout<<"\n\t\t\t Agrega otro Departamento(Y,N): ";
     		cin>>x;
 		}while(x=='y'||x=='Y');
-		cout <<"Puestos agregados satisfactoriamente"<<endl;
+		cout <<"Departamentos agregados satisfactoriamente"<<endl;
 		break;
 	case 2:
 	    control.nuevaActividadTxt(26);
@@ -77,7 +79,7 @@ void Puesto::menu()
 	    control.nuevaActividadTxt(33);
         control.nuevaActividad(33);
 		Borrar();
-		cout <<"Puesto eliminado satisfactoriamente"<<endl;
+		cout <<"Departamento eliminado satisfactoriamente"<<endl;
 		break;
 	case 6:
 	    cout << "Presiona Enter para confirmar"<<endl;
@@ -97,7 +99,7 @@ void Puesto::Ingresar()
 	fstream file;
 	cout<<"\n.....................................................................................................................";
 	cout<<"\n.....................................Agregar detalles de Departamento......................................................"<<endl;
-	cout<<"\t\t\tMIngresa el nombre del Departamento       : ";
+	cout<<"\t\t\tIngresa el nombre del Departamento       : ";
 	cin>>Dpuesto;
 	cout<<"\t\t\tIngresa el Puesto     : ";
 	cin>>Crpuesto;
@@ -122,7 +124,7 @@ void Puesto::Imprimir()
 	system("cls");
 	fstream file;
 	int total=0;
-	cout<<"\n..............................Tabla de Detalles de Puesto ........................"<<endl;
+	cout<<"\n..............................Tabla de Detalles de Departamento ........................"<<endl;
 	file.open("PUESTO.txt",ios::in);
 	if(!file)
 	{
@@ -158,7 +160,7 @@ void Puesto::Actualizar()
 	fstream file,file1;
 	string participant_Dp;
 	int found=0;
-	cout<<"\n.............................Modificacion Detalles Puesto................................."<<endl;
+	cout<<"\n.............................Modificacion Detalles Departamento................................."<<endl;
 	file.open("PUESTO.txt",ios::in);
 	if(!file)
 	{
@@ -179,8 +181,6 @@ void Puesto::Actualizar()
 			}
 			else
 			{
-				cout<<"\t\t\tIngrese Departamento: ";
-				cin>>Dpuesto;
 				cout<<"\t\t\tIngrese el Puesto: ";
 				cin>>Crpuesto;
 				cout<<"\t\t\tIngresa Salario: ";
@@ -197,8 +197,8 @@ void Puesto::Actualizar()
 		}
 		file1.close();
 		file.close();
-		remove("ParticipantRecord.txt");
-		rename("Record.txt","ParticipantRecord.txt");
+		remove("PUESTO.txt");
+		rename("Record.txt","PUESTO.txt");
 	}
 }
 
@@ -212,14 +212,14 @@ void Puesto::Consultar()
 	file.open("PUESTO.txt",ios::in);
 	if(!file)
 	{
-		cout<<"\n..................................Datos del Puesto buscado......................................"<<endl;
+		cout<<"\n..................................Datos del Departamento buscado......................................"<<endl;
 		cout<<"\n\t\t\tNo hay informacion...";
 	}
 	else
 	{
 		string participant_Dp;
-		cout<<"\n..................................Datos del puesto buscado......................................"<<endl;
-		cout<<"\nIngrese Departamento de la Persona que quiere buscar: ";
+		cout<<"\n..................................Datos del Departamento buscado......................................"<<endl;
+		cout<<"\n Ingrese el Departamento que quiere consultar: ";
 		cin>>participant_Dp;
 		file >> Dpuesto >> Crpuesto >> Spuesto >> Hentrada >> Hsalida;
 		while(!file.eof())
@@ -238,7 +238,7 @@ void Puesto::Consultar()
 		}
 		if(found==0)
 		{
-			cout<<"\n\t\t\t Puesto no encontrado...";
+			cout<<"\n\t\t\t Departamento no encontrado...";
 		}
 		file.close();
 	}
@@ -250,8 +250,8 @@ void Puesto::Borrar()
 	fstream file,file1;
 	string participant_Dp;
 	int found=0;
-	cout<<"\n.......................................Detalles Puesto a Borrar.................................."<<endl;
-	file.open("PUESTOS.txt",ios::in);
+	cout<<"\n.......................................Detalles Departamento a Borrar.................................."<<endl;
+	file.open("PUESTO.txt",ios::in);
 	if(!file)
 	{
 		cout<<"\n\t\t\tNo hay informacion...";
@@ -259,7 +259,7 @@ void Puesto::Borrar()
 	}
 	else
 	{
-		cout<<"\n Ingrese el Departamento del Puesto que quiere borrar: ";
+		cout<<"\n Ingrese el Departamento que quiere borrar: ";
 		cin>>participant_Dp;
 		file1.open("Record.txt",ios::app | ios::out);
 		file >> Dpuesto >> Crpuesto>> Spuesto >> Hentrada >> Hsalida;
@@ -298,13 +298,13 @@ void Puesto::Borrar()
 	if(!file)
 	{
 		cout<<"\n..................................Datos del Departamento buscado......................................"<<endl;
-		cout<<"\n\t\t\tNo hay informacion...";
+		cout<<"\n\t\t\t No hay informacion...";
 	}
 	else
 	{
 		string participant_Dp;
 		cout<<"\n..................................Datos del Departamento buscado......................................"<<endl;
-		cout<<"\nIngrese el Departamento que desea ver: ";
+		cout<<"\n Ingrese el Departamento que desea ver: ";
 		cin>>participant_Dp;
 		file >> Dpuesto >> Crpuesto >> Spuesto >> Hentrada >> Hsalida;
 		while(!file.eof())
@@ -323,7 +323,7 @@ void Puesto::Borrar()
 		}
 		if(found==0)
 		{
-			cout<<"\n\t\t\t Puesto no encontrado...";
+			cout<<"\n\t\t\t Departamento no encontrado...";
 		}
 		file.close();
 	}

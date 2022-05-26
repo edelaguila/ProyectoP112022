@@ -1,5 +1,6 @@
 #include "Persona.h"
 #include "Concepto.h"
+#include "menus.h"
 #include <iostream>
 #include<conio.h>
 using namespace std;
@@ -10,7 +11,7 @@ using std::string;
 #include <cstdlib>
 #include<string>
 
-
+//Mantenimiento de Empleados - Carlos Sandoval 9959-21-1324
 // constructor Persona
 Persona::Persona( int valorNumeroId,
    string valorApellido, string valorPrimerNombre,
@@ -163,6 +164,7 @@ void Persona::establecerEmail( string emailString )
 
 }
 
+//Declaraciones para la Nomina - Nelson Pineda 9959-21-10015
 int Persona::obtenerHoras() const
 {
    return hExtra;
@@ -343,13 +345,28 @@ double Persona::obtenerPerAlim() const
    return imp.ePension;
 }
 
+double Persona::obtenerBanco() const
+{
+   return estBancario;
+}
 
+void Persona::establecerBanco(double valorBanco){
+
+    estBancario = valorBanco;
+
+}
+
+/*void Persona::establecerBanco( int valorBanco)
+{
+   estBancario = valorBanco;
+
+}*/
 
 // crear archivo de texto con formato para imprimirlo
 void Persona::imprimirRegistro( fstream &leerDeArchivo )
 {
    // crear archivo de texto
-   ofstream archivoImprimirSalida( "imprimir.txt", ios::out );
+   ofstream archivoImprimirSalida( "EMPLEADOS.txt", ios::out );
 
    // salir del programa si ofstream no puede crear el archivo
    if ( !archivoImprimirSalida ) {
@@ -387,10 +404,11 @@ void Persona::imprimirRegistro( fstream &leerDeArchivo )
 
 }
 
+//Impresion de la Nomina - Maria Jose Veliz 9959-21-5909
 void Persona::imprimirRegistro2( fstream &leerDeArchivo )
 {
    // crear archivo de texto
-   ofstream archivoImprimirSalida( "planilla.txt", ios::out );
+   ofstream archivoImprimirSalida( "nomina.txt", ios::out );
 
    // salir del programa si ofstream no puede crear el archivo
    if ( !archivoImprimirSalida ) {
@@ -594,7 +612,7 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
       cin >> setw( 15 ) >> apellido;
       cout << "Escriba el nombre: " << endl;
       cin >> setw( 10 ) >> primerNombre;
-      cout<<"¿Tiene vigencia Pensión Alimenticia: 1= Si / 2 = No"<<endl;
+      cout<<"¿Tiene vigencia Pension Alimenticia: 1= Si / 2 = No"<<endl;
       cin>>setw(8)>>RAlimenticio;
       cout << "Escriba el sueldo: "<<endl;
       cin >> setw( 14 ) >> sueldo;
@@ -618,6 +636,7 @@ void Persona::nuevoRegistro( fstream &insertarEnArchivo )
       double resultAnticipo = imp.eAnticipos;
       double resultpension = imp.ePension;
 
+      //Investigacion e Implementacion de Conceptos a Nomina - Nelson Pineda 9959-21-10015, Meyglin Rosales 9959-21-4490
       switch(RAlimenticio){
      case 1:
      if (sueldo >= 4000 ){
@@ -798,6 +817,36 @@ cout << left << setw( 4 ) << "ID" << setw( 12 )
 
 }
 
+void Persona::consultarRegistro3( fstream &leerDeArchivo )
+{
+
+cout << left << setw( 4 ) << "ID" << setw( 12 )
+       << "Apellido" << setw( 14 ) << "Primer nombre" << setw(20) << "No. Cuenta" <<
+        setw( 12 )<<"Sueldo(Q)"<<setw(26)<<"Sueldo Extraordinario (Q)"<<setw(16)<<"Total Devengado"<<setw(17)<<"Liquido Recibir"<< endl;
+
+   // colocar el apuntador de posición de archivo al principio del archivo de registros
+   leerDeArchivo.seekg( 0 );
+
+   // leer el primer registro del archivo de registros
+   Persona empleado;
+   leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Persona ) );
+
+   // copiar todos los registros del archivo de registros en el archivo de texto
+   while ( !leerDeArchivo.eof() ) {
+
+      // escribir un registro individual en el archivo de texto
+      if ( empleado.obtenerNumeroId() != 0 )
+         mostrarLineaPantalla3(empleado);
+
+      // leer siguiente registro del archivo de registros
+      leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+         sizeof( Persona ) );
+
+   }
+
+}
+
 // mostrar registro individual
 void Persona::mostrarLinea( ostream &salida, const Persona &registro )
 {
@@ -864,6 +913,19 @@ void Persona::mostrarLineaPantalla2( const Persona &registro )
           << setw( 16) << registro.obtenerBincentivo()
           << setw( 17 ) << registro.obtenerLiquidorR()
           <<setw(8)<< registro.obtenerPAlimenticia()<<endl;
+
+}
+
+void Persona::mostrarLineaPantalla3( const Persona &registro )
+{
+   cout << left << setw( 4 ) << registro.obtenerNumeroId()
+          << setw( 12 ) << registro.obtenerApellido().data()
+          << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw(20)<< registro.obtenerCuenta()
+          << setw( 12 ) << registro.obtenerSueldo()
+          << setw( 26) << registro.obtenerSueldoEx()
+          << setw( 16 ) << registro.obtenerTDevengado()
+          << setw( 17 ) << registro.obtenerLiquidorR()<<endl;
 
 }
 
@@ -950,3 +1012,6 @@ if ( empleado.obtenerNumeroId() != 0 ) {
          << " aun no existe" << endl;
 
 }
+
+
+
