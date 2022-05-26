@@ -1055,8 +1055,9 @@ void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
     system("cls");
     fstream baseDatos, log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"entro al menu Registrar Impuesto ";
+    log<<"entro al menu Registrar Concepto Impuesto ";
     log.close();
+
     cout << "\n\t\t\tEntrando al menu --REGISTRAR CONCEPTO IMPUESTOS--\n" << endl;
     cout << "\n\t�Quires salir al --MENU IMPUESTOS--? [ si / no ] : "; cin >> desicion;
     if (desicion=="si"){
@@ -1076,24 +1077,25 @@ void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
         log.open("bitacora.dat",ios::app|ios::out|ios::binary);
         log<<"registro el impuesto: "<<documentoIdentificacion<<", ";
         log.close();
-        baseDatos.open("empleados.dat",ios::app | ios::out | ios::binary);
+        baseDatos.open("impuestos.dat",ios::app | ios::out | ios::binary);
         baseDatos<<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
         baseDatos.close();
     }
-    cout <<"\n\n\t\tRegresando al --MENU IMPUESTOS--";
+    cout <<"\n\n\t\tRegresando al --MENU CONCEPTO IMPUESTOS--";
     cout<<"\n\t";system("pause");
     return menuConceptoImpuestos();
 }
 
 void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
+    //preguntar
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"entro al menu Modificar Impuestos ";
+    log<<"entro al menu Modificar Concepto Impuestos ";
     log.close();
     fstream baseDatos, modBaseDatos;
     cout << "\n\t\t\tEntrando al menu --MODIFICAR CONCEPTO IMPUESTOS--" << endl;
-    baseDatos.open("empleados.dat",ios::in|ios::binary);
+    baseDatos.open("impuestos.dat",ios::in|ios::binary);
     if(!baseDatos){
         cout << "\n\t\tNo se encontro el archivo" << endl;
         baseDatos.close();
@@ -1103,7 +1105,7 @@ void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
     }
     else {
         cout << "\n\t\t\tIngrese el numero de Documento de Identificacion de la persona que busca: "; cin >> busquedaDatos;
-        modBaseDatos.open("temporalEmpleados.dat",ios::out|ios::binary);
+        modBaseDatos.open("temporalImpuestos.dat",ios::out|ios::binary);
         baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
         while (!baseDatos.eof()){
             if (busquedaDatos!=documentoIdentificacion){
@@ -1120,7 +1122,7 @@ void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
                 cout << "\t\tIngrese el puesto de la persona a registrar: "; cin>>puesto;
                 cout << "\t\tIngrese el sueldo de la persona a registrar: "; cin>>sueldo;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<"modifico el impuesto: "<<documentoIdentificacion<<", ";
+                log<<"modifico el Concepto impuesto: "<<documentoIdentificacion<<", ";
                 log.close();
                 modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
             }
@@ -1133,12 +1135,12 @@ void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
     if (modBaseDatos.is_open())
         modBaseDatos.close();
 
-    if( remove( "empleados.dat" ) != 0 )
+    if( remove( "impuestos.dat" ) != 0 )
         perror( "\n\t\tError deleting file" );
     else
         puts( "\n\t\tFile successfully deleted" );
 
-    if (rename("temporalEmpleados.dat","empleados.dat") != 0)
+    if (rename("temporalImpuestos.dat","impuestos.dat") != 0)
         perror("\n\t\tError renaming file");
     else
         cout << "\n\t\tFile renamed successfully";
@@ -1150,6 +1152,7 @@ void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
 }
 
 void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
+    //preguntar
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1158,7 +1161,7 @@ void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
 	fstream baseDatos,modBaseDatos;
 	int found=0;
 	cout << "\n\t\t\tEntrando al menu --ELIMINAR CONCEPTO IMPUESTOS--" << endl;
-	baseDatos.open("empleados.dat",ios::in|ios::binary);
+	baseDatos.open("impuestos.dat",ios::in|ios::binary);
 	if(!baseDatos)
 	{
 		cout<<"\n\t\t\tNo hay informacion...\a";
@@ -1167,7 +1170,7 @@ void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
 	else
 	{
 		cout << "\n\t\tIngrese el numero de Documento de Identificacion de la persona que busca: "; cin >> busquedaDatos;
-		modBaseDatos.open("temporalEmpleados.dat", ios::app | ios::out | ios::binary);
+		modBaseDatos.open("temporalImpuestos.dat", ios::app | ios::out | ios::binary);
 		baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
 		while(!baseDatos.eof())
 		{
@@ -1179,7 +1182,7 @@ void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
 			{
 				found++;
 				log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-                log<<"elimino el impuesto: "<<documentoIdentificacion<<", ";
+                log<<"elimino el concepto impuesto: "<<documentoIdentificacion<<", ";
                 log.close();
 				cout << "\n\t\t\tBorrado de informacion exitoso\a";
 			}
@@ -1196,18 +1199,18 @@ void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
     if (modBaseDatos.is_open())
         modBaseDatos.close();
 
-    if( remove( "empleados.dat" ) != 0 )
+    if( remove( "impuestos.dat" ) != 0 )
         perror( "\n\t\tError deleting file" );
     else
         puts( "\n\t\tFile successfully deleted" );
 
-    if (rename("temporalEmpleados.dat","empleados.dat") != 0)
+    if (rename("temporalImpuestos.dat","impuestos.dat") != 0)
         perror("\n\t\tError renaming file");
     else
         cout << "\n\t\tFile renamed successfully";
     }
 
-    cout <<"\n\n\t\t\tRegresando al --MENU EMPLEADOS--";
+    cout <<"\n\n\t\t\tRegresando al --MENU IMPUESTOS--";
     cout<<"\n\t";system("pause");
     return menuConceptoImpuestos();
 }
@@ -1216,14 +1219,14 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"entro al menu Mostrar Datos Impuestos, ";
+    log<<"entro al menu Mostrar Datos concepto Impuestos, ";
     log.close();
     fstream baseDatos;
-    cout << "\n\t\t\tEntrando al menu --MOSTRAR DATOS IMPUESTOS--";
+    cout << "\n\t\t\tEntrando al menu --MOSTRAR DATOS CONCEPTO IMPUESTOS--";
     cout << "\n\n\t\t�Quiere buscar a una persona en especifico? [ si / no ] : "; cin>>desicion;
     if (desicion=="si"){
         int datos=0;
-        baseDatos.open("empleados.dat",ios::in|ios::binary);
+        baseDatos.open("impuestos.dat",ios::in|ios::binary);
         if(!baseDatos)
         {
             cout<<"\n\t\tError";
@@ -1231,7 +1234,7 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
         }
         else
         {
-            cout << "\n\t\t\tEntrando en el menu --BUSCAR--"<<endl;
+            cout << "\n\t\t\tEntrando en el menu --BUSCAR CONCEPTO IMPUESTOS--"<<endl;
             cout << "\n\t\tIngrese el numero del Documento de Identificacion de la persona a buscar: "; cin >> busquedaDatos;
             baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
             while(!baseDatos.eof()){
@@ -1250,7 +1253,7 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
                         baseDatos.close();
                         cout<<"\n\n\t\tArchivo cerrado";}
 
-                    cout<<"\n\n\t\t\tRegresando al --MENU EMPLEADO--";
+                    cout<<"\n\n\t\t\tRegresando al --MENU IMPUESTOS--";
                     cout<<"\n\t";system("pause");
                     return menuConceptoImpuestos();
                     baseDatos.close();
@@ -1260,7 +1263,7 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
             if(datos==0)
             {
                 cout<<"\n\t\t\tNo se encontro ninguna coincidencia, intentelo de nuevo";
-                cout <<"\n\n\t\t\tRegresando al --MENU MOSTRAR DATOS--";
+                cout <<"\n\n\t\t\tRegresando al --MENU MOSTRAR DATOS CONCEPTO IMPUESTOS--";
                 cout<<"\n\t";system("pause");
                 return mostrarDatosConceptoImpuestos();
                 if (baseDatos.is_open()){
@@ -1279,7 +1282,7 @@ void empresa::mostrarDatosConceptoImpuestos(){//funcion creada por William Mayen
         fstream baseDatos;
         int total=0;
         cout<<"\n\t\t\tEntrando al --MENU MOSTRAR DATOS CONCEPTO IMPUESTOS"<<endl;
-        baseDatos.open("empleados.dat",ios::in|ios::binary);
+        baseDatos.open("impuestos.dat",ios::in|ios::binary);
         if(!baseDatos){
             cout<<"\n\t\t\tError\n\t\t\tNo se encontro el archivo, asegurese de que el archivo se encuentre en la misma carpeta del programa";
             if (baseDatos.is_open()){
@@ -1638,3 +1641,4 @@ void empresa::ModificarPlan(ifstream &Lec){//funcion creada por Carlos Montes
     }
     config.close();
 };
+
