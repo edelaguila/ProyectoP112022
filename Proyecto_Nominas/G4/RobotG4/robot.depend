@@ -140,6 +140,7 @@
 	<fstream>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 1653317955 source:c:\users\mey\proyectos\proyectofinal\proyectoequipo4\proyecto_nominas\g4\robotg4\src\mapcell.cpp
 	"mapcell.h"
@@ -151,11 +152,15 @@
 	<fstream>
 
 1653377456 source:c:\users\nelso\desktop\roboobobot\main.cpp
+=======
+1653517484 source:c:\users\mey\desktop\progra1\nueva carpeta\main.cpp
+>>>>>>> 74909decd316040db6568f5684d1d556bad9c255
 	<iostream>
 	"player.h"
 	"mapcell.h"
 	"gamemap.h"
 
+<<<<<<< HEAD
 1653317956 c:\users\nelso\desktop\roboobobot\include\player.h
 
 1653317956 c:\users\nelso\desktop\roboobobot\include\mapcell.h
@@ -174,8 +179,30 @@
 	<iostream>
 
 1653317956 source:c:\users\nelso\desktop\roboobobot\src\player.cpp
+=======
+1653516259 c:\users\mey\desktop\progra1\nueva carpeta\include\player.h
+
+1653516805 c:\users\mey\desktop\progra1\nueva carpeta\include\mapcell.h
+
+1653517435 c:\users\mey\desktop\progra1\nueva carpeta\include\gamemap.h
+	"mapcell.h"
+
+1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1653516259 source:c:\users\mey\desktop\progra1\nueva carpeta\src\player.cpp
+>>>>>>> 74909decd316040db6568f5684d1d556bad9c255
 	"player.h"
 	<iostream>
 	<fstream>
 
+<<<<<<< HEAD
 >>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
+=======
+1653516729 source:c:\users\mey\desktop\progra1\nueva carpeta\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
+
+>>>>>>> 74909decd316040db6568f5684d1d556bad9c255

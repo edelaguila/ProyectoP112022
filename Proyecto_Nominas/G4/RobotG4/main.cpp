@@ -14,9 +14,11 @@ int main()
     gamemap map;
     gamemap map2;
     gamemap map3;
+    gamemap map4;
     player hero;
     player hero2;
     player hero3;
+    player hero4;
     map.drawPortada();
     char choice;
 
@@ -65,6 +67,36 @@ int main()
                 }
 
                 }
+<<<<<<< HEAD
+        }
+            if (map.opcion = 1){
+                //system("cls");
+            map.drawPortada3();
+            getchar();
+            while(map3.isGameOver==false)
+            {
+                cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
+                hero3.callInput();
+
+
+                //Actualizar información del jugador en el mapa
+                if(map3.setPlayerCell3(hero3.getValueX(), hero3.getValueY()))
+                {
+                //   system("cls");
+                    map3.draw3();
+                } else
+                {
+                // system("cls");
+                    hero3.resetToSafePosition();
+                    //Dibujamos el mapa
+                    map3.draw3();
+                }
+
+                }
+
+
+=======
+>>>>>>> 74909decd316040db6568f5684d1d556bad9c255
         }
             if (map.opcion = 1){
                 //system("cls");
@@ -93,32 +125,30 @@ int main()
 
 
         }
-
             if (map.opcion = 1){
                 //system("cls");
-            map.drawPortada3();
+            map.drawPortada4();
             getchar();
-            while(map3.isGameOver==false)
+            while(map4.isGameOver==false)
             {
                 cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
-                hero3.callInput();
+                hero4.callInput();
 
 
                 //Actualizar información del jugador en el mapa
-                if(map3.setPlayerCell3(hero3.getValueX(), hero3.getValueY()))
+                if(map4.setPlayerCell4(hero4.getValueX(), hero4.getValueY()))
                 {
                 //   system("cls");
-                    map3.draw3();
+                    map4.draw4();
                 } else
                 {
                 // system("cls");
-                    hero3.resetToSafePosition();
+                    hero4.resetToSafePosition();
                     //Dibujamos el mapa
-                    map3.draw3();
+                    map4.draw4();
                 }
 
                 }
-
         }
     return 0;
 }
