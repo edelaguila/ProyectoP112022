@@ -3,7 +3,6 @@
 #include "Persona.h"
 #include "Bitacora.h"
 #include "Puesto.h"
-#include "Departamento.h"
 #include "Usuarios.h"
 #include "menus.h"
 #include "Concepto.h"
@@ -46,6 +45,7 @@ int main(int argc, char *argv[])
     accesoUsuarios=usuarioRegistrado.loginUsuarios();
     if (accesoUsuarios){menuG.menuGeneral();}
     system("cls");
+    //mensaje de cierre
     cout<<"** REGRESE PRONTO **";
     return 0;
 

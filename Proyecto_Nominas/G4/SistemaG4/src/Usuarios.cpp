@@ -10,7 +10,7 @@
 using namespace std;
 #include "Usuarios.h"
 
-
+//Login - Meyglin Rosales 9959-21-4490
 Usuarios::Usuarios()
 {
 

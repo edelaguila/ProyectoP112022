@@ -15,8 +15,9 @@ Concepto::~Concepto()
 {
     //dtor
 }
-void Concepto::menu()
+void Concepto::menu() //Clase Concepto - Nelson Pineda 9959-21-10015
 {
+    //Menu para modificar los porcentajes de conceptos
     Bitacora control;
     int choice;
     char x;
@@ -112,6 +113,7 @@ void Concepto::Actualizar()
 		rename("Record.txt","Porcentajes.txt");
 	}
 }
+//Consulta de conceptos
 void Concepto::Consultar()
 {
     Bitacora control;
@@ -139,7 +141,7 @@ void Concepto::Consultar()
 				cout<<"\n\n\t\t\t IGSS en %: "<<PIGSS<<endl;
                 cout<<"\t\t\t ISR en %: "<<PISR<<endl;
                 cout<<"\t\t\t Anticipo en %: "<<PAnticipos<<endl;
-                cout<<"\t\t\t Pensionn en %: "<<Ppension<<endl;
+                cout<<"\t\t\t Pension en %: "<<Ppension<<endl;
                 cout<<"\t\t\t IGSS en decimales: "<<resultIGSS<<endl;
                 cout<<"\t\t\t ISR en decimales: "<<resultISR<<endl;
                 cout<<"\t\t\t Anticipos en Decimales: "<<resultAnticipo<<endl;

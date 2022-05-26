@@ -12,6 +12,8 @@ class menus
         menuContabilidad();
         menuEmpleados();
         menuSeguridad();
+        menuTransferencia();
+        int opcion;
     protected:
 
     private:
