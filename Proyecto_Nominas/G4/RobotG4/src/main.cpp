@@ -14,11 +14,9 @@ int main()
     gamemap map;
     gamemap map2;
     gamemap map3;
-    gamemap map4;
     player hero;
     player hero2;
     player hero3;
-    player hero4;
     map.drawPortada();
     char choice;
 
@@ -43,7 +41,6 @@ int main()
       }
 
      }
-
             if (map.opcion = 1){
                 //system("cls");
             map.drawPortada2();
@@ -94,32 +91,6 @@ int main()
 
                 }
 
-
-        }
-            if (map.opcion = 1){
-                //system("cls");
-            map.drawPortada4();
-            getchar();
-            while(map4.isGameOver==false)
-            {
-                cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
-                hero4.callInput();
-
-
-                //Actualizar información del jugador en el mapa
-                if(map4.setPlayerCell4(hero4.getValueX(), hero4.getValueY()))
-                {
-                //   system("cls");
-                    map4.draw4();
-                } else
-                {
-                // system("cls");
-                    hero4.resetToSafePosition();
-                    //Dibujamos el mapa
-                    map4.draw4();
-                }
-
-                }
         }
     return 0;
 }

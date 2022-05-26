@@ -1,4 +1,4 @@
-                         NIVEL 3
+                 BIENVENIDOS AL LABERINTO
 
                            (__)    )
                            (..)   /|\
@@ -10,4 +10,4 @@
                            `._\(___`.
                              '---' _)/
                                   `-'
-            Presione enter para iniciar el nivel 3
+            Presione enter para iniciar el nivel 1   
