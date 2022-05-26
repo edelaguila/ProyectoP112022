@@ -22,6 +22,7 @@ class gamemapCarlosGonzalez
 
     private:
         void loadMapFromFile();
+        void loadMapFromFile2();
         void createMapToFile();
 };
 

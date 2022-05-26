@@ -68,8 +68,40 @@
 	<iostream>
 	<fstream>
 
-1653427718 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\gamemapcarlosgonzalez.cpp
+1653427409 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\gamemapcarlosgonzalez.cpp
 	"gamemapCarlosGonzalez.h"
+	<iostream>
+	<fstream>
+
+1653426698 source:c:\users\ll322\onedrive\escritorio\juego robot\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<fstream>
+	<cstdlib>
+	<iomanip>
+	<windows.h>
+	<string>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	"playerCarlosGonzalez.h"
+	"mapcellCarlosGonzalez.h"
+	"gamemapCarlosGonzalez.h"
+
+1653342844 c:\users\ll322\onedrive\escritorio\juego robot\include\playercarlosgonzalez.h
+
+1653342844 c:\users\ll322\onedrive\escritorio\juego robot\include\mapcellcarlosgonzalez.h
+
+1653532004 c:\users\ll322\onedrive\escritorio\juego robot\include\gamemapcarlosgonzalez.h
+	"mapcellCarlosGonzalez.h"
+
+1653342344 source:c:\users\ll322\onedrive\escritorio\juego robot\src\mapcellcarlosgonzalez.cpp
+	"mapcellCarlosGonzalez.h"
+	<iostream>
+
+1653342344 source:c:\users\ll322\onedrive\escritorio\juego robot\src\playercarlosgonzalez.cpp
+	"playerCarlosGonzalez.h"
 	<iostream>
 	<fstream>
 
