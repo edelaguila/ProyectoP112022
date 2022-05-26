@@ -1,4 +1,4 @@
-                                                                     __________________________________________
+                                                                      __________________________________________
                                                              _______| _  ___  __           __     ___  _   __  |_______
                                                             \       ||_)  |  |__ |\ | \  /|__ |\ | |  | \ |  | |      /
                                                              \      ||_) _|_ |__ | \|  \/ |__ | \|_|_ |_/ |__| |     /
@@ -13,18 +13,33 @@
                                                  |_____|  |_| |_|  |_____/   |____|  |_| |_\  |__|  |__| \___|   |____|  |_____|
                                                                            
 
-
-
                                                                                            NIVEL 1
-
-                                                                                            (__)    )
-                                                                                            (..)   /|\
-                                                                                           (o_o)  / | \
-                                                                                           ___) \/,-|,-\
-                                                                                         //,-/_\ )  '  '
-                                                                                            (//,-'\
-                                                                                           (  ( . \_
-                                                                                           `._\(___`.
-                                                                                             '---' _)/
-                                                                                                  `-'
-                                                                           Presione enter para iniciar el nivel 1
+                                                                                          
+                                           r                          
+                                           MM                         
+                                     9,    S99r                       
+                                     BBs,   B,99sh: ,,                
+                                      9:2hshM, ,SBBGr9B               
+                                     :sB, ,:       Ss 9               
+                        BGrr:,       BshM9r         hBX       :i sr   
+                   sGi::rBh29GMB952s,9   ,X, ,i      hhsr:::isBBBBB,  
+                   :MBXrss2srssBh  hGB:, rM, ,rrM,     ,:i::,  :   M         BIENVENIDO AL NIVEL 1
+                      G2     , 29  929222B9    GBB:,,,,,,:rs9GB9h9sM9              Suerte!!
+                       hX  r,  sM  M      iXGr,  :rsss222GBBBM92:2G9: 
+                        B5:    ,M  M       rMiMBssssssssri,           
+                        r925Sr  ss M      rB ,s9                      
+                            :2MG B G    ,9M  ssG                      
+                     sS9hX5ssrsMXBBGh2599r   s22                      
+                   GGs:          Mi         sh9                       
+                 ,Bi                     iGBBGBM                      
+                 Br            ss 2r,sh9BM2G9rB:                      
+     ,sss2sr:    B              GS,sBGGBGsss,                         
+    h9:X99GMBB2 rG         ,,,   MsBs Mr                              
+   rM s9     9G rG       rG92X95X,:Gs                                 
+   M: XS         B      XB     ,Bi2,r9                                
+   Gs  99r      2M      h        92 Gi                                
+    B:  ,shhSSh92               s2M2,                                 
+     G9i                      ,S29B5s                                 
+      ,2992sr::,,,,,,,,:, ,ss5BMBGr9B                                 
+            ,,,:::::::::iir2sr :s                                                  
+                Presione enter para iniciar el nivel 1

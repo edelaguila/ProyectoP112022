@@ -1,13 +1,38 @@
-             BIENVENIDOS AL LABERINTO 4
+                           BIENVENIDOS AL LABERINTO 4
 
-                           (__)    )
-                           (..)   /|\
-                          (o_o)  / | \
-                          ___) \/,-|,-\
-                        //,-/_\ )  '  '
-                           (//,-'\
-                           (  ( . \_
-                           `._\(___`.
-                             '---' _)/
-                                  `-'
-            Presione enter para iniciar el nivel 4
+       :2     ,  M9  s,          ,i,i   rsMr                                    
+        : :         ,           s9i:,     i                                     
+        ,GGGs9h  2Mr sM99G9:   GM       ,, ,,S9irSrs22r                         
+           :XiG  sh  GS:s,   ,:i   sGi:GG9S,  irss irs:s:                       
+            2 h   , ss    s999h : hMr    i       :2    hG92                     
+             ssX5sG ,X  99r,   ,  9S    GG     ,5s,hrhr,  s9                    
+               :hsG  , 2:   rh9,  S  ,M G s, sh  :S ,i i: GrX                   
+                 irssG   2r Ms  :Ghi Xs   h  9XX,9i ,    s, 9                   
+                     ,Gr M is 2   ,sr9,,  9s 2hS h  ,shhh2 2                              BIENVENIDO AL NIVEL 4
+          iGhX9rsr     9:h  2 h9i,Gsrhhh2h9ss,    ,ii,sX,:G,                      Preparate para vivir la ultima experiencia
+     GX9XMr5ir5  9G     rrsr2sis2h     ,,,rr9  s ,22     92                       inolvidable en el mapa de volcanes..
+    MsXr i   G9 ss9GS                       9s599Xhsrs  5h                                      Suerte!!
+  :G9 9G:sM, ,rSh   M                        rrssh,r2 :2Ms                      
+  99Si  , i2S   sG  59                            s2S Sh5,2                     
+ 2G 22r2X  9G,sX s55hG                         ,5ssiss2  h29:                   
+ ,M2,: 2  9hS,,M5   ,9s                       5s5s ,2i   ,s:i9                  
+  GGs:X2s 9s  s ,  ,2M,                    ,BBss:5Mss2,22:S2:99:                
+  sh252s2 ,hsss5:rXssG,                   :MB,s 9Bs ss22:s 2 r,i2i              
+    rh9M9MMs2BM292X9s                 ,9hXhh  ,GBM9 is5:i 29  ss rsr           ,
+       sMBG hM :i,     Gr iMs     ,irhBG2s, sSBBrBX  ss ih,    ::issSSsr,    i9 
+        sB s5     ,r:hBB,5BBXX99S99:     ,sMBBM BB  hX2i,,r, s2,   ,:   ,Xhhhs,s
+i:s: ,, sB22  ,i:     Bi s,        s2hhGMGBB9  MG   h995:s     s:     ::: i i ,M
+:  s9:,,GBss,222,5MBBG     ,X9XisGGGM9ss     :r:     :9M5 :     ,s, S, s sS25MGB
+ss2 is, 29s ,r s MBs       :h99r        s9GBh s :9hi   Ss,rsi:2r  ,s2r92GBBBB9G9
+GhBMs,Mh9s9BBMMM9X22hs              2XMGGMBG s:   2h2i  ss, 52srBBhGBBBBG52r    
+BBBBMGBBBrGBGGMGGMGMGr::::,:r:r9GGMMMGS,22   ,2  s  s,99G5BBBBBBBBG9s           
+2:     r9ss             i:s52,,,,,,is  s, ,:, :rsGBG9MBBM9MGh22r                
+       922S         hh9Xr :iri,   sXi    ,shX952SX9952:                         
+    ,GXB25GMG   ssMsS    rh2i   GGr                    ,,:::iriii:::,,::::iirsr:
+     sss,:,  i99Ms   r999s    rMG                                 ,,,  ,,       
+           sGM9   ,iri      iMG:                                                
+         99Gr   rs:        2Ms                                                  
+       :M9,               ,B9                                                   
+       :s                 ,r                                                                                    
+                                                                                                    
+                Presione enter para iniciar el nivel 4

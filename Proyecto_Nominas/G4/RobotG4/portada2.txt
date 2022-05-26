@@ -1,13 +1,31 @@
-                          NIVEL 2
-
-                           (__)    )
-                           (..)   /|\
-                          (o_o)  / | \
-                          ___) \/,-|,-\
-                        //,-/_\ )  '  '
-                           (//,-'\
-                           (  ( . \_
-                           `._\(___`.
-                             '---' _)/
-                                  `-'
+                         NIVEL 2
+                                      ,BB                   
+                                      BBBs                  
+                                      ,Xs                   
+              B,                                            
+           ,,BBB:        i29BBBBBGXr,                       
+          ,BBB BBB:  :MBBBhsi:,::r2BBBBs                    
+             rBM   2BBs               rBBB                  
+              M  rBB                     hBB                
+                BB,                        BBMh5ssr:,       
+               BB                           iBBBBBBBBBBBBi  
+              BB                             ,BMhs,rMB2 rBB,            BIENVENIDO AL NIVEL 2
+             9B                               2B,hM   9B  ,B        Preparate para una experiencia 
+         ,sBBBi                                B  BB   Bs  B        inolvidable en el mapa de Saturno..
+      iMBBBBBB                                 MBrB:  BB  BB                  Suerte!!
+    MBBBBGi2BB                                ,BB2  9Bs 5BM 
+  GB5,BB  B:rB                            ,sBB9, :GB2iGBB   
+ BB  Br  Bi  B                       is9BM9srir5MBGMBBr     
+BB  hB   sB9,BB             ,:rsSGGMMGX2ssshMB9BMMh,        
+sB:  MB9,  ,r2BGMGMGGMGMGGMGGG9S22sssS9BBBBBB5BB            
+  BBr  sBBM5ri:rrrsrssssss222XGMBBBBBBBBG2:  hB    BBBB     
+   ,GBBMh99GMBBBBMMBBBBBBBBBBBBBMh2r:       BB     MBBB     
+        ,rrss2h25BBr:rsrii,,              ,BB               
+                  BB:                   iBBi    B           
+                    BBBs             rBBBr     rBB          
+         rBBM         rMBBBBG92h9MBBBBs     ,BBB BBBr       
+         :BB2             ,:sss2si,            GBB,         
+                                                B           
+     
+                                                                  
             Presione enter para iniciar el nivel 2  
