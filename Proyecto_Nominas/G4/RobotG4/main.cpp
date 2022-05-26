@@ -68,6 +68,9 @@ int main()
 
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
         }
             if (map.opcion = 1){
                 //system("cls");
@@ -95,6 +98,7 @@ int main()
                 }
 
 
+<<<<<<< HEAD
 =======
 >>>>>>> 74909decd316040db6568f5684d1d556bad9c255
         }
@@ -124,6 +128,8 @@ int main()
                 }
 
 
+=======
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
         }
             if (map.opcion = 1){
                 //system("cls");

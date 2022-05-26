@@ -24,7 +24,7 @@ void gamemap::draw(){
         cout << endl;
     }
 }
-void gamemap::draw2(){
+void gamemap::draw2(){//Carlos Sandoval
     //system("cls");
     for (int i = 0; i < 15; i++)
     {
@@ -60,6 +60,7 @@ void gamemap::draw4(){
         cout << endl;
     }
 }
+<<<<<<< HEAD
 void gamemap::draw3(){
     //system("cls");
     for (int i = 0; i < 15; i++)
@@ -72,6 +73,8 @@ void gamemap::draw3(){
         cout << endl;
     }
 }
+=======
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 gamemap::gamemap2()
 {
     //ctor
@@ -79,14 +82,18 @@ gamemap::gamemap2()
     loadMapFromFile2();
     isGameOver = false;
 }
-gamemap::gamemap3()
+gamemap::gamemap3()//Meyglin Rosales
 {
     //ctor
     playerCell = NULL;
     loadMapFromFile3();
     isGameOver = false;
 }
+<<<<<<< HEAD
 gamemap::gamemap4()
+=======
+gamemap::gamemap4()//Meyglin Rosales
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 {
     //ctor
     playerCell = NULL;
@@ -128,7 +135,7 @@ bool gamemap::setPlayerCell(int playerX, int playerY)
     }
 
 }
-bool gamemap::setPlayerCell2(int playerX, int playerY)
+bool gamemap::setPlayerCell2(int playerX, int playerY)//Carlos Sandoval
 {
 
     if (cell[playerX][playerY].isBlockedCell() == false)
@@ -153,10 +160,14 @@ bool gamemap::setPlayerCell2(int playerX, int playerY)
             playerCell = &cell[playerX][playerY];
             //Simbolo del jugador en el mapa
 <<<<<<< HEAD
+<<<<<<< HEAD
             playerCell->id=254; //ascii 254
 =======
             playerCell->id=254; //ascii 169
 >>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
+=======
+            playerCell->id=254; //ascii 169
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
         }
 
         return true;
@@ -167,8 +178,9 @@ bool gamemap::setPlayerCell2(int playerX, int playerY)
     }
 
 }
-bool gamemap::setPlayerCell3(int playerX, int playerY)
+bool gamemap::setPlayerCell3(int playerX, int playerY)//Meyglin Rosales
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -176,6 +188,8 @@ bool gamemap::setPlayerCell3(int playerX, int playerY)
 >>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
 =======
 >>>>>>> 74909decd316040db6568f5684d1d556bad9c255
+=======
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
     loadMapFromFile3();
 
     if (cell[playerX][playerY].isBlockedCell() == false)
@@ -200,10 +214,14 @@ bool gamemap::setPlayerCell3(int playerX, int playerY)
             playerCell = &cell[playerX][playerY];
             //Simbolo del jugador en el mapa
 <<<<<<< HEAD
+<<<<<<< HEAD
             playerCell->id=156; //ascii 156
 =======
             playerCell->id=184; //ascii 169
 >>>>>>> d6cff647aa36c9ada2b4a921a68abb9618c12a5d
+=======
+            playerCell->id=184; //ascii 169
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
         }
 
         return true;
@@ -214,7 +232,11 @@ bool gamemap::setPlayerCell3(int playerX, int playerY)
     }
 
 }
+<<<<<<< HEAD
 bool gamemap::setPlayerCell4(int playerX, int playerY)
+=======
+bool gamemap::setPlayerCell4(int playerX, int playerY)//Meyglin Rosales
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 {
     loadMapFromFile4();
 
@@ -239,7 +261,11 @@ bool gamemap::setPlayerCell4(int playerX, int playerY)
             //playerCell = &cell[playerY][playerX];
             playerCell = &cell[playerX][playerY];
             //Simbolo del jugador en el mapa
+<<<<<<< HEAD
             playerCell->id=225; //ascii 225
+=======
+            playerCell->id=225; //ascii 169
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
         }
 
         return true;
@@ -293,9 +319,14 @@ void gamemap::loadMapFromFile()
     }
 
 }
+<<<<<<< HEAD
 void gamemap::loadMapFromFile2()
 {HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, 5);
+=======
+void gamemap::loadMapFromFile2()//Carlos Sandoval
+{
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
     string line;
     int row = 0;
     char userInput = ' ';
@@ -337,7 +368,7 @@ void gamemap::loadMapFromFile2()
     }
 
 }
-void gamemap::loadMapFromFile3()
+void gamemap::loadMapFromFile3()//Meyglin Rosales
 {
 <<<<<<< HEAD
 =======
@@ -385,7 +416,11 @@ void gamemap::loadMapFromFile3()
     }
 
 }
+<<<<<<< HEAD
 void gamemap::loadMapFromFile4()
+=======
+void gamemap::loadMapFromFile4()//Meyglin Rosales
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 {
     string line;
     int row = 0;
@@ -525,9 +560,45 @@ void gamemap::createMapToFile3()
     }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 void gamemap::createMapToFile3()
 =======
 void gamemap::createMapToFile4()
+=======
+void gamemap::createMapToFile4()
+{
+    ofstream myFile("map4.txt");
+    if (myFile.is_open())
+    {
+        for (int i = 0; i < 15; i++)
+        {
+            for (int j = 0; j < 30; j++)
+            {
+                if (i == 0 || i == 14)
+                {
+                    myFile << "1";
+                } else
+                {
+                    if (j == 0 || j == 29)
+                    {
+                        myFile << "1";
+                    } else
+                    {
+                        myFile << "0";
+                    }
+                }
+
+            }
+            myFile << endl;
+        }
+        myFile.close();
+    } else
+    {
+        cout << "Error FATAL: archivo no pudo ser creado" << endl;
+    }
+}
+void gamemap::drawPortada()
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 {
     ofstream myFile("map4.txt");
     if (myFile.is_open())
@@ -597,7 +668,7 @@ void gamemap::drawPortada()
     SetConsoleTextAttribute(hConsole, 15);
     string line;
     char userInput = ' ';
-    ifstream myFile("portada.txt");
+    ifstream myFile("portada.txt");//María José Véliz
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas
@@ -661,6 +732,29 @@ void gamemap::drawPortada3()
     }
 }
 void gamemap::drawPortada4()
+<<<<<<< HEAD
+=======
+{
+    string line;
+    char userInput = ' ';
+    ifstream myFile("portada4.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        while( getline(myFile, line))
+        {
+            cout << line << endl;
+        }
+        myFile.close();
+        getchar();
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
+    }
+}
+void gamemap::drawVictoria()
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 {
     string line;
     char userInput = ' ';
@@ -686,7 +780,7 @@ void gamemap::drawVictoria()
     gamemap map;
     string line;
     char choice;
-    ifstream myFile("premio.txt");
+    ifstream myFile("premio.txt");//María José Véliz
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas
@@ -712,7 +806,7 @@ void gamemap::drawVictoria2()
     gamemap map;
     string line;
     char choice;
-    ifstream myFile("premio2.txt");
+    ifstream myFile("premio2.txt");//María José Véliz
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas
@@ -742,7 +836,32 @@ void gamemap::drawVictoria3()
     gamemap map;
     string line;
     char choice;
-    ifstream myFile("premio3.txt");
+    ifstream myFile("premio3.txt");//María José Véliz
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        while( getline(myFile, line))
+        {
+            cout << line << endl;
+        }
+        myFile.close();
+        cout<<"Ingrese cualquier letra para vanzar al siguiente nivel"<<endl;
+        cin >> choice;
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de ganador no pudo ser cargado" << endl;
+    }
+            if (choice == 'Y'){
+                map.opcion = 1;
+        }
+}
+void gamemap::drawVictoria4()
+{
+    gamemap map;
+    string line;
+    char choice;
+    ifstream myFile("premio4.txt"); //María José Véliz
     if(myFile.is_open())
     {
         //Se obtiene el mapa externo y se general el mapa de celdas
@@ -786,10 +905,13 @@ void gamemap::drawVictoria4()
         }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> 74909decd316040db6568f5684d1d556bad9c255
+=======
+>>>>>>> 39ba803861718d26772eae793d797e30eaa7c02f
 gamemap::~gamemap()
 {
     //dtor
