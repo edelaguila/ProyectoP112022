@@ -31,7 +31,6 @@ public:
     void eliminarDepto();//funcion creada por Carlos Gonzalez
     void mostrarDatosDepto();//funcion creada por Carlos Gonzalez
     void menuNomina();//funcion creada por Diego Culajay
-    void insertNomina();//funcion creada por Diego Culajay
     void displayNomina();//funcion creada por Diego Culajay
     void modifyNomina();//funcion creada por Diego Culajay
     void searchNomina();//funcion creada por Diego Culajay
@@ -48,9 +47,10 @@ public:
     void reclamaciones(ofstream &Esc, ifstream &Lec);//funcion creada por Carlos Montes
     void ModificarPlan(ifstream &Lec);//funcion creada por Carlos Montes
 private:
-    string documentoIdentificacion, Id, nombre, direccion, edad, correo, telefono, estudios, nomConcep, puesto, montoConcep, sueldo, desicion, busquedaDatos, numDepto, nombreDepto, telefonoDepto, direccionDepto;
+    string documentoIdentificacion, puesto2,nombre, direccion, edad, correo, telefono, estudios, puesto, desicion, busquedaDatos, numDepto, nombreDepto, telefonoDepto, direccionDepto;
     string numeroid,choice;
-    int sueldo1,sueldototal,bonificacion,hora,horaextra,totalhoras,horatr;
+    int   hora,horaextra,totalhoras,horatr;
+    float impuesto,sueldo1,bonificacion,isr,igss,irtra,totaldesc,sueldo,totalnominas,sueldototal,sueldo2;
 };
 
 const std::string currentDateTime() {//funcion creada por Carlos Gonzalez
@@ -193,13 +193,15 @@ void empresa::registrarEmpleado(){//funcion creada por Carlos Gonzalez
         cout << "\t\tIngrese la direccion de la persona a registrar: "; cin >> direccion;
         cout << "\t\tIngrese el nivel de estudios de la persona a registrar: "; cin >> estudios;
         cout << "\t\tIngrese el puesto de la persona a registrar: "; cin>>puesto;
-        cout << "\t\tIngrese el sueldo de la persona a registrar: "; cin>>sueldo;
+        cout<<  "\t\tIngresa las Horas Trabajadas de la persona a registrar "; cin>> horatr;
+        cout<<  "\t\ttIngresa la Cantidad que Gana por Hora la persona a registrar  : "; cin>> hora;
+        cout<<  "\t\tIngresa la Cantidad de Horas Extras Trabajadas de la persona a registrar (SI NO TIENE HORAS EXTRAS TRABAJADAS, INGRESE 0) : "; cin>> horaextra;
         cout << "\n\t--Registro completado--\n" << endl;
         log.open("bitacora.dat",ios::app|ios::out|ios::binary);
         log<< "registro a: "<<documentoIdentificacion<<", ";
         log.close();
         baseDatos.open("empleados.dat",ios::app | ios::out | ios::binary);
-        baseDatos<<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
+        baseDatos<<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora << std::left<<std::setw(15)<< horaextra << "\n";
         baseDatos.close();
     }
     cout <<"\n\n\t\tRegresando al --MENU EMPLEADOS--";
@@ -225,10 +227,10 @@ void empresa::modificarEmpleado(){//funcion creada por Carlos Gonzalez
     else {
         cout << "\n\t\t\tIngrese el numero de Documento de Identificacion de la persona que busca: "; cin >> busquedaDatos;
         modBaseDatos.open("temporalEmpleados.dat",ios::out|ios::binary);
-        baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
+        baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
         while (!baseDatos.eof()){
             if (busquedaDatos!=documentoIdentificacion){
-                modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
+                modBaseDatos<<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora << std::left<<std::setw(15)<< horaextra << "\n";
             }
             else {
                 cout << "\n\t\tIngrese el numero de documento de identificacion de la persona: "; cin >> documentoIdentificacion;
@@ -239,13 +241,16 @@ void empresa::modificarEmpleado(){//funcion creada por Carlos Gonzalez
                 cout << "\t\tIngrese la direccion de la persona a registrar: "; cin >> direccion;
                 cout << "\t\tIngrese el nivel de estudios de la persona a registrar: "; cin >> estudios;
                 cout << "\t\tIngrese el puesto de la persona a registrar: "; cin>>puesto;
-                cout << "\t\tIngrese el sueldo de la persona a registrar: "; cin>>sueldo;
+                cout << "\t\tIngresa las Horas Trabajadas de la persona a registrar "; cin>> horatr;
+                cout << "\t\ttIngresa la Cantidad que Gana por Hora la persona a registrar  : "; cin>> hora;
+                cout << "\t\tIngresa la Cantidad de Horas Extras Trabajadas de la persona a registrar (SI NO TIENE HORAS EXTRAS TRABAJADAS, INGRESE 0) : "; cin>> horaextra;
                 log.open("bitacora.dat",ios::app|ios::out|ios::binary);
                 log<<"busco a: "<<busquedaDatos<<" y la modificacion es: "<<documentoIdentificacion<<", ";
                 log.close();
-                modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
+                modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora << std::left<<std::setw(15)<< horaextra << "\n";
             }
-            baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
+            baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
+
         }
         modBaseDatos.close();
         baseDatos.close();
@@ -287,12 +292,13 @@ void empresa::eliminarEmpleado(){//funcion creada por Carlos Gonzalez
 	{
 		cout << "\n\t\tIngrese el numero de Documento de Identificacion de la persona que busca: "; cin >> busquedaDatos;
 		modBaseDatos.open("temporalEmpleados.dat", ios::app | ios::out | ios::binary);
-		baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
+		baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
+
 		while(!baseDatos.eof())
 		{
 			if(busquedaDatos!=documentoIdentificacion)
 			{
-				modBaseDatos <<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono << std::left<<std::setw(15)<< direccion << std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< sueldo <<"\n";
+				modBaseDatos<<std::left<<std::setw(15)<< documentoIdentificacion <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< edad <<std::left<<std::setw(15)<< correo <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< direccion <<std::left<<std::setw(15)<< estudios << std::left<<std::setw(15)<< puesto << std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora << std::left<<std::setw(15)<< horaextra << "\n";
 			}
 			else
 			{
@@ -302,7 +308,8 @@ void empresa::eliminarEmpleado(){//funcion creada por Carlos Gonzalez
         log.close();
 				cout << "\n\t\t\tBorrado de informacion exitoso\a";
 			}
-			baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
+			baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
+
 		}
 		if(found==0)
 		{
@@ -351,7 +358,8 @@ void empresa::mostrarDatosEmpleados(){//funcion creada por Carlos Gonzalez
         {
             cout << "\n\t\t\tEntrando en el menu --BUSCAR--"<<endl;
             cout << "\n\t\tIngrese el numero del Documento de Identificacion de la persona a buscar: "; cin >> busquedaDatos;
-            baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
+            baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
+
             while(!baseDatos.eof()){
                 if(busquedaDatos==documentoIdentificacion){
                     cout<<"\n\t\tDocumento de Identificacion: "<< documentoIdentificacion;
@@ -362,6 +370,7 @@ void empresa::mostrarDatosEmpleados(){//funcion creada por Carlos Gonzalez
                     cout<<"\n\t\tDireccion: "<< direccion;
                     cout<<"\n\t\tNivel de estudios: "<< estudios;
                     cout<<"\n\t\tPuesto o cargo: "<< puesto;
+                    sueldo=(horatr+horaextra)*hora;
                     cout<<"\n\t\tSueldo: "<< sueldo;
                     datos++;
                     if (baseDatos.is_open()){
@@ -404,7 +413,8 @@ void empresa::mostrarDatosEmpleados(){//funcion creada por Carlos Gonzalez
         }
         else
         {
-            baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
+            baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
+
             while(!baseDatos.eof())
             {
                 total++;
@@ -416,6 +426,7 @@ void empresa::mostrarDatosEmpleados(){//funcion creada por Carlos Gonzalez
                 cout<<"\n\t\tDireccion: "<< direccion;
                 cout<<"\n\t\tNivel de estudios: "<< estudios;
                 cout<<"\n\t\tPuesto o cargo: "<< puesto;
+                sueldo=(horatr+horaextra)*hora;
                 cout<<"\n\t\tSueldo: "<< sueldo;
                 baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>sueldo;
                 //if (baseDatos.is_open()){
@@ -738,12 +749,9 @@ log.close();
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"\t\t\t |  SISTEMA DE NOMINA EMPLEADOS  |"<<endl;
 	cout<<"\t\t\t-------------------------------"<<endl;
-	cout<<"\t\t\t 1. Registrar"<<endl;
-	cout<<"\t\t\t 2. Mostrar"<<endl;
-	cout<<"\t\t\t 3. Modificar"<<endl;
-	cout<<"\t\t\t 4. Buscar"<<endl;
-	cout<<"\t\t\t 5. Eliminar"<<endl;
-	cout<<"\t\t\t 6. Exit"<<endl;
+	cout<<"\t\t\t 1. Mostrar"<<endl;
+	cout<<"\t\t\t 2. Buscar"<<endl;
+	cout<<"\t\t\t 3. Exit"<<endl;
 
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
@@ -756,62 +764,27 @@ log.close();
     case 1:
     	do
     	{
-    		insertNomina();
+    		displayNomina();
     		cout<<"\n\t\t\t Agrega otro empleado a la nomina (Y,N): ";
     		cin>>x;
 		}while(x=='y'||x=='Y');
 		break;
 	case 2:
-		displayNomina();
-		break;
-	case 3:
-		modifyNomina();
-		break;
-	case 4:
 		searchNomina();
 		break;
-	case 5:
+	case 3:
+		return menuPrincipal();
+		break;
+	case 4:
 		deletNomina ();
 		break;
-	case 6:
+	case 5:
 		exit(0);
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 	}
 	getch();
-    }while(choice!= 6);
-}
-
-void empresa::insertNomina()//funcion creada por Diego Culajay
-{
-fstream log;
-    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"entro REGISTRAR EMPLEADOS EN NOMINA ";
-    log.close();
-
-	system("cls");
-	fstream file;
-	cout<<"\n Agregar detalles Empleados a Nomina "<<endl;
-	cout<<"\t\t\tIngresa Id de Empleado        : ";
-	cin>>numeroid;
-	cout<<"\t\t\tIngresa Nombre del Empleado     : ";
-	cin>>nombre;
-	cout<<"\t\t\tIngresa Telefono del Empleado   : ";
-	cin>>telefono;
-	cout<<"\t\t\tIngresa las Horas Trabajadas del Empleado ";
-	cin>>horatr;
-	cout<<"\t\t\tIngresa la Cantidad que Gana por Hora el Empleado  : ";
-	cin>>hora;
-	cout<<"\t\t\tIngresa la Cantidad de Horas Extras Trabajadas (si no tiene horas extras ingrese 0) : ";
-	cin>>horaextra;
-
-    log.open("bitacora.dat",ios::app|ios::out|ios::binary);
-    log<<"registro a: "<<numeroid<<", ";
-    log.close();
-	file.open("Empleados.dat", ios::app | ios::out | ios::binary);
-	file<<std::left<<std::setw(15)<< numeroid <<std::left<<std::setw(15)<< nombre <<std::left<<std::setw(15)<< telefono <<std::left<<std::setw(15)<< horatr <<std::left<<std::setw(15)<< hora << std::left<<std::setw(15)<< horaextra << "\n";
-	file.close();
-
+    }while(choice!= 3);
 }
 
 void empresa::displayNomina()//funcion creada por Diego Culajay
@@ -822,40 +795,48 @@ log<<"entro MOSTRAR EMPLEADOS EN NOMINA ";
 log.close();
 
 	system("cls");
-	fstream file;
+	fstream baseDatos;
 	int total=0;
 	cout<<"\n-------------------------Tabla de Detalles de Empleados -------------------------"<<endl;
-	file.open("Empleados.dat",ios::in|ios::binary);
-	if(!file)
+	baseDatos.open("empleados.dat",ios::in|ios::binary);
+	if(!baseDatos)
 	{
-		cout<<"\n\t\t\tNo hay informaci�n...";
-		file.close();
+		cout<<"\n\t\t\tNo hay informacion......";
+		baseDatos.close();
 	}
 	else
 	{
-		file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra;
-		while(!file.eof())
+		baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
+
+		while(!baseDatos.eof())
 		{
-			total++;
-			cout<<"\n\n\t\t\t Id Empleado: "<<numeroid<<endl;
-			cout<<"\t\t\t Nombre Empleado: "<<nombre<<endl;
-			cout<<"\t\t\t Telefono Empleado: "<<telefono<<endl;
-			cout<<"\t\t\t Horas Trabajadas del Empleado: "<<horatr<<endl;
-			cout<<"\t\t\t Cantidad que Gana por Hora: "<<hora<<endl;
-			cout<<"\t\t\t Horas extas trabajadas: "<<horaextra<<endl;
+				total++;
+
 			sueldo1 = horatr+horaextra;
-			sueldototal= sueldo1*hora;
-			bonificacion= sueldototal+250;
-			cout<<"\t\t\t Bonificacion Incentiva de Q250.00 "<<endl;
-			cout<<"\t\t\t Sueldo total a recibir "<< bonificacion<<endl;
-			file >> numeroid >> nombre >> telefono >> horatr >> hora >> horaextra >> sueldototal >> bonificacion;
+			sueldo= sueldo1*hora;
+
+
+
+			isr = sueldo*0.05;
+			igss = sueldo*0.0483;
+			irtra= sueldo*0.01;
+			totaldesc=isr+igss+irtra;
+
+			sueldo2=sueldo-totaldesc;
+			bonificacion=sueldo2+250;
+
+
+			cout<<"\t\nNOMBRES"<<" "<<"|"<<"CARGO"<<" "<<" "<<" "<<" "<<" "<<"|"<<"HORASTRABAJADAS"<<"|"<<"CANTIDADPORHORA"<<"|"<<"HORASEXTRAS"<<"|"<<"BONIFICACION"<<"|"<<" "<<" "<<"ISR"<<"|"<<" "<<" "<<" "<<"IGSS"<<"|"<<"IRTRA"<<"|"<<"TOTALDESCUENTOS"<<"|"<<"SALARIOTOTAL\t\t\n ";
+			cout<<nombre<<" "<<" "<<"|"<<puesto<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<horatr<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<hora<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<horaextra<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<"250"<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<isr<<" "<<" "<<"|"<<igss<<"|"<<irtra<<" "<<"|"<<" "<<" "<<totaldesc<<" "<<" "<<" "<<" "<<" "<<" "<<"|"" "<<" "<<bonificacion;
+			cout<<"----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
+			baseDatos>>nombre>>puesto>>horatr>>hora>>horaextra>>sueldo1>>sueldo>>isr>>igss>>irtra>>totaldesc>>sueldo2>>bonificacion;
 		}
 		if(total==0)
 		{
 			cout<<"\n\t\t\tNo hay informacion...";
 		}
 	}
-	file.close();
+	baseDatos.close();
 }
 
 void empresa::modifyNomina()//funcion creada por Diego Culajay
@@ -870,7 +851,7 @@ log.close();
 	string participant_id;
 	int found=0;
 	cout<<"\n-------------------------Modificacion Detalles Empleado-------------------------"<<endl;
-	file.open("Empleados.dat",ios::in|ios::binary);
+	file.open("empleados.dat",ios::in|ios::binary);
 	if(!file)
 	{
 		cout<<"\n\t\t\tNo hay informacion..,";
@@ -919,7 +900,7 @@ log.close();
 
 		file1.close();
 		file.close();
-		remove("Empleados.dat");
+		remove("empleados.dat");
 		rename("Record.dat","Empleados.dat");
 	}
 }
@@ -933,7 +914,7 @@ log.close();
 	system("cls");
 	fstream file;
 	int found=0;
-	file.open("Empleados.dat",ios::in|ios::binary);
+	file.open("empleados.dat",ios::in|ios::binary);
 	if(!file)
 	{
 		cout<<"\n-------------------------Datos del Empleado buscada------------------------"<<endl;
@@ -980,7 +961,7 @@ log.close();
 	string participant_id;
 	int found=0;
 	cout<<"\n-------------------------Detalles de Empleado a Borrar-------------------------"<<endl;
-	file.open("Empleados.dat",ios::in|ios::binary);
+	file.open("empleados.dat",ios::in|ios::binary);
 	if(!file)
 	{
 		cout<<"\n\t\t\tNo hay informacion...";
@@ -1016,7 +997,7 @@ log.close();
 
 		file1.close();
 		file.close();
-		remove("Empleados.dat");
+		remove("empleados.dat");
 		rename("Record.dad","Empleados.dad");
 	}
 }
@@ -1057,7 +1038,6 @@ void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
     log<<"entro al menu Registrar Concepto Impuesto ";
     log.close();
-
     cout << "\n\t\t\tEntrando al menu --REGISTRAR CONCEPTO IMPUESTOS--\n" << endl;
     cout << "\n\t�Quires salir al --MENU IMPUESTOS--? [ si / no ] : "; cin >> desicion;
     if (desicion=="si"){
@@ -1087,7 +1067,6 @@ void empresa::registrarConceptoImpuestos(){//funcion creada por William Mayen
 }
 
 void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
-    //preguntar
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1152,7 +1131,6 @@ void empresa::modificarConceptoImpuestos(){//funcion creada por William Mayen
 }
 
 void empresa::eliminarConceptoImpuestos(){//funcion creada por William Mayen
-    //preguntar
     system("cls");
     fstream log;
     log.open("bitacora.dat",ios::app|ios::out|ios::binary);
@@ -1545,7 +1523,7 @@ void empresa::ModificarPlan(ifstream &Lec){//funcion creada por Carlos Montes
 	rename("auxiliar.dat", "poliza.dat");
 }
 
- int main(){
+ int main(){//funcion creada por Carlos Gonzalez
 
      //bitacora, log in, creado por Carlos Gonzalez
 
