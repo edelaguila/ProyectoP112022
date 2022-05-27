@@ -3,9 +3,10 @@
 #include "Persona.h"
 #include "Bitacora.h"
 #include "Puesto.h"
-#include "Departamento.h"
 #include "Usuarios.h"
 #include "menus.h"
+#include "Concepto.h"
+#include "Poliza.h"
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -44,6 +45,7 @@ int main(int argc, char *argv[])
     accesoUsuarios=usuarioRegistrado.loginUsuarios();
     if (accesoUsuarios){menuG.menuGeneral();}
     system("cls");
+    //mensaje de cierre
     cout<<"** REGRESE PRONTO **";
     return 0;
 

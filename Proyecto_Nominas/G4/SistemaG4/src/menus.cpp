@@ -4,8 +4,9 @@
 #include "Persona.h"
 #include "Bitacora.h"
 #include "Puesto.h"
-#include "Departamento.h"
 #include "Usuarios.h"
+#include "Concepto.h"
+#include "Poliza.h"
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -59,7 +60,7 @@ int choice;
 	cout<<"\t\t\t 1. Consultas"<<endl;
 	cout<<"\t\t\t 2. Contabilidad"<<endl;
 	cout<<"\t\t\t 3. Gestion Empleados"<<endl;
-	cout<<"\t\t\t 4. Gestion Puestos"<<endl;
+	cout<<"\t\t\t 4. Gestion Departamentos"<<endl;
 	cout<<"\t\t\t 5. Seguridad"<<endl;
 	cout<<"\t\t\t 6. Salir"<<endl;
 
@@ -112,6 +113,7 @@ menus::menuConsultas()
     //Creacion de un objeto de la clase Persona
     Persona empleado;
     Bitacora control;
+    Puesto dep;
     fstream empleadosEntradaSalida = empleado.inicioArchivo();
 
     int choice;
@@ -125,7 +127,7 @@ menus::menuConsultas()
 	cout<<"\t\t\t"<<endl;
 	cout<<"\t\t\t 1. Consulta Empleados"<<endl;
 	cout<<"\t\t\t 2. Consulta Departamentos"<<endl;
-	cout<<"\t\t\t 3. Consulta Sueldos"<<endl;
+	cout<<"\t\t\t 3. Consulta Nomina"<<endl;
 	cout<<"\t\t\t 4. Regresar"<<endl;
 
 	cout<<"\t\t\t"<<endl;
@@ -144,14 +146,12 @@ menus::menuConsultas()
 	case 2:
 	    control.nuevaActividadTxt(8);
         control.nuevaActividad(8);
-        cout<<"Estamos trabajando en la Consulta de Departamentos"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+        dep.Consultar();
 		break;
 	case 3:
 	    control.nuevaActividadTxt(9);
         control.nuevaActividad(9);
-        cout<<"Estamos trabajando en la Consulta de Sueldos"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+        empleado.consultarRegistro2(empleadosEntradaSalida);
 		break;
 	case 4:
 	        cout<<"Presione Enter para confirmar"<<endl;
@@ -165,12 +165,15 @@ menus::menuConsultas()
 }
 
 menus::menuContabilidad()
-{
+{   Concepto gesConcepto;
     Persona empleado;
+    Poliza gesPoliza;
     Bitacora control;
+    menus opMenu;
     fstream empleadosEntradaSalida = empleado.inicioArchivo();
     fstream empleadosEntradaSalida2 = empleado.inicioArchivo();
     int choice;
+    int opcion;
 	char x;
 	do
     {
@@ -180,14 +183,14 @@ menus::menuContabilidad()
 	cout<<"\t\t\t    CONTABILIDAD    "<<endl;
 	cout<<"\t\t\t"<<endl;
 	cout<<"\t\t\t 1. Consulta Nomina"<<endl;
-	cout<<"\t\t\t 2. Imprimir Nomina"<<endl;
+	cout<<"\t\t\t 2. Autorizacion Nomina"<<endl;
 	cout<<"\t\t\t 3. Consulta Poliza"<<endl;
-	cout<<"\t\t\t 4. Consulta Retenciones"<<endl;
-	cout<<"\t\t\t 5. Transferencias"<<endl;
+	cout<<"\t\t\t 4. Transferencias"<<endl;
+	cout<<"\t\t\t 5. Mantenimiento de Deducciones y Percepciones"<<endl;
 	cout<<"\t\t\t 6. Regresar"<<endl;
 
 	cout<<"\t\t\t"<<endl;
-	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6/7]"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
 	cout<<"\t\t\t"<<endl;
 	cout<<"Ingresa una Opcion: ";
     cin>>choice;
@@ -201,36 +204,45 @@ menus::menuContabilidad()
         cout << "Presiona Enter para aceptar"<<endl;
 		break;
 	case 2:
-	    control.nuevaActividadTxt(11);
-        control.nuevaActividad(11);
-        empleado.imprimirRegistro2(empleadosEntradaSalida2);
-        cout << "Planilla impresa satisfactoriamente"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
-		break;
-	case 3:
+	    empleado.consultarRegistro2(empleadosEntradaSalida);
 	    control.nuevaActividadTxt(12);
         control.nuevaActividad(12);
-        cout<<"Estamos trabajando en la Consulta de Poliza"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+        //Funcion para imprimir la nomina si esta se autoriza - Maria Jose Veliz 9959-21-5909
+        cout << "¿Autoriza la Nomina? SI=1, NO=2" << endl;
+        cin >> opcion;
+        if (opcion == 1){
+            empleado.imprimirRegistro2(empleadosEntradaSalida2);
+            cout << "Nomina impresa satisfactoriamente"<<endl;
+            cout << "Presiona Enter para aceptar"<<endl;}
+        else {
+            cout << "Nomina NO autorizada"<<endl;
+            break;
+        }
+        break;
+	case 3:
+	    control.nuevaActividadTxt(11);
+        control.nuevaActividad(11);
+        gesPoliza.menu();
 		break;
 	case 4:
-	    control.nuevaActividadTxt(13);
-        control.nuevaActividad(13);
-        cout<<"Estamos trabajando en la Consulta de Retenciones"<<endl;
+	    control.nuevaActividadTxt(15);
+        control.nuevaActividad(15);
+        menuTransferencia();
         cout << "Presiona Enter para aceptar"<<endl;
 		break;
 	case 5:
-	    control.nuevaActividadTxt(15);
-        control.nuevaActividad(15);
-        cout<<"Estamos trabajando en las Transferencias"<<endl;
-        cout << "Presiona Enter para aceptar"<<endl;
+	    control.nuevaActividadTxt(13);
+        control.nuevaActividad(13);
+        gesConcepto.menu();
 		break;
-	case 6:
+    case 6:
 	    cout<<"Presiona enter para confirmar"<<endl;
 		break;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
     }getch();
+    empleadosEntradaSalida.clear();
+    empleadosEntradaSalida2.clear(); // reinicializar indicador de fin de archivo
     }while(choice!= 6);
 }
 
@@ -375,3 +387,88 @@ menus::menuSeguridad()
 	}getch();
     }while(choice!= 4);
 }
+
+menus::menuTransferencia()
+{
+    Persona empleado;
+    Bitacora control;
+
+    int choice;
+    int noCuenta;
+    double cantidad;
+    double estCuenta = empleado.obtenerBanco();
+    double resultado;
+    fstream empleadosEntradaSalida = empleado.inicioArchivo();
+	char x;
+	do
+    {
+	system("cls");
+
+	cout<<"\t\t\t"<<endl;
+	cout<<"\t\t\t    TRANSFERENCIAS    "<<endl;
+	cout<<"\t\t\t"<<endl;
+	cout<<"\t\t\t 1. Consulta Estado de Cuenta"<<endl;
+	cout<<"\t\t\t 2. Pago a Empleado"<<endl;
+	cout<<"\t\t\t 3. Deposito"<<endl;
+	cout<<"\t\t\t 4. Regresar"<<endl;
+
+	cout<<"\t\t\t"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2/3/4]"<<endl;
+	cout<<"\t\t\t"<<endl;
+	cout<<"Ingresa una Opcion: ";
+    cin>>choice;
+
+    switch(choice)
+    {
+    case 1:
+        control.nuevaActividadTxt(39);
+        control.nuevaActividad(39);
+        cout << "ESTADO DE CUENTA:"<< endl;
+        cout << "Q." << estCuenta << endl;
+		break;
+	case 2:
+	    control.nuevaActividadTxt(40);
+        control.nuevaActividad(40);
+        empleado.consultarRegistro3(empleadosEntradaSalida);
+        cout << "Ingrese el numero de cuenta del empleado:" << endl;
+        cin >> noCuenta;
+        cout << "Ingrese la cantidad en quetzales a ser pagada:"<<endl;
+        cout << "Q. ";
+        cin >> cantidad;
+        //Se realiza la operacion correspondiente y se actualiza el valor para todo el programa
+        resultado = estCuenta - cantidad;
+        empleado.establecerBanco(resultado);
+        estCuenta = empleado.obtenerBanco();
+        cout << "Se han pagado Q." << cantidad << "a la cuenta No. " << noCuenta<< endl;
+        cout << "El estado de cuenta actual es de Q." << estCuenta <<  endl;
+        cout << "Presiona enter para continuar"<<endl;
+        getch();
+		break;
+	case 3:
+	    control.nuevaActividadTxt(41);
+        control.nuevaActividad(41);
+        cout << "El estado de Cuenta actual es de Q." << estCuenta<<endl;
+        cout << "Ingrese la cantidad a depositar:"<<endl;
+        cout << "Q. ";
+        cin >> cantidad;
+        //Se realiza la operacion correspondiente y se actualiza el valor para todo el programa
+        resultado = estCuenta + cantidad;
+        empleado.establecerBanco(resultado);
+        estCuenta = empleado.obtenerBanco();
+        cout << "Se han depositado Q." << cantidad << endl;
+        cout << "El estado de cuenta actual es de Q." << estCuenta <<  endl;
+        cout << "Presiona enter para continuar"<<endl;
+        getch();
+		break;
+	case 4:
+	        cout<<"Presione Enter para confirmar"<<endl;
+		break;
+	default:
+		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
+	}
+    getch();
+    empleadosEntradaSalida.clear(); // reinicializar indicador de fin de archivo
+    }while(choice!= 4);
+}
+
+

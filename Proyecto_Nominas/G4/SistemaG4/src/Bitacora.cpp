@@ -35,7 +35,7 @@ string Bitacora::obtenerAccion(int opcion)
 }
 
 
-//Funcion que establece la fecha y la hora
+//Funcion que establece la fecha y la hora ---- Nelson Pineda 9959-21-10015
 Bitacora::fechaHora()
 {
     //se establece la hora
@@ -77,9 +77,10 @@ Bitacora::fechaHora()
     cout<<"\t\t\t-----------------------------------------------------------------"<<endl;
 }
 
-//Funcion para agregar informacion a la bitacora(binario)
+//Funcion para agregar informacion a la bitacora(binario) ----- Carlos Sandoval 9959-21-1324
 Bitacora::nuevaActividad(int opcion)
 {
+    //Se establece toda la informacion de fecha y hora
     Usuarios user;
     fstream file;
     Bitacora control;
@@ -177,7 +178,7 @@ Bitacora::nuevaActividad(int opcion)
         accion1 = "Se realizo consulta de Poliza";
         break;
     case 12:
-        accion1 = "Se realizo consulta de Planillas";
+        accion1 = "Se imprimio a Nomina";
         break;
     case 13:
         accion1 = "Se realizo consulta de Retenciones";
@@ -324,7 +325,7 @@ Bitacora::nuevaActividadTxt(int opcion)
         accion1 = "Ingreso a Gestion de Empleados";
         break;
     case 4:
-        accion1 = "Ingreso a Gestion de Puestos";
+        accion1 = "Ingreso a Gestion de Departamentos";
         break;
     case 5:
         accion1 = "Ingreso a Menu Seguridad";
@@ -339,25 +340,25 @@ Bitacora::nuevaActividadTxt(int opcion)
         accion1 = "Se realizo consulta de Departamentos";
         break;
     case 9:
-        accion1 = "Se realizo consulta de Sueldos";
+        accion1 = "Se realizo consulta de Nomina";
         break;
     case 10:
         accion1 = "Se realizo consulta de Nomina";
         break;
     case 11:
-        accion1 = "Se realizo consulta de Poliza";
+        accion1 = "Se imprimio la Nomina";
         break;
     case 12:
-        accion1 = "Se realizo consulta de Planillas";
+        accion1 = "Se realizo consulta de Poliza";
         break;
     case 13:
-        accion1 = "Se realizo consulta de Retenciones";
+        accion1 = "Se ingreso al menu de Transferencias";
         break;
     case 14:
         accion1 = "Se realizo consulta de Salarios";
         break;
     case 15:
-        accion1 = "Se ingreso al Menu Transferencias";
+        accion1 = "Se ingreso al Menu de Conceptos";
         break;
     case 16:
         accion1 = "Se realizo consulta de Empleados";
@@ -412,6 +413,30 @@ Bitacora::nuevaActividadTxt(int opcion)
         break;
     case 32:
         accion1 = "Ingreso de usuario y contrasena exitoso";
+        break;
+    case 34:
+        accion1 = "Se consultaron los conceptos";
+        break;
+    case 35:
+        accion1 = "Se consultaron Seguros de Vida";
+        break;
+    case 36:
+        accion1 = "Se consultaron seguros de Salud";
+        break;
+    case 37:
+        accion1 = "Se consultaron seguros Familiares";
+        break;
+    case 38:
+        accion1 = "Se consultaron seguros Dentales";
+        break;
+    case 39:
+        accion1 = "Se consulto Estado de Cuenta";
+        break;
+    case 40:
+        accion1 = "Se realizo pago a empleado";
+        break;
+    case 41:
+        accion1 = "Se realizo un deposito";
         break;
 
     }

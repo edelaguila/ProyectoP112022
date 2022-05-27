@@ -1,1 +1,2 @@
-23             Gerente        100000         23             30             2015           
+ID  Apellido    Primer nombre Puesto      Sueldo(Q)   Horas Extra Dias Laborados Comisiones Valor Horas Sueldo Extraordinario (Q) Total Devengado IGSS     ISR      Anticipos Total Descuento  Bono Incentivo  Liquido Recibir  Pension A.
+1   Pineda      Nelson        Gerente     10000       30          30             0          25          750                       10750           519.225  311.539     4300      5130.76          250             5119.24          0       

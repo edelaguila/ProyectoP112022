@@ -99,8 +99,17 @@ public:
    void establecerRAlimenticio( string );
    string obtenerRAlimenticio() const;
 
-   void establecerPIGSS( double);
-   double obtenerPIGSS() const;
+   void establecerresultIGSS (double);
+   double obtenerresultIGSS () const;
+
+   double obtenerPerIgss () const;
+   double obtenerPerISR () const;
+   double obtenerPerAlim () const;
+   double obtenerPerAnticipo () const;
+   double obtenerBanco () const;
+   void establecerBanco( double );
+
+
 
    //Funciones para el tratado de archivos
     void imprimirRegistro( fstream& );
@@ -114,10 +123,13 @@ public:
     void crearArchivoEmpleados();
     void consultarRegistro( fstream& );
     void consultarRegistro2( fstream& );
+    void consultarRegistro3( fstream& );
     void busquedaRegistro(fstream&);
     void mostrarLineaPantalla( const Persona &);
     void mostrarLineaPantalla2( const Persona &);
+    void mostrarLineaPantalla3( const Persona &);
     fstream inicioArchivo();
+    void menuTransferencia();
 
 private:
    int numeroId;
@@ -141,7 +153,11 @@ private:
    double LiquidoR;
    double PAlimenticia;
    char RAlimenticio[5] ;
-   double PIGSS;
+   double estBancario = 100000;
+
+
+
+
 };
 
 #endif
