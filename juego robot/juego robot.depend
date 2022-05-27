@@ -105,3 +105,64 @@
 	<iostream>
 	<fstream>
 
+1653678365 source:c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\src\gamemapcarlosgonzalez.cpp
+	"gamemapCarlosGonzalez.h"
+	<iostream>
+	<fstream>
+
+1653672970 c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\include\gamemapcarlosgonzalez.h
+	"mapcellCarlosGonzalez.h"
+
+1653672970 c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\include\mapcellcarlosgonzalez.h
+
+1653672970 source:c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\src\mapcellcarlosgonzalez.cpp
+	"mapcellCarlosGonzalez.h"
+	<iostream>
+
+1653672970 source:c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\src\playercarlosgonzalez.cpp
+	"playerCarlosGonzalez.h"
+	<iostream>
+	<fstream>
+
+1653672970 c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\include\playercarlosgonzalez.h
+
+1653685746 source:c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\src\gamemapdiegoculajay.cpp
+	"gamemapDiegoCulajay.h"
+	<iostream>
+	<fstream>
+
+1653677681 c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\include\gamemapdiegoculajay.h
+	"mapcellDiegoCulajay.h"
+
+1653681649 c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\include\mapcelldiegoculajay.h
+
+1653683832 source:c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\src\mapcelldiegoculajay.cpp
+	"mapcellDiegoCulajay.h"
+	<iostream>
+
+1653677039 source:c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\src\playerdiegoculajay.cpp
+	"playerDiegoCulajay.h"
+	<iostream>
+	<fstream>
+
+1653677681 c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\include\playerdiegoculajay.h
+
+1653684064 source:c:\users\public\umg diego culajay\proyecto en grupo\proyectop1equipo2\juego robot\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<fstream>
+	<cstdlib>
+	<iomanip>
+	<windows.h>
+	<string>
+	<stdio.h>
+	<conio.h>
+	<math.h>
+	"playerCarlosGonzalez.h"
+	"mapcellCarlosGonzalez.h"
+	"gamemapCarlosGonzalez.h"
+	"playerDiegoCulajay.h"
+	"mapcellDiegoCulajay.h"
+	"gamemapDiegoCulajay.h"
+

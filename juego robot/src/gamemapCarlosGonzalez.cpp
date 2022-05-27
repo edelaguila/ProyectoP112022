@@ -119,8 +119,8 @@ void gamemapCarlosGonzalez::loadMapFromFile2()
         }
     }
 
-}
 
+}
 void gamemapCarlosGonzalez::loadMapFromFile()
 {
     string line;
