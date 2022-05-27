@@ -10,7 +10,7 @@
 #include <iomanip>
 
 using namespace std;
-
+//codigo del CRUD de departamentos, Carlos Hernandez 9959-21-363
 
 
 departamentos::departamentos()

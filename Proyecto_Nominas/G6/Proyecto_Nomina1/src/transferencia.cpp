@@ -9,7 +9,7 @@
 #include <conio.h>
 #include <iomanip>
 
-
+//Codigo de la transferencia bancaria, Carlos Hernandez 9959-21-363
 transferencia::transferencia()
 {
     //ctor

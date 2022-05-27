@@ -2,7 +2,7 @@
 #define TRANSFERENCIA_H
 
 using namespace std;
-
+//Headers de la transferencia bancaria, Carlos Hernandez 9959-21-363
 class transferencia
 {
     public:

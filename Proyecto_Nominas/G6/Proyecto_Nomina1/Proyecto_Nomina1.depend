@@ -751,7 +751,7 @@
 	<conio.h>
 	<iostream>
 
-1652935504 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\menus.cpp
+1653368168 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\menus.cpp
 	"menus.h"
 	"conceptos.h"
 	"impuestos.h"
@@ -760,7 +760,6 @@
 	"Banco.h"
 	"Empresas.h"
 	"Poliza.h"
-	"bitacora.h"
 	"transferencia.h"
 	"departamentos.h"
 	"puestos.h"
@@ -774,7 +773,7 @@
 
 1652919633 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\transferencia.h
 
-1652920871 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\puestos.h
+1653367479 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\puestos.h
 	<iostream>
 
 1652917412 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\poliza.cpp
@@ -789,15 +788,17 @@
 	<iomanip>
 	"menus.h"
 
-1652921587 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\puestos.cpp
+1653367697 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\puestos.cpp
+	"puestos.h"
+	"menus.h"
 	<iostream>
+	<istream>
 	<fstream>
 	<stdlib.h>
+	<string.h>
 	<cstdlib>
 	<conio.h>
 	<iomanip>
-	"puestos.h"
-	"menus.h"
 
 1652919633 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\transferencia.cpp
 	"transferencia.h"
@@ -811,7 +812,7 @@
 	<conio.h>
 	<iomanip>
 
-1652935421 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\generacionnomina.cpp
+1653373286 source:c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\src\generacionnomina.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -819,8 +820,9 @@
 	<conio.h>
 	<iomanip>
 	"generacionnomina.h"
+	"empleados.h"
 	"menus.h"
 
-1652935261 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\generacionnomina.h
+1653373059 c:\users\vjere\proyectos\programaproyectofinale6\prograproyectofinale6\proyecto_nomina1\include\generacionnomina.h
 	<iostream>
 

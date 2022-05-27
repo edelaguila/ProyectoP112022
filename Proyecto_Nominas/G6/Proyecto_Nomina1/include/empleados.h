@@ -2,7 +2,7 @@
 #ifndef EMPLEADOS_H
 #define EMPLEADOS_H
 using namespace std;
-
+//Headers para el CRUD de empleados, Bryan Ariana 9959-21-2832
 class empleados
 {
     public:

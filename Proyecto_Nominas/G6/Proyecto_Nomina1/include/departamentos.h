@@ -1,7 +1,7 @@
 #ifndef DEPARTAMENTOS_H
 #define DEPARTAMENTOS_H
 
-
+//Headers de departamentos, Carlos Hernandez 9959-21-363
 class departamentos
 {
     public:

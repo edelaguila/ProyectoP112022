@@ -4,7 +4,7 @@ using namespace std;
 
 #include <cstring>
 #include "impuestos.h"
-
+//Codigo CRUD de impuestos, Victor Jerez 9959-21-2081
 impuestos::impuestos(int valorNumeroId, string valorUsuario, double valorSueldo)
 {
     establecerNumeroId(valorNumeroId);

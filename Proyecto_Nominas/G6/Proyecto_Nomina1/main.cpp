@@ -1,5 +1,6 @@
 #include <iostream>
 #include <conio.h>
+#include <fstream>
 #include "ingreso.h"
 #include "menus.h"
 
@@ -13,10 +14,6 @@ using std::right;
 using std::fixed;
 using std::showpoint;
 
-//#include <ctime>
-//#include <vector>
-#include <fstream>
-
 using std::ofstream;
 using std::ostream;
 using std::fstream;
@@ -29,7 +26,7 @@ using std::setprecision;
 #include <cstdlib>
 using namespace std;
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]) //main, Victor Jerez 9959-21-2081
 {
     menus menuG;
 

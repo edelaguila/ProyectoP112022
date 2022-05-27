@@ -2,7 +2,7 @@
 #define CONCEPTOS_H
 
 using namespace std;
-
+//Headers para el menu de conceptos, Victor Jerez 9959-21-2081
 class conceptos
 {
     public:

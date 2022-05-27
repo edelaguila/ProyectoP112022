@@ -8,7 +8,7 @@
 #include <iomanip>
 #include "informe.h"
 #include "menus.h"
-
+//Codigo Informe de nomina, Bryan Ariana 9959-21-2832
 using namespace std;
 
 informe::informe()

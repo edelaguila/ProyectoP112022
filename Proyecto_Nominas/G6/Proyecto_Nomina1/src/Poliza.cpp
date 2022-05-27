@@ -9,9 +9,8 @@
 #include <iomanip>
 #include "menus.h"
 
-
 using namespace std;
-
+//Codigo de la generacion de poliza, Salvador Martinez 9959-21-4167
 Poliza::Poliza()
 {
     //ctor

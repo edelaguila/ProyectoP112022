@@ -10,7 +10,7 @@
 #include <iomanip>
 
 using namespace std;
-
+//Codigo del Menu de conceptos, Victor Jerez 9959-21-2081
 conceptos::conceptos()
 {
     //ctor

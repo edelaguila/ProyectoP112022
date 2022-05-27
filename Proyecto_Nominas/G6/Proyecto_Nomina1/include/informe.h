@@ -2,7 +2,7 @@
 #define INFORME_H
 
 using namespace std;
-
+//Headers para el informe de nomina, Bryan Ariana
 class informe
 {
     public:

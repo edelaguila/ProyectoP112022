@@ -3,7 +3,7 @@
 #include <iostream>
 
 using namespace std;
-
+//Headers para el CRUD de impuestos, Victor Jerez 9959-21-2081
 class impuestos
 {
     public:

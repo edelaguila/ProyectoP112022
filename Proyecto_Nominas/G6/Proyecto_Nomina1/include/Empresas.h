@@ -3,7 +3,7 @@
 
 
 using namespace std;
-
+//Headers de empresas, Salvador Martinez 9959-21-4167
 
 class Empresas
 {

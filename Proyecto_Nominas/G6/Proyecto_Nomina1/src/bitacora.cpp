@@ -8,7 +8,7 @@
 #include <iomanip>
 #include "bitacora.h"
 #include "menus.h"
-
+//Codigo de la bitacora (no funcional), Victor Guzman 9959-21-5648
 void bitacora::menubitacora()
 {
     bitacora::limpiarpantalla();

@@ -9,6 +9,9 @@
 #include <conio.h>
 #include <iomanip>
 
+using namespace std;
+//Codigo CRUD de Empresas, Salvador Martinez 9959-21-4167
+
 Empresas::Empresas()
 {
     //ctor

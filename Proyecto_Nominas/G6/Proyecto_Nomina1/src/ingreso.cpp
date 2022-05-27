@@ -15,7 +15,7 @@ ingreso::~ingreso()
 {
     //dtor
 }
-bool ingreso::loginUsuarios()
+bool ingreso::loginUsuarios()//Menu de ingreso(login), Victor Jerez 9959-21-2081
 {
     string usuario, contra;
     int contador=0;
@@ -28,7 +28,6 @@ bool ingreso::loginUsuarios()
         cout <<"\t\t\t Usuario: ";
         getline(cin, usuario);
         cout<<"\n\t\t\t Contrasena: ";
-        //getline(cin, contra);
         char caracter;
         caracter = getch();
         contra="";
@@ -48,15 +47,12 @@ bool ingreso::loginUsuarios()
             }
             caracter = getch();
         }
-        //instancia de clase USUARIOS, para consultar: primero se consulta el usuario, si existe, se consulta la contraseña
         if (usuario==USER && contra==PASS){
             ingreso=true;
-            //bitacora.setRegistro(usuario, "Login correcto");
         } else {
             cout<<"\n\n\t\t\t El usuario y/o contrasena son incorrectos"<<endl;
             cin.get();
             contador++;
-            //bitacora.setRegistro(usuario, "Login incorrecto");
         }
     } while (ingreso==false && contador<3);
     if (ingreso==false){
