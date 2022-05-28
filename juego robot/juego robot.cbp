@@ -34,19 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/gamemapCarlosGonzalez.h" />
-		<Unit filename="include/gamemapDiegoCulajay.h" />
-		<Unit filename="include/mapcellCarlosGonzalez.h" />
-		<Unit filename="include/mapcellDiegoCulajay.h" />
-		<Unit filename="include/playerCarlosGonzalez.h" />
-		<Unit filename="include/playerDiegoCulajay.h" />
+		<Unit filename="include/gamemap.h" />
+		<Unit filename="include/mapcell.h" />
+		<Unit filename="include/player.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/gamemapCarlosGonzalez.cpp" />
-		<Unit filename="src/gamemapDiegoCulajay.cpp" />
-		<Unit filename="src/mapcellCarlosGonzalez.cpp" />
-		<Unit filename="src/mapcellDiegoCulajay.cpp" />
-		<Unit filename="src/playerCarlosGonzalez.cpp" />
-		<Unit filename="src/playerDiegoCulajay.cpp" />
+		<Unit filename="src/gamemap.cpp" />
+		<Unit filename="src/mapcell.cpp" />
+		<Unit filename="src/player.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

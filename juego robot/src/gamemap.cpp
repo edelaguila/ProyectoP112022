@@ -1,17 +1,17 @@
-#include "gamemapCarlosGonzalez.h"
+#include "gamemap.h"
 #include <iostream>
 #include <fstream>
 //Implementacion de toda la funcionabilidad del mapa del juego
 
 using namespace std;
-gamemapCarlosGonzalez::gamemapCarlosGonzalez()
+gamemap::gamemap()
 {
     //ctor
     playerCell = NULL;
     loadMapFromFile();
     isGameOver = false;
 }
-void gamemapCarlosGonzalez::draw(){
+void gamemap::draw(){
     //system("cls");
     for (int i = 0; i < 12; i++)
     {
@@ -23,7 +23,7 @@ void gamemapCarlosGonzalez::draw(){
         cout << endl;
     }
 }
-bool gamemapCarlosGonzalez::setPlayerCell(int playerX, int playerY)
+bool gamemap::setPlayerCell(int playerX, int playerY)
 {
     if (cell[playerX][playerY].isBlockedCell() == false)
     {
@@ -35,6 +35,19 @@ bool gamemapCarlosGonzalez::setPlayerCell(int playerX, int playerY)
         }if (cell[playerX][playerY].id=='2')
         {
             drawFinalA();
+            isGameOver==true;
+            return true;
+        }
+        if (cell[playerX][playerY].id=='3')
+        {
+            drawPortadaDiego();
+            loadMapFromFile3();
+            isGameOver==true;
+            return true;
+        }
+        if (cell[playerX][playerY].id=='#')
+        {
+            drawCasa();
             isGameOver==true;
             return true;
         }
@@ -69,8 +82,56 @@ bool gamemapCarlosGonzalez::setPlayerCell(int playerX, int playerY)
     }
 
 }
-
-void gamemapCarlosGonzalez::loadMapFromFile2()
+void gamemap::loadMapFromFile3()
+{
+    string line;
+    int row = 0;
+    char userInput = ' ';
+    ifstream myFile("mapDiego.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        while( getline(myFile, line))
+        {
+            //cout << line << endl;
+            for (int p = 0; p < line.length(); p++)
+            {
+                if (line[p] == 0)
+                {
+                    cell[row][p].id = '0';//posible solucion
+                } else
+                {
+                    cell[row][p].id = line[p];
+                }
+                // Cambio para quitar ceros y colocar espacios en blanco en el mapa
+                // cell[row][p].id = line[p];
+                /*if (line[p] =='1')
+                {
+                    cell[row][p].id=176;
+                }else
+                {
+                    cell[row][p].id=line[p];
+                }*/
+            }
+            row++;
+        }
+        myFile.close();
+    }
+    else
+    {
+        cout << "Error FATAL: archivo del mapa no pudo ser cargado" << endl;
+        cout << "Desea crearlo? " << endl;
+        cin >> userInput;
+        if (userInput='s')
+        {
+            createMapToFile();
+        } else
+        {
+            cout << "NO podemos continuar el juego" << endl;
+        }
+    }
+}
+void gamemap::loadMapFromFile2()
 {
     string line;
     int row = 0;
@@ -118,10 +179,8 @@ void gamemapCarlosGonzalez::loadMapFromFile2()
             cout << "NO podemos continuar el juego" << endl;
         }
     }
-
-
 }
-void gamemapCarlosGonzalez::loadMapFromFile()
+void gamemap::loadMapFromFile()
 {
     string line;
     int row = 0;
@@ -171,7 +230,7 @@ void gamemapCarlosGonzalez::loadMapFromFile()
     }
 
 }
-void gamemapCarlosGonzalez::createMapToFile()
+void gamemap::createMapToFile()
 {
     ofstream myFile("mapCarlosGonzalez.txt");
     if (myFile.is_open())
@@ -203,7 +262,7 @@ void gamemapCarlosGonzalez::createMapToFile()
         cout << "Error FATAL: archivo no pudo ser creado" << endl;
     }
 }
-void gamemapCarlosGonzalez::drawPortada()
+void gamemap::drawPortada()
 {
     system("cls");
     string line;
@@ -225,7 +284,29 @@ void gamemapCarlosGonzalez::drawPortada()
     }
 }
 
-void gamemapCarlosGonzalez::drawFinalA(){
+void gamemap::drawPortadaDiego(){
+    system("cls");
+    string line;
+    ifstream myFile("PortadaDiego.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        cout<<"\n\n";
+        while( getline(myFile, line))
+        {
+            cout << "\t" <<line << endl;
+        }
+        myFile.close();
+        cout<<"\n\t\t\t";system("pause");//cin >> userInput;
+        loadMapFromFile2();
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
+    }
+}
+
+void gamemap::drawFinalA(){
     system("cls");
     string line;
     ifstream myFile("tunelInfinito.txt");
@@ -247,7 +328,7 @@ void gamemapCarlosGonzalez::drawFinalA(){
     }
 }
 
-void gamemapCarlosGonzalez::drawMuerte()
+void gamemap::drawMuerte()
 {
     system("cls");
     string line;
@@ -270,7 +351,29 @@ void gamemapCarlosGonzalez::drawMuerte()
     }
 }
 
-void gamemapCarlosGonzalez::drawVictoria()
+void gamemap::drawCasa(){
+    system("cls");
+    string line;
+    ifstream myFile("casa.txt");
+    if(myFile.is_open())
+    {
+        //Se obtiene el mapa externo y se general el mapa de celdas
+        cout<<"\n\n";
+        while( getline(myFile, line))
+        {
+            cout << "\t" <<line << endl;
+        }
+        myFile.close();
+        cout<<"\n\t\t\t";system("pause");//cin >> userInput;
+        loadMapFromFile2();
+    }
+    else
+    {
+        cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
+    }
+}
+
+void gamemap::drawVictoria()
 {
     string line;
     char userInput = ' ';
@@ -291,7 +394,7 @@ void gamemapCarlosGonzalez::drawVictoria()
     }
 }
 
-gamemapCarlosGonzalez::~gamemapCarlosGonzalez()
+gamemap::~gamemap()
 {
     //dtor
 }

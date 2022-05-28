@@ -1,11 +1,11 @@
-#include "playerCarlosGonzalez.h"
+#include "player.h"
 #include <iostream>
 #include <fstream>
 
 using namespace std;
 //Implementacion de toda la funcionabilidad de la clase Jugador
 
-playerCarlosGonzalez::playerCarlosGonzalez()
+player::player()
 {
     //ctor
     x = 7;
@@ -14,24 +14,24 @@ playerCarlosGonzalez::playerCarlosGonzalez()
     lastY =10;
 }
 
-playerCarlosGonzalez::~playerCarlosGonzalez()
+player::~player()
 {
     //dtor
     //
 }
-int playerCarlosGonzalez::getValueX(){
+int player::getValueX(){
     return x;
 }
-int playerCarlosGonzalez::getValueY(){
+int player::getValueY(){
     return y;
 }
-void playerCarlosGonzalez::setValueX(int valueX){
+void player::setValueX(int valueX){
     x = valueX;
 }
-void playerCarlosGonzalez::setValueY(int valueY){
+void player::setValueY(int valueY){
     y = valueY;
 }
-void playerCarlosGonzalez::callInput()
+void player::callInput()
 {
     char userInput = ' ';
     cin >> userInput;
@@ -71,12 +71,12 @@ void playerCarlosGonzalez::callInput()
     }
     //cout << "El jugador esta en las coordenadas -> " << "X=" << x << " Y=" << y << " GuardaX=" << lastX << "GuardaY=" << lastY << endl;
 }
-void playerCarlosGonzalez::resetToSafePosition()
+void player::resetToSafePosition()
 {
     x = lastX;
     y = lastY;
 }
-void playerCarlosGonzalez::drawCreditos()
+void player::drawCreditos()
 {
     string line;
     char userInput = ' ';

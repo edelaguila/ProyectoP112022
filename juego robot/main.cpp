@@ -9,13 +9,10 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
-#include "playerCarlosGonzalez.h"
-#include "mapcellCarlosGonzalez.h"
-#include "gamemapCarlosGonzalez.h"
-#include "playerDiegoCulajay.h"
-#include "mapcellDiegoCulajay.h"
-#include "gamemapDiegoCulajay.h"
-int decision;
+#include "player.h"
+#include "mapcell.h"
+#include "gamemap.h"
+
 using namespace std;
 
 int main()
@@ -36,10 +33,11 @@ int main()
         cout << "Error FATAL: el archivo de portada no pudo ser cargado" << endl;
     }
     int desicion;
-    cout<<"\n\n\t\t\tBIENVENIDO, ELIGE UNA OPCION: "<<"\n\n\t\t[1] ENTRAR A JUGAR"<<"\n\t\t[2] Segundo Mapa"<<"\n\t\t[3] ¿SALIR?"<<"\n\n\t\t";cin>>desicion;
-    if (decision==1){
-        gamemapCarlosGonzalez map;
-            playerCarlosGonzalez hero;
+    cout<<"\n\n\t\t\tBIENVENIDO, ELIGE UNA OPCION: "<<"\n\n\t\t[1] ENTRAR A JUGAR"<<"\n\t\t[2] ¿SALIR?";cout<<"\n\n\t\t";cin>>desicion;
+    switch (desicion){
+        case 1:
+            gamemap map;
+            player hero;
             string line;
             ifstream myFile("controles.txt");
             system("cls");
@@ -75,44 +73,10 @@ int main()
                 map.draw();
                 }
             }
-    }
-    else if(desicion==2){
-        gamemapDiegoCulajay map;
-    playerDiegoCulajay hero;
-    map.drawPortada();
-    //map.draw();
-    while(map.isGameOver==false)
-    {
-      cout << "Introduce comando de movimiento <w>, <a>, <s>, <d> : <x> --> Salir " << endl;
-      hero.callInput();
-
-      //Actualizar información del jugador en el mapa
-      if(map.setPlayerCell(hero.getValueX(), hero.getValueY()))
-      {
-     //   system("cls");
-        map.draw();
-      } else
-      {
-       // system("cls");
-        hero.resetToSafePosition();
-        //Dibujamos el mapa
-        map.draw();
-      }
-      //map.draw();
-    }
-}
-else {
-
-            cout<<"\n\t\t\tGRACIAS POR JUGAR... :)";
+            break;
+        //case 2:
+            cout<<"\n\t\t\tGRTACIAS POR JUGAR... :)";
             cout<<"\n\t\t\t";system("pause");
-            return(0);
-
-}
-
-
+            exit (0);
     }
-
-
-
-
-
+}

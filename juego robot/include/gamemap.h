@@ -1,13 +1,13 @@
-#ifndef GAMEMAPCARLOSGONZALEZ_H
-#define GAMEMAPCARLOSGONZALEZ_H
-#include "mapcellCarlosGonzalez.h"
+#ifndef GAMEMAP_H
+#define GAMEMAP_H
+#include "mapcell.h"
 
-class gamemapCarlosGonzalez
+class gamemap
 {
     public:
-        gamemapCarlosGonzalez();
-        mapcellCarlosGonzalez* playerCell;
-        mapcellCarlosGonzalez cell [12][20];
+        gamemap();
+        mapcell* playerCell;
+        mapcell cell [12][20];
         void draw();
         // método que obtiene las coordenadas del jugador y actualiza el mapa
         bool setPlayerCell(int playerX, int playerY);
@@ -16,14 +16,16 @@ class gamemapCarlosGonzalez
         void drawFinalA();
         void drawFinalB();
         void drawMuerte();
-        virtual ~gamemapCarlosGonzalez();
+        void drawCasa();
+        void drawPortadaDiego();
+        virtual ~gamemap();
         bool isGameOver=false;
     protected:
 
     private:
         void loadMapFromFile();
         void loadMapFromFile2();
+        void loadMapFromFile3();
         void createMapToFile();
 };
-
-#endif // GAMEMAPCARLOSGONZALEZ_H
+#endif // GAMEMAP_H

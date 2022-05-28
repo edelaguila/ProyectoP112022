@@ -36,7 +36,7 @@
 	<iostream>
 	<fstream>
 
-1653426698 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\main.cpp
+1653695658 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\main.cpp
 	<iostream>
 	<fstream>
 	<stdlib.h>
@@ -48,27 +48,27 @@
 	<stdio.h>
 	<conio.h>
 	<math.h>
-	"playerCarlosGonzalez.h"
+	"player.h"
+	"mapcell.h"
+	"gamemap.h"
+
+1653688927 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\playercarlosgonzalez.h
+
+1653688927 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\mapcellcarlosgonzalez.h
+
+1653690350 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\gamemapcarlosgonzalez.h
 	"mapcellCarlosGonzalez.h"
-	"gamemapCarlosGonzalez.h"
 
-1653342844 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\playercarlosgonzalez.h
-
-1653342844 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\mapcellcarlosgonzalez.h
-
-1653427409 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\gamemapcarlosgonzalez.h
-	"mapcellCarlosGonzalez.h"
-
-1653342344 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\mapcellcarlosgonzalez.cpp
+1653688927 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\mapcellcarlosgonzalez.cpp
 	"mapcellCarlosGonzalez.h"
 	<iostream>
 
-1653342344 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\playercarlosgonzalez.cpp
+1653688927 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\playercarlosgonzalez.cpp
 	"playerCarlosGonzalez.h"
 	<iostream>
 	<fstream>
 
-1653427409 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\gamemapcarlosgonzalez.cpp
+1653691380 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\gamemapcarlosgonzalez.cpp
 	"gamemapCarlosGonzalez.h"
 	<iostream>
 	<fstream>
@@ -165,4 +165,46 @@
 	"playerDiegoCulajay.h"
 	"mapcellDiegoCulajay.h"
 	"gamemapDiegoCulajay.h"
+
+1653689176 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\playerdiegoculajay.h
+
+1653689176 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\mapcelldiegoculajay.h
+
+1653689654 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\gamemapdiegoculajay.h
+	"mapcellDiegoCulajay.h"
+
+1653689176 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\mapcelldiegoculajay.cpp
+	"mapcellDiegoCulajay.h"
+	<iostream>
+
+1653689176 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\playerdiegoculajay.cpp
+	"playerDiegoCulajay.h"
+	<iostream>
+	<fstream>
+
+1653689621 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\gamemapdiegoculajay.cpp
+	"gamemapDiegoCulajay.h"
+	<iostream>
+	<fstream>
+
+1653696679 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\mapcell.cpp
+	"mapcell.h"
+	<iostream>
+
+1653696696 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\mapcell.h
+
+1653696739 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\player.h
+
+1653697336 c:\users\ll322\proyectos\proyectop1equipo2\juego robot\include\gamemap.h
+	"mapcell.h"
+
+1653696855 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\player.cpp
+	"player.h"
+	<iostream>
+	<fstream>
+
+1653697336 source:c:\users\ll322\proyectos\proyectop1equipo2\juego robot\src\gamemap.cpp
+	"gamemap.h"
+	<iostream>
+	<fstream>
 

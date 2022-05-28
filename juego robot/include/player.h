@@ -1,12 +1,12 @@
-#ifndef PLAYERCARLOSGONZALEZ_H
-#define PLAYERCARLOSGONZALEZ_H
+#ifndef PLAYER_H
+#define PLAYER_H
 
 
-class playerCarlosGonzalez
+class player
 {
     public:
-        playerCarlosGonzalez();
-        virtual ~playerCarlosGonzalez();
+        player();
+        virtual ~player();
         int lastX, lastY;
         void callInput();
         int getValueX();
@@ -22,4 +22,4 @@ class playerCarlosGonzalez
         int x, y;
 };
 
-#endif // PLAYERCARLOSGONZALEZ_H
+#endif // PLAYER_H
