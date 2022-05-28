@@ -9,12 +9,12 @@
 
 
 				Equipo de Desarrollo:
-				   Equipo -----> G1
-				   Integrante 1:  Edwin Adony Montejo Martínez
-				   Integrante 2:  Leticia Eugenia Sontay Chanchavac
-				   Integrante 3:  Juan Ejemplo - Caracteres
-				   Integrante 4:  Juan Ejemplo - Mensaje Final
-				   Integrante 5:  Juan Ejemplo - Creditos
+				   Equipo -----> G3
+				   Integrante 1:  Edwin Adony Montejo Martínez 9491-21-3898
+				   Integrante 2:  José Rodrigo Pérez Cojon 9959-21-4557
+				   Integrante 3:  Carlos David Rojas Coronado 9959-21-504
+				   Integrante 4:  Leticia Eugenia sontay chanchavac 9491-21-9664
+				   Integrante 5:  Arlethe Esthepany Mendoza Guzmán 9959-21–1160
 
 
 
