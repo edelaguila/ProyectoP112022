@@ -45,7 +45,6 @@ int main(int argc, char *argv[])
     accesoUsuarios=usuarioRegistrado.loginUsuarios();
     if (accesoUsuarios){menuG.menuGeneral();}
     system("cls");
-    //mensaje de cierre
     cout<<"** REGRESE PRONTO **";
     return 0;
 

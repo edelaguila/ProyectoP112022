@@ -114,17 +114,20 @@ public:
    //Funciones para el tratado de archivos
     void imprimirRegistro( fstream& );
     void imprimirRegistro2( fstream& );
+    void imprimirRegistro3(fstream& );
     void actualizarRegistro( fstream& );
     void nuevoRegistro( fstream& );
     void eliminarRegistro( fstream& );
     void mostrarLinea( ostream&, const Persona & );
     void mostrarLinea2( ostream&, const Persona & );
+    void mostrarLinea4( ostream&, const Persona & );
     int obtenerId( const char * const );
     void crearArchivoEmpleados();
     void consultarRegistro( fstream& );
     void consultarRegistro2( fstream& );
     void consultarRegistro3( fstream& );
     void busquedaRegistro(fstream&);
+    void busquedaRegistro2(fstream&);
     void mostrarLineaPantalla( const Persona &);
     void mostrarLineaPantalla2( const Persona &);
     void mostrarLineaPantalla3( const Persona &);

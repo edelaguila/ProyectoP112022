@@ -1,6 +1,7 @@
 #include "Persona.h"
 #include "Concepto.h"
 #include "menus.h"
+#include "Poliza.h"
 #include <iostream>
 #include<conio.h>
 using namespace std;
@@ -13,6 +14,8 @@ using std::string;
 
 //Mantenimiento de Empleados - Carlos Sandoval 9959-21-1324
 // constructor Persona
+
+
 Persona::Persona( int valorNumeroId,
    string valorApellido, string valorPrimerNombre,
    int valorSueldo, int valorCuenta, string valorPuesto, string valorEmail, string valorRAlimenticio,
@@ -417,7 +420,7 @@ void Persona::imprimirRegistro2( fstream &leerDeArchivo )
 
    }
    archivoImprimirSalida<< left << setw( 4 ) << "ID" << setw( 12 )
-       << "Apellido" << setw( 14 ) << "Primer nombre" <<
+       << "Apellido" << setw( 14 ) << "Primer nombre" <<setw( 12 )<< "Cargo"<<
        setw( 12 )<<"Sueldo(Q)"<<setw(12)<<"Horas Extra"<<setw(15)<<"Dias Laborados"<<setw(11)<<"Comisiones"<<setw(12)<<"Valor Horas"
        <<setw(26)<<"Sueldo Extraordinario (Q)"<<setw(16)<<"Total Devengado"<<setw(9)<<"IGSS"
         <<setw(9)<<"ISR"<<setw(10)<<"Anticipos"<<setw(17)<<"Total Descuento"<<setw(16)<<"Bono Incentivo"<<setw(17)<<"Liquido Recibir"<<setw(8)<<"Pension A."<< endl;
@@ -789,7 +792,7 @@ void Persona::consultarRegistro2( fstream &leerDeArchivo )
 {
 
 cout << left << setw( 4 ) << "ID" << setw( 12 )
-       << "Apellido" << setw( 14 ) << "Primer nombre" <<
+       << "Apellido" << setw( 14 ) << "Primer nombre" <<setw( 12 )<< "Cargo"<<
        setw( 12 )<<"Sueldo(Q)"<<setw(12)<<"Horas Extra"<<setw(15)<<"Dias Laborados"<<setw(11)<<"Comisiones"<<setw(12)<<"Valor Horas"
        <<setw(26)<<"Sueldo Extraordinario (Q)"<<setw(16)<<"Total Devengado"<<setw(9)<<"IGSS"
         <<setw(9)<<"ISR"<<setw(10)<<"Anticipos"<<setw(17)<<"Total Descuento"<<setw(16)<<"Bono Incentivo"<<setw(17)<<"Liquido Recibir"<<setw(8)<<"Pension A."<< endl;
@@ -879,6 +882,7 @@ void Persona::mostrarLinea2( ostream &salida, const Persona &registro )
    salida << left << setw( 4 ) << registro.obtenerNumeroId()
           << setw( 12 ) << registro.obtenerApellido().data()
           << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw( 12 ) << registro.obtenerPuesto().data()
           << setw( 12 ) << registro.obtenerSueldo()
           << setw( 12 ) << registro.obtenerHoras()
           << setw( 15 ) << registro.obtenerDias()
@@ -887,7 +891,7 @@ void Persona::mostrarLinea2( ostream &salida, const Persona &registro )
           << setw( 26) << registro.obtenerSueldoEx()
           << setw( 16 ) << registro.obtenerTDevengado()
           << setw( 9) << registro.obtenerIGSS()
-          << setw( 12 ) << registro.obtenerISR()
+          << setw( 9 ) << registro.obtenerISR()
           << setw( 10 ) << registro.obtenerAnticipos()
           << setw( 17 ) << registro.obtenerTDescuentos()
           << setw( 16) << registro.obtenerBincentivo()
@@ -899,6 +903,7 @@ void Persona::mostrarLineaPantalla2( const Persona &registro )
    cout << left << setw( 4 ) << registro.obtenerNumeroId()
           << setw( 12 ) << registro.obtenerApellido().data()
           << setw( 14 ) << registro.obtenerPrimerNombre().data()
+          << setw( 12 ) << registro.obtenerPuesto().data()
           << setw( 12 ) << registro.obtenerSueldo()
           << setw( 12 ) << registro.obtenerHoras()
           << setw( 15 )  << registro.obtenerDias()
@@ -913,7 +918,6 @@ void Persona::mostrarLineaPantalla2( const Persona &registro )
           << setw( 16) << registro.obtenerBincentivo()
           << setw( 17 ) << registro.obtenerLiquidorR()
           <<setw(8)<< registro.obtenerPAlimenticia()<<endl;
-
 }
 
 void Persona::mostrarLineaPantalla3( const Persona &registro )
@@ -929,6 +933,38 @@ void Persona::mostrarLineaPantalla3( const Persona &registro )
 
 }
 
+void Persona::mostrarLinea4( ostream &salida, const Persona &registro )
+{
+     cout<<"_______________________________________________________________________________"<<endl;
+     cout<<"\t\t\t"<<endl;
+	 cout<<"\t\t\t .   Generacion de voucher   ."<<endl;
+	 cout<<"_______________________________________________________________________________"<<endl;
+     cout<<"\t Banco Nacional "; cout<<"\t\t\t Identificacion: " <<registro.obtenerNumeroId()<<endl;
+     cout<<"\t\t\t"<<endl;
+     cout<<"\t Paguese este cheque a:"<<endl;
+     cout<<"\t\t\t"<<endl;
+     cout<<"\t Apellido: "<<registro.obtenerApellido().data(); cout<<"\t\t\t Nombre: "<< registro.obtenerPrimerNombre().data()<<endl;
+     cout<<"\t\t\t"<<endl;
+     cout<<"\t Puesto: "<<registro.obtenerPuesto().data()<< endl;
+     cout<<"_______________________________________________________________________________"<<endl;
+     cout<<"\t\t\t"<<endl;
+     cout<<"\t\t\t .     CONCEPTOS    ."<<endl;
+     cout<<"_______________________________________________________________________________"<<endl;
+     cout<<"\t\t\t"<<endl;
+     cout<<"\t Sueldo: " <<registro.obtenerSueldo(); cout<<"\t\t\t\t IGSS: "<<registro.obtenerIGSS()<< endl;
+     cout<<"\t\t\t"<<endl;
+     cout<<"\t Dias Laborados: "<<registro.obtenerDias(); cout<<"\t\t\t ISR: "<< registro.obtenerISR()<<endl;
+     cout<<"\t\t\t"<<endl;
+     cout<<"\t Horas extras: "<<registro.obtenerHoras(); cout<<"\t\t\t Anticipos: "<<registro.obtenerAnticipos()<< endl;
+     cout<<"\t\t\t "<<endl;
+     cout<<"\t Valor Horas: "<<registro.obtenerVhoras(); cout<<"\t\t\t Total Descuento: "<<registro.obtenerTDescuentos()<< endl;
+     cout<<"\t "<<endl;
+     cout<<"\t Comsiones: "<<registro.obtenerComisiones(); cout<<"\t\t\t\t Bono Incentivo: "<<registro.obtenerBincentivo()<< endl;
+     cout<<"\t\t\t "<<endl;
+     cout<<"\t Sueldo extraordinario: "<<registro.obtenerSueldoEx(); cout<<"\t\t Liquido a Recibir: "<<registro.obtenerLiquidorR()<<endl;
+     cout<<"\t\t\t "<<endl;
+     cout<<"\t Total Devengado: "<< registro.obtenerTDevengado(); cout<<"\t\t\t Firma______________"<< endl;
+}
 // obtener el valor del número ID del usuario
 int Persona::obtenerId( const char * const indicador )
 {
@@ -1001,6 +1037,35 @@ if ( empleado.obtenerNumeroId() != 0 ) {
       mostrarLinea( cout, empleado );
 
       // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+      actualizarArchivo.seekp(
+         ( numeroId - 1 ) * sizeof( Persona ) );
+
+   }
+
+   // mostrar error si el ID no existe
+   else
+      cerr << "El ID #" << numeroId
+         << " aun no existe" << endl;
+
+}
+void Persona::busquedaRegistro2(fstream &actualizarArchivo)
+{
+//Se obtiene el ID a buscar
+       int numeroId = obtenerId( "Escriba el ID del empleado a generar voucher " );
+
+   // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+
+   actualizarArchivo.seekg(
+      ( numeroId - 1 ) * sizeof( Persona ) );
+
+   // leer el primer registro del archivo
+   Persona empleado;
+   actualizarArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Persona ) );
+if ( empleado.obtenerNumeroId() != 0 ) {
+     mostrarLinea4( cout, empleado );
+      // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+
       actualizarArchivo.seekp(
          ( numeroId - 1 ) * sizeof( Persona ) );
 
