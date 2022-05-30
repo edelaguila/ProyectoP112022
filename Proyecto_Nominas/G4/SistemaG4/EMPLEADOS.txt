@@ -1,0 +1,2 @@
+ID  Apellido    Primer nombre Sueldo(Q)   No. Cuenta      Email                      Puesto      Horas Extra Dias Laburados del Mes  
+40  Rosales     Meyglin       4000        123             meyglin@gmail.com          Secretaria  20          18             

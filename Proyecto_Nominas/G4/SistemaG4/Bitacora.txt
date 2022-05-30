@@ -1,0 +1,95 @@
+Grupo4         
+30/05/2022
+12:47:35
+Ingreso de Contrasena y Usuario Incorrectos
+
+Grupo4         
+30/05/2022
+12:47:43
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+30/05/2022
+12:47:47
+Ingreso a Gestion de Empleados
+
+Grupo4         
+30/05/2022
+12:47:59
+Ingreso a Menu Contabilidad
+
+Grupo4         
+30/05/2022
+12:48:1
+Se imprimio la Nomina
+
+Grupo4         
+30/05/2022
+12:48:2
+Se consultaron seguros Familiares
+
+Grupo4         
+30/05/2022
+12:48:7
+Se consultaron seguros Familiares
+
+Grupo4         
+30/05/2022
+12:48:51
+Se consultaron seguros Familiares
+
+Grupo4         
+30/05/2022
+13:2:57
+Ingreso de Contrasena y Usuario Incorrectos
+
+Grupo4         
+30/05/2022
+13:3:2
+Ingreso de usuario y contrasena exitoso
+
+Grupo4         
+30/05/2022
+13:3:10
+Ingreso a Menu Consultas
+
+Grupo4         
+30/05/2022
+13:3:12
+Se realizo consulta de Empleados
+
+Grupo4         
+30/05/2022
+13:3:15
+Se realizo consulta de Departamentos
+
+Grupo4         
+30/05/2022
+13:3:19
+Se realizo consulta de Nomina
+
+Grupo4         
+30/05/2022
+13:3:23
+Ingreso a Menu Contabilidad
+
+Grupo4         
+30/05/2022
+13:3:25
+Se realizo consulta de Nomina
+
+Grupo4         
+30/05/2022
+13:3:28
+Se realizo consulta de Poliza
+
+Grupo4         
+30/05/2022
+13:3:34
+Se imprimio la Nomina
+
+Grupo4         
+30/05/2022
+13:3:38
+Se consultaron seguros Familiares
+

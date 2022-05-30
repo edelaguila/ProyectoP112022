@@ -119,12 +119,14 @@ public:
     void eliminarRegistro( fstream& );
     void mostrarLinea( ostream&, const Persona & );
     void mostrarLinea2( ostream&, const Persona & );
+    void mostrarLinea4( ostream&, const Persona & );
     int obtenerId( const char * const );
     void crearArchivoEmpleados();
     void consultarRegistro( fstream& );
     void consultarRegistro2( fstream& );
     void consultarRegistro3( fstream& );
     void busquedaRegistro(fstream&);
+    void busquedaRegistro2(fstream&);
     void mostrarLineaPantalla( const Persona &);
     void mostrarLineaPantalla2( const Persona &);
     void mostrarLineaPantalla3( const Persona &);

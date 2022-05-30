@@ -7,6 +7,7 @@
 #include <string>
 #include <sstream>
 #include "Usuarios.h"
+#include "Poliza.h"
 
 using std::ofstream;
 using std::ostream;
