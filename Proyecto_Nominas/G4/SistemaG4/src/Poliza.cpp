@@ -18,7 +18,7 @@ Poliza::~Poliza()
 }
 
 //Clase para Poliza de Seguros - Meyglin Rosales 9959-21-4490, Maria Jose Veliz 9959-21-5909
-void Poliza::menu()
+/*void Poliza::menu()
 {
     Bitacora control;
     int choice;
@@ -98,4 +98,4 @@ void Poliza::menu()
 	}
 	getch();
     }while(choice!= 5);
-}
+}*/

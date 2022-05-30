@@ -1260,3 +1260,137 @@
 
 1653494387 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\transferencia.h
 
+1653934128 source:c:\users\mey\desktop\progra1\proyecto final\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653934128 c:\users\mey\desktop\progra1\proyecto final\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653934128 c:\users\mey\desktop\progra1\proyecto final\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653934128 c:\users\mey\desktop\progra1\proyecto final\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653934128 c:\users\mey\desktop\progra1\proyecto final\include\usuarios.h
+	<string>
+
+1653934128 c:\users\mey\desktop\progra1\proyecto final\include\menus.h
+
+1653934128 c:\users\mey\desktop\progra1\proyecto final\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653934128 c:\users\mey\desktop\progra1\proyecto final\include\poliza.h
+
+1653934128 source:c:\users\mey\desktop\progra1\proyecto final\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1653934128 source:c:\users\mey\desktop\progra1\proyecto final\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653934129 source:c:\users\mey\desktop\progra1\proyecto final\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653934128 source:c:\users\mey\desktop\progra1\proyecto final\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	"menus.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653934128 source:c:\users\mey\desktop\progra1\proyecto final\src\poliza.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Poliza.h"
+	"Bitacora.h"
+
+1653934128 source:c:\users\mey\desktop\progra1\proyecto final\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1653934128 source:c:\users\mey\desktop\progra1\proyecto final\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
