@@ -114,7 +114,6 @@ public:
    //Funciones para el tratado de archivos
     void imprimirRegistro( fstream& );
     void imprimirRegistro2( fstream& );
-    void imprimirRegistro3(fstream& );
     void actualizarRegistro( fstream& );
     void nuevoRegistro( fstream& );
     void eliminarRegistro( fstream& );
