@@ -1,2 +1,0 @@
-ID  Apellido    Primer nombre Cargo       Sueldo(Q)   Horas Extra Dias Laborados Comisiones Valor Horas Sueldo Extraordinario (Q) Total Devengado IGSS     ISR      Anticipos Total Descuento  Bono Incentivo  Liquido Recibir  Pension A.
-40  Rosales     Meyglin       Secretaria  4000        20          18             10         25          500                       4510            217.833  14.6084  1804      2036.44          250             2213.56          1812.72 

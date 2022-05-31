@@ -792,7 +792,7 @@ void Persona::consultarRegistro2( fstream &leerDeArchivo )
 {
 
 cout << left << setw( 4 ) << "ID" << setw( 12 )
-       << "Apellido" << setw( 14 ) << "Primer nombre" <<setw( 12 )<< "Cargo"<<
+       << "Apellido" << setw( 14 ) << "Primer nombre" <<setw( 12 )<< "Puesto"<<
        setw( 12 )<<"Sueldo(Q)"<<setw(12)<<"Horas Extra"<<setw(15)<<"Dias Laborados"<<setw(11)<<"Comisiones"<<setw(12)<<"Valor Horas"
        <<setw(26)<<"Sueldo Extraordinario (Q)"<<setw(16)<<"Total Devengado"<<setw(9)<<"IGSS"
         <<setw(9)<<"ISR"<<setw(10)<<"Anticipos"<<setw(17)<<"Total Descuento"<<setw(16)<<"Bono Incentivo"<<setw(17)<<"Liquido Recibir"<<setw(8)<<"Pension A."<< endl;
@@ -891,7 +891,7 @@ void Persona::mostrarLinea2( ostream &salida, const Persona &registro )
           << setw( 26) << registro.obtenerSueldoEx()
           << setw( 16 ) << registro.obtenerTDevengado()
           << setw( 9) << registro.obtenerIGSS()
-          << setw( 9 ) << registro.obtenerISR()
+          << setw( 12 ) << registro.obtenerISR()
           << setw( 10 ) << registro.obtenerAnticipos()
           << setw( 17 ) << registro.obtenerTDescuentos()
           << setw( 16) << registro.obtenerBincentivo()
@@ -918,6 +918,7 @@ void Persona::mostrarLineaPantalla2( const Persona &registro )
           << setw( 16) << registro.obtenerBincentivo()
           << setw( 17 ) << registro.obtenerLiquidorR()
           <<setw(8)<< registro.obtenerPAlimenticia()<<endl;
+
 }
 
 void Persona::mostrarLineaPantalla3( const Persona &registro )
