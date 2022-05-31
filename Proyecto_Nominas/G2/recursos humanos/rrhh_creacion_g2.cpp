@@ -48,7 +48,7 @@ public:
     void ModificarPlan(ifstream &Lec);//funcion creada por Carlos Montes
 private:
     string documentoIdentificacion, puesto2,nombre, direccion, edad, correo, telefono, estudios, puesto, desicion, busquedaDatos, numDepto, nombreDepto, telefonoDepto, direccionDepto;
-    string numeroid,choice;
+    string numeroid,choice, Id, nomConcep, montoConcep;
     int   hora,horaextra,totalhoras,horatr;
     float impuesto,sueldo1,bonificacion,isr,igss,irtra,totaldesc,sueldo,totalnominas,sueldototal,sueldo2;
 };
@@ -751,7 +751,7 @@ log.close();
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"\t\t\t 1. Mostrar"<<endl;
 	cout<<"\t\t\t 2. Buscar"<<endl;
-	cout<<"\t\t\t 3. Exit"<<endl;
+	cout<<"\t\t\t 3. Salir al --MENU PRINCIPAL--"<<endl;
 
 	cout<<"\t\t\t-------------------------------"<<endl;
 	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
@@ -807,10 +807,10 @@ log.close();
 	else
 	{
 		baseDatos>>documentoIdentificacion>>nombre>>edad>>correo>>telefono>>direccion>>estudios>>puesto>>horatr>>hora>>horaextra;
-
+        cout<<"\t\nNOMBRES  | "<<"CARGO             |"<<"HORASTRABAJADAS"<<"   |"<<"CANTIDADPORHORA"<<"   |"<<"HORASEXTRAS"<<"   |"<<"BONIFICACION"<<" "<<" "<<"    |"<<"ISR"<<"      |"<<"IGSS"<<"         |"<<"IRTRA"<<"          |"<<"TOTALDESCUENTOS"<<"|       "<<"SALARIOTOTAL\t\t\n ";
+        cout<<"-------------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
 		while(!baseDatos.eof())
 		{
-				total++;
 
 			sueldo1 = horatr+horaextra;
 			sueldo= sueldo1*hora;
@@ -825,11 +825,10 @@ log.close();
 			sueldo2=sueldo-totaldesc;
 			bonificacion=sueldo2+250;
 
-
-			cout<<"\t\nNOMBRES"<<" "<<"|"<<"CARGO"<<" "<<" "<<" "<<" "<<" "<<"|"<<"HORASTRABAJADAS"<<"|"<<"CANTIDADPORHORA"<<"|"<<"HORASEXTRAS"<<"|"<<"BONIFICACION"<<"|"<<" "<<" "<<"ISR"<<"|"<<" "<<" "<<" "<<"IGSS"<<"|"<<"IRTRA"<<"|"<<"TOTALDESCUENTOS"<<"|"<<"SALARIOTOTAL\t\t\n ";
 			cout<<nombre<<" "<<" "<<"|"<<puesto<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<horatr<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<hora<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<" "<<" "<<" "<<" "<<horaextra<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<"250"<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<" "<<"|"<<isr<<" "<<" "<<"|"<<igss<<"|"<<irtra<<" "<<"|"<<" "<<" "<<totaldesc<<" "<<" "<<" "<<" "<<" "<<" "<<"|"" "<<" "<<bonificacion;
-			cout<<"----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
+			cout<<"\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------------"<<endl;
 			baseDatos>>nombre>>puesto>>horatr>>hora>>horaextra>>sueldo1>>sueldo>>isr>>igss>>irtra>>totaldesc>>sueldo2>>bonificacion;
+			total++;
 		}
 		if(total==0)
 		{
@@ -1619,4 +1618,3 @@ void empresa::ModificarPlan(ifstream &Lec){//funcion creada por Carlos Montes
     }
     config.close();
 };
-
