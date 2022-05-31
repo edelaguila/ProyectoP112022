@@ -3,6 +3,7 @@
 #include <iostream>
 
 using std::string;
+//Realizado por Daniel Alexander Hall Alvarez - 9959-21-1395
 class DatosDepartamento
 {
     public:
@@ -24,7 +25,7 @@ class DatosDepartamento
     private:
         int codigo;
         char apellido[ 15 ];
-        char nombre[ 10 ];
+        char nombre[ 20 ];
 
 };
 

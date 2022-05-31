@@ -4,14 +4,21 @@
 #include <iostream>
 
 using std::string;
+// Monica Gabriela Perez Velásquez - 9959-21-1840
 
-DatosEmpleado::DatosEmpleado(int valorCodigo, string valorApellido, string valorNombre, string valorCorreo, double valorSueldo )
+DatosEmpleado::DatosEmpleado(int valorCodigo, string valorApellido, string valorNombre, string valorCorreo, double valorSueldo, double valorIGSS, double valorISR , int valorHoras, double valorHorasExtras, double valorAnticipo, double TotalFilas)
 {
     establecerCodigo( valorCodigo );
     establecerApellido( valorApellido );
     establecerNombre( valorNombre );
     establecerCorreo( valorCorreo );
     establecerSueldo( valorSueldo );
+    establecerIGSS (valorIGSS);//Daniel Alexander Hall Alvarez - 9959-21-1395
+    establecerISR (valorISR);// Monica Gabriela Perez Velásquez - 9959-21-1840
+    establecerHoras (valorHoras);// Monica Gabriela Perez Velásquez - 9959-21-1840
+    establecerHE (valorHorasExtras);// Alan Abimael Galicia Ruano - 9959-21-3632
+    establecerAnticipo( valorAnticipo);//Abigail Elizabeth Vásquez Herrera - 9959-21-13777
+    establecerTotalF (TotalFilas);// Alan Abimael Galicia Ruano - 9959-21-3632
 
 }
 int DatosEmpleado::obtenerCodigo() const
@@ -71,8 +78,61 @@ void DatosEmpleado::establecerCorreo( string correostring )
     strncpy( correo, valorCorreo, longitud );
 
     correostring[ longitud ] = '\0';
-
 }
+
+double DatosEmpleado::obtenerIGSS() const
+{
+   return impIGSS;
+}
+
+void DatosEmpleado::establecerIGSS( double valorIGSS )
+{
+   impIGSS = valorIGSS;
+}
+
+double DatosEmpleado::obtenerISR() const
+{
+   return impISR;
+}
+void DatosEmpleado::establecerISR( double valorISR )
+{
+   impISR = valorISR;
+}
+
+int DatosEmpleado::obtenerHoras() const
+{
+   return horas;
+}
+void DatosEmpleado::establecerHoras( int valorHoras )
+{
+   horas = valorHoras;
+}
+
+double DatosEmpleado::obtenerHE() const
+{
+   return valorHE;
+}
+void DatosEmpleado::establecerHE( double valorHorasExtras )
+{
+   valorHE = valorHorasExtras;
+}
+double DatosEmpleado::obtenerAnticipo () const
+{
+    return anticipo;
+}
+void DatosEmpleado::establecerAnticipo ( double valorAnt )
+{
+    anticipo = valorAnt;
+}
+double DatosEmpleado::obtenerTotalF() const
+{
+   return totalF;
+}
+void DatosEmpleado::establecerTotalF( double TotalFilas )
+{
+   totalF = TotalFilas;
+}
+
 DatosEmpleado::~DatosEmpleado()
 {
     //dtor

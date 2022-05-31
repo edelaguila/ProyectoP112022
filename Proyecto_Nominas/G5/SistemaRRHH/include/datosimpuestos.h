@@ -3,7 +3,7 @@
 #include <iostream>
 
 using std::string;
-
+// Realizado por Abigail Elizabeth Vásquez Herrera - 9959-21-13777
 class datosimpuestos
 {
     public:
@@ -23,7 +23,7 @@ class datosimpuestos
     protected:
 
     private:
-        int codigo;
+        int codigoImpuestos;
         char nombre[ 15 ];
         double cantidad;
 

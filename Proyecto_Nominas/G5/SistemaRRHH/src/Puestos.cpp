@@ -5,6 +5,8 @@
 #include <iomanip>
 #include <cstdlib>
 #include <cstring>
+#include <ctime>
+#include <vector>
 
 using namespace std;
 
@@ -20,13 +22,10 @@ void mostrarLineaPantallaP( const datosPuestos &);
 
 enum Optios { imprim = 1, nuevo = 2, leer, eliminar, editar, regresar};
 
+// Realizado por  Alan Abimael Galicia Ruano - 9959-21-3632
+
 Puestos::Puestos()
 {
-    cout<<"\n\t\t\t---------------------------------"<<endl;
-    cout<<"\t\t\t\t----------------"<<endl;
-	cout<<"\t\t\t\t |   PUESTOS  |"<<endl;
-	cout<<"\t\t\t\t----------------"<<endl;
-
 	fstream puestoEntradaSalida( "puest.dat", ios::in | ios::out | ios::binary);
     if ( !puestoEntradaSalida ) {
         cerr << "No se pudo abrir el archivo." << endl;
@@ -72,13 +71,47 @@ Puestos::Puestos()
     }
 }
 
-
-
 int Puestos::escribirOption()
 {
-    cout<<"\n\t\t\t   --------------------------"<<endl;
-	cout<<"\t\t\t    |   Modulo de Puestos  |"<<endl;
-	cout<<"\t\t\t   --------------------------"<<endl;
+    system("cls");
+    time_t now = time(0);//Hora y fecha por Daniel Alexander Hall Alvarez - 9959-21-1395
+    tm * time = localtime(&now);
+
+    vector<string> dia_semana;
+    dia_semana.push_back("Domingo");
+    dia_semana.push_back("Lunes");
+    dia_semana.push_back("Martes");
+    dia_semana.push_back("Miercoles");
+    dia_semana.push_back("Jueves");
+    dia_semana.push_back("Viernes");
+    dia_semana.push_back("Sabado");
+
+    vector<string> mes;
+    mes.push_back("Enero");
+    mes.push_back("Febrero");
+    mes.push_back("Marzo");
+    mes.push_back("Abril");
+    mes.push_back("Mayo");
+    mes.push_back("Junio");
+    mes.push_back("Julio");
+    mes.push_back("Agosto");
+    mes.push_back("Septiembre");
+    mes.push_back("Octubre");
+    mes.push_back("Noviembre");
+    mes.push_back("Diciembre");
+
+    int year = 1900 + time->tm_year;
+
+    //Formato=hoy miercoles, 27 de mayo del 2015
+    cout<< "\n";
+    cout << "Hoy " << dia_semana[time->tm_wday] << ", ";
+    cout << time->tm_mday << " de " << mes[time->tm_mon] << " del " << year << endl;
+    cout << time->tm_hour << ":" << time->tm_min << ":" << time->tm_sec << endl;
+
+    cout<<"\n\t\t\t-----------------------------------------------"<<endl;
+    cout<<"\t\t\t\t       ----------------"<<endl;
+	cout<<"\t\t\t\t        |   PUESTOS  |"<<endl;
+	cout<<"\t\t\t\t       ----------------"<<endl;
 
     cout<< "\n\n\t\t\t 1. Crear un archivo de texto para imprimir" << endl
         << "\t\t\t 2. Crear un nuevo puesto de trabajo" << endl
@@ -86,7 +119,7 @@ int Puestos::escribirOption()
         << "\t\t\t 4. Eliminar puesto de trabajo" << endl
         << "\t\t\t 5. Editar puesto de trabajo" << endl
         << "\t\t\t 6. Regresar al Menu Principal" << endl
-        << "\n\t\t\t---------------------------------"<<endl
+        <<"\n\t\t\t-----------------------------------------------"
         << "\n\t\t\tIngrese su opcion: ";
    int opcionMenuP;
    cin >> opcionMenuP; // recibir opción del usuario
@@ -116,6 +149,9 @@ void imprimirRegistroPuesto( fstream &leerDeArchivoP )
         leerDeArchivoP.read( reinterpret_cast< char * >( &puestos ), sizeof( datosPuestos ) );
     } //FIN DE WHILE
 cout << "archivo creado exitosamente"<<endl;
+
+  cout<<"\n";
+ system("pause");
 }
 
 void mostrarLineaP( ostream &salida, const datosPuestos &registro )
@@ -123,7 +159,6 @@ void mostrarLineaP( ostream &salida, const datosPuestos &registro )
    salida << left << setw( 10 ) << registro.obtenerCodigoP()
           << setw( 16 ) << registro.obtenerEstatus().data()
           << setw( 14 ) << registro.obtenerNombre().data()<< endl;
-
 }
 
 void crearArchivoPuesto()
@@ -136,6 +171,8 @@ void crearArchivoPuesto()
     datosPuestos puestoEnBlanco;
     for ( int i = 0; i < 100; i++ )
         creditoSalida.write(reinterpret_cast< const char * >( &puestoEnBlanco ), sizeof( datosPuestos ) );
+        cout<<"\n";
+ system("pause");
 }
 
 void nuevoRegistroPuesto( fstream &insertarEnArchivo )
@@ -147,11 +184,11 @@ void nuevoRegistroPuesto( fstream &insertarEnArchivo )
 
     if ( puestos.obtenerCodigoP() == 0 ) {
         char Estatus[ 15 ];
-        char nombreP[ 10 ];
+        char nombreP[ 15 ];
         cout<<"Escriba el Estatus del Puesto: ";
         cin>> setw( 15 ) >> Estatus;
         cout<<"Escriba el Nombre del Puesto: ";
-        cin>> setw( 10 ) >> nombreP;
+        cin>> setw( 15 ) >> nombreP;
 
         puestos.establecerEstatus( Estatus );
         puestos.establecerNombrePuestos( nombreP );
@@ -164,7 +201,8 @@ void nuevoRegistroPuesto( fstream &insertarEnArchivo )
     } //FIN IF
     else
         cerr << "El Puesto con codigo #" << codigoP << " ya contiene informacion.\n" << endl;
-
+  cout<<"\n";
+ system("pause");
 }
 
 int obtenernCodigoPuesto( const char * const indicador )
@@ -231,7 +269,8 @@ void modificarRegistroPuesto( fstream &actualizarArchivo )
                 actualizarArchivo.write(reinterpret_cast< const char * >( &puestos ), sizeof( datosPuestos ) );
         }
     }
-
+  cout<<"\n";
+ system("pause");
 } //FIN DE -ACTUALIZAR REGISTRO-
 
 void eliminarRegistroPuesto( fstream &eliminarDeArchivo )
@@ -254,6 +293,8 @@ void eliminarRegistroPuesto( fstream &eliminarDeArchivo )
    else
       cerr << "El codigo #" << codigoP << " esta vacia.\n";
 
+cout<<"\n";
+ system("pause");
 } //FIN -ELIMINARREGISTRO-
 
 void consultarRegistroPuesto( fstream &leerDeArchivoP )
@@ -268,7 +309,8 @@ void consultarRegistroPuesto( fstream &leerDeArchivoP )
             leerDeArchivoP.read( reinterpret_cast< char * >( &puestos ), sizeof( datosPuestos ) );
 
    } //FIN WHILE
-
+   cout<<"\n";
+ system("pause");
 } //FIN CONSULTAR REGISTRO
 
 void mostrarLineaPantallaP( const datosPuestos &registro )

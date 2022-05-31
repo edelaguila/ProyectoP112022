@@ -1,1 +1,3 @@
 Codigo    Nombre            Cantidad
+1         ISR             5         
+2         IGSS            4.83      

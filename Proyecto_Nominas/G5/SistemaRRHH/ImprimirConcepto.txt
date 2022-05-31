@@ -1,0 +1,4 @@
+Codigo    Nombre              Efecto          Estado               Valor
+1            IGSS               -             Activo                10.00
+2            ISR                -             Activo                 5.00
+3            Prestamo           -             Activo               100.00

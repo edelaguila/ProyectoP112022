@@ -1,3 +1,4 @@
-Codigo    Apellido        Nombre        Correo              Sueldo
-1         Lopez           Roberto       gmail              5300.00
-2         Perez           Juan          jgmail.com         2100.00
+Codigo        Apellido        Nombre        Correo              Sueldo          Horas Extras
+1                 Rosales         Maria           MR@gmail.com   5600           3         
+2                 Lopez           Juan            JL@gmail.com   6300           6         
+3                 Gomez           Pablo           pg7@gmail.com  3000           3         

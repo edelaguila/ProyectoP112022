@@ -1,6 +1,9 @@
 #include "Impuestos.h"
 #include <iostream>
 #include "datosimpuestos.h"
+#include <ctime>
+#include <vector>
+
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -36,6 +39,7 @@ void mostrarLineaPantallaImp( const datosimpuestos &);
 
 using namespace std;
 
+// Realizado por Abigail Elizabeth Vásquez Herrera - 9959-21-13777
 
 Impuestos::Impuestos()
 {
@@ -76,11 +80,46 @@ Impuestos::Impuestos()
    } //FIN WHILE
 }
 int opcionImp(){
-    //system("cls");
-    cout<<"\n\t\t\t---------------------------------"<<endl;
-    cout<<"\t\t\t\t------------------"<<endl;
-	cout<<"\t\t\t\t|  IMPUESTOS  |"<<endl;
-	cout<<"\t\t\t\t------------------"<<endl;
+
+    system("cls");
+    time_t now = time(0);//Hora y fecha por Daniel Alexander Hall Alvarez - 9959-21-1395
+    tm * time = localtime(&now);
+
+    vector<string> dia_semana;
+    dia_semana.push_back("Domingo");
+    dia_semana.push_back("Lunes");
+    dia_semana.push_back("Martes");
+    dia_semana.push_back("Miercoles");
+    dia_semana.push_back("Jueves");
+    dia_semana.push_back("Viernes");
+    dia_semana.push_back("Sabado");
+
+    vector<string> mes;
+    mes.push_back("Enero");
+    mes.push_back("Febrero");
+    mes.push_back("Marzo");
+    mes.push_back("Abril");
+    mes.push_back("Mayo");
+    mes.push_back("Junio");
+    mes.push_back("Julio");
+    mes.push_back("Agosto");
+    mes.push_back("Septiembre");
+    mes.push_back("Octubre");
+    mes.push_back("Noviembre");
+    mes.push_back("Diciembre");
+
+    int year = 1900 + time->tm_year;
+
+    //Formato=hoy miercoles, 27 de mayo del 2015
+    cout<< "\n";
+    cout << "Hoy " << dia_semana[time->tm_wday] << ", ";
+    cout << time->tm_mday << " de " << mes[time->tm_mon] << " del " << year << endl;
+    cout << time->tm_hour << ":" << time->tm_min << ":" << time->tm_sec << endl;
+
+    cout<<"\n\t\t\t-----------------------------------------------"<<endl;
+    cout<<"\t\t\t\t     -----------------"<<endl;
+	cout<<"\t\t\t\t      |  IMPUESTOS  |"<<endl;
+	cout<<"\t\t\t\t     -----------------"<<endl;
 
 
     cout<< "\n\n\t\t\t 1. Guardar archivo de texto para Imprimirlo" << endl
@@ -89,7 +128,7 @@ int opcionImp(){
         << "\t\t\t 4. Eliminar Impuesto" << endl
         << "\t\t\t 5. Mostrar Lista de impuestos" << endl
         << "\t\t\t 6. Regresar al Menu Principal" << endl
-        <<"\n\t\t\t---------------------------------"<<endl
+        <<"\n\t\t\t-----------------------------------------------"<<endl
         << "\n\t\t\tIngrese su opcion: ";
 
     int opcionMenu;
@@ -118,7 +157,8 @@ void imprimirRegistroImp( fstream &leerDeArchivo )
         mostrarLineaImp( archivoImprimirSalida, impuestos );
         leerDeArchivo.read( reinterpret_cast< char * >( &impuestos ), sizeof( datosimpuestos ) );
     } //FIN DE WHILE
-
+cout<<"\n";
+ system("pause");
 } //FIN DE LA FUNCION -IMPRIMIR REGISTRO-
 void mostrarLineaImp( ostream &salida, const datosimpuestos &registro )
 {
@@ -138,11 +178,13 @@ void crearArchivoCreditoImp()
     datosimpuestos impuestoEnBlanco;
     for ( int i = 0; i < 100; i++ )
         creditoSalida.write(reinterpret_cast< const char * >( &impuestoEnBlanco ), sizeof( datosimpuestos ) );
+cout<<"\n";
+ system("pause");
 }
 void nuevoRegistroImp( fstream &insertarEnArchivo )
 {
-    int codigo = obtenernCodigoImp( "\nEscriba el Codigo " );
-    insertarEnArchivo.seekg( ( codigo - 1 ) * sizeof( datosimpuestos ) );
+    int codigoImpuestos = obtenernCodigoImp( "\nEscriba el Codigo " );
+    insertarEnArchivo.seekg( ( codigoImpuestos - 1 ) * sizeof( datosimpuestos ) );
     datosimpuestos impuestos;
     insertarEnArchivo.read( reinterpret_cast< char * >( &impuestos ), sizeof( datosimpuestos ) );
 
@@ -157,27 +199,28 @@ void nuevoRegistroImp( fstream &insertarEnArchivo )
 
         impuestos.establecerNombre( nombre );
         impuestos.establecerCantidad( cantidad );
-        impuestos.establecerCodigo( codigo );
+        impuestos.establecerCodigo( codigoImpuestos );
 
-        insertarEnArchivo.seekp( ( codigo - 1 ) * sizeof( datosimpuestos ) );
+        insertarEnArchivo.seekp( ( codigoImpuestos - 1 ) * sizeof( datosimpuestos ) );
         insertarEnArchivo.write( reinterpret_cast< const char * >( &impuestos ), sizeof( datosimpuestos ) );
         cout<<"\n impuesto agregado con excito..."<<endl;
 
     } //FIN IF
     else
-        cerr << "El impuesto con codigo #" << codigo << " ya contiene informacion.\n" << endl;
-
+        cerr << "El impuesto con codigo #" << codigoImpuestos << " ya contiene informacion.\n" << endl;
+cout<<"\n";
+ system("pause");
 } //FIN REGISTRO
 int obtenernCodigoImp( const char * const indicador )
 {
-   int codigo;
+   int codigoImpuestos;
     do {
       cout << indicador << "(1 - 100): ";
-      cin >> codigo;
+      cin >> codigoImpuestos;
 
-    } while ( codigo < 1 || codigo > 100 );
+    } while ( codigoImpuestos < 1 || codigoImpuestos > 100 );
 
-   return codigo;
+   return codigoImpuestos;
 
 } //FIN -OBTENERCODIGO-
 void modificarRegistroImp( fstream &actualizarArchivo )
@@ -187,9 +230,9 @@ void modificarRegistroImp( fstream &actualizarArchivo )
     cin>>opcionAc;
 
     if (opcionAc == 1){
-        int codigo = obtenernCodigoImp( "\nEscriba el codigo del impuesto que desea modificar" );
+        int codigoImpuestos = obtenernCodigoImp( "\nEscriba el codigo del impuesto que desea modificar" );
 
-        actualizarArchivo.seekg(( codigo - 1 ) * sizeof( datosimpuestos ));
+        actualizarArchivo.seekg(( codigoImpuestos - 1 ) * sizeof( datosimpuestos ));
 
         datosimpuestos impuestos;
         actualizarArchivo.read( reinterpret_cast< char * >( &impuestos), sizeof( datosimpuestos ) );
@@ -203,15 +246,15 @@ void modificarRegistroImp( fstream &actualizarArchivo )
             impuestos.establecerNombre( nombre );
             mostrarLineaImp( cout, impuestos );
 
-            actualizarArchivo.seekp(( codigo - 1 ) * sizeof( datosimpuestos ));
+            actualizarArchivo.seekp(( codigoImpuestos - 1 ) * sizeof( datosimpuestos ));
 
             actualizarArchivo.write(reinterpret_cast< const char * >( &impuestos ), sizeof( datosimpuestos ) );
         }
 
     }else if (opcionAc== 2){
-        int codigo = obtenernCodigoImp( "\nEscriba el ccdigo del impuesto que desea Modifcar" );
+        int codigoImpuestos = obtenernCodigoImp( "\nEscriba el ccdigo del impuesto que desea Modifcar" );
 
-        actualizarArchivo.seekg(( codigo - 1 ) * sizeof( datosimpuestos ));
+        actualizarArchivo.seekg(( codigoImpuestos - 1 ) * sizeof( datosimpuestos ));
 
         datosimpuestos impuestos;
         actualizarArchivo.read( reinterpret_cast< char * >( &impuestos ), sizeof( datosimpuestos ) );
@@ -227,32 +270,34 @@ void modificarRegistroImp( fstream &actualizarArchivo )
             impuestos.establecerCantidad( cantidad );
             mostrarLineaImp (cout, impuestos );
 
-            actualizarArchivo.seekp(( codigo - 1 ) * sizeof( datosimpuestos));
+            actualizarArchivo.seekp(( codigoImpuestos - 1 ) * sizeof( datosimpuestos));
             actualizarArchivo.write(reinterpret_cast< const char * >( &impuestos ), sizeof( datosimpuestos ) );
         }
     }
-
+cout<<"\n";
+ system("pause");
 } //FIN DE -ACTUALIZAR REGISTRO-
 void eliminarRegistroImp( fstream &eliminarDeArchivo )
 {
-    int codigo = obtenernCodigoImp( "\nEscriba el codigo del Impuesto a Eliminar" );
-    eliminarDeArchivo.seekg( ( codigo - 1 ) * sizeof( datosimpuestos ) );
+    int codigoImpuestos = obtenernCodigoImp( "\nEscriba el codigo del Impuesto a Eliminar" );
+    eliminarDeArchivo.seekg( ( codigoImpuestos - 1 ) * sizeof( datosimpuestos ) );
     datosimpuestos impuestos;
     eliminarDeArchivo.read( reinterpret_cast< char * >( &impuestos ), sizeof( datosimpuestos ) );
 
     if ( impuestos.obtenerCodigo() != 0 ) {
         datosimpuestos impuestosEnBlanco;
-        eliminarDeArchivo.seekp( ( codigo - 1 ) * sizeof( datosimpuestos ) );
+        eliminarDeArchivo.seekp( ( codigoImpuestos - 1 ) * sizeof( datosimpuestos ) );
         eliminarDeArchivo.write( reinterpret_cast< const char * >( &impuestosEnBlanco ), sizeof( datosimpuestos));
 
-      cout << " Cuenta #" << codigo << " eliminada Exitosamente.\n";
+      cout << " Cuenta #" << codigoImpuestos << " eliminada Exitosamente.\n";
 
    } //FIN IF
 
    //ERROR SI NO EXISTE
    else
-      cerr << "La cuenta #" << codigo << " esta vacia.\n";
-
+      cerr << "La cuenta #" << codigoImpuestos << " esta vacia.\n";
+cout<<"\n";
+ system("pause");
 } //FIN -ELIMINARREGISTRO-
 void consultarRegistroImp( fstream &leerDeArchivo )
 {
@@ -266,7 +311,8 @@ void consultarRegistroImp( fstream &leerDeArchivo )
             leerDeArchivo.read( reinterpret_cast< char * >( &impuestos ), sizeof( datosimpuestos ) );
 
    } //FIN WHILE
-
+cout<<"\n";
+ system("pause");
 } //FIN CONSULTAR REGISTRO
 void mostrarLineaPantallaImp( const datosimpuestos &registro)
 {
@@ -279,3 +325,4 @@ Impuestos::~Impuestos()
 {
     //dtor
 }
+

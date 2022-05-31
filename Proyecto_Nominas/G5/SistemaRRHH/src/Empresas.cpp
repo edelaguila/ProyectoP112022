@@ -1,6 +1,9 @@
 #include "Empresas.h"
 #include "DatosEmpresas.h"
 #include <iostream>
+#include <ctime>
+#include <vector>
+
 using std::cout;
 using std::cerr;
 using std::cin;
@@ -33,6 +36,7 @@ void consultarRegistroEmpre( fstream& );
 void mostrarLineaPantallaEmpre( const DatosEmpresas &);
 
 using namespace std;
+// Realizado por Monica Gabriela Perez Velásquez - 9959-21-1840
 
 Empresas::Empresas()
 {
@@ -72,11 +76,47 @@ Empresas::Empresas()
    } //FIN WHILE
 }
 int opcionEmpre(){
-    //system("cls");
-    cout<<"\n\t\t\t---------------------------------"<<endl;
-    cout<<"\n\t\t\t\t-----------------"<<endl;
-	cout<<"\t\t\t\t |   EMPRESAS  |"<<endl;
-	cout<<"\t\t\t\t-----------------"<<endl;
+
+    system("cls");
+    time_t now = time(0);//Hora y fecha por Daniel Alexander Hall Alvarez - 9959-21-1395
+    tm * time = localtime(&now);
+
+    vector<string> dia_semana;
+    dia_semana.push_back("Domingo");
+    dia_semana.push_back("Lunes");
+    dia_semana.push_back("Martes");
+    dia_semana.push_back("Miercoles");
+    dia_semana.push_back("Jueves");
+    dia_semana.push_back("Viernes");
+    dia_semana.push_back("Sabado");
+
+    vector<string> mes;
+    mes.push_back("Enero");
+    mes.push_back("Febrero");
+    mes.push_back("Marzo");
+    mes.push_back("Abril");
+    mes.push_back("Mayo");
+    mes.push_back("Junio");
+    mes.push_back("Julio");
+    mes.push_back("Agosto");
+    mes.push_back("Septiembre");
+    mes.push_back("Octubre");
+    mes.push_back("Noviembre");
+    mes.push_back("Diciembre");
+
+    int year = 1900 + time->tm_year;
+
+    //Formato=hoy miercoles, 27 de mayo del 2015
+    cout<< "\n";
+    cout << "Hoy " << dia_semana[time->tm_wday] << ", ";
+    cout << time->tm_mday << " de " << mes[time->tm_mon] << " del " << year << endl;
+    cout << time->tm_hour << ":" << time->tm_min << ":" << time->tm_sec << endl;
+
+
+    cout<<"\n\t\t\t-----------------------------------------------"<<endl;
+    cout<<"\t\t\t\t     -----------------"<<endl;
+	cout<<"\t\t\t\t      |   EMPRESAS  |"<<endl;
+	cout<<"\t\t\t\t     -----------------"<<endl;
 
     cout<< "\n\t\t\t 1. Guardar archivo de texto para Imprimirlo" << endl
         << "\t\t\t 2. Agregar Empresa" << endl
@@ -84,7 +124,7 @@ int opcionEmpre(){
         << "\t\t\t 4. Eliminar Empresa" << endl
         << "\t\t\t 5. Mostrar Lista de Empresa" << endl
         << "\t\t\t 6. Regresar al Menu Principal" << endl
-        << "\n\t\t\t---------------------------------"<<endl
+        <<"\n\t\t\t-----------------------------------------------"<<endl
         << "\n\t\t\tIngrese su opcion: ";
 
    int opcionMenu;
@@ -112,7 +152,8 @@ void imprimirRegistroEmpre( fstream &leerDeArchivo )
         mostrarLineaEmpre( archivoImprimirSalida, empresas );
         leerDeArchivo.read( reinterpret_cast< char * >( &empresas ), sizeof( DatosEmpresas ) );
     } //FIN DE WHILE
-
+cout<<"\n";
+ system("pause");
 } //FIN DE LA FUNCION -IMPRIMIR REGISTRO-
 void mostrarLineaEmpre( ostream &salida, const DatosEmpresas &registro )
 {
@@ -131,6 +172,8 @@ void crearArchivoCreditoEmpre()
     DatosEmpresas empresaEnBlanco;
     for ( int i = 0; i < 100; i++ )
         creditoSalida.write(reinterpret_cast< const char * >( &empresaEnBlanco ), sizeof( DatosEmpresas ) );
+cout<<"\n";
+ system("pause");
 }
 void nuevoRegistroEmpre( fstream &insertarEnArchivo )
 {
@@ -157,6 +200,8 @@ void nuevoRegistroEmpre( fstream &insertarEnArchivo )
     } //FIN IF
     else
         cerr << "El Empresas con codigo #" << codigo << " ya contiene informacion.\n" << endl;
+cout<<"\n";
+ system("pause");
 }
 int obtenerCodigoEmpre( const char * const indicador )
 {
@@ -221,7 +266,8 @@ void modificarRegistroEmpre( fstream &actualizarArchivo )
                 cout << "\nCelular Modificado Exitosamente...";
         }
     }
-
+cout<<"\n";
+ system("pause");
 } //FIN DE -ACTUALIZAR REGISTRO-
 void eliminarRegistroEmpre( fstream &eliminarDeArchivo )
 {
@@ -242,7 +288,8 @@ void eliminarRegistroEmpre( fstream &eliminarDeArchivo )
    //ERROR SI NO EXISTE
    else
       cerr << "La cuenta #" << codigo << " esta vacia.\n";
-
+cout<<"\n";
+ system("pause");
 } //FIN -ELIMINARREGISTRO-
 void consultarRegistroEmpre( fstream &leerDeArchivo )
 {
@@ -256,7 +303,8 @@ void consultarRegistroEmpre( fstream &leerDeArchivo )
             leerDeArchivo.read( reinterpret_cast< char * >( &empresas ), sizeof( DatosEmpresas ) );
 
    } //FIN WHILE
-
+cout<<"\n";
+ system("pause");
 } //FIN CONSULTAR REGISTRO
 void mostrarLineaPantallaEmpre( const DatosEmpresas &registro )
 {
