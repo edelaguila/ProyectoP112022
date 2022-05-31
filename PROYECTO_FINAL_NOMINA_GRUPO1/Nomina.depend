@@ -1,0 +1,1345 @@
+# depslib dependency file v1.0
+1652400398 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+
+1652400492 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+
+1653402801 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652401275 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652401405 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467816 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+
+1652467221 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652467723 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652735456 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+
+1652467723 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467221 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652467816 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652381106 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652381106 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652381106 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652381106 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652399079 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652399079 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652400433 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsempresa.h
+	<string>
+	<iostream>
+
+1652400433 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsempresa.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652428585 source:c:\users\dell\progra\proyectofinal\nomina\nomina\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\nomina\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652428585 c:\users\dell\progra\proyectofinal\nomina\nomina\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652428585 source:c:\users\dell\progra\proyectofinal\nomina\nomina\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652428585 c:\users\dell\progra\proyectofinal\nomina\nomina\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652428585 source:c:\users\dell\progra\proyectofinal\nomina\nomina\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652428585 source:c:\users\dell\progra\proyectofinal\nomina\nomina\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652428585 c:\users\dell\progra\proyectofinal\nomina\nomina\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652429216 source:c:\users\dell\progra\proyectofinal\nomina\nomina\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+
+1652428585 c:\users\dell\progra\proyectofinal\nomina\nomina\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652428939 c:\users\dell\progra\proyectofinal\nomina\nomina\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652429415 source:c:\users\dell\progra\proyectofinal\nomina\nomina\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467723 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467723 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652467723 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467723 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652467723 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467723 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653856098 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+	"ClsConceptos.h"
+	"ClsReporte.h"
+
+1653402801 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653707163 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653402801 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653402801 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653856098 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653402801 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1654009378 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+	"ClsReporte.h"
+
+1653402801 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653402801 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653707164 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653402801 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653856098 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1654009336 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsnomina.h
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1654009388 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsnomina.cpp
+	"Clsnomina.h"
+	"Clsempleados.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+	"ClsReporte.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652915050 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+
+1652738877 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652738877 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652826217 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsnomina.h
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652918479 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652738877 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652918231 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652738877 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652917410 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652918062 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652738877 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652917882 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsnomina.cpp
+	"Clsnomina.h"
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652917673 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652738877 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652918751 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsconceptos.cpp
+	"ClsConceptos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	<math.h>
+	"ClsmenuMantenimientos.h"
+
+1652894896 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsconceptos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652916622 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+	"ClsConceptos.h"
+
+1652912898 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsbitacora.cpp
+	"ClsBitacora.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	<math.h>
+	"ClsmenuMantenimientos.h"
+
+1652912895 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsbitacora.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+	"ClsConceptos.h"
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsconceptos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsnomina.h
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsconceptos.cpp
+	"ClsConceptos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	<math.h>
+	"ClsmenuMantenimientos.h"
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsnomina.cpp
+	"Clsnomina.h"
+	"Clsempleados.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+	"ClsConceptos.h"
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653793933 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsconceptos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsnomina.h
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsconceptos.cpp
+	"ClsConceptos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	<math.h>
+	"ClsmenuMantenimientos.h"
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsnomina.cpp
+	"Clsnomina.h"
+	"Clsempleados.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653793933 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653402801 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsconceptos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653402801 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsconceptos.cpp
+	"ClsConceptos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	<math.h>
+	"ClsmenuMantenimientos.h"
+
+1653578923 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsencabezado.h
+	"Clsnomina.h"
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653402801 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsencabezado.cpp
+	"Clsencabezado.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653716036 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsencabezado.h
+	"Clsnomina.h"
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653716036 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsencabezado.cpp
+	"Clsencabezado.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653794047 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsreporte.cpp
+	"ClsReporte.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653794038 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsreporte.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsencabezado.h
+	"Clsnomina.h"
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsencabezado.cpp
+	"Clsencabezado.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsreporte.cpp
+	"ClsReporte.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsreporte.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653856527 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsreporte.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1654009706 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsreporte.cpp
+	"ClsReporte.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+

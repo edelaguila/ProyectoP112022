@@ -1,0 +1,4 @@
+Codigo   Nombre:             Departamento:       Puesto:             
+2        Mercadotecnia       Mercadotecnia       Dise¤ador_Grafico   
+3        Administrar         Administracion      Administrar         
+5        Algo                Produccion          Gerente             
