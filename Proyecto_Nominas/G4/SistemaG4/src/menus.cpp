@@ -146,7 +146,7 @@ menus::menuConsultas()
 	case 2:
 	    control.nuevaActividadTxt(8);
         control.nuevaActividad(8);
-        dep.Consultar();
+        dep.Imprimir();
 		break;
 	case 3:
 	    control.nuevaActividadTxt(9);
