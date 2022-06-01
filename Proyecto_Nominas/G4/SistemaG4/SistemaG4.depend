@@ -1116,3 +1116,818 @@
 	"Bitacora.h"
 	"Usuarios.h"
 
+1653533773 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653534165 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653476745 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653476745 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653476745 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\departamento.h
+
+1653476745 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\usuarios.h
+	<string>
+
+1653497928 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\menus.h
+
+1653476745 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653476745 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\poliza.h
+
+1653533960 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1653534026 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653476745 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\departamento.cpp
+	"Departamento.h"
+
+1653534140 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653534257 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\poliza.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Poliza.h"
+	"Bitacora.h"
+
+1653533279 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1653476745 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653534165 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	"menus.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653496270 source:c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\transferencia.cpp
+	"transferencia.h"
+
+1653494387 c:\users\jawic\desktop\prepre\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\transferencia.h
+
+1653547208 source:c:\users\nelso\desktop\sistemag4\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653819276 c:\users\nelso\desktop\sistemag4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1651872040 c:\users\nelso\desktop\sistemag4\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653406736 c:\users\nelso\desktop\sistemag4\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1651872040 c:\users\nelso\desktop\sistemag4\include\usuarios.h
+	<string>
+
+1653547208 c:\users\nelso\desktop\sistemag4\include\menus.h
+
+1653406736 c:\users\nelso\desktop\sistemag4\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653814905 c:\users\nelso\desktop\sistemag4\include\poliza.h
+
+1653547208 source:c:\users\nelso\desktop\sistemag4\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	<iomanip>
+	<cstdlib>
+
+1653547208 source:c:\users\nelso\desktop\sistemag4\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653547208 source:c:\users\nelso\desktop\sistemag4\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653819339 source:c:\users\nelso\desktop\sistemag4\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	"menus.h"
+	"Poliza.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653819237 source:c:\users\nelso\desktop\sistemag4\src\poliza.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Poliza.h"
+	"Bitacora.h"
+	"Persona.h"
+
+1653547208 source:c:\users\nelso\desktop\sistemag4\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1653547208 source:c:\users\nelso\desktop\sistemag4\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653930600 source:c:\users\mey\desktop\progra1\nelson\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653930245 c:\users\mey\desktop\progra1\nelson\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1651872040 c:\users\mey\desktop\progra1\nelson\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653406736 c:\users\mey\desktop\progra1\nelson\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1651872040 c:\users\mey\desktop\progra1\nelson\include\usuarios.h
+	<string>
+
+1653547208 c:\users\mey\desktop\progra1\nelson\include\menus.h
+
+1653406736 c:\users\mey\desktop\progra1\nelson\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653896112 c:\users\mey\desktop\progra1\nelson\include\poliza.h
+
+1653843989 source:c:\users\mey\desktop\progra1\nelson\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	"Poliza.h"
+	<iomanip>
+	<cstdlib>
+
+1653547208 source:c:\users\mey\desktop\progra1\nelson\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653547208 source:c:\users\mey\desktop\progra1\nelson\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653896112 source:c:\users\mey\desktop\progra1\nelson\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	"menus.h"
+	"Poliza.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653896112 source:c:\users\mey\desktop\progra1\nelson\src\poliza.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Poliza.h"
+	"Bitacora.h"
+	"Persona.h"
+
+1653547208 source:c:\users\mey\desktop\progra1\nelson\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1653547208 source:c:\users\mey\desktop\progra1\nelson\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653935887 source:c:\users\mey\desktop\nelson\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653937356 c:\users\mey\desktop\nelson\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1651872040 c:\users\mey\desktop\nelson\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653406736 c:\users\mey\desktop\nelson\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1651872040 c:\users\mey\desktop\nelson\include\usuarios.h
+	<string>
+
+1653547208 c:\users\mey\desktop\nelson\include\menus.h
+
+1653406736 c:\users\mey\desktop\nelson\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653896112 c:\users\mey\desktop\nelson\include\poliza.h
+
+1653843989 source:c:\users\mey\desktop\nelson\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	"Poliza.h"
+	<iomanip>
+	<cstdlib>
+
+1653547208 source:c:\users\mey\desktop\nelson\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653547208 source:c:\users\mey\desktop\nelson\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653935887 source:c:\users\mey\desktop\nelson\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	"menus.h"
+	"Poliza.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653936114 source:c:\users\mey\desktop\nelson\src\poliza.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Poliza.h"
+	"Bitacora.h"
+	"Persona.h"
+
+1653547208 source:c:\users\mey\desktop\nelson\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1653547208 source:c:\users\mey\desktop\nelson\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653995536 source:c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653995536 c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653995536 c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653995536 c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653995536 c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\usuarios.h
+	<string>
+
+1653995536 c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\menus.h
+
+1653995536 c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653995536 c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\poliza.h
+
+1653995536 source:c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	"Poliza.h"
+	<iomanip>
+	<cstdlib>
+
+1653995536 source:c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653995536 source:c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653995536 source:c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\poliza.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Poliza.h"
+	"Bitacora.h"
+	"Persona.h"
+
+1653995536 source:c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1653995536 source:c:\users\jawic\desktop\mey\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653997265 source:c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\main.cpp
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"menus.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653997265 c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\persona.h
+	<iostream>
+	<conio.h>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653997265 c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\bitacora.h
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+
+1653997265 c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\puesto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653997265 c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\usuarios.h
+	<string>
+
+1653997265 c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\menus.h
+
+1653997265 c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\concepto.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1653997265 c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\include\poliza.h
+
+1653997265 source:c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\bitacora.cpp
+	"Bitacora.h"
+	"Persona.h"
+	<iostream>
+	<ctime>
+	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	"Usuarios.h"
+	"Poliza.h"
+	<iomanip>
+	<cstdlib>
+
+1653997265 source:c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\concepto.cpp
+	"Concepto.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1653997265 source:c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\persona.cpp
+	"Persona.h"
+	"Concepto.h"
+	"menus.h"
+	"Poliza.h"
+	<iostream>
+	<conio.h>
+	<cstring>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<string>
+
+1653997265 source:c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\poliza.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Poliza.h"
+	"Bitacora.h"
+	"Persona.h"
+
+1653997265 source:c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\puesto.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Puesto.h"
+	"Bitacora.h"
+
+1653997265 source:c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\usuarios.cpp
+	"Usuarios.h"
+	<cstdlib>
+	<conio.h>
+	<iostream>
+	<string>
+	"Bitacora.h"
+	"Usuarios.h"
+
+1653997394 source:c:\users\jawic\desktop\final\proyectoequipo4\proyecto_nominas\g4\sistemag4\src\menus.cpp
+	"menus.h"
+	<iostream>
+	<conio.h>
+	"Persona.h"
+	"Bitacora.h"
+	"Puesto.h"
+	"Usuarios.h"
+	"Concepto.h"
+	"Poliza.h"
+	<ctime>
+	<vector>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+

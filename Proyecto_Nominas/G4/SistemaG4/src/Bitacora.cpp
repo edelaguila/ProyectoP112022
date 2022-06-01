@@ -7,6 +7,7 @@
 #include <string>
 #include <sstream>
 #include "Usuarios.h"
+#include "Poliza.h"
 
 using std::ofstream;
 using std::ostream;
@@ -35,7 +36,7 @@ string Bitacora::obtenerAccion(int opcion)
 }
 
 
-//Funcion que establece la fecha y la hora
+//Funcion que establece la fecha y la hora ---- Nelson Pineda 9959-21-10015
 Bitacora::fechaHora()
 {
     //se establece la hora
@@ -77,9 +78,10 @@ Bitacora::fechaHora()
     cout<<"\t\t\t-----------------------------------------------------------------"<<endl;
 }
 
-//Funcion para agregar informacion a la bitacora(binario)
+//Funcion para agregar informacion a la bitacora(binario) ----- Carlos Sandoval 9959-21-1324
 Bitacora::nuevaActividad(int opcion)
 {
+    //Se establece toda la informacion de fecha y hora
     Usuarios user;
     fstream file;
     Bitacora control;
@@ -427,6 +429,15 @@ Bitacora::nuevaActividadTxt(int opcion)
         break;
     case 38:
         accion1 = "Se consultaron seguros Dentales";
+        break;
+    case 39:
+        accion1 = "Se consulto Estado de Cuenta";
+        break;
+    case 40:
+        accion1 = "Se realizo pago a empleado";
+        break;
+    case 41:
+        accion1 = "Se realizo un deposito";
         break;
 
     }
